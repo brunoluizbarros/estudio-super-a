@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE despesas \nADD COLUMN horarioSaida varchar(5) DEFAULT NULL,\nADD COLUMN horarioRetorno varchar(5) DEFAULT NULL,\nADD COLUMN cafeDaManhaIncluso tinyint(1) DEFAULT 0,\nADD COLUMN fornecedoresAlimentacao text DEFAULT NULL,\nADD COLUMN refeicoesCalculadas text DEFAULT NULL,\nADD COLUMN fornecedorHospedagem int(11) DEFAULT NULL,\nADD COLUMN quartosHospedagem text DEFAULT NULL,\nADD COLUMN valoresDiarias text DEFAULT NULL,\nADD COLUMN diasAntes int(11) DEFAULT 0,\nADD COLUMN diasDepois int(11) DEFAULT 0;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE despesas \nADD COLUMN horarioSaida varchar(5) DEFAULT NULL,\nADD COLUMN horarioRetorno varchar(5) DEFAULT NULL,\nADD COLUMN cafeDaManhaIncluso tinyint(1) DEFAULT 0,\nADD COLUMN fornecedoresAlimentacao text DEFAULT NULL,\nADD COLUMN refeicoesCalculadas text DEFAULT NULL,\nADD COLUMN fornecedorHospedagem int(11) DEFAULT NULL,\nADD COLUMN quartosHospedagem text DEFAULT NULL,\nADD COLUMN valoresDiarias text DEFAULT NULL,\nADD COLUMN diasAntes int(11) DEFAULT 0,\nADD COLUMN diasDepois int(11) DEFAULT 0;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 3060
+}

@@ -1,0 +1,20 @@
+{
+  "query": "SELECT id, name, email, role, status, openId, createdAt, lastSignedIn FROM users WHERE email = 'cirocouceiro@me.com' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, name, email, role, status, openId, createdAt, lastSignedIn FROM users WHERE email = 'cirocouceiro@me.com' ORDER BY id;",
+  "rows": [
+    {
+      "id": "14100118",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "openId": "PThHPwQ7ZTYXSZuFuhoi6r",
+      "createdAt": "2025-12-23 18:26:34",
+      "lastSignedIn": "2025-12-23 19:06:19"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\topenId\tcreatedAt\tlastSignedIn\n14100118\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\taprovado\tPThHPwQ7ZTYXSZuFuhoi6r\t2025-12-23 18:26:34\t2025-12-23 19:06:19\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

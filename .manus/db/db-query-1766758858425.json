@@ -1,0 +1,20 @@
+{
+  "query": "SELECT tipoServicoCompra, COUNT(*) as total,\n       SUM(valorTotal) / 100 as valor_total_reais\nFROM despesas_v2\nWHERE tipoServicoCompra LIKE '%Equipamento%' \n   OR tipoServicoCompra LIKE '%Utensílio%'\n   OR tipoServicoCompra LIKE '%Bem%'\nGROUP BY tipoServicoCompra;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT tipoServicoCompra, COUNT(*) as total,\n       SUM(valorTotal) / 100 as valor_total_reais\nFROM despesas_v2\nWHERE tipoServicoCompra LIKE '%Equipamento%' \n   OR tipoServicoCompra LIKE '%Utensílio%'\n   OR tipoServicoCompra LIKE '%Bem%'\nGROUP BY tipoServicoCompra;",
+  "rows": [
+    {
+      "tipoServicoCompra": "Equipamentos / Utensílios /Bens",
+      "total": "1",
+      "valor_total_reais": "0.0100"
+    },
+    {
+      "tipoServicoCompra": "Locação de Equipamentos Fotográficos",
+      "total": "1",
+      "valor_total_reais": "800.0000"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoServicoCompra\ttotal\tvalor_total_reais\nEquipamentos / Utensílios /Bens\t1\t0.0100\nLocação de Equipamentos Fotográficos\t1\t800.0000\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

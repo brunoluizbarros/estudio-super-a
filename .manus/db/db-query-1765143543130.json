@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE tipoEvento = 'foto_descontrada' ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE tipoEvento = 'foto_descontrada' ORDER BY id DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "60001",
+      "turmaId": "1176",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "2025-11-08 00:00:00",
+      "dataEventoFim": "2025-11-08 00:00:00",
+      "local": "MARCO ZERO"
+    },
+    {
+      "id": "946",
+      "turmaId": "1329",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "925",
+      "turmaId": "1322",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "909",
+      "turmaId": "1315",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "891",
+      "turmaId": "1308",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "881",
+      "turmaId": "1305",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "874",
+      "turmaId": "1303",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "862",
+      "turmaId": "1298",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "850",
+      "turmaId": "1294",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    },
+    {
+      "id": "841",
+      "turmaId": "1291",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "local": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\n60001\t1176\tfoto_descontrada\t2025-11-08 00:00:00\t2025-11-08 00:00:00\tMARCO ZERO\n946\t1329\tfoto_descontrada\tNULL\tNULL\tNULL\n925\t1322\tfoto_descontrada\tNULL\tNULL\tNULL\n909\t1315\tfoto_descontrada\tNULL\tNULL\tNULL\n891\t1308\tfoto_descontrada\tNULL\tNULL\tNULL\n881\t1305\tfoto_descontrada\tNULL\tNULL\tNULL\n874\t1303\tfoto_descontrada\tNULL\tNULL\tNULL\n862\t1298\tfoto_descontrada\tNULL\tNULL\tNULL\n850\t1294\tfoto_descontrada\tNULL\tNULL\tNULL\n841\t1291\tfoto_descontrada\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

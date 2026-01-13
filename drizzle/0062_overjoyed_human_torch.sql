@@ -1,0 +1,1 @@
+ALTER TABLE `divergencias_fechamento` DROP COLUMN `updatedAt`;

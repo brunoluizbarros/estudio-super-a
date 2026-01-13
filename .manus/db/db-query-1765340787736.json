@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO tipos_cenario (nome) VALUES \n('Externa'),\n('Fundo Branco'),\n('Fundo Cinza'),\n('Fundo Preto'),\n('Família'),\n('Poltrona'),\n('Beca'),\n('Consultório'),\n('Samu'),\n('Raio X'),\n('Sala de Habilidades'),\n('Fundo de Led');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO tipos_cenario (nome) VALUES \n('Externa'),\n('Fundo Branco'),\n('Fundo Cinza'),\n('Fundo Preto'),\n('Família'),\n('Poltrona'),\n('Beca'),\n('Consultório'),\n('Samu'),\n('Raio X'),\n('Sala de Habilidades'),\n('Fundo de Led');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 63
+}

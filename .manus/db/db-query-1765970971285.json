@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `reunioes` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `turmaId` int NOT NULL,\n  `data` date NOT NULL,\n  `horario` varchar(5) NOT NULL,\n  `tiposEvento` text NOT NULL,\n  `tipoReuniao` enum('Presencial','Online') NOT NULL,\n  `quantidadeReunioes` int DEFAULT 0,\n  `dataResumo` date,\n  `alinhamento` boolean DEFAULT false,\n  `dataBriefing` date,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n  CONSTRAINT `reunioes_id` PRIMARY KEY(`id`)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE TABLE IF NOT EXISTS `reunioes` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `turmaId` int NOT NULL,\n  `data` date NOT NULL,\n  `horario` varchar(5) NOT NULL,\n  `tiposEvento` text NOT NULL,\n  `tipoReuniao` enum('Presencial','Online') NOT NULL,\n  `quantidadeReunioes` int DEFAULT 0,\n  `dataResumo` date,\n  `alinhamento` boolean DEFAULT false,\n  `dataBriefing` date,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n  CONSTRAINT `reunioes_id` PRIMARY KEY(`id`)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 395
+}

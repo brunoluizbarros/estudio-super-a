@@ -1,0 +1,1 @@
+ALTER TABLE `formandos` MODIFY COLUMN `status` enum('apto','inapto','migracao');

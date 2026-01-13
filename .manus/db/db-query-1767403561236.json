@@ -1,0 +1,154 @@
+{
+  "query": "\nSELECT \n  t.codigo,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos,\n  COUNT(f.id) as totalFormandos\nFROM formandos f\nINNER JOIN turmas t ON f.turmaId = t.id\nGROUP BY t.id, t.codigo, t.cursos, t.instituicoes, t.numeroTurma, t.anos, t.periodos\nORDER BY COUNT(f.id) DESC\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  t.codigo,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos,\n  COUNT(f.id) as totalFormandos\nFROM formandos f\nINNER JOIN turmas t ON f.turmaId = t.id\nGROUP BY t.id, t.codigo, t.cursos, t.instituicoes, t.numeroTurma, t.anos, t.periodos\nORDER BY COUNT(f.id) DESC\n",
+  "rows": [
+    {
+      "codigo": "507",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMJ\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "172"
+    },
+    {
+      "codigo": "567",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FCM\"]",
+      "numeroTurma": "34",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "142"
+    },
+    {
+      "codigo": "976",
+      "cursos": "[\"COLEGIO\"]",
+      "instituicoes": "[\"SANTA MARIA\"]",
+      "numeroTurma": "",
+      "anos": "[2025]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "116"
+    },
+    {
+      "codigo": "820",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNINASSAU\"]",
+      "numeroTurma": "20",
+      "anos": "[2028]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "85"
+    },
+    {
+      "codigo": "804",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FPS\"]",
+      "numeroTurma": "24",
+      "anos": "[2028]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "84"
+    },
+    {
+      "codigo": "553",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"AFYA\"]",
+      "numeroTurma": "7",
+      "anos": "[2026]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "73"
+    },
+    {
+      "codigo": "926",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNINASSAU\"]",
+      "numeroTurma": "21",
+      "anos": "[\"2029\"]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "69"
+    },
+    {
+      "codigo": "799",
+      "cursos": "[\"ODONTOLOGIA\"]",
+      "instituicoes": "[\"UPE\\r\\nUFPE\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "68"
+    },
+    {
+      "codigo": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "58"
+    },
+    {
+      "codigo": "902",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "numeroTurma": "NULL",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "58"
+    },
+    {
+      "codigo": "818",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNICAP\"]",
+      "numeroTurma": "18",
+      "anos": "[2028]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "48"
+    },
+    {
+      "codigo": "974",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FAMENE\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]",
+      "totalFormandos": "43"
+    },
+    {
+      "codigo": "632",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIVASF PAULO AFONSO\"]",
+      "numeroTurma": "7",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "29"
+    },
+    {
+      "codigo": "721",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE SERRA TALHADA \\r\\n GARANHUNS\"]",
+      "numeroTurma": "",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "21"
+    },
+    {
+      "codigo": "0001",
+      "cursos": "[\"DIREITO \\r\\nADMINISTRAÇÃO\\r\\nCIÊNCIAS CONTÁBEIS\"]",
+      "instituicoes": "[\"AESET\"]",
+      "numeroTurma": "NULL",
+      "anos": "[2025]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "2"
+    },
+    {
+      "codigo": "TEST-CVNSU",
+      "cursos": "[\"TESTE\"]",
+      "instituicoes": "[\"TESTE\"]",
+      "numeroTurma": "1",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]",
+      "totalFormandos": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "codigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\ttotalFormandos\n507\t[\"MEDICINA\"]\t[\"FMJ\"]\t\t[\"2026\"]\t[\"1\"]\t172\n567\t[\"MEDICINA\"]\t[\"FCM\"]\t34\t[\"2026\"]\t[\"2\"]\t142\n976\t[\"COLEGIO\"]\t[\"SANTA MARIA\"]\t\t[2025]\t[\"2\"]\t116\n820\t[\"MEDICINA\"]\t[\"UNINASSAU\"]\t20\t[2028]\t[\"2\"]\t85\n804\t[\"MEDICINA\"]\t[\"FPS\"]\t24\t[2028]\t[\"2\"]\t84\n553\t[\"MEDICINA\"]\t[\"AFYA\"]\t7\t[2026]\t[\"2\"]\t73\n926\t[\"MEDICINA\"]\t[\"UNINASSAU\"]\t21\t[\"2029\"]\t[\"1\"]\t69\n799\t[\"ODONTOLOGIA\"]\t[\"UPE\\r\\nUFPE\"]\t\t[\"2026\"]\t[\"1\"]\t68\n654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\t58\n902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\tNULL\t[2026]\t[\"1\"]\t58\n818\t[\"MEDICINA\"]\t[\"UNICAP\"]\t18\t[2028]\t[\"2\"]\t48\n974\t[\"MEDICINA\"]\t[\"FAMENE\"]\t\t[\"2026\"]\t[\"2\"]\t43\n632\t[\"MEDICINA\"]\t[\"UNIVASF PAULO AFONSO\"]\t7\t[2026]\t[\"1\"]\t29\n721\t[\"MEDICINA\"]\t[\"UPE SERRA TALHADA \\r\\n GARANHUNS\"]\t\t[2026]\t[\"1\"]\t21\n0001\t[\"DIREITO \\r\\nADMINISTRAÇÃO\\r\\nCIÊNCIAS CONTÁBEIS\"]\t[\"AESET\"]\tNULL\t[2025]\t[\"1\"]\t2\nTEST-CVNSU\t[\"TESTE\"]\t[\"TESTE\"]\t1\t[2026]\t[\"1\"]\t1\n",
+  "stderr": "",
+  "execution_time_ms": 95
+}

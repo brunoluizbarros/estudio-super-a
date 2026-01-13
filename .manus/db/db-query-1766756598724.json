@@ -1,0 +1,90 @@
+{
+  "query": "SELECT * FROM permissoes WHERE secao = 'financeiro';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE secao = 'financeiro';",
+  "rows": [
+    {
+      "id": "9",
+      "role": "administrador",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:24:39",
+      "updatedAt": "2025-12-18 12:24:39"
+    },
+    {
+      "id": "23",
+      "role": "gestor",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:39",
+      "updatedAt": "2025-12-18 12:39:46"
+    },
+    {
+      "id": "37",
+      "role": "coordenador",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:41:14"
+    },
+    {
+      "id": "30068",
+      "role": "financeiro",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 20:21:27"
+    },
+    {
+      "id": "120006",
+      "role": "logistica",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2025-12-23 18:32:44"
+    },
+    {
+      "id": "120021",
+      "role": "cerimonial",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:34:51",
+      "updatedAt": "2025-12-23 18:34:51"
+    },
+    {
+      "id": "120028",
+      "role": "beca",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:34:55",
+      "updatedAt": "2025-12-23 18:34:55"
+    },
+    {
+      "id": "120045",
+      "role": "armazenamento",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:35:16",
+      "updatedAt": "2025-12-23 18:35:16"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n9\tadministrador\tfinanceiro\t1\t1\t1\t2025-12-18 12:24:39\t2025-12-18 12:24:39\n23\tgestor\tfinanceiro\t1\t1\t0\t2025-12-18 12:24:39\t2025-12-18 12:39:46\n37\tcoordenador\tfinanceiro\t0\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:41:14\n30068\tfinanceiro\tfinanceiro\t1\t1\t1\t2025-12-18 12:36:31\t2025-12-18 20:21:27\n120006\tlogistica\tfinanceiro\t0\t0\t0\t2025-12-23 18:32:44\t2025-12-23 18:32:44\n120021\tcerimonial\tfinanceiro\t0\t0\t0\t2025-12-23 18:34:51\t2025-12-23 18:34:51\n120028\tbeca\tfinanceiro\t0\t0\t0\t2025-12-23 18:34:55\t2025-12-23 18:34:55\n120045\tarmazenamento\tfinanceiro\t0\t0\t0\t2025-12-23 18:35:16\t2025-12-23 18:35:16\n",
+  "stderr": "",
+  "execution_time_ms": 63
+}

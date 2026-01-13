@@ -1,0 +1,190 @@
+{
+  "query": "SELECT id, role, secao, visualizar, inserir, excluir, tipoUsuarioId FROM permissoes LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, role, secao, visualizar, inserir, excluir, tipoUsuarioId FROM permissoes LIMIT 20;",
+  "rows": [
+    {
+      "id": "1",
+      "role": "administrador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "2",
+      "role": "administrador",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "3",
+      "role": "administrador",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "4",
+      "role": "administrador",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "5",
+      "role": "administrador",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "6",
+      "role": "administrador",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "7",
+      "role": "administrador",
+      "secao": "reunioes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "8",
+      "role": "administrador",
+      "secao": "servicos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "9",
+      "role": "administrador",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "10",
+      "role": "administrador",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "11",
+      "role": "administrador",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "12",
+      "role": "administrador",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "13",
+      "role": "administrador",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "14",
+      "role": "administrador",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "15",
+      "role": "gestor",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "16",
+      "role": "gestor",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "17",
+      "role": "gestor",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "18",
+      "role": "gestor",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "19",
+      "role": "gestor",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "20",
+      "role": "gestor",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "tipoUsuarioId": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\ttipoUsuarioId\n1\tadministrador\thome\t1\t1\t1\t1\n2\tadministrador\tturmas\t1\t1\t1\t1\n3\tadministrador\teventos\t1\t1\t1\t1\n4\tadministrador\tabordagem\t1\t1\t1\t1\n5\tadministrador\texecucao\t1\t1\t1\t1\n6\tadministrador\tvendas\t1\t1\t1\t1\n7\tadministrador\treunioes\t1\t1\t1\t1\n8\tadministrador\tservicos\t1\t1\t1\t1\n9\tadministrador\tfinanceiro\t1\t1\t1\t1\n10\tadministrador\tdespesas\t1\t1\t1\t1\n11\tadministrador\trelatorios\t1\t1\t1\t1\n12\tadministrador\tbriefing\t1\t1\t1\t1\n13\tadministrador\tbecas\t1\t1\t1\t1\n14\tadministrador\tconfiguracoes\t1\t1\t1\t1\n15\tgestor\thome\t1\t1\t1\t1\n16\tgestor\tturmas\t1\t1\t1\t1\n17\tgestor\teventos\t1\t1\t1\t1\n18\tgestor\tabordagem\t1\t1\t1\t1\n19\tgestor\texecucao\t1\t1\t1\t1\n20\tgestor\tvendas\t1\t1\t1\t1\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, nome, ativo FROM tipos_usuario WHERE nome = 'Logística'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome, ativo FROM tipos_usuario WHERE nome = 'Logística'",
+  "rows": [
+    {
+      "id": "4",
+      "nome": "Logística",
+      "ativo": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tativo\n4\tLogística\t1\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

@@ -1,0 +1,73 @@
+{
+  "query": "\nSELECT role, COUNT(*) as total, \n       SUM(visualizar) as total_visualizar, \n       SUM(inserir) as total_inserir, \n       SUM(excluir) as total_excluir\nFROM permissoes \nWHERE role IN ('Administrador', 'Armazenamento', 'Beca', 'Cerimonial', 'Controle', 'Coordenador', 'Financeiro', 'Fotógrafo', 'Gestor', 'Logística')\nGROUP BY role\nORDER BY role\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT role, COUNT(*) as total, \n       SUM(visualizar) as total_visualizar, \n       SUM(inserir) as total_inserir, \n       SUM(excluir) as total_excluir\nFROM permissoes \nWHERE role IN ('Administrador', 'Armazenamento', 'Beca', 'Cerimonial', 'Controle', 'Coordenador', 'Financeiro', 'Fotógrafo', 'Gestor', 'Logística')\nGROUP BY role\nORDER BY role\n",
+  "rows": [
+    {
+      "role": "administrador",
+      "total": "15",
+      "total_visualizar": "15",
+      "total_inserir": "15",
+      "total_excluir": "15"
+    },
+    {
+      "role": "armazenamento",
+      "total": "15",
+      "total_visualizar": "6",
+      "total_inserir": "5",
+      "total_excluir": "0"
+    },
+    {
+      "role": "beca",
+      "total": "14",
+      "total_visualizar": "7",
+      "total_inserir": "6",
+      "total_excluir": "1"
+    },
+    {
+      "role": "cerimonial",
+      "total": "13",
+      "total_visualizar": "8",
+      "total_inserir": "7",
+      "total_excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "total": "15",
+      "total_visualizar": "15",
+      "total_inserir": "15",
+      "total_excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "total": "14",
+      "total_visualizar": "10",
+      "total_inserir": "9",
+      "total_excluir": "9"
+    },
+    {
+      "role": "Fotógrafo",
+      "total": "14",
+      "total_visualizar": "4",
+      "total_inserir": "4",
+      "total_excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "total": "15",
+      "total_visualizar": "15",
+      "total_inserir": "15",
+      "total_excluir": "15"
+    },
+    {
+      "role": "logistica",
+      "total": "15",
+      "total_visualizar": "7",
+      "total_inserir": "6",
+      "total_excluir": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\ttotal\ttotal_visualizar\ttotal_inserir\ttotal_excluir\nadministrador\t15\t15\t15\t15\narmazenamento\t15\t6\t5\t0\nbeca\t14\t7\t6\t1\ncerimonial\t13\t8\t7\t0\ncoordenador\t15\t15\t15\t0\nfinanceiro\t14\t10\t9\t9\nFotógrafo\t14\t4\t4\t0\ngestor\t15\t15\t15\t15\nlogistica\t15\t7\t6\t1\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

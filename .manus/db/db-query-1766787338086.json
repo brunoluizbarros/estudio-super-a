@@ -1,0 +1,90 @@
+{
+  "query": "SELECT * FROM permissoes_relatorios WHERE aba = 'vendas_excluidas' ORDER BY role",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes_relatorios WHERE aba = 'vendas_excluidas' ORDER BY role",
+  "rows": [
+    {
+      "id": "90001",
+      "role": "administrador",
+      "aba": "vendas_excluidas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90002",
+      "role": "gestor",
+      "aba": "vendas_excluidas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90003",
+      "role": "coordenador",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90004",
+      "role": "cerimonial",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90005",
+      "role": "beca",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90006",
+      "role": "logistica",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90007",
+      "role": "armazenamento",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    },
+    {
+      "id": "90008",
+      "role": "financeiro",
+      "aba": "vendas_excluidas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 22:15:33",
+      "updatedAt": "2025-12-26 22:15:33"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\taba\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n90001\tadministrador\tvendas_excluidas\t1\t1\t1\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90002\tgestor\tvendas_excluidas\t1\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90003\tcoordenador\tvendas_excluidas\t0\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90004\tcerimonial\tvendas_excluidas\t0\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90005\tbeca\tvendas_excluidas\t0\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90006\tlogistica\tvendas_excluidas\t0\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90007\tarmazenamento\tvendas_excluidas\t0\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n90008\tfinanceiro\tvendas_excluidas\t1\t0\t0\t2025-12-26 22:15:33\t2025-12-26 22:15:33\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

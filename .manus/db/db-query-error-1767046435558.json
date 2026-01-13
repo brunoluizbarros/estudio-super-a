@@ -1,0 +1,8 @@
+{
+  "query": "\nSELECT \n  t.id as turma_id,\n  t.codigo as turma_codigo,\n  COUNT(DISTINCT g.id) as total_grupos,\n  COUNT(DISTINCT f.id) as total_formandos\nFROM turmas t\nLEFT JOIN grupos_briefing g ON g.turmaId = t.id\nLEFT JOIN formandos_briefing f ON f.grupoId = g.id\nWHERE t.codigo = '654'\nGROUP BY t.id, t.codigo;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  t.id as turma_id,\n  t.codigo as turma_codigo,\n  COUNT(DISTINCT g.id) as total_grupos,\n  COUNT(DISTINCT f.id) as total_formandos\nFROM turmas t\nLEFT JOIN grupos_briefing g ON g.turmaId = t.id\nLEFT JOIN formandos_briefing f ON f.grupoId = g.id\nWHERE t.codigo = '654'\nGROUP BY t.id, t.codigo;\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 2: Table 'axwmxybcbhhb5etksga95a.grupos_briefing' doesn't exist"
+  ]
+}

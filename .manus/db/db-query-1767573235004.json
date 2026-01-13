@@ -1,0 +1,19 @@
+{
+  "query": "SELECT \n  id, \n  numeroCi, \n  mesServico, \n  setorSolicitante, \n  valorTotal, \n  createdAt,\n  excluido\nFROM despesas_v2 \nWHERE YEAR(createdAt) = 2026 AND MONTH(createdAt) = 1\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id, \n  numeroCi, \n  mesServico, \n  setorSolicitante, \n  valorTotal, \n  createdAt,\n  excluido\nFROM despesas_v2 \nWHERE YEAR(createdAt) = 2026 AND MONTH(createdAt) = 1\nLIMIT 10",
+  "rows": [
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "createdAt": "2026-01-03 16:53:53",
+      "excluido": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\tmesServico\tsetorSolicitante\tvalorTotal\tcreatedAt\texcluido\n330001\t001/2026\tjaneiro\tfotografia\t94000\t2026-01-03 16:53:53\t0\n",
+  "stderr": "",
+  "execution_time_ms": 75
+}

@@ -1,0 +1,50 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '799') ORDER BY dataEvento",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '799') ORDER BY dataEvento",
+  "rows": [
+    {
+      "id": "420065",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-12 00:00:00",
+      "dataEventoFim": "2026-01-12 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420068",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-13 00:00:00",
+      "dataEventoFim": "2026-01-13 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420070",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-14 00:00:00",
+      "dataEventoFim": "2026-01-14 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420076",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-16 00:00:00",
+      "dataEventoFim": "2026-01-16 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420144",
+      "turmaId": "1113",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "2026-03-20 00:00:00",
+      "dataEventoFim": "2026-03-20 00:00:00",
+      "local": "MUSEU DO ESTADO"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\n420065\t1113\tfoto_estudio\t2026-01-12 00:00:00\t2026-01-12 00:00:00\tESTUDIO SUPER A\n420068\t1113\tfoto_estudio\t2026-01-13 00:00:00\t2026-01-13 00:00:00\tESTUDIO SUPER A\n420070\t1113\tfoto_estudio\t2026-01-14 00:00:00\t2026-01-14 00:00:00\tESTUDIO SUPER A\n420076\t1113\tfoto_estudio\t2026-01-16 00:00:00\t2026-01-16 00:00:00\tESTUDIO SUPER A\n420144\t1113\tfoto_oficial\t2026-03-20 00:00:00\t2026-03-20 00:00:00\tMUSEU DO ESTADO\n",
+  "stderr": "",
+  "execution_time_ms": 84
+}

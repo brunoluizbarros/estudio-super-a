@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, nome FROM tipos_usuario WHERE nome = 'Fotógrafo'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM tipos_usuario WHERE nome = 'Fotógrafo'",
+  "rows": [
+    {
+      "id": "30001",
+      "nome": "Fotógrafo"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n30001\tFotógrafo\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

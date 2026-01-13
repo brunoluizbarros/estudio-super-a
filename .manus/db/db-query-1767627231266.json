@@ -1,0 +1,20 @@
+{
+  "query": "SELECT DISTINCT\n  h.usuarioId,\n  u.name,\n  u.email\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nWHERE DATE(h.dataAlteracao) = CURDATE();",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT\n  h.usuarioId,\n  u.name,\n  u.email\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nWHERE DATE(h.dataAlteracao) = CURDATE();",
+  "rows": [
+    {
+      "usuarioId": "1",
+      "name": "Ciro Couceiro",
+      "email": "gestao@superaformaturas.com.br"
+    },
+    {
+      "usuarioId": "20970368",
+      "name": "Bruno.vasconcelos Vasconelos",
+      "email": "bruno.vasconcelos1302@gmail.com"
+    }
+  ],
+  "messages": [],
+  "stdout": "usuarioId\tname\temail\n1\tCiro Couceiro\tgestao@superaformaturas.com.br\n20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n    v.id as venda_id,\n    v.formandoId,\n    f.id as formando_id_real,\n    f.turmaId,\n    CASE \n        WHEN f.turmaId IS NULL THEN 'SEM TURMA - EXCLUIR'\n        ELSE 'COM TURMA - MANTER'\n    END as acao\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\nORDER BY v.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n    v.id as venda_id,\n    v.formandoId,\n    f.id as formando_id_real,\n    f.turmaId,\n    CASE \n        WHEN f.turmaId IS NULL THEN 'SEM TURMA - EXCLUIR'\n        ELSE 'COM TURMA - MANTER'\n    END as acao\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\nORDER BY v.id",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 60
+}

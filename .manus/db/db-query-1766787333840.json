@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO permissoes_relatorios (role, aba, visualizar, inserir, excluir) VALUES\n('administrador', 'vendas_excluidas', true, true, true),\n('gestor', 'vendas_excluidas', true, false, false),\n('coordenador', 'vendas_excluidas', false, false, false),\n('cerimonial', 'vendas_excluidas', false, false, false),\n('beca', 'vendas_excluidas', false, false, false),\n('logistica', 'vendas_excluidas', false, false, false),\n('armazenamento', 'vendas_excluidas', false, false, false),\n('financeiro', 'vendas_excluidas', true, false, false)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO permissoes_relatorios (role, aba, visualizar, inserir, excluir) VALUES\n('administrador', 'vendas_excluidas', true, true, true),\n('gestor', 'vendas_excluidas', true, false, false),\n('coordenador', 'vendas_excluidas', false, false, false),\n('cerimonial', 'vendas_excluidas', false, false, false),\n('beca', 'vendas_excluidas', false, false, false),\n('logistica', 'vendas_excluidas', false, false, false),\n('armazenamento', 'vendas_excluidas', false, false, false),\n('financeiro', 'vendas_excluidas', true, false, false)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 61
+}

@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  v.id AS vendaId,\n  v.dataVenda,\n  v.valorTotal,\n  v.updatedAt,\n  v.updatedBy,\n  f.nome AS formandoNome,\n  t.codigo AS turmaCodigo,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail\nFROM vendas v\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nLEFT JOIN users u ON v.updatedBy = u.id\nWHERE t.codigo = 902 \n  AND DATE(v.updatedAt) = CURDATE()\nORDER BY v.updatedAt DESC\nLIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  v.id AS vendaId,\n  v.dataVenda,\n  v.valorTotal,\n  v.updatedAt,\n  v.updatedBy,\n  f.nome AS formandoNome,\n  t.codigo AS turmaCodigo,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail\nFROM vendas v\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nLEFT JOIN users u ON v.updatedBy = u.id\nWHERE t.codigo = 902 \n  AND DATE(v.updatedAt) = CURDATE()\nORDER BY v.updatedAt DESC\nLIMIT 20;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'v.updatedby' in 'on clause'"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "query": "SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas LIMIT 10",
+  "rows": [
+    {
+      "id": "1026",
+      "codigo": "708",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"ESTÁCIO QUIXADÁ\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1027",
+      "codigo": "887",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"ESTÁCIO IGUATU\"]",
+      "numeroTurma": "3",
+      "anos": "[\"2028\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1028",
+      "codigo": "890",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UECE CRATEÚS\"]",
+      "numeroTurma": "1",
+      "anos": "[\"2029\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1029",
+      "codigo": "450",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMO\"]",
+      "numeroTurma": "9",
+      "anos": "[2025]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1030",
+      "codigo": "575",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMO\"]",
+      "numeroTurma": "11",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1031",
+      "codigo": "601",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMO\"]",
+      "numeroTurma": "10",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1032",
+      "codigo": "794",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMO\"]",
+      "numeroTurma": "14",
+      "anos": "[2028]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1033",
+      "codigo": "652",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FPS\"]",
+      "numeroTurma": "19",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1034",
+      "codigo": "715",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FPS\"]",
+      "numeroTurma": "20",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1035",
+      "codigo": "779",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FPS\"]",
+      "numeroTurma": "23",
+      "anos": "[2028]",
+      "periodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\n1026\t708\t[\"MEDICINA\"]\t[\"ESTÁCIO QUIXADÁ\"]\t\t[\"2026\"]\t[\"2\"]\n1027\t887\t[\"MEDICINA\"]\t[\"ESTÁCIO IGUATU\"]\t3\t[\"2028\"]\t[\"2\"]\n1028\t890\t[\"MEDICINA\"]\t[\"UECE CRATEÚS\"]\t1\t[\"2029\"]\t[\"1\"]\n1029\t450\t[\"MEDICINA\"]\t[\"FMO\"]\t9\t[2025]\t[\"2\"]\n1030\t575\t[\"MEDICINA\"]\t[\"FMO\"]\t11\t[\"2026\"]\t[\"2\"]\n1031\t601\t[\"MEDICINA\"]\t[\"FMO\"]\t10\t[2026]\t[\"1\"]\n1032\t794\t[\"MEDICINA\"]\t[\"FMO\"]\t14\t[2028]\t[\"1\"]\n1033\t652\t[\"MEDICINA\"]\t[\"FPS\"]\t19\t[2026]\t[\"1\"]\n1034\t715\t[\"MEDICINA\"]\t[\"FPS\"]\t20\t[\"2026\"]\t[\"2\"]\n1035\t779\t[\"MEDICINA\"]\t[\"FPS\"]\t23\t[2028]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 212
+}

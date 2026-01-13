@@ -1,0 +1,23 @@
+{
+  "query": "\nSELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  v.formandoId,\n  f.nome as formandoNome,\n  t.codigo as turmaCodigo,\n  t.cursos as turmaCursos,\n  t.instituicoes as turmaInstituicoes,\n  t.numeroTurma,\n  t.anos as turmaAnos,\n  t.periodos as turmaPeriodos\nFROM historico_alteracoes_vendas h\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE t.codigo = 902\nLIMIT 1;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  v.formandoId,\n  f.nome as formandoNome,\n  t.codigo as turmaCodigo,\n  t.cursos as turmaCursos,\n  t.instituicoes as turmaInstituicoes,\n  t.numeroTurma,\n  t.anos as turmaAnos,\n  t.periodos as turmaPeriodos\nFROM historico_alteracoes_vendas h\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE t.codigo = 902\nLIMIT 1;\n",
+  "rows": [
+    {
+      "id": "60006",
+      "vendaId": "330034",
+      "tipo": "edicao",
+      "formandoId": "270058",
+      "formandoNome": "Arielly Gouveia Urbano da Silva",
+      "turmaCodigo": "902",
+      "turmaCursos": "[\"MEDICINA\"]",
+      "turmaInstituicoes": "[\"UNIFACISA\"]",
+      "numeroTurma": "NULL",
+      "turmaAnos": "[2026]",
+      "turmaPeriodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tformandoId\tformandoNome\tturmaCodigo\tturmaCursos\tturmaInstituicoes\tnumeroTurma\tturmaAnos\tturmaPeriodos\n60006\t330034\tedicao\t270058\tArielly Gouveia Urbano da Silva\t902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\tNULL\t[2026]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 68
+}

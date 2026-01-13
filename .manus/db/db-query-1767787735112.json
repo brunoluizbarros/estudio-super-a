@@ -1,0 +1,9 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.valorTotal / 100 as valor, v.excluido,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as data_venda\nFROM vendas v \nWHERE DATE(v.dataVenda) = '2026-06-15'\n  AND v.valorTotal = 50000\n  AND v.valorLiquido = 50000\n  AND v.excluido = 0\nORDER BY v.id\nLIMIT 2",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.valorTotal / 100 as valor, v.excluido,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as data_venda\nFROM vendas v \nWHERE DATE(v.dataVenda) = '2026-06-15'\n  AND v.valorTotal = 50000\n  AND v.valorLiquido = 50000\n  AND v.excluido = 0\nORDER BY v.id\nLIMIT 2",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 56
+}

@@ -1,0 +1,9 @@
+{
+  "query": "SELECT DISTINCT e.id, e.turmaId, e.tipoEvento, e.dataEvento, t.codigo, t.cursos, t.instituicoes\nFROM eventos e\nINNER JOIN briefing_grupo bg ON bg.eventoId = e.id\nINNER JOIN turmas t ON t.id = e.turmaId\nWHERE bg.ativo = 1\nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT e.id, e.turmaId, e.tipoEvento, e.dataEvento, t.codigo, t.cursos, t.instituicoes\nFROM eventos e\nINNER JOIN briefing_grupo bg ON bg.eventoId = e.id\nINNER JOIN turmas t ON t.id = e.turmaId\nWHERE bg.ativo = 1\nLIMIT 5;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 53
+}

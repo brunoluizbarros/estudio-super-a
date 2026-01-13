@@ -1,0 +1,164 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'Financeiro'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'Financeiro'",
+  "rows": [
+    {
+      "id": "30064",
+      "role": "financeiro",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30065",
+      "role": "financeiro",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30066",
+      "role": "financeiro",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30067",
+      "role": "financeiro",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30068",
+      "role": "financeiro",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30069",
+      "role": "financeiro",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30070",
+      "role": "financeiro",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120030",
+      "role": "financeiro",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2025-12-23 18:35:00",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120031",
+      "role": "financeiro",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120033",
+      "role": "financeiro",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2025-12-23 18:35:00",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120034",
+      "role": "financeiro",
+      "secao": "servicos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120035",
+      "role": "financeiro",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2026-01-02 19:36:08",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "120036",
+      "role": "financeiro",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:35:00",
+      "updatedAt": "2025-12-23 18:35:00",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "180016",
+      "role": "financeiro",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-26 23:14:45",
+      "updatedAt": "2025-12-26 23:14:45",
+      "tipoUsuarioId": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\n30064\tfinanceiro\thome\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30065\tfinanceiro\tturmas\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30066\tfinanceiro\teventos\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30067\tfinanceiro\tvendas\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30068\tfinanceiro\tfinanceiro\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30069\tfinanceiro\tdespesas\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n30070\tfinanceiro\trelatorios\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n120030\tfinanceiro\tabordagem\t0\t0\t0\t2025-12-23 18:35:00\t2025-12-23 18:35:00\t1\n120031\tfinanceiro\texecucao\t1\t1\t1\t2025-12-23 18:35:00\t2026-01-05 18:49:22\t1\n120033\tfinanceiro\treunioes\t0\t0\t0\t2025-12-23 18:35:00\t2025-12-23 18:35:00\t1\n120034\tfinanceiro\tservicos\t1\t1\t1\t2025-12-23 18:35:00\t2026-01-05 18:49:22\t1\n120035\tfinanceiro\tbriefing\t1\t0\t0\t2025-12-23 18:35:00\t2026-01-02 19:36:08\t1\n120036\tfinanceiro\tbecas\t0\t0\t0\t2025-12-23 18:35:00\t2025-12-23 18:35:00\t1\n180016\tfinanceiro\tpermissoes_cerimoniais\t0\t0\t0\t2025-12-26 23:14:45\t2025-12-26 23:14:45\t1\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

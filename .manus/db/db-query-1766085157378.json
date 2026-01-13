@@ -1,0 +1,28 @@
+{
+  "query": "SELECT id, openId, email, name, role, status, lastSignedIn FROM users WHERE email = 'controlersuperaformaturas@gmail.com'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, openId, email, name, role, status, lastSignedIn FROM users WHERE email = 'controlersuperaformaturas@gmail.com'",
+  "rows": [
+    {
+      "id": "9990044",
+      "openId": "temp_controlersuperaformaturas_gmail_com_1766083112762",
+      "email": "controlersuperaformaturas@gmail.com",
+      "name": "Beatriz Silva",
+      "role": "financeiro",
+      "status": "pendente",
+      "lastSignedIn": "2025-12-18 18:38:33"
+    },
+    {
+      "id": "9990297",
+      "openId": "KXZpjoqotrkdNotduURhDw",
+      "email": "controlersuperaformaturas@gmail.com",
+      "name": "Controler 2",
+      "role": "financeiro",
+      "status": "pendente",
+      "lastSignedIn": "2025-12-18 19:09:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\temail\tname\trole\tstatus\tlastSignedIn\n9990044\ttemp_controlersuperaformaturas_gmail_com_1766083112762\tcontrolersuperaformaturas@gmail.com\tBeatriz Silva\tfinanceiro\tpendente\t2025-12-18 18:38:33\n9990297\tKXZpjoqotrkdNotduURhDw\tcontrolersuperaformaturas@gmail.com\tControler 2\tfinanceiro\tpendente\t2025-12-18 19:09:24\n",
+  "stderr": "",
+  "execution_time_ms": 79
+}

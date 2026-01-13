@@ -1,0 +1,55 @@
+{
+  "query": "SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  descricao\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\n  AND cvNsu IN ('18913588', '17829N98', '12655922', '24668478', '26482146', '175329394', '27418518', '176726822')\nORDER BY cvNsu",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  descricao\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\n  AND cvNsu IN ('18913588', '17829N98', '12655922', '24668478', '26482146', '175329394', '27418518', '176726822')\nORDER BY cvNsu",
+  "rows": [
+    {
+      "id": "51",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "175329394",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao": "Transação não lançada no sistema: CV 175329394, valor R$ 650.00"
+    },
+    {
+      "id": "60044",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "175329394",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard"
+    },
+    {
+      "id": "60043",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "176726822",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025"
+    },
+    {
+      "id": "53",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "24668478",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao": "Transação não lançada no sistema: CV 24668478, valor R$ 650.00"
+    },
+    {
+      "id": "60040",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "24668478",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoDivergencia\tcvNsu\tvalorEsperado\tvalorEncontrado\tdiferenca\tdescricao\n51\tnao_lancado\t175329394\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 175329394, valor R$ 650.00\n60044\tvalor_diferente\t175329394\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard\n60043\tvalor_diferente\t176726822\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\n53\tnao_lancado\t24668478\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 24668478, valor R$ 650.00\n60040\tvalor_diferente\t24668478\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

@@ -1,0 +1,120 @@
+{
+  "query": "SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  descricao,\n  statusResolucao,\n  createdAt\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\nORDER BY createdAt DESC\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  descricao,\n  statusResolucao,\n  createdAt\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\nORDER BY createdAt DESC\nLIMIT 10",
+  "rows": [
+    {
+      "id": "60047",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "1702290098",
+      "valorEsperado": "30000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao": "Venda fantasma: existe no sistema mas não na Rede, CV 1702290098, valor R$ 300.00",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60046",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "170290098",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "30000",
+      "diferenca": "NULL",
+      "descricao": "Transação não lançada no sistema: CV 170290098, valor R$ 300.00",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60043",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "176726822",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60041",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "27410510",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60039",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "18913508",
+      "valorEsperado": "35000",
+      "valorEncontrado": "35000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60045",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "26402146",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60044",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "175329394",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60042",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "170355022",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60040",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "24668478",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "56",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "18913508",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "35000",
+      "diferenca": "NULL",
+      "descricao": "Transação não lançada no sistema: CV 18913508, valor R$ 350.00",
+      "statusResolucao": "pendente",
+      "createdAt": "2026-01-02 21:57:45"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoDivergencia\tcvNsu\tvalorEsperado\tvalorEncontrado\tdiferenca\tdescricao\tstatusResolucao\tcreatedAt\n60047\tvenda_fantasma\t1702290098\t30000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 1702290098, valor R$ 300.00\tpendente\t2026-01-06 12:53:08\n60046\tnao_lancado\t170290098\tNULL\t30000\tNULL\tTransação não lançada no sistema: CV 170290098, valor R$ 300.00\tpendente\t2026-01-06 12:53:08\n60043\tvalor_diferente\t176726822\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\tpendente\t2026-01-06 12:53:08\n60041\tvalor_diferente\t27410510\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard\tpendente\t2026-01-06 12:53:08\n60039\tvalor_diferente\t18913508\t35000\t35000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito\tpendente\t2026-01-06 12:53:08\n60045\tvalor_diferente\t26402146\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\tpendente\t2026-01-06 12:53:08\n60044\tvalor_diferente\t175329394\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard\tpendente\t2026-01-06 12:53:08\n60042\tvalor_diferente\t170355022\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\tpendente\t2026-01-06 12:53:08\n60040\tvalor_diferente\t24668478\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard\tpendente\t2026-01-06 12:53:08\n56\tnao_lancado\t18913508\tNULL\t35000\tNULL\tTransação não lançada no sistema: CV 18913508, valor R$ 350.00\tpendente\t2026-01-02 21:57:45\n",
+  "stderr": "",
+  "execution_time_ms": 80
+}

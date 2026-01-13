@@ -1,0 +1,40 @@
+{
+  "query": "SELECT * FROM despesas_v2_datas WHERE despesaId = 330001",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM despesas_v2_datas WHERE despesaId = 330001",
+  "rows": [
+    {
+      "id": "150014",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-26 03:00:00",
+      "createdAt": "2026-01-03 16:53:53"
+    },
+    {
+      "id": "150015",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-27 03:00:00",
+      "createdAt": "2026-01-03 16:53:53"
+    },
+    {
+      "id": "150016",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-28 03:00:00",
+      "createdAt": "2026-01-03 16:53:53"
+    },
+    {
+      "id": "150017",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-29 03:00:00",
+      "createdAt": "2026-01-03 16:53:53"
+    },
+    {
+      "id": "150018",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-30 03:00:00",
+      "createdAt": "2026-01-03 16:53:53"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdespesaId\tdataRealizacao\tcreatedAt\n150014\t330001\t2026-01-26 03:00:00\t2026-01-03 16:53:53\n150015\t330001\t2026-01-27 03:00:00\t2026-01-03 16:53:53\n150016\t330001\t2026-01-28 03:00:00\t2026-01-03 16:53:53\n150017\t330001\t2026-01-29 03:00:00\t2026-01-03 16:53:53\n150018\t330001\t2026-01-30 03:00:00\t2026-01-03 16:53:53\n",
+  "stderr": "",
+  "execution_time_ms": 48
+}

@@ -1,0 +1,49 @@
+{
+  "query": "SELECT DISTINCT role FROM permissoes ORDER BY role",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT role FROM permissoes ORDER BY role",
+  "rows": [
+    {
+      "role": "administrador"
+    },
+    {
+      "role": "armazenamento"
+    },
+    {
+      "role": "beca"
+    },
+    {
+      "role": "cerimonial"
+    },
+    {
+      "role": "controler"
+    },
+    {
+      "role": "coordenador"
+    },
+    {
+      "role": "financeiro"
+    },
+    {
+      "role": "gestor"
+    },
+    {
+      "role": "logistica"
+    },
+    {
+      "role": "Logística 1"
+    },
+    {
+      "role": "logística_1"
+    },
+    {
+      "role": "Teste Vendedor"
+    },
+    {
+      "role": "Vendedor"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\nadministrador\narmazenamento\nbeca\ncerimonial\ncontroler\ncoordenador\nfinanceiro\ngestor\nlogistica\nLogística 1\nlogística_1\nTeste Vendedor\nVendedor\n",
+  "stderr": "",
+  "execution_time_ms": 94
+}

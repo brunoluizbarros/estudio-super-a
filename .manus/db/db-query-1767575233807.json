@@ -1,0 +1,50 @@
+{
+  "query": "SELECT \n  id,\n  dataVenda,\n  YEAR(dataVenda) as ano_extraido,\n  MONTH(dataVenda) as mes_extraido,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  dataVenda,\n  YEAR(dataVenda) as ano_extraido,\n  MONTH(dataVenda) as mes_extraido,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 5",
+  "rows": [
+    {
+      "id": "420006",
+      "dataVenda": "2026-06-15 00:00:00",
+      "ano_extraido": "2026",
+      "mes_extraido": "6",
+      "valorTotal": "50000",
+      "excluido": "0"
+    },
+    {
+      "id": "420008",
+      "dataVenda": "2026-06-15 00:00:00",
+      "ano_extraido": "2026",
+      "mes_extraido": "6",
+      "valorTotal": "50000",
+      "excluido": "0"
+    },
+    {
+      "id": "330004",
+      "dataVenda": "2025-12-13 15:00:00",
+      "ano_extraido": "2025",
+      "mes_extraido": "12",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330011",
+      "dataVenda": "2025-12-13 15:00:00",
+      "ano_extraido": "2025",
+      "mes_extraido": "12",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330009",
+      "dataVenda": "2025-12-13 15:00:00",
+      "ano_extraido": "2025",
+      "mes_extraido": "12",
+      "valorTotal": "65000",
+      "excluido": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdataVenda\tano_extraido\tmes_extraido\tvalorTotal\texcluido\n420006\t2026-06-15 00:00:00\t2026\t6\t50000\t0\n420008\t2026-06-15 00:00:00\t2026\t6\t50000\t0\n330004\t2025-12-13 15:00:00\t2025\t12\t65000\t0\n330011\t2025-12-13 15:00:00\t2025\t12\t65000\t0\n330009\t2025-12-13 15:00:00\t2025\t12\t65000\t0\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

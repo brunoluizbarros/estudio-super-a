@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO `tipos_usuario` (`nome`, `ativo`) VALUES\n('Administrador', true),\n('Financeiro', true),\n('Gestor', true),\n('Logística', true),\n('Coordenador', true),\n('Armazenamento', true),\n('Cerimonial', true),\n('Beca', true);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO `tipos_usuario` (`nome`, `ativo`) VALUES\n('Administrador', true),\n('Financeiro', true),\n('Gestor', true),\n('Logística', true),\n('Coordenador', true),\n('Armazenamento', true),\n('Cerimonial', true),\n('Beca', true);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 63
+}

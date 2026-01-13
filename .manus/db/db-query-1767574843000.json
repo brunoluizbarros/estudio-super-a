@@ -1,0 +1,45 @@
+{
+  "query": "SELECT \n  id,\n  dataVenda,\n  valorTotal,\n  excluido,\n  createdAt\nFROM vendas\nWHERE excluido = 0\nORDER BY id DESC\nLIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  dataVenda,\n  valorTotal,\n  excluido,\n  createdAt\nFROM vendas\nWHERE excluido = 0\nORDER BY id DESC\nLIMIT 5",
+  "rows": [
+    {
+      "id": "420008",
+      "dataVenda": "2026-06-15 00:00:00",
+      "valorTotal": "50000",
+      "excluido": "0",
+      "createdAt": "2026-01-05 00:45:37"
+    },
+    {
+      "id": "420006",
+      "dataVenda": "2026-06-15 00:00:00",
+      "valorTotal": "50000",
+      "excluido": "0",
+      "createdAt": "2026-01-05 00:35:52"
+    },
+    {
+      "id": "390001",
+      "dataVenda": "2024-01-01 15:00:00",
+      "valorTotal": "65000",
+      "excluido": "0",
+      "createdAt": "2026-01-04 03:13:17"
+    },
+    {
+      "id": "330036",
+      "dataVenda": "2025-12-10 15:00:00",
+      "valorTotal": "65000",
+      "excluido": "0",
+      "createdAt": "2025-12-22 12:59:32"
+    },
+    {
+      "id": "330035",
+      "dataVenda": "2025-12-13 15:00:00",
+      "valorTotal": "65000",
+      "excluido": "0",
+      "createdAt": "2025-12-22 12:57:49"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdataVenda\tvalorTotal\texcluido\tcreatedAt\n420008\t2026-06-15 00:00:00\t50000\t0\t2026-01-05 00:45:37\n420006\t2026-06-15 00:00:00\t50000\t0\t2026-01-05 00:35:52\n390001\t2024-01-01 15:00:00\t65000\t0\t2026-01-04 03:13:17\n330036\t2025-12-10 15:00:00\t65000\t0\t2025-12-22 12:59:32\n330035\t2025-12-13 15:00:00\t65000\t0\t2025-12-22 12:57:49\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

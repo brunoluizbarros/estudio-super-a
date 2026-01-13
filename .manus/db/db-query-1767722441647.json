@@ -1,0 +1,40 @@
+{
+  "query": "SELECT f.id, f.nome, f.turmaId, t.codigo\nFROM formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nWHERE t.codigo = '654'\nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT f.id, f.nome, f.turmaId, t.codigo\nFROM formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nWHERE t.codigo = '654'\nLIMIT 5;",
+  "rows": [
+    {
+      "id": "480001",
+      "nome": "Victor de Paula Fonseca",
+      "turmaId": "1132",
+      "codigo": "654"
+    },
+    {
+      "id": "480002",
+      "nome": "Idílio Lucas Freitas de Araújo",
+      "turmaId": "1132",
+      "codigo": "654"
+    },
+    {
+      "id": "480003",
+      "nome": "Bianca de Medeiros Fernandes",
+      "turmaId": "1132",
+      "codigo": "654"
+    },
+    {
+      "id": "480004",
+      "nome": "Maria Eduarda Cavalcante Melo",
+      "turmaId": "1132",
+      "codigo": "654"
+    },
+    {
+      "id": "480005",
+      "nome": "Alice Rodrigues de Andrade Alves",
+      "turmaId": "1132",
+      "codigo": "654"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tturmaId\tcodigo\n480001\tVictor de Paula Fonseca\t1132\t654\n480002\tIdílio Lucas Freitas de Araújo\t1132\t654\n480003\tBianca de Medeiros Fernandes\t1132\t654\n480004\tMaria Eduarda Cavalcante Melo\t1132\t654\n480005\tAlice Rodrigues de Andrade Alves\t1132\t654\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

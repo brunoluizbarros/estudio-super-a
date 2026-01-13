@@ -1,0 +1,30 @@
+{
+  "query": "SELECT CONSTRAINT_NAME, TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME = 'permissoes';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT CONSTRAINT_NAME, TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME = 'permissoes';",
+  "rows": [
+    {
+      "CONSTRAINT_NAME": "PRIMARY",
+      "TABLE_NAME": "permissoes",
+      "COLUMN_NAME": "id"
+    },
+    {
+      "CONSTRAINT_NAME": "unique_role_secao",
+      "TABLE_NAME": "permissoes",
+      "COLUMN_NAME": "role"
+    },
+    {
+      "CONSTRAINT_NAME": "unique_role_secao",
+      "TABLE_NAME": "permissoes",
+      "COLUMN_NAME": "secao"
+    },
+    {
+      "CONSTRAINT_NAME": "permissoes_tipoUsuarioId_tipos_usuario_id_fk",
+      "TABLE_NAME": "permissoes",
+      "COLUMN_NAME": "tipoUsuarioId"
+    }
+  ],
+  "messages": [],
+  "stdout": "CONSTRAINT_NAME\tTABLE_NAME\tCOLUMN_NAME\nPRIMARY\tpermissoes\tid\nunique_role_secao\tpermissoes\trole\nunique_role_secao\tpermissoes\tsecao\npermissoes_tipoUsuarioId_tipos_usuario_id_fk\tpermissoes\ttipoUsuarioId\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

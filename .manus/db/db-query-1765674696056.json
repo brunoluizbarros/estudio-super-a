@@ -1,0 +1,43 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao, maquiadoras FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '902') LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao, maquiadoras FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '902') LIMIT 3;",
+  "rows": [
+    {
+      "id": "780",
+      "turmaId": "1273",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "781",
+      "turmaId": "1273",
+      "tipoEvento": "foto_oficial",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "30001",
+      "turmaId": "1273",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tcenarios\tfotografos\tcerimoniais\tcoordenadores\tproducao\tmaquiadoras\n780\t1273\tfoto_estudio\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n781\t1273\tfoto_oficial\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n30001\t1273\tfoto_estudio\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 69
+}

@@ -1,0 +1,100 @@
+{
+  "query": "SELECT * FROM execucao_formando LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM execucao_formando LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "eventoId": "90008",
+      "formandoId": "90039",
+      "arquivoEntregue": "1",
+      "createdAt": "2025-12-10 18:55:04",
+      "updatedAt": "2025-12-10 18:55:04",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "30001",
+      "eventoId": "90008",
+      "formandoId": "90001",
+      "arquivoEntregue": "1",
+      "createdAt": "2025-12-10 19:21:13",
+      "updatedAt": "2025-12-10 19:21:13",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "60001",
+      "eventoId": "90008",
+      "formandoId": "90002",
+      "arquivoEntregue": "1",
+      "createdAt": "2025-12-10 19:41:00",
+      "updatedAt": "2025-12-10 19:41:00",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "90001",
+      "eventoId": "30002",
+      "formandoId": "120001",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-11 13:38:52",
+      "updatedAt": "2025-12-11 13:38:52",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "120001",
+      "eventoId": "90008",
+      "formandoId": "90003",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-11 15:47:06",
+      "updatedAt": "2025-12-11 15:47:06",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "150001",
+      "eventoId": "90008",
+      "formandoId": "90004",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-12 11:31:33",
+      "updatedAt": "2025-12-12 11:31:33",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "150002",
+      "eventoId": "90008",
+      "formandoId": "90005",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-12 11:32:15",
+      "updatedAt": "2025-12-12 11:32:15",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "150003",
+      "eventoId": "90008",
+      "formandoId": "90006",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-12 11:33:04",
+      "updatedAt": "2025-12-12 11:33:04",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "150004",
+      "eventoId": "90008",
+      "formandoId": "90007",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-12 11:33:54",
+      "updatedAt": "2025-12-12 11:33:54",
+      "dataExecucao": "NULL"
+    },
+    {
+      "id": "150005",
+      "eventoId": "90008",
+      "formandoId": "90008",
+      "arquivoEntregue": "0",
+      "createdAt": "2025-12-12 11:34:43",
+      "updatedAt": "2025-12-12 11:34:43",
+      "dataExecucao": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\tarquivoEntregue\tcreatedAt\tupdatedAt\tdataExecucao\n1\t90008\t90039\t1\t2025-12-10 18:55:04\t2025-12-10 18:55:04\tNULL\n30001\t90008\t90001\t1\t2025-12-10 19:21:13\t2025-12-10 19:21:13\tNULL\n60001\t90008\t90002\t1\t2025-12-10 19:41:00\t2025-12-10 19:41:00\tNULL\n90001\t30002\t120001\t0\t2025-12-11 13:38:52\t2025-12-11 13:38:52\tNULL\n120001\t90008\t90003\t0\t2025-12-11 15:47:06\t2025-12-11 15:47:06\tNULL\n150001\t90008\t90004\t0\t2025-12-12 11:31:33\t2025-12-12 11:31:33\tNULL\n150002\t90008\t90005\t0\t2025-12-12 11:32:15\t2025-12-12 11:32:15\tNULL\n150003\t90008\t90006\t0\t2025-12-12 11:33:04\t2025-12-12 11:33:04\tNULL\n150004\t90008\t90007\t0\t2025-12-12 11:33:54\t2025-12-12 11:33:54\tNULL\n150005\t90008\t90008\t0\t2025-12-12 11:34:43\t2025-12-12 11:34:43\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 48
+}

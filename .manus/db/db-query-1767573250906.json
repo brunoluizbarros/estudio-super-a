@@ -1,0 +1,35 @@
+{
+  "query": "SELECT id, despesaId, dataRealizacao FROM despesas_v2_datas WHERE despesaId = 330001 ORDER BY dataRealizacao",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, despesaId, dataRealizacao FROM despesas_v2_datas WHERE despesaId = 330001 ORDER BY dataRealizacao",
+  "rows": [
+    {
+      "id": "150014",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-26 03:00:00"
+    },
+    {
+      "id": "150015",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-27 03:00:00"
+    },
+    {
+      "id": "150016",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-28 03:00:00"
+    },
+    {
+      "id": "150017",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-29 03:00:00"
+    },
+    {
+      "id": "150018",
+      "despesaId": "330001",
+      "dataRealizacao": "2026-01-30 03:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdespesaId\tdataRealizacao\n150014\t330001\t2026-01-26 03:00:00\n150015\t330001\t2026-01-27 03:00:00\n150016\t330001\t2026-01-28 03:00:00\n150017\t330001\t2026-01-29 03:00:00\n150018\t330001\t2026-01-30 03:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 48
+}

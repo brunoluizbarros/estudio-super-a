@@ -1,0 +1,70 @@
+{
+  "query": "SELECT DISTINCT tiposServico FROM fornecedores WHERE tiposServico IS NOT NULL AND tiposServico != '' LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT tiposServico FROM fornecedores WHERE tiposServico IS NOT NULL AND tiposServico != '' LIMIT 20;",
+  "rows": [
+    {
+      "tiposServico": "[14, 5, 12]"
+    },
+    {
+      "tiposServico": "[14, 7]"
+    },
+    {
+      "tiposServico": "[7]"
+    },
+    {
+      "tiposServico": "[11]"
+    },
+    {
+      "tiposServico": "[3]"
+    },
+    {
+      "tiposServico": "[2]"
+    },
+    {
+      "tiposServico": "[12]"
+    },
+    {
+      "tiposServico": "[1]"
+    },
+    {
+      "tiposServico": "[7, 5, 12]"
+    },
+    {
+      "tiposServico": "[13]"
+    },
+    {
+      "tiposServico": "[10, 6]"
+    },
+    {
+      "tiposServico": "[11, 10]"
+    },
+    {
+      "tiposServico": "[5, 12]"
+    },
+    {
+      "tiposServico": "[7, 10]"
+    },
+    {
+      "tiposServico": "[14, 11, 10]"
+    },
+    {
+      "tiposServico": "[14, 7, 8, 12]"
+    },
+    {
+      "tiposServico": "[2, 3]"
+    },
+    {
+      "tiposServico": "[14]"
+    },
+    {
+      "tiposServico": "[10]"
+    },
+    {
+      "tiposServico": "[10, 9]"
+    }
+  ],
+  "messages": [],
+  "stdout": "tiposServico\n[14, 5, 12]\n[14, 7]\n[7]\n[11]\n[3]\n[2]\n[12]\n[1]\n[7, 5, 12]\n[13]\n[10, 6]\n[11, 10]\n[5, 12]\n[7, 10]\n[14, 11, 10]\n[14, 7, 8, 12]\n[2, 3]\n[14]\n[10]\n[10, 9]\n",
+  "stderr": "",
+  "execution_time_ms": 49
+}

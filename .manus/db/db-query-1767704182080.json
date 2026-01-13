@@ -1,0 +1,250 @@
+{
+  "query": "SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  LEFT(descricao, 200) as descricao_resumo,\n  createdAt\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\nORDER BY id DESC",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  tipoDivergencia,\n  cvNsu,\n  valorEsperado,\n  valorEncontrado,\n  diferenca,\n  LEFT(descricao, 200) as descricao_resumo,\n  createdAt\nFROM divergencias_fechamento\nWHERE statusResolucao = 'pendente'\nORDER BY id DESC",
+  "rows": [
+    {
+      "id": "60047",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "1702290098",
+      "valorEsperado": "30000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 1702290098, valor R$ 300.00",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60046",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "170290098",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "30000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 170290098, valor R$ 300.00",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60045",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "26402146",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60044",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "175329394",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60043",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "176726822",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60042",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "170355022",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60041",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "27410510",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60040",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "24668478",
+      "valorEsperado": "65000",
+      "valorEncontrado": "65000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "60039",
+      "tipoDivergencia": "valor_diferente",
+      "cvNsu": "18913508",
+      "valorEsperado": "35000",
+      "valorEncontrado": "35000",
+      "diferenca": "0",
+      "descricao_resumo": "Divergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito",
+      "createdAt": "2026-01-06 12:53:08"
+    },
+    {
+      "id": "63",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "65000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "62",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "65000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "61",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "65000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "60",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "65000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "59",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "65000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "58",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "35000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 350.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "57",
+      "tipoDivergencia": "venda_fantasma",
+      "cvNsu": "0000",
+      "valorEsperado": "30000",
+      "valorEncontrado": "NULL",
+      "diferenca": "NULL",
+      "descricao_resumo": "Venda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 300.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "56",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "18913508",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "35000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 18913508, valor R$ 350.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "55",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "170290098",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "30000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 170290098, valor R$ 300.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "54",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "170355022",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 170355022, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "53",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "24668478",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 24668478, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "52",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "26402146",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 26402146, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "51",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "175329394",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 175329394, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "50",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "27410510",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "65000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 27410510, valor R$ 650.00",
+      "createdAt": "2026-01-02 21:57:45"
+    },
+    {
+      "id": "16",
+      "tipoDivergencia": "nao_lancado",
+      "cvNsu": "182662422",
+      "valorEsperado": "NULL",
+      "valorEncontrado": "45000",
+      "diferenca": "NULL",
+      "descricao_resumo": "Transação não lançada no sistema: CV 182662422, valor R$ 450.00",
+      "createdAt": "2026-01-02 20:30:19"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoDivergencia\tcvNsu\tvalorEsperado\tvalorEncontrado\tdiferenca\tdescricao_resumo\tcreatedAt\n60047\tvenda_fantasma\t1702290098\t30000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 1702290098, valor R$ 300.00\t2026-01-06 12:53:08\n60046\tnao_lancado\t170290098\tNULL\t30000\tNULL\tTransação não lançada no sistema: CV 170290098, valor R$ 300.00\t2026-01-06 12:53:08\n60045\tvalor_diferente\t26402146\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\t2026-01-06 12:53:08\n60044\tvalor_diferente\t175329394\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard\t2026-01-06 12:53:08\n60043\tvalor_diferente\t176726822\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\t2026-01-06 12:53:08\n60042\tvalor_diferente\t170355022\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025\t2026-01-06 12:53:08\n60041\tvalor_diferente\t27410510\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Bandeira: Sistema=MASTER, Planilha=Mastercard\t2026-01-06 12:53:08\n60040\tvalor_diferente\t24668478\t65000\t65000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito; Bandeira: Sistema=MASTER, Planilha=Mastercard\t2026-01-06 12:53:08\n60039\tvalor_diferente\t18913508\t35000\t35000\t0\tDivergências encontradas: Data: Sistema=NaN/NaN/NaN, Planilha=13/12/2025; Modalidade: Sistema=credito, Planilha=débito\t2026-01-06 12:53:08\n63\tvenda_fantasma\t0000\t65000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00\t2026-01-02 21:57:45\n62\tvenda_fantasma\t0000\t65000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00\t2026-01-02 21:57:45\n61\tvenda_fantasma\t0000\t65000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00\t2026-01-02 21:57:45\n60\tvenda_fantasma\t0000\t65000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00\t2026-01-02 21:57:45\n59\tvenda_fantasma\t0000\t65000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 650.00\t2026-01-02 21:57:45\n58\tvenda_fantasma\t0000\t35000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 350.00\t2026-01-02 21:57:45\n57\tvenda_fantasma\t0000\t30000\tNULL\tNULL\tVenda fantasma: existe no sistema mas não na Rede, CV 0000, valor R$ 300.00\t2026-01-02 21:57:45\n56\tnao_lancado\t18913508\tNULL\t35000\tNULL\tTransação não lançada no sistema: CV 18913508, valor R$ 350.00\t2026-01-02 21:57:45\n55\tnao_lancado\t170290098\tNULL\t30000\tNULL\tTransação não lançada no sistema: CV 170290098, valor R$ 300.00\t2026-01-02 21:57:45\n54\tnao_lancado\t170355022\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 170355022, valor R$ 650.00\t2026-01-02 21:57:45\n53\tnao_lancado\t24668478\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 24668478, valor R$ 650.00\t2026-01-02 21:57:45\n52\tnao_lancado\t26402146\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 26402146, valor R$ 650.00\t2026-01-02 21:57:45\n51\tnao_lancado\t175329394\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 175329394, valor R$ 650.00\t2026-01-02 21:57:45\n50\tnao_lancado\t27410510\tNULL\t65000\tNULL\tTransação não lançada no sistema: CV 27410510, valor R$ 650.00\t2026-01-02 21:57:45\n16\tnao_lancado\t182662422\tNULL\t45000\tNULL\tTransação não lançada no sistema: CV 182662422, valor R$ 450.00\t2026-01-02 20:30:19\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

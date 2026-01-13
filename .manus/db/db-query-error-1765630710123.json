@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE itensVenda \nADD COLUMN ajusteValor INT DEFAULT 0 AFTER valorUnitario,\nADD COLUMN justificativa VARCHAR(255) AFTER ajusteValor;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE itensVenda \nADD COLUMN ajusteValor INT DEFAULT 0 AFTER valorUnitario,\nADD COLUMN justificativa VARCHAR(255) AFTER ajusteValor;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'ajustevalor' in 'itensVenda'"
+  ]
+}

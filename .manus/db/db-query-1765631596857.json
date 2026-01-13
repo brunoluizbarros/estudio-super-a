@@ -1,0 +1,49 @@
+{
+  "query": "SELECT * FROM itensVenda LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM itensVenda LIMIT 3;",
+  "rows": [
+    {
+      "id": "1",
+      "vendaId": "1",
+      "produtoId": "30002",
+      "produto": "10 Fotos",
+      "categoria": "Foto",
+      "quantidade": "1",
+      "valorUnitario": "55000",
+      "valorTotal": "55000",
+      "createdAt": "2025-12-09 11:37:26",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "30001",
+      "vendaId": "30001",
+      "produtoId": "30007",
+      "produto": "Pen Drive",
+      "categoria": "Outros",
+      "quantidade": "1",
+      "valorUnitario": "10000",
+      "valorTotal": "10000",
+      "createdAt": "2025-12-11 15:44:14",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "60001",
+      "vendaId": "60001",
+      "produtoId": "90001",
+      "produto": "Família",
+      "categoria": "Outros",
+      "quantidade": "1",
+      "valorUnitario": "20000",
+      "valorTotal": "20000",
+      "createdAt": "2025-12-12 23:44:08",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\tprodutoId\tproduto\tcategoria\tquantidade\tvalorUnitario\tvalorTotal\tcreatedAt\tajusteValor\tjustificativa\n1\t1\t30002\t10 Fotos\tFoto\t1\t55000\t55000\t2025-12-09 11:37:26\t0\tNULL\n30001\t30001\t30007\tPen Drive\tOutros\t1\t10000\t10000\t2025-12-11 15:44:14\t0\tNULL\n60001\t60001\t90001\tFamília\tOutros\t1\t20000\t20000\t2025-12-12 23:44:08\t0\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

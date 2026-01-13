@@ -1,0 +1,80 @@
+{
+  "query": "SELECT * FROM tipos_usuario ORDER BY id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM tipos_usuario ORDER BY id",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "2",
+      "nome": "Financeiro",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "3",
+      "nome": "Gestor",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "4",
+      "nome": "Logística",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "5",
+      "nome": "Coordenador",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "6",
+      "nome": "Armazenamento",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "7",
+      "nome": "Cerimonial",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "8",
+      "nome": "Beca",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    },
+    {
+      "id": "30001",
+      "nome": "Fotógrafo",
+      "ativo": "1",
+      "createdAt": "2026-01-05 18:10:57",
+      "updatedAt": "2026-01-05 18:10:57"
+    },
+    {
+      "id": "30002",
+      "nome": "Controle",
+      "ativo": "1",
+      "createdAt": "2026-01-05 18:33:48",
+      "updatedAt": "2026-01-05 18:33:48"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tativo\tcreatedAt\tupdatedAt\n1\tAdministrador\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n2\tFinanceiro\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n3\tGestor\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n4\tLogística\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n5\tCoordenador\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n6\tArmazenamento\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n7\tCerimonial\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n8\tBeca\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n30001\tFotógrafo\t1\t2026-01-05 18:10:57\t2026-01-05 18:10:57\n30002\tControle\t1\t2026-01-05 18:33:48\t2026-01-05 18:33:48\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

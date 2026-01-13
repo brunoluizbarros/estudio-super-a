@@ -1,0 +1,18 @@
+{
+  "query": "SHOW COLUMNS FROM turmas LIKE 'instituicao%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW COLUMNS FROM turmas LIKE 'instituicao%'",
+  "rows": [
+    {
+      "Field": "instituicao",
+      "Type": "varchar(200)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\ninstituicao\tvarchar(200)\tNO\t\tNULL\t\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

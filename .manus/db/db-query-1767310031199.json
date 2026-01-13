@@ -1,0 +1,9 @@
+{
+  "query": "SELECT p.role, p.secao, p.visualizar, p.inserir, p.excluir, t.nome as tipo_usuario_nome\nFROM permissoes p\nLEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id\nWHERE t.nome = 'Beca'\nORDER BY p.secao",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.role, p.secao, p.visualizar, p.inserir, p.excluir, t.nome as tipo_usuario_nome\nFROM permissoes p\nLEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id\nWHERE t.nome = 'Beca'\nORDER BY p.secao",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 57
+}

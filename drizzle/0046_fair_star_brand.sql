@@ -1,0 +1,1 @@
+ALTER TABLE `fotos_formando` ADD `dataExecucao` timestamp;

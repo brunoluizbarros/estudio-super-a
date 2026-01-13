@@ -1,0 +1,18 @@
+{
+  "query": "SELECT MONTH(dataVenda) as mes, SUM(valorTotal) as totalBruto FROM vendas WHERE YEAR(dataVenda) = 2025 AND excluido = 0 GROUP BY MONTH(dataVenda) ORDER BY MONTH(dataVenda) LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT MONTH(dataVenda) as mes, SUM(valorTotal) as totalBruto FROM vendas WHERE YEAR(dataVenda) = 2025 AND excluido = 0 GROUP BY MONTH(dataVenda) ORDER BY MONTH(dataVenda) LIMIT 5;",
+  "rows": [
+    {
+      "mes": "11",
+      "totalBruto": "852500"
+    },
+    {
+      "mes": "12",
+      "totalBruto": "2360000"
+    }
+  ],
+  "messages": [],
+  "stdout": "mes\ttotalBruto\n11\t852500\n12\t2360000\n",
+  "stderr": "",
+  "execution_time_ms": 77
+}

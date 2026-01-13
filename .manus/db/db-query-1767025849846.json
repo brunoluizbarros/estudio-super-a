@@ -1,0 +1,65 @@
+{
+  "query": "SELECT * FROM briefing_grupo LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM briefing_grupo LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "eventoId": "60006",
+      "numero": "1",
+      "dataGrupo": "2025-11-14 00:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "8",
+      "ativo": "1",
+      "createdAt": "2025-12-14 15:27:51",
+      "updatedAt": "2025-12-14 19:54:35"
+    },
+    {
+      "id": "30001",
+      "eventoId": "60006",
+      "numero": "2",
+      "dataGrupo": "2025-11-14 00:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "9",
+      "ativo": "1",
+      "createdAt": "2025-12-14 16:37:51",
+      "updatedAt": "2025-12-14 16:37:51"
+    },
+    {
+      "id": "60001",
+      "eventoId": "60006",
+      "numero": "3",
+      "dataGrupo": "2025-11-10 00:00:00",
+      "horarioFormandos": "8:00",
+      "limiteFormandos": "8",
+      "ativo": "1",
+      "createdAt": "2025-12-14 18:22:28",
+      "updatedAt": "2025-12-14 18:23:51"
+    },
+    {
+      "id": "60002",
+      "eventoId": "60006",
+      "numero": "4",
+      "dataGrupo": "2025-11-19 00:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "8",
+      "ativo": "1",
+      "createdAt": "2025-12-14 18:24:21",
+      "updatedAt": "2025-12-14 18:24:21"
+    },
+    {
+      "id": "60003",
+      "eventoId": "60006",
+      "numero": "5",
+      "dataGrupo": "2025-11-21 00:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "8",
+      "ativo": "1",
+      "createdAt": "2025-12-14 18:26:05",
+      "updatedAt": "2025-12-14 18:26:05"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tnumero\tdataGrupo\thorarioFormandos\tlimiteFormandos\tativo\tcreatedAt\tupdatedAt\n1\t60006\t1\t2025-11-14 00:00:00\t08:00\t8\t1\t2025-12-14 15:27:51\t2025-12-14 19:54:35\n30001\t60006\t2\t2025-11-14 00:00:00\t13:00\t9\t1\t2025-12-14 16:37:51\t2025-12-14 16:37:51\n60001\t60006\t3\t2025-11-10 00:00:00\t8:00\t8\t1\t2025-12-14 18:22:28\t2025-12-14 18:23:51\n60002\t60006\t4\t2025-11-19 00:00:00\t13:00\t8\t1\t2025-12-14 18:24:21\t2025-12-14 18:24:21\n60003\t60006\t5\t2025-11-21 00:00:00\t08:00\t8\t1\t2025-12-14 18:26:05\t2025-12-14 18:26:05\n",
+  "stderr": "",
+  "execution_time_ms": 47
+}

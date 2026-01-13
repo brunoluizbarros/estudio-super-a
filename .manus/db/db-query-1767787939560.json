@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE vendas \nSET excluido = 1,\n    excluidoEm = NOW(),\n    motivoExclusao = 'Vendas de teste sem identificação de turma e formando - removidas conforme solicitação do usuário em 07/01/2026'\nWHERE id IN (\n  SELECT v_id FROM (\n    SELECT v.id as v_id\n    FROM vendas v \n    INNER JOIN formandos f ON v.formandoId = f.id\n    WHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n      AND v.excluido = 0\n      AND f.turmaId IS NULL\n  ) AS temp\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute UPDATE vendas \nSET excluido = 1,\n    excluidoEm = NOW(),\n    motivoExclusao = 'Vendas de teste sem identificação de turma e formando - removidas conforme solicitação do usuário em 07/01/2026'\nWHERE id IN (\n  SELECT v_id FROM (\n    SELECT v.id as v_id\n    FROM vendas v \n    INNER JOIN formandos f ON v.formandoId = f.id\n    WHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n      AND v.excluido = 0\n      AND f.turmaId IS NULL\n  ) AS temp\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 51
+}

@@ -1,0 +1,16 @@
+{
+  "query": "SELECT ef.id as execucaoFormandoId, ef.eventoId, ef.formandoId, f.nome\nFROM execucao_formando ef\nJOIN formandos f ON ef.formandoId = f.id\nWHERE f.nome LIKE '%Álvaro Pontual%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ef.id as execucaoFormandoId, ef.eventoId, ef.formandoId, f.nome\nFROM execucao_formando ef\nJOIN formandos f ON ef.formandoId = f.id\nWHERE f.nome LIKE '%Álvaro Pontual%'",
+  "rows": [
+    {
+      "execucaoFormandoId": "30001",
+      "eventoId": "90008",
+      "formandoId": "90001",
+      "nome": "Álvaro Pontual Moraes Rego De Lucena"
+    }
+  ],
+  "messages": [],
+  "stdout": "execucaoFormandoId\teventoId\tformandoId\tnome\n30001\t90008\t90001\tÁlvaro Pontual Moraes Rego De Lucena\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

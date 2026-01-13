@@ -1,0 +1,30 @@
+{
+  "query": "SELECT * FROM vendas WHERE excluido = 0 LIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM vendas WHERE excluido = 0 LIMIT 1",
+  "rows": [
+    {
+      "id": "30001",
+      "agendamentoId": "NULL",
+      "reuniaoId": "NULL",
+      "eventoId": "90008",
+      "formandoId": "90018",
+      "dataVenda": "2025-11-11 15:00:00",
+      "valorTotal": "10000",
+      "valorLiquido": "10000",
+      "status": "pago",
+      "fase": "Execução",
+      "observacao": "NULL",
+      "createdAt": "2025-12-11 15:44:14",
+      "updatedAt": "2025-12-26 21:44:29",
+      "excluido": "0",
+      "excluidoPor": "NULL",
+      "excluidoEm": "NULL",
+      "motivoExclusao": "NULL",
+      "createdBy": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tagendamentoId\treuniaoId\teventoId\tformandoId\tdataVenda\tvalorTotal\tvalorLiquido\tstatus\tfase\tobservacao\tcreatedAt\tupdatedAt\texcluido\texcluidoPor\texcluidoEm\tmotivoExclusao\tcreatedBy\n30001\tNULL\tNULL\t90008\t90018\t2025-11-11 15:00:00\t10000\t10000\tpago\tExecução\tNULL\t2025-12-11 15:44:14\t2025-12-26 21:44:29\t0\tNULL\tNULL\tNULL\t1\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

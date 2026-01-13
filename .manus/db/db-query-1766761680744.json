@@ -1,0 +1,14 @@
+{
+  "query": "SELECT \n  COUNT(*) as total_despesas,\n  SUM(valorTotal) / 100 as soma_total\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  COUNT(*) as total_despesas,\n  SUM(valorTotal) / 100 as soma_total\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'",
+  "rows": [
+    {
+      "total_despesas": "3",
+      "soma_total": "7686.3900"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_despesas\tsoma_total\n3\t7686.3900\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

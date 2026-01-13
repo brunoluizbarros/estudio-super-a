@@ -1,0 +1,70 @@
+{
+  "query": "SELECT t.id, t.codigo, \n  (SELECT COUNT(*) FROM formandos WHERE turmaId = t.id) as total_formandos,\n  (SELECT COUNT(*) FROM eventos WHERE turmaId = t.id) as total_eventos\nFROM turmas t \nWHERE EXISTS (SELECT 1 FROM formandos WHERE turmaId = t.id)\n  AND EXISTS (SELECT 1 FROM eventos WHERE turmaId = t.id)\nORDER BY t.id DESC \nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, \n  (SELECT COUNT(*) FROM formandos WHERE turmaId = t.id) as total_formandos,\n  (SELECT COUNT(*) FROM eventos WHERE turmaId = t.id) as total_eventos\nFROM turmas t \nWHERE EXISTS (SELECT 1 FROM formandos WHERE turmaId = t.id)\n  AND EXISTS (SELECT 1 FROM eventos WHERE turmaId = t.id)\nORDER BY t.id DESC \nLIMIT 10;",
+  "rows": [
+    {
+      "id": "300001",
+      "codigo": "TEST GERAL",
+      "total_formandos": "2",
+      "total_eventos": "2"
+    },
+    {
+      "id": "1306",
+      "codigo": "974",
+      "total_formandos": "42",
+      "total_eventos": "3"
+    },
+    {
+      "id": "1255",
+      "codigo": "567",
+      "total_formandos": "1",
+      "total_eventos": "10"
+    },
+    {
+      "id": "1254",
+      "codigo": "572",
+      "total_formandos": "1",
+      "total_eventos": "4"
+    },
+    {
+      "id": "1253",
+      "codigo": "776",
+      "total_formandos": "2",
+      "total_eventos": "3"
+    },
+    {
+      "id": "1252",
+      "codigo": "506",
+      "total_formandos": "3",
+      "total_eventos": "6"
+    },
+    {
+      "id": "1189",
+      "codigo": "720",
+      "total_formandos": "1",
+      "total_eventos": "4"
+    },
+    {
+      "id": "1177",
+      "codigo": "497",
+      "total_formandos": "1",
+      "total_eventos": "5"
+    },
+    {
+      "id": "1176",
+      "codigo": "553",
+      "total_formandos": "1",
+      "total_eventos": "5"
+    },
+    {
+      "id": "1168",
+      "codigo": "507",
+      "total_formandos": "49",
+      "total_eventos": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\ttotal_formandos\ttotal_eventos\n300001\tTEST GERAL\t2\t2\n1306\t974\t42\t3\n1255\t567\t1\t10\n1254\t572\t1\t4\n1253\t776\t2\t3\n1252\t506\t3\t6\n1189\t720\t1\t4\n1177\t497\t1\t5\n1176\t553\t1\t5\n1168\t507\t49\t3\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

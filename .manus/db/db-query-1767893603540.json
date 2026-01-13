@@ -1,0 +1,16 @@
+{
+  "query": "SHOW TABLES LIKE '%execucao%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW TABLES LIKE '%execucao%'",
+  "rows": [
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A (%execucao%)": "execucao_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A (%execucao%)": "servicos_execucao"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_axWmxYbCBHHB5ETKSgA95A (%execucao%)\nexecucao_formando\nservicos_execucao\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, cenarios, fotografos FROM eventos WHERE id = 90008",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, cenarios, fotografos FROM eventos WHERE id = 90008",
+  "rows": [
+    {
+      "id": "90008",
+      "turmaId": "1061",
+      "tipoEvento": "foto_50",
+      "cenarios": "[2,5,1]",
+      "fotografos": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tcenarios\tfotografos\n90008\t1061\tfoto_50\t[2,5,1]\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

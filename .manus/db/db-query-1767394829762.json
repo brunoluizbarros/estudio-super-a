@@ -1,0 +1,120 @@
+{
+  "query": "SELECT p.id, p.vendaId, p.tipo, p.valor, p.valorLiquido, p.cvNsu, p.dataCompensacao, v.dataVenda, v.formandoId\nFROM pagamentos p\nJOIN vendas v ON p.vendaId = v.id\nWHERE p.dataCompensacao IS NULL AND p.tipo != 'incluso_pacote'\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.id, p.vendaId, p.tipo, p.valor, p.valorLiquido, p.cvNsu, p.dataCompensacao, v.dataVenda, v.formandoId\nFROM pagamentos p\nJOIN vendas v ON p.vendaId = v.id\nWHERE p.dataCompensacao IS NULL AND p.tipo != 'incluso_pacote'\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "240005",
+      "vendaId": "240005",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "000000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-11-28 15:00:00",
+      "formandoId": "30112"
+    },
+    {
+      "id": "240006",
+      "vendaId": "240006",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "000000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-11-28 15:00:00",
+      "formandoId": "30115"
+    },
+    {
+      "id": "300001",
+      "vendaId": "300001",
+      "tipo": "pix",
+      "valor": "55000",
+      "valorLiquido": "55000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-20 15:00:00",
+      "formandoId": "240002"
+    },
+    {
+      "id": "330008",
+      "vendaId": "330006",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-13 15:00:00",
+      "formandoId": "270007"
+    },
+    {
+      "id": "330009",
+      "vendaId": "330007",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-10 15:00:00",
+      "formandoId": "270008"
+    },
+    {
+      "id": "330010",
+      "vendaId": "330007",
+      "tipo": "pix",
+      "valor": "10000",
+      "valorLiquido": "10000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-10 15:00:00",
+      "formandoId": "270008"
+    },
+    {
+      "id": "330016",
+      "vendaId": "330013",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-13 15:00:00",
+      "formandoId": "270023"
+    },
+    {
+      "id": "330024",
+      "vendaId": "330021",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-12 15:00:00",
+      "formandoId": "270037"
+    },
+    {
+      "id": "330030",
+      "vendaId": "330027",
+      "tipo": "pix",
+      "valor": "65000",
+      "valorLiquido": "65000",
+      "cvNsu": "0000",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-12-12 15:00:00",
+      "formandoId": "270043"
+    },
+    {
+      "id": "360002",
+      "vendaId": "240001",
+      "tipo": "pix",
+      "valor": "32500",
+      "valorLiquido": "NULL",
+      "cvNsu": "NULL",
+      "dataCompensacao": "NULL",
+      "dataVenda": "2025-11-28 15:00:00",
+      "formandoId": "30090"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tvalor\tvalorLiquido\tcvNsu\tdataCompensacao\tdataVenda\tformandoId\n240005\t240005\tpix\t65000\t65000\t000000\tNULL\t2025-11-28 15:00:00\t30112\n240006\t240006\tpix\t65000\t65000\t000000\tNULL\t2025-11-28 15:00:00\t30115\n300001\t300001\tpix\t55000\t55000\t0000\tNULL\t2025-12-20 15:00:00\t240002\n330008\t330006\tpix\t65000\t65000\t0000\tNULL\t2025-12-13 15:00:00\t270007\n330009\t330007\tpix\t65000\t65000\t0000\tNULL\t2025-12-10 15:00:00\t270008\n330010\t330007\tpix\t10000\t10000\t0000\tNULL\t2025-12-10 15:00:00\t270008\n330016\t330013\tpix\t65000\t65000\t0000\tNULL\t2025-12-13 15:00:00\t270023\n330024\t330021\tpix\t65000\t65000\t0000\tNULL\t2025-12-12 15:00:00\t270037\n330030\t330027\tpix\t65000\t65000\t0000\tNULL\t2025-12-12 15:00:00\t270043\n360002\t240001\tpix\t32500\tNULL\tNULL\tNULL\t2025-11-28 15:00:00\t30090\n",
+  "stderr": "",
+  "execution_time_ms": 112
+}

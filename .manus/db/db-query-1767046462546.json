@@ -1,0 +1,50 @@
+{
+  "query": "\nSELECT \n  e.id as evento_id,\n  e.turmaId,\n  t.codigo as turma_codigo,\n  e.tipoEvento,\n  COUNT(DISTINCT bg.id) as total_grupos,\n  COUNT(DISTINCT bf.id) as total_formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nLEFT JOIN briefing_grupo bg ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = e.id\nWHERE t.codigo = '654'\nGROUP BY e.id, e.turmaId, t.codigo, e.tipoEvento\nORDER BY e.id;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  e.id as evento_id,\n  e.turmaId,\n  t.codigo as turma_codigo,\n  e.tipoEvento,\n  COUNT(DISTINCT bg.id) as total_grupos,\n  COUNT(DISTINCT bf.id) as total_formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nLEFT JOIN briefing_grupo bg ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = e.id\nWHERE t.codigo = '654'\nGROUP BY e.id, e.turmaId, t.codigo, e.tipoEvento\nORDER BY e.id;\n",
+  "rows": [
+    {
+      "evento_id": "420061",
+      "turmaId": "1132",
+      "turma_codigo": "654",
+      "tipoEvento": "foto_estudio",
+      "total_grupos": "8",
+      "total_formandos": "68"
+    },
+    {
+      "evento_id": "420062",
+      "turmaId": "1132",
+      "turma_codigo": "654",
+      "tipoEvento": "foto_estudio",
+      "total_grupos": "0",
+      "total_formandos": "0"
+    },
+    {
+      "evento_id": "420063",
+      "turmaId": "1132",
+      "turma_codigo": "654",
+      "tipoEvento": "foto_estudio",
+      "total_grupos": "0",
+      "total_formandos": "0"
+    },
+    {
+      "evento_id": "420064",
+      "turmaId": "1132",
+      "turma_codigo": "654",
+      "tipoEvento": "foto_estudio",
+      "total_grupos": "0",
+      "total_formandos": "0"
+    },
+    {
+      "evento_id": "420116",
+      "turmaId": "1132",
+      "turma_codigo": "654",
+      "tipoEvento": "foto_oficial",
+      "total_grupos": "0",
+      "total_formandos": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "evento_id\tturmaId\tturma_codigo\ttipoEvento\ttotal_grupos\ttotal_formandos\n420061\t1132\t654\tfoto_estudio\t8\t68\n420062\t1132\t654\tfoto_estudio\t0\t0\n420063\t1132\t654\tfoto_estudio\t0\t0\n420064\t1132\t654\tfoto_estudio\t0\t0\n420116\t1132\t654\tfoto_oficial\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

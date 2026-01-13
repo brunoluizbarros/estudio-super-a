@@ -1,0 +1,45 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '553') ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '553') ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "60003",
+      "turmaId": "1176",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-14 00:00:00",
+      "dataEventoFim": "2025-11-14 00:00:00"
+    },
+    {
+      "id": "60001",
+      "turmaId": "1176",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "2025-11-08 00:00:00",
+      "dataEventoFim": "2025-11-08 00:00:00"
+    },
+    {
+      "id": "493",
+      "turmaId": "1176",
+      "tipoEvento": "foto_50",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL"
+    },
+    {
+      "id": "492",
+      "turmaId": "1176",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL"
+    },
+    {
+      "id": "491",
+      "turmaId": "1176",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\n60003\t1176\tfoto_estudio\t2025-11-14 00:00:00\t2025-11-14 00:00:00\n60001\t1176\tfoto_descontrada\t2025-11-08 00:00:00\t2025-11-08 00:00:00\n493\t1176\tfoto_50\tNULL\tNULL\n492\t1176\tfoto_oficial\tNULL\tNULL\n491\t1176\tfoto_descontrada\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 106
+}

@@ -1,0 +1,170 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE dataEvento >= '2026-01-01' AND dataEvento <= '2026-01-31' ORDER BY dataEvento LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, dataEvento, dataEventoFim, local FROM eventos WHERE dataEvento >= '2026-01-01' AND dataEvento <= '2026-01-31' ORDER BY dataEvento LIMIT 20",
+  "rows": [
+    {
+      "id": "420061",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-06 00:00:00",
+      "dataEventoFim": "2026-01-06 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420062",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-07 00:00:00",
+      "dataEventoFim": "2026-01-07 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420063",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-08 00:00:00",
+      "dataEventoFim": "2026-01-08 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420064",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-09 00:00:00",
+      "dataEventoFim": "2026-01-09 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420065",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-12 00:00:00",
+      "dataEventoFim": "2026-01-12 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420067",
+      "turmaId": "1306",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "2026-01-12 15:00:00",
+      "dataEventoFim": "2026-01-14 15:00:00",
+      "local": "IGREJA SÃO FRANCISCO"
+    },
+    {
+      "id": "420066",
+      "turmaId": "1306",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-12 15:00:00",
+      "dataEventoFim": "2026-01-14 15:00:00",
+      "local": "NULL"
+    },
+    {
+      "id": "420068",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-13 00:00:00",
+      "dataEventoFim": "2026-01-13 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420070",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-14 00:00:00",
+      "dataEventoFim": "2026-01-14 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420071",
+      "turmaId": "1306",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-14 00:00:00",
+      "dataEventoFim": "2026-01-14 00:00:00",
+      "local": "NULL"
+    },
+    {
+      "id": "420072",
+      "turmaId": "1168",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "2026-01-14 00:00:00",
+      "dataEventoFim": "2026-01-14 00:00:00",
+      "local": "HORTO"
+    },
+    {
+      "id": "420073",
+      "turmaId": "1168",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-15 00:00:00",
+      "dataEventoFim": "2026-01-15 00:00:00",
+      "local": "FACULDADE FMJ"
+    },
+    {
+      "id": "420074",
+      "turmaId": "1173",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-15 00:00:00",
+      "dataEventoFim": "2026-01-15 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420078",
+      "turmaId": "1173",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "2026-01-16 00:00:00",
+      "dataEventoFim": "2026-01-16 00:00:00",
+      "local": "MUSEU DO ESTADO"
+    },
+    {
+      "id": "420075",
+      "turmaId": "1168",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-16 00:00:00",
+      "dataEventoFim": "2026-01-16 00:00:00",
+      "local": "FACULDADE FMJ"
+    },
+    {
+      "id": "420076",
+      "turmaId": "1113",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-16 00:00:00",
+      "dataEventoFim": "2026-01-16 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    },
+    {
+      "id": "420077",
+      "turmaId": "1255",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-16 00:00:00",
+      "dataEventoFim": "2026-01-16 00:00:00",
+      "local": "FACULDADE FCM"
+    },
+    {
+      "id": "420079",
+      "turmaId": "1255",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-17 00:00:00",
+      "dataEventoFim": "2026-01-17 00:00:00",
+      "local": "FACULDADE FCM"
+    },
+    {
+      "id": "420081",
+      "turmaId": "1255",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-19 00:00:00",
+      "dataEventoFim": "2026-01-19 00:00:00",
+      "local": "NULL"
+    },
+    {
+      "id": "420080",
+      "turmaId": "1034",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-19 00:00:00",
+      "dataEventoFim": "2026-01-19 00:00:00",
+      "local": "ESTUDIO SUPER A"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\n420061\t1132\tfoto_estudio\t2026-01-06 00:00:00\t2026-01-06 00:00:00\tESTUDIO SUPER A\n420062\t1132\tfoto_estudio\t2026-01-07 00:00:00\t2026-01-07 00:00:00\tESTUDIO SUPER A\n420063\t1132\tfoto_estudio\t2026-01-08 00:00:00\t2026-01-08 00:00:00\tESTUDIO SUPER A\n420064\t1132\tfoto_estudio\t2026-01-09 00:00:00\t2026-01-09 00:00:00\tESTUDIO SUPER A\n420065\t1113\tfoto_estudio\t2026-01-12 00:00:00\t2026-01-12 00:00:00\tESTUDIO SUPER A\n420067\t1306\tfoto_oficial\t2026-01-12 15:00:00\t2026-01-14 15:00:00\tIGREJA SÃO FRANCISCO\n420066\t1306\tfoto_estudio\t2026-01-12 15:00:00\t2026-01-14 15:00:00\tNULL\n420068\t1113\tfoto_estudio\t2026-01-13 00:00:00\t2026-01-13 00:00:00\tESTUDIO SUPER A\n420070\t1113\tfoto_estudio\t2026-01-14 00:00:00\t2026-01-14 00:00:00\tESTUDIO SUPER A\n420071\t1306\tfoto_estudio\t2026-01-14 00:00:00\t2026-01-14 00:00:00\tNULL\n420072\t1168\tfoto_oficial\t2026-01-14 00:00:00\t2026-01-14 00:00:00\tHORTO\n420073\t1168\tfoto_estudio\t2026-01-15 00:00:00\t2026-01-15 00:00:00\tFACULDADE FMJ\n420074\t1173\tfoto_estudio\t2026-01-15 00:00:00\t2026-01-15 00:00:00\tESTUDIO SUPER A\n420078\t1173\tfoto_oficial\t2026-01-16 00:00:00\t2026-01-16 00:00:00\tMUSEU DO ESTADO\n420075\t1168\tfoto_estudio\t2026-01-16 00:00:00\t2026-01-16 00:00:00\tFACULDADE FMJ\n420076\t1113\tfoto_estudio\t2026-01-16 00:00:00\t2026-01-16 00:00:00\tESTUDIO SUPER A\n420077\t1255\tfoto_estudio\t2026-01-16 00:00:00\t2026-01-16 00:00:00\tFACULDADE FCM\n420079\t1255\tfoto_estudio\t2026-01-17 00:00:00\t2026-01-17 00:00:00\tFACULDADE FCM\n420081\t1255\tfoto_estudio\t2026-01-19 00:00:00\t2026-01-19 00:00:00\tNULL\n420080\t1034\tfoto_estudio\t2026-01-19 00:00:00\t2026-01-19 00:00:00\tESTUDIO SUPER A\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

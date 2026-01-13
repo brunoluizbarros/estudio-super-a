@@ -1,0 +1,87 @@
+{
+  "query": "SELECT pc.role, pc.aba, pc.visualizar, pc.inserir, pc.excluir\nFROM permissoes_configuracoes pc\nWHERE pc.role = 'Logística 1'\nORDER BY pc.aba",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT pc.role, pc.aba, pc.visualizar, pc.inserir, pc.excluir\nFROM permissoes_configuracoes pc\nWHERE pc.role = 'Logística 1'\nORDER BY pc.aba",
+  "rows": [
+    {
+      "role": "Logística 1",
+      "aba": "instituicoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "cursos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "cidades",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "locais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "tipos_evento",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "tipos_servico",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "fornecedores",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "tabela_preco",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "taxas_cartao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "produtos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "maquiagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\taba\tvisualizar\tinserir\texcluir\nLogística 1\tinstituicoes\t0\t0\t0\nLogística 1\tcursos\t0\t0\t0\nLogística 1\tcidades\t0\t0\t0\nLogística 1\tlocais\t1\t1\t0\nLogística 1\ttipos_evento\t0\t0\t0\nLogística 1\ttipos_servico\t0\t0\t0\nLogística 1\tfornecedores\t1\t1\t0\nLogística 1\ttabela_preco\t0\t0\t0\nLogística 1\ttaxas_cartao\t0\t0\t0\nLogística 1\tprodutos\t0\t0\t0\nLogística 1\tmaquiagem\t1\t1\t0\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

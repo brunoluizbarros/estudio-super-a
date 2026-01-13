@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `briefing_evento` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `eventoId` int NOT NULL,\n  `formandoId` int NOT NULL,\n  `grupo` int DEFAULT 1,\n  `horarioFormando` varchar(20),\n  `horarioFamilia` varchar(20),\n  `makeFormando` boolean DEFAULT false,\n  `cabeloFormando` boolean DEFAULT false,\n  `makeFamilia` int DEFAULT 0,\n  `cabeloFamilia` int DEFAULT 0,\n  `qtdFamilia` int DEFAULT 0,\n  `qtdPets` int DEFAULT 0,\n  `somenteGrupo` boolean DEFAULT false,\n  `observacao` text,\n  `preenchidoPor` varchar(100),\n  `preenchidoEm` timestamp NULL,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `briefing_evento_unique` (`eventoId`, `formandoId`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE TABLE IF NOT EXISTS `briefing_evento` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `eventoId` int NOT NULL,\n  `formandoId` int NOT NULL,\n  `grupo` int DEFAULT 1,\n  `horarioFormando` varchar(20),\n  `horarioFamilia` varchar(20),\n  `makeFormando` boolean DEFAULT false,\n  `cabeloFormando` boolean DEFAULT false,\n  `makeFamilia` int DEFAULT 0,\n  `cabeloFamilia` int DEFAULT 0,\n  `qtdFamilia` int DEFAULT 0,\n  `qtdPets` int DEFAULT 0,\n  `somenteGrupo` boolean DEFAULT false,\n  `observacao` text,\n  `preenchidoPor` varchar(100),\n  `preenchidoEm` timestamp NULL,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `briefing_evento_unique` (`eventoId`, `formandoId`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 192
+}

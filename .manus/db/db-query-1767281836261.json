@@ -1,0 +1,20 @@
+{
+  "query": "SELECT u.id, u.openId, u.name, u.email, u.role, u.tipoUsuarioId, u.lastSignedIn, tu.nome as tipoUsuarioNome \nFROM users u \nLEFT JOIN tipos_usuario tu ON u.tipoUsuarioId = tu.id \nWHERE u.email = 'cirocouceiro@me.com'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT u.id, u.openId, u.name, u.email, u.role, u.tipoUsuarioId, u.lastSignedIn, tu.nome as tipoUsuarioNome \nFROM users u \nLEFT JOIN tipos_usuario tu ON u.tipoUsuarioId = tu.id \nWHERE u.email = 'cirocouceiro@me.com'",
+  "rows": [
+    {
+      "id": "20822170",
+      "openId": "PThHPwQ7ZTYXSZuFuhoi6r",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador",
+      "tipoUsuarioId": "12",
+      "lastSignedIn": "2026-01-01 15:36:58",
+      "tipoUsuarioNome": "Logística 1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\trole\ttipoUsuarioId\tlastSignedIn\ttipoUsuarioNome\n20822170\tPThHPwQ7ZTYXSZuFuhoi6r\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\t12\t2026-01-01 15:36:58\tLogística 1\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

@@ -1,0 +1,40 @@
+{
+  "query": "\nSELECT \n  e.id,\n  e.tipoEvento,\n  (SELECT COUNT(*) FROM briefing_grupo WHERE eventoId = e.id) as grupos,\n  (SELECT COUNT(*) FROM briefing_formando WHERE eventoId = e.id) as formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nWHERE t.codigo = '654'\nORDER BY e.id;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  e.id,\n  e.tipoEvento,\n  (SELECT COUNT(*) FROM briefing_grupo WHERE eventoId = e.id) as grupos,\n  (SELECT COUNT(*) FROM briefing_formando WHERE eventoId = e.id) as formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nWHERE t.codigo = '654'\nORDER BY e.id;\n",
+  "rows": [
+    {
+      "id": "420061",
+      "tipoEvento": "foto_estudio",
+      "grupos": "8",
+      "formandos": "68"
+    },
+    {
+      "id": "420062",
+      "tipoEvento": "foto_estudio",
+      "grupos": "0",
+      "formandos": "0"
+    },
+    {
+      "id": "420063",
+      "tipoEvento": "foto_estudio",
+      "grupos": "0",
+      "formandos": "0"
+    },
+    {
+      "id": "420064",
+      "tipoEvento": "foto_estudio",
+      "grupos": "0",
+      "formandos": "0"
+    },
+    {
+      "id": "420116",
+      "tipoEvento": "foto_oficial",
+      "grupos": "0",
+      "formandos": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tgrupos\tformandos\n420061\tfoto_estudio\t8\t68\n420062\tfoto_estudio\t0\t0\n420063\tfoto_estudio\t0\t0\n420064\tfoto_estudio\t0\t0\n420116\tfoto_oficial\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

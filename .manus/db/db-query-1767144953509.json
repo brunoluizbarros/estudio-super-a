@@ -1,0 +1,33 @@
+{
+  "query": "SELECT * FROM turmas WHERE codigo LIKE '%654%' OR id = 654 LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM turmas WHERE codigo LIKE '%654%' OR id = 654 LIMIT 1;",
+  "rows": [
+    {
+      "id": "1132",
+      "codigo": "654",
+      "cidade": "Recife / RMR",
+      "estado": "PE",
+      "createdAt": "2025-12-07 04:06:10",
+      "updatedAt": "2025-12-07 04:06:10",
+      "numeroTurma": "115",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "fotosInclusas": "NULL",
+      "observacao": "NULL",
+      "valorMakeFormandoMasc": "NULL",
+      "valorMakeFormandoFem": "NULL",
+      "valorMakeFamilia": "NULL",
+      "valorCabeloSimples": "NULL",
+      "valorCabeloCombinado": "NULL",
+      "valorRetoque": "NULL",
+      "pacotesConfig": "NULL",
+      "observacoesBeca": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcidade\testado\tcreatedAt\tupdatedAt\tnumeroTurma\tcursos\tinstituicoes\tanos\tperiodos\tfotosInclusas\tobservacao\tvalorMakeFormandoMasc\tvalorMakeFormandoFem\tvalorMakeFamilia\tvalorCabeloSimples\tvalorCabeloCombinado\tvalorRetoque\tpacotesConfig\tobservacoesBeca\n1132\t654\tRecife / RMR\tPE\t2025-12-07 04:06:10\t2025-12-07 04:06:10\t115\t[\"MEDICINA\"]\t[\"UPE\"]\t[\"2026\"]\t[\"1\"]\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

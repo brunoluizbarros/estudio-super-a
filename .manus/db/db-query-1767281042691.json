@@ -1,0 +1,76 @@
+{
+  "query": "SELECT aba, visualizar, inserir, excluir FROM permissoes_configuracoes WHERE role = 'Logística 1'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT aba, visualizar, inserir, excluir FROM permissoes_configuracoes WHERE role = 'Logística 1'",
+  "rows": [
+    {
+      "aba": "instituicoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "cursos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "cidades",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "locais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "aba": "tipos_evento",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "tipos_servico",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "fornecedores",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "aba": "tabela_preco",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "taxas_cartao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "produtos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "aba": "maquiagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "aba\tvisualizar\tinserir\texcluir\ninstituicoes\t0\t0\t0\ncursos\t0\t0\t0\ncidades\t0\t0\t0\nlocais\t1\t1\t0\ntipos_evento\t0\t0\t0\ntipos_servico\t0\t0\t0\nfornecedores\t1\t1\t0\ntabela_preco\t0\t0\t0\ntaxas_cartao\t0\t0\t0\nprodutos\t0\t0\t0\nmaquiagem\t1\t1\t0\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

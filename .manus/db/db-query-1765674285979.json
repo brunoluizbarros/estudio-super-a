@@ -1,0 +1,60 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao FROM eventos WHERE cenarios IS NOT NULL OR fotografos IS NOT NULL LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao FROM eventos WHERE cenarios IS NOT NULL OR fotografos IS NOT NULL LIMIT 5",
+  "rows": [
+    {
+      "id": "30002",
+      "turmaId": "1273",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL",
+      "fotografos": "[197]",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL"
+    },
+    {
+      "id": "60001",
+      "turmaId": "1176",
+      "tipoEvento": "foto_descontrada",
+      "cenarios": "[1,2,5]",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL"
+    },
+    {
+      "id": "60003",
+      "turmaId": "1176",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "[1,2,5]",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL"
+    },
+    {
+      "id": "60004",
+      "turmaId": "1176",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "[1,2,5]",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL"
+    },
+    {
+      "id": "60005",
+      "turmaId": "1176",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "[1,2,5]",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tcenarios\tfotografos\tcerimoniais\tcoordenadores\tproducao\n30002\t1273\tfoto_estudio\tNULL\t[197]\tNULL\tNULL\tNULL\n60001\t1176\tfoto_descontrada\t[1,2,5]\tNULL\tNULL\tNULL\tNULL\n60003\t1176\tfoto_estudio\t[1,2,5]\tNULL\tNULL\tNULL\tNULL\n60004\t1176\tfoto_estudio\t[1,2,5]\tNULL\tNULL\tNULL\tNULL\n60005\t1176\tfoto_estudio\t[1,2,5]\tNULL\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

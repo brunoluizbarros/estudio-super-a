@@ -1,0 +1,8 @@
+{
+  "query": "\nSELECT \n  e.id as evento_id,\n  e.turmaId,\n  t.codigo as turma_codigo,\n  te.nome as tipo_evento,\n  COUNT(DISTINCT bg.id) as total_grupos,\n  COUNT(DISTINCT bf.id) as total_formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nINNER JOIN tipos_evento te ON te.id = e.tipoEventoId\nLEFT JOIN briefing_grupo bg ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = e.id\nWHERE t.codigo = '654'\nGROUP BY e.id, e.turmaId, t.codigo, te.nome\nORDER BY e.id;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  e.id as evento_id,\n  e.turmaId,\n  t.codigo as turma_codigo,\n  te.nome as tipo_evento,\n  COUNT(DISTINCT bg.id) as total_grupos,\n  COUNT(DISTINCT bf.id) as total_formandos\nFROM eventos e\nINNER JOIN turmas t ON t.id = e.turmaId\nINNER JOIN tipos_evento te ON te.id = e.tipoEventoId\nLEFT JOIN briefing_grupo bg ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = e.id\nWHERE t.codigo = '654'\nGROUP BY e.id, e.turmaId, t.codigo, te.nome\nORDER BY e.id;\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'e.tipoeventoid' in 'on clause'"
+  ]
+}

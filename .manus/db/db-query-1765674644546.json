@@ -1,0 +1,65 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao, maquiadoras FROM eventos LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, cenarios, fotografos, cerimoniais, coordenadores, producao, maquiadoras FROM eventos LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "turmaId": "1026",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "2",
+      "turmaId": "1026",
+      "tipoEvento": "foto_oficial",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "3",
+      "turmaId": "1026",
+      "tipoEvento": "foto_50",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "4",
+      "turmaId": "1026",
+      "tipoEvento": "foto_bloco",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    },
+    {
+      "id": "5",
+      "turmaId": "1027",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tcenarios\tfotografos\tcerimoniais\tcoordenadores\tproducao\tmaquiadoras\n1\t1026\tfoto_estudio\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n2\t1026\tfoto_oficial\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n3\t1026\tfoto_50\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n4\t1026\tfoto_bloco\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n5\t1027\tfoto_estudio\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

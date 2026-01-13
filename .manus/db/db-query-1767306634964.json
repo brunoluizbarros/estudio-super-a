@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'permissoes_configuracoes' AND COLUMN_NAME = 'tipoUsuarioId';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'permissoes_configuracoes' AND COLUMN_NAME = 'tipoUsuarioId';",
+  "rows": [
+    {
+      "COLUMN_NAME": "tipoUsuarioId"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\ntipoUsuarioId\n",
+  "stderr": "",
+  "execution_time_ms": 88
+}

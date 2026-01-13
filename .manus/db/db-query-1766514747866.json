@@ -1,0 +1,80 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'logistica';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'logistica';",
+  "rows": [
+    {
+      "id": "54",
+      "role": "logistica",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-22 13:18:23"
+    },
+    {
+      "id": "55",
+      "role": "logistica",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:44:34"
+    },
+    {
+      "id": "56",
+      "role": "logistica",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:44:57"
+    },
+    {
+      "id": "57",
+      "role": "logistica",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:41:09"
+    },
+    {
+      "id": "58",
+      "role": "logistica",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:24:40"
+    },
+    {
+      "id": "60001",
+      "role": "logistica",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-19 20:30:16",
+      "updatedAt": "2025-12-19 20:30:19"
+    },
+    {
+      "id": "90001",
+      "role": "logistica",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-22 13:16:49",
+      "updatedAt": "2025-12-22 13:16:52"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n54\tlogistica\thome\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-22 13:18:23\n55\tlogistica\tturmas\t1\t1\t0\t2025-12-18 12:24:40\t2025-12-18 12:44:34\n56\tlogistica\teventos\t1\t1\t0\t2025-12-18 12:24:40\t2025-12-18 12:44:57\n57\tlogistica\tservicos\t0\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:41:09\n58\tlogistica\trelatorios\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:24:40\n60001\tlogistica\tdespesas\t1\t1\t1\t2025-12-19 20:30:16\t2025-12-19 20:30:19\n90001\tlogistica\tconfiguracoes\t1\t1\t0\t2025-12-22 13:16:49\t2025-12-22 13:16:52\n",
+  "stderr": "",
+  "execution_time_ms": 111
+}

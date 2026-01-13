@@ -1,0 +1,20 @@
+{
+  "query": "SELECT t.id, t.codigo, t.cursos, t.instituicoes, t.numeroTurma, t.anos, t.periodos, \n       COUNT(e.id) as total_eventos\nFROM turmas t\nLEFT JOIN eventos e ON t.id = e.turmaId\nWHERE t.cursos LIKE '%MEDICINA%' AND t.instituicoes LIKE '%UPE%' AND t.numeroTurma = '115'\nGROUP BY t.id\nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, t.cursos, t.instituicoes, t.numeroTurma, t.anos, t.periodos, \n       COUNT(e.id) as total_eventos\nFROM turmas t\nLEFT JOIN eventos e ON t.id = e.turmaId\nWHERE t.cursos LIKE '%MEDICINA%' AND t.instituicoes LIKE '%UPE%' AND t.numeroTurma = '115'\nGROUP BY t.id\nLIMIT 5;",
+  "rows": [
+    {
+      "id": "1132",
+      "codigo": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "total_eventos": "5"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\ttotal_eventos\n1132\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\t5\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

@@ -1,0 +1,16 @@
+{
+  "query": "SELECT \n  COUNT(*) as total,\n  SUM(CASE WHEN dataVenda IS NULL THEN 1 ELSE 0 END) as nulos,\n  SUM(CASE WHEN dataVenda IS NOT NULL THEN 1 ELSE 0 END) as com_data,\n  SUM(CASE WHEN excluido = 0 THEN 1 ELSE 0 END) as nao_excluidos\nFROM vendas",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  COUNT(*) as total,\n  SUM(CASE WHEN dataVenda IS NULL THEN 1 ELSE 0 END) as nulos,\n  SUM(CASE WHEN dataVenda IS NOT NULL THEN 1 ELSE 0 END) as com_data,\n  SUM(CASE WHEN excluido = 0 THEN 1 ELSE 0 END) as nao_excluidos\nFROM vendas",
+  "rows": [
+    {
+      "total": "60",
+      "nulos": "0",
+      "com_data": "60",
+      "nao_excluidos": "55"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\tnulos\tcom_data\tnao_excluidos\n60\t0\t60\t55\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

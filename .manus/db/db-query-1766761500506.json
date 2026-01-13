@@ -1,0 +1,34 @@
+{
+  "query": "SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  setorSolicitante,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander') \n    THEN 'EXCLUÍDO' \n    ELSE 'INCLUÍDO' \n  END AS status_calculo\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY status_calculo, tipoServicoCompra",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  setorSolicitante,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander') \n    THEN 'EXCLUÍDO' \n    ELSE 'INCLUÍDO' \n  END AS status_calculo\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY status_calculo, tipoServicoCompra",
+  "rows": [
+    {
+      "numeroCi": "023/2025",
+      "tipoServicoCompra": "Equipamentos / Utensílios / Bens",
+      "valorReais": "0.0100",
+      "mesServico": "dezembro",
+      "setorSolicitante": "estudio",
+      "status_calculo": "EXCLUÍDO"
+    },
+    {
+      "numeroCi": "024/2025",
+      "tipoServicoCompra": "Transferência Santander",
+      "valorReais": "4965.3800",
+      "mesServico": "dezembro",
+      "setorSolicitante": "estudio",
+      "status_calculo": "EXCLUÍDO"
+    },
+    {
+      "numeroCi": "022/2025",
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "valorReais": "2721.0000",
+      "mesServico": "dezembro",
+      "setorSolicitante": "estudio",
+      "status_calculo": "INCLUÍDO"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\ttipoServicoCompra\tvalorReais\tmesServico\tsetorSolicitante\tstatus_calculo\n023/2025\tEquipamentos / Utensílios / Bens\t0.0100\tdezembro\testudio\tEXCLUÍDO\n024/2025\tTransferência Santander\t4965.3800\tdezembro\testudio\tEXCLUÍDO\n022/2025\tGráfica (Impressos / Brindes)\t2721.0000\tdezembro\testudio\tINCLUÍDO\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

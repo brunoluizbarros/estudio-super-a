@@ -1,0 +1,17 @@
+{
+  "query": "SELECT t.id, t.codigo, t.curso, t.instituicao, \n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id) as numEventos\nFROM turmas t\nWHERE t.codigo = '804' OR t.id IN (\n  SELECT turmaId FROM formandos WHERE nome LIKE '%Aires%'\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, t.curso, t.instituicao, \n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id) as numEventos\nFROM turmas t\nWHERE t.codigo = '804' OR t.id IN (\n  SELECT turmaId FROM formandos WHERE nome LIKE '%Aires%'\n)",
+  "rows": [
+    {
+      "id": "1061",
+      "codigo": "804",
+      "curso": "MEDICINA",
+      "instituicao": "FPS",
+      "numEventos": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcurso\tinstituicao\tnumEventos\n1061\t804\tMEDICINA\tFPS\t4\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

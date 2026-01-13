@@ -1,0 +1,40 @@
+{
+  "query": "SELECT e.id, e.tipoEvento, e.local as localId, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '654')\nORDER BY e.tipoEvento;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.tipoEvento, e.local as localId, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '654')\nORDER BY e.tipoEvento;",
+  "rows": [
+    {
+      "id": "420061",
+      "tipoEvento": "foto_estudio",
+      "localId": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420062",
+      "tipoEvento": "foto_estudio",
+      "localId": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420063",
+      "tipoEvento": "foto_estudio",
+      "localId": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420064",
+      "tipoEvento": "foto_estudio",
+      "localId": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420116",
+      "tipoEvento": "foto_oficial",
+      "localId": "MUSEU DO ESTADO",
+      "localNome": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tlocalId\tlocalNome\n420061\tfoto_estudio\tESTUDIO SUPER A\tNULL\n420062\tfoto_estudio\tESTUDIO SUPER A\tNULL\n420063\tfoto_estudio\tESTUDIO SUPER A\tNULL\n420064\tfoto_estudio\tESTUDIO SUPER A\tNULL\n420116\tfoto_oficial\tMUSEU DO ESTADO\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 48
+}

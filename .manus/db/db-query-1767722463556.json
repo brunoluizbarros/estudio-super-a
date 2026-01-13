@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nSET f.cabeloSimples = CASE \n    WHEN f.id % 3 = 0 THEN 1\n    WHEN f.id % 3 = 1 THEN 0\n    ELSE 1\nEND,\nf.cabeloCombinado = CASE \n    WHEN f.id % 3 = 0 THEN 0\n    WHEN f.id % 3 = 1 THEN 1\n    ELSE 0\nEND,\nf.makeFormando = CASE \n    WHEN f.id % 2 = 0 THEN 1\n    ELSE 0\nEND,\nf.makeFamilia = CASE \n    WHEN f.id % 4 = 0 THEN 2\n    WHEN f.id % 4 = 1 THEN 1\n    WHEN f.id % 4 = 2 THEN 3\n    ELSE 0\nEND\nWHERE t.codigo = '654';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute UPDATE formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nSET f.cabeloSimples = CASE \n    WHEN f.id % 3 = 0 THEN 1\n    WHEN f.id % 3 = 1 THEN 0\n    ELSE 1\nEND,\nf.cabeloCombinado = CASE \n    WHEN f.id % 3 = 0 THEN 0\n    WHEN f.id % 3 = 1 THEN 1\n    ELSE 0\nEND,\nf.makeFormando = CASE \n    WHEN f.id % 2 = 0 THEN 1\n    ELSE 0\nEND,\nf.makeFamilia = CASE \n    WHEN f.id % 4 = 0 THEN 2\n    WHEN f.id % 4 = 1 THEN 1\n    WHEN f.id % 4 = 2 THEN 3\n    ELSE 0\nEND\nWHERE t.codigo = '654';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 63
+}

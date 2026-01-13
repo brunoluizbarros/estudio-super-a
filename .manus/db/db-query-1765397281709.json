@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, nome FROM tipos_servico WHERE nome LIKE '%Make%' OR nome LIKE '%Cabelo%' OR nome LIKE '%Maquiagem%' ORDER BY nome;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM tipos_servico WHERE nome LIKE '%Make%' OR nome LIKE '%Cabelo%' OR nome LIKE '%Maquiagem%' ORDER BY nome;",
+  "rows": [
+    {
+      "id": "17",
+      "nome": "Mão de Obra - Maquiagem"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n17\tMão de Obra - Maquiagem\n",
+  "stderr": "",
+  "execution_time_ms": 147
+}

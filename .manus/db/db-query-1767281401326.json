@@ -1,0 +1,18 @@
+{
+  "query": "SELECT u.id, u.name, u.email, u.role, u.tipoUsuarioId, tu.nome as tipoUsuarioNome \nFROM users u \nLEFT JOIN tipos_usuario tu ON u.tipoUsuarioId = tu.id \nWHERE u.email = 'cirocouceiro@me.com'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT u.id, u.name, u.email, u.role, u.tipoUsuarioId, tu.nome as tipoUsuarioNome \nFROM users u \nLEFT JOIN tipos_usuario tu ON u.tipoUsuarioId = tu.id \nWHERE u.email = 'cirocouceiro@me.com'",
+  "rows": [
+    {
+      "id": "20822170",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador",
+      "tipoUsuarioId": "12",
+      "tipoUsuarioNome": "Logística 1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\ttipoUsuarioId\ttipoUsuarioNome\n20822170\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\t12\tLogística 1\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

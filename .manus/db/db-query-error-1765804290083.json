@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE fotos_formando \nADD COLUMN briefingFormandoId INT NULL AFTER execucaoFormandoId,\nADD COLUMN horarioInicio VARCHAR(10) NULL AFTER fotografoId,\nADD COLUMN horarioTermino VARCHAR(10) NULL AFTER horarioInicio;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE fotos_formando \nADD COLUMN briefingFormandoId INT NULL AFTER execucaoFormandoId,\nADD COLUMN horarioInicio VARCHAR(10) NULL AFTER fotografoId,\nADD COLUMN horarioTermino VARCHAR(10) NULL AFTER horarioInicio;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'horarioinicio' in 'fotos_formando'"
+  ]
+}

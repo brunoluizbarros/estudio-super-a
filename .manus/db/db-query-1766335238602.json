@@ -1,0 +1,45 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, observacao, createdAt FROM eventos ORDER BY createdAt DESC LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, observacao, createdAt FROM eventos ORDER BY createdAt DESC LIMIT 5",
+  "rows": [
+    {
+      "id": "150001",
+      "turmaId": "60001",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-19 18:58:01"
+    },
+    {
+      "id": "120001",
+      "turmaId": "1141",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-19 18:23:37"
+    },
+    {
+      "id": "90020",
+      "turmaId": "1343",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-07 22:52:36"
+    },
+    {
+      "id": "90019",
+      "turmaId": "1320",
+      "tipoEvento": "foto_50",
+      "observacao": "NULL",
+      "createdAt": "2025-12-07 22:51:46"
+    },
+    {
+      "id": "90018",
+      "turmaId": "1336",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-07 22:51:02"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tobservacao\tcreatedAt\n150001\t60001\tfoto_estudio\tNULL\t2025-12-19 18:58:01\n120001\t1141\tfoto_estudio\tNULL\t2025-12-19 18:23:37\n90020\t1343\tfoto_estudio\tNULL\t2025-12-07 22:52:36\n90019\t1320\tfoto_50\tNULL\t2025-12-07 22:51:46\n90018\t1336\tfoto_estudio\tNULL\t2025-12-07 22:51:02\n",
+  "stderr": "",
+  "execution_time_ms": 639
+}

@@ -1,0 +1,60 @@
+{
+  "query": "SELECT ff.id, ff.execucaoFormandoId, ff.cenarioId, ff.fotografoId, ff.numeroArquivos, ff.observacao, ff.createdAt, tc.nome as cenario\nFROM fotos_formando ff\nLEFT JOIN tipos_cenario tc ON ff.cenarioId = tc.id\nORDER BY ff.id DESC\nLIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ff.id, ff.execucaoFormandoId, ff.cenarioId, ff.fotografoId, ff.numeroArquivos, ff.observacao, ff.createdAt, tc.nome as cenario\nFROM fotos_formando ff\nLEFT JOIN tipos_cenario tc ON ff.cenarioId = tc.id\nORDER BY ff.id DESC\nLIMIT 5",
+  "rows": [
+    {
+      "id": "60005",
+      "execucaoFormandoId": "90001",
+      "cenarioId": "7",
+      "fotografoId": "4",
+      "numeroArquivos": "10",
+      "observacao": "Teste carregamento",
+      "createdAt": "2025-12-11 13:40:35",
+      "cenario": "Beca"
+    },
+    {
+      "id": "60004",
+      "execucaoFormandoId": "90001",
+      "cenarioId": "7",
+      "fotografoId": "4",
+      "numeroArquivos": "10",
+      "observacao": "Teste carregamento",
+      "createdAt": "2025-12-11 13:38:52",
+      "cenario": "Beca"
+    },
+    {
+      "id": "60003",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "33",
+      "observacao": "NULL",
+      "createdAt": "2025-12-11 13:27:00",
+      "cenario": "Externa"
+    },
+    {
+      "id": "60002",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "33",
+      "observacao": "NULL",
+      "createdAt": "2025-12-11 13:01:03",
+      "cenario": "Família"
+    },
+    {
+      "id": "60001",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "99",
+      "observacao": "NULL",
+      "createdAt": "2025-12-11 13:00:30",
+      "cenario": "Família"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\texecucaoFormandoId\tcenarioId\tfotografoId\tnumeroArquivos\tobservacao\tcreatedAt\tcenario\n60005\t90001\t7\t4\t10\tTeste carregamento\t2025-12-11 13:40:35\tBeca\n60004\t90001\t7\t4\t10\tTeste carregamento\t2025-12-11 13:38:52\tBeca\n60003\t30001\t1\t4\t33\tNULL\t2025-12-11 13:27:00\tExterna\n60002\t30001\t5\t5\t33\tNULL\t2025-12-11 13:01:03\tFamília\n60001\t30001\t5\t5\t99\tNULL\t2025-12-11 13:00:30\tFamília\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

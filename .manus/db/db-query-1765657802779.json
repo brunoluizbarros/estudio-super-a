@@ -1,0 +1,27 @@
+{
+  "query": "SELECT se.*, f.nome as formandoNome \nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nWHERE f.nome LIKE '%Dilianne%' \nAND se.tipoServico IN ('cabelo_simples', 'cabelo_combinado')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.*, f.nome as formandoNome \nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nWHERE f.nome LIKE '%Dilianne%' \nAND se.tipoServico IN ('cabelo_simples', 'cabelo_combinado')",
+  "rows": [
+    {
+      "id": "360007",
+      "eventoId": "60006",
+      "formandoId": "30064",
+      "tipoServico": "cabelo_simples",
+      "fornecedorId": "NULL",
+      "quantidade": "1",
+      "valorUnitario": "800",
+      "valorTotal": "800",
+      "fluxo": "receber",
+      "dataRealizacao": "2025-11-28 00:00:00",
+      "observacao": "NULL",
+      "createdAt": "2025-12-13 13:06:59",
+      "updatedAt": "2025-12-13 13:06:59",
+      "tipoMake": "NULL",
+      "formandoNome": "Dilianne Sousa Alencar"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\ttipoServico\tfornecedorId\tquantidade\tvalorUnitario\tvalorTotal\tfluxo\tdataRealizacao\tobservacao\tcreatedAt\tupdatedAt\ttipoMake\tformandoNome\n360007\t60006\t30064\tcabelo_simples\tNULL\t1\t800\t800\treceber\t2025-11-28 00:00:00\tNULL\t2025-12-13 13:06:59\t2025-12-13 13:06:59\tNULL\tDilianne Sousa Alencar\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

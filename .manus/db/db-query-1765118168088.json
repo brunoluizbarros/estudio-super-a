@@ -1,0 +1,27 @@
+{
+  "query": "SELECT * FROM turmas WHERE codigo = '902';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM turmas WHERE codigo = '902';",
+  "rows": [
+    {
+      "id": "1273",
+      "codigo": "902",
+      "curso": "MEDICINA",
+      "instituicao": "UNIFACISA",
+      "cidade": "Campina Grande",
+      "estado": "PB",
+      "createdAt": "2025-12-07 04:06:19",
+      "updatedAt": "2025-12-07 04:06:19",
+      "numeroTurma": "",
+      "ano": "2026",
+      "periodo": "1",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcurso\tinstituicao\tcidade\testado\tcreatedAt\tupdatedAt\tnumeroTurma\tano\tperiodo\tcursos\tinstituicoes\tanos\tperiodos\n1273\t902\tMEDICINA\tUNIFACISA\tCampina Grande\tPB\t2025-12-07 04:06:19\t2025-12-07 04:06:19\t\t2026\t1\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\t[\"2026\"]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

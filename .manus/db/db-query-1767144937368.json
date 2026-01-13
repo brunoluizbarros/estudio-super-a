@@ -1,0 +1,9 @@
+{
+  "query": "SELECT e.id, e.turmaId, e.tipoEvento, e.dataEvento, e.dataEventoFim, e.local, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId = 654\nORDER BY e.dataEvento;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.turmaId, e.tipoEvento, e.dataEvento, e.dataEventoFim, e.local, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId = 654\nORDER BY e.dataEvento;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 67
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `permissoes` ADD `tipoUsuarioId` int DEFAULT 1 NOT NULL;--> statement-breakpoint
+ALTER TABLE `permissoes` ADD CONSTRAINT `permissoes_tipoUsuarioId_tipos_usuario_id_fk` FOREIGN KEY (`tipoUsuarioId`) REFERENCES `tipos_usuario`(`id`) ON DELETE cascade ON UPDATE no action;

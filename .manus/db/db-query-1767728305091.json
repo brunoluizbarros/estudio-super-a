@@ -1,0 +1,26 @@
+{
+  "query": "SELECT id, turmaId, data, horario, tiposEvento, tipoReuniao FROM reunioes LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, data, horario, tiposEvento, tipoReuniao FROM reunioes LIMIT 5",
+  "rows": [
+    {
+      "id": "60001",
+      "turmaId": "1271",
+      "data": "2025-01-05",
+      "horario": "18:00",
+      "tiposEvento": "[1,30003]",
+      "tipoReuniao": "Online"
+    },
+    {
+      "id": "60007",
+      "turmaId": "1036",
+      "data": "2026-01-07",
+      "horario": "18:00",
+      "tiposEvento": "[1]",
+      "tipoReuniao": "Online"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\tdata\thorario\ttiposEvento\ttipoReuniao\n60001\t1271\t2025-01-05\t18:00\t[1,30003]\tOnline\n60007\t1036\t2026-01-07\t18:00\t[1]\tOnline\n",
+  "stderr": "",
+  "execution_time_ms": 95
+}

@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE `permissoes` DROP INDEX `permissoes_role_secao_unique`;\nALTER TABLE `permissoes_configuracoes` DROP INDEX `permissoes_configuracoes_role_aba_unique`;\nALTER TABLE `permissoes_relatorios` DROP INDEX `permissoes_relatorios_role_aba_unique`;\nALTER TABLE `permissoes` DROP COLUMN `role`;\nALTER TABLE `permissoes_configuracoes` DROP COLUMN `role`;\nALTER TABLE `permissoes_relatorios` DROP COLUMN `role`;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE `permissoes` DROP INDEX `permissoes_role_secao_unique`;\nALTER TABLE `permissoes_configuracoes` DROP INDEX `permissoes_configuracoes_role_aba_unique`;\nALTER TABLE `permissoes_relatorios` DROP INDEX `permissoes_relatorios_role_aba_unique`;\nALTER TABLE `permissoes` DROP COLUMN `role`;\nALTER TABLE `permissoes_configuracoes` DROP COLUMN `role`;\nALTER TABLE `permissoes_relatorios` DROP COLUMN `role`;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1091 (42000) at line 1: index permissoes_role_secao_unique doesn't exist"
+  ]
+}

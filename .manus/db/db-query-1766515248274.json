@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, name, email, role, status FROM users WHERE email = 'cirocouceiro@me.com';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, name, email, role, status FROM users WHERE email = 'cirocouceiro@me.com';",
+  "rows": [
+    {
+      "id": "14100118",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador",
+      "status": "aprovado"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\n14100118\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\taprovado\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

@@ -1,0 +1,66 @@
+{
+  "query": "SELECT \n  t.nome as tipo_usuario,\n  COUNT(p.id) as total_permissoes,\n  SUM(CASE WHEN p.visualizar = 1 THEN 1 ELSE 0 END) as total_visualizar,\n  SUM(CASE WHEN p.inserir = 1 THEN 1 ELSE 0 END) as total_inserir,\n  SUM(CASE WHEN p.excluir = 1 THEN 1 ELSE 0 END) as total_excluir\nFROM tipos_usuario t\nLEFT JOIN permissoes p ON p.tipoUsuarioId = t.id\nGROUP BY t.id, t.nome\nORDER BY t.nome",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  t.nome as tipo_usuario,\n  COUNT(p.id) as total_permissoes,\n  SUM(CASE WHEN p.visualizar = 1 THEN 1 ELSE 0 END) as total_visualizar,\n  SUM(CASE WHEN p.inserir = 1 THEN 1 ELSE 0 END) as total_inserir,\n  SUM(CASE WHEN p.excluir = 1 THEN 1 ELSE 0 END) as total_excluir\nFROM tipos_usuario t\nLEFT JOIN permissoes p ON p.tipoUsuarioId = t.id\nGROUP BY t.id, t.nome\nORDER BY t.nome",
+  "rows": [
+    {
+      "tipo_usuario": "Administrador",
+      "total_permissoes": "166",
+      "total_visualizar": "69",
+      "total_inserir": "42",
+      "total_excluir": "34"
+    },
+    {
+      "tipo_usuario": "Armazenamento",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Beca",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Cerimonial",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Coordenador",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Financeiro",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Gestor",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    },
+    {
+      "tipo_usuario": "Logística",
+      "total_permissoes": "0",
+      "total_visualizar": "0",
+      "total_inserir": "0",
+      "total_excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipo_usuario\ttotal_permissoes\ttotal_visualizar\ttotal_inserir\ttotal_excluir\nAdministrador\t166\t69\t42\t34\nArmazenamento\t0\t0\t0\t0\nBeca\t0\t0\t0\t0\nCerimonial\t0\t0\t0\t0\nCoordenador\t0\t0\t0\t0\nFinanceiro\t0\t0\t0\t0\nGestor\t0\t0\t0\t0\nLogística\t0\t0\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

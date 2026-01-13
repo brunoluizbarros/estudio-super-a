@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE permissoes_relatorios MODIFY COLUMN aba ENUM('despesas', 'emissao_nf', 'servicos_make_cabelo', 'execucao', 'compensacao_bancaria', 'vendas_excluidas', 'observacoes', 'fechamentos_mensais') NOT NULL",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE permissoes_relatorios MODIFY COLUMN aba ENUM('despesas', 'emissao_nf', 'servicos_make_cabelo', 'execucao', 'compensacao_bancaria', 'vendas_excluidas', 'observacoes', 'fechamentos_mensais') NOT NULL",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 607
+}

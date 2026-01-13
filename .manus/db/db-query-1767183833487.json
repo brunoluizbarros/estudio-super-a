@@ -1,0 +1,40 @@
+{
+  "query": "SELECT e.turmaId, t.codigo, COUNT(*) as total, GROUP_CONCAT(DISTINCT e.local) as locais FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL AND e.local IS NOT NULL GROUP BY e.turmaId LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.turmaId, t.codigo, COUNT(*) as total, GROUP_CONCAT(DISTINCT e.local) as locais FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL AND e.local IS NOT NULL GROUP BY e.turmaId LIMIT 5",
+  "rows": [
+    {
+      "turmaId": "1030",
+      "codigo": "575",
+      "total": "8",
+      "locais": "ESTUDIO SUPER A"
+    },
+    {
+      "turmaId": "1034",
+      "codigo": "715",
+      "total": "5",
+      "locais": "ESTUDIO SUPER A"
+    },
+    {
+      "turmaId": "1037",
+      "codigo": "580",
+      "total": "1",
+      "locais": "FACULDADE UECE"
+    },
+    {
+      "turmaId": "1042",
+      "codigo": "583",
+      "total": "1",
+      "locais": "FACULDADE UFC"
+    },
+    {
+      "turmaId": "1094",
+      "codigo": "944",
+      "total": "3",
+      "locais": "ESTUDIO SUPER A"
+    }
+  ],
+  "messages": [],
+  "stdout": "turmaId\tcodigo\ttotal\tlocais\n1030\t575\t8\tESTUDIO SUPER A\n1034\t715\t5\tESTUDIO SUPER A\n1037\t580\t1\tFACULDADE UECE\n1042\t583\t1\tFACULDADE UFC\n1094\t944\t3\tESTUDIO SUPER A\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

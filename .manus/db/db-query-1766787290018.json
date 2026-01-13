@@ -1,0 +1,18 @@
+{
+  "query": "SHOW COLUMNS FROM permissoes_relatorios WHERE Field = 'aba'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW COLUMNS FROM permissoes_relatorios WHERE Field = 'aba'",
+  "rows": [
+    {
+      "Field": "aba",
+      "Type": "enum('despesas','emissao_nf','servicos_make_cabelo','execucao','compensacao_bancaria','observacoes','fechamentos_mensais')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\naba\tenum('despesas','emissao_nf','servicos_make_cabelo','execucao','compensacao_bancaria','observacoes','fechamentos_mensais')\tNO\t\tNULL\t\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

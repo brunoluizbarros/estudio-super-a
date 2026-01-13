@@ -1,0 +1,50 @@
+{
+  "query": "\nSELECT \n  v.id as vendaId,\n  v.dataVenda,\n  DATE(v.dataVenda) as dataVendaFormatada,\n  v.valorTotal,\n  p.cvNsu,\n  p.valor as valorPagamento,\n  p.tipo,\n  p.bandeira\nFROM vendas v\nINNER JOIN pagamentos p ON p.vendaId = v.id\nWHERE p.cvNsu IN ('176726822', '27410510', '175329394', '26402146')\nORDER BY v.dataVenda DESC;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  v.id as vendaId,\n  v.dataVenda,\n  DATE(v.dataVenda) as dataVendaFormatada,\n  v.valorTotal,\n  p.cvNsu,\n  p.valor as valorPagamento,\n  p.tipo,\n  p.bandeira\nFROM vendas v\nINNER JOIN pagamentos p ON p.vendaId = v.id\nWHERE p.cvNsu IN ('176726822', '27410510', '175329394', '26402146')\nORDER BY v.dataVenda DESC;\n",
+  "rows": [
+    {
+      "vendaId": "330009",
+      "dataVenda": "2025-12-13 15:00:00",
+      "dataVendaFormatada": "2025-12-13",
+      "valorTotal": "65000",
+      "cvNsu": "27410510",
+      "valorPagamento": "65000",
+      "tipo": "credito",
+      "bandeira": "MASTER"
+    },
+    {
+      "vendaId": "330015",
+      "dataVenda": "2025-12-13 15:00:00",
+      "dataVendaFormatada": "2025-12-13",
+      "valorTotal": "65000",
+      "cvNsu": "176726822",
+      "valorPagamento": "65000",
+      "tipo": "debito",
+      "bandeira": "VISA"
+    },
+    {
+      "vendaId": "330016",
+      "dataVenda": "2025-12-13 15:00:00",
+      "dataVendaFormatada": "2025-12-13",
+      "valorTotal": "65000",
+      "cvNsu": "175329394",
+      "valorPagamento": "65000",
+      "tipo": "credito",
+      "bandeira": "MASTER"
+    },
+    {
+      "vendaId": "330035",
+      "dataVenda": "2025-12-13 15:00:00",
+      "dataVendaFormatada": "2025-12-13",
+      "valorTotal": "65000",
+      "cvNsu": "26402146",
+      "valorPagamento": "65000",
+      "tipo": "credito",
+      "bandeira": "VISA"
+    }
+  ],
+  "messages": [],
+  "stdout": "vendaId\tdataVenda\tdataVendaFormatada\tvalorTotal\tcvNsu\tvalorPagamento\ttipo\tbandeira\n330009\t2025-12-13 15:00:00\t2025-12-13\t65000\t27410510\t65000\tcredito\tMASTER\n330015\t2025-12-13 15:00:00\t2025-12-13\t65000\t176726822\t65000\tdebito\tVISA\n330016\t2025-12-13 15:00:00\t2025-12-13\t65000\t175329394\t65000\tcredito\tMASTER\n330035\t2025-12-13 15:00:00\t2025-12-13\t65000\t26402146\t65000\tcredito\tVISA\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

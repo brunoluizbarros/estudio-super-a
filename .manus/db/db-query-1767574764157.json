@@ -1,0 +1,100 @@
+{
+  "query": "SELECT \n  id,\n  dataVenda,\n  FROM_UNIXTIME(dataVenda/1000) as data_convertida,\n  YEAR(FROM_UNIXTIME(dataVenda/1000)) as ano,\n  MONTH(FROM_UNIXTIME(dataVenda/1000)) as mes,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  dataVenda,\n  FROM_UNIXTIME(dataVenda/1000) as data_convertida,\n  YEAR(FROM_UNIXTIME(dataVenda/1000)) as ano,\n  MONTH(FROM_UNIXTIME(dataVenda/1000)) as mes,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 10",
+  "rows": [
+    {
+      "id": "420006",
+      "dataVenda": "2026-06-15 00:00:00",
+      "data_convertida": "2612-01-13 20:36:40.0000",
+      "ano": "2612",
+      "mes": "1",
+      "valorTotal": "50000",
+      "excluido": "0"
+    },
+    {
+      "id": "420008",
+      "dataVenda": "2026-06-15 00:00:00",
+      "data_convertida": "2612-01-13 20:36:40.0000",
+      "ano": "2612",
+      "mes": "1",
+      "valorTotal": "50000",
+      "excluido": "0"
+    },
+    {
+      "id": "330011",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330006",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330013",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330004",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330035",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330016",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330009",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    },
+    {
+      "id": "330015",
+      "dataVenda": "2025-12-13 15:00:00",
+      "data_convertida": "2611-09-27 00:59:10.0000",
+      "ano": "2611",
+      "mes": "9",
+      "valorTotal": "65000",
+      "excluido": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdataVenda\tdata_convertida\tano\tmes\tvalorTotal\texcluido\n420006\t2026-06-15 00:00:00\t2612-01-13 20:36:40.0000\t2612\t1\t50000\t0\n420008\t2026-06-15 00:00:00\t2612-01-13 20:36:40.0000\t2612\t1\t50000\t0\n330011\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330006\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330013\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330004\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330035\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330016\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330009\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n330015\t2025-12-13 15:00:00\t2611-09-27 00:59:10.0000\t2611\t9\t65000\t0\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

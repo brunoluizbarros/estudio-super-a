@@ -1,0 +1,16 @@
+{
+  "query": "SELECT e.id, e.tipoEvento, e.dataEvento, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo LIKE '%642%' \nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.tipoEvento, e.dataEvento, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo LIKE '%642%' \nLIMIT 5;",
+  "rows": [
+    {
+      "id": "390883",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "2025-04-12 04:00:00",
+      "codigo": "642"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tdataEvento\tcodigo\n390883\tfoto_descontrada\t2025-04-12 04:00:00\t642\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

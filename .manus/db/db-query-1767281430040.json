@@ -1,0 +1,66 @@
+{
+  "query": "SELECT pr.role, pr.aba, pr.visualizar, pr.inserir, pr.excluir\nFROM permissoes_relatorios pr\nWHERE pr.role = 'Logística 1'\nORDER BY pr.aba",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT pr.role, pr.aba, pr.visualizar, pr.inserir, pr.excluir\nFROM permissoes_relatorios pr\nWHERE pr.role = 'Logística 1'\nORDER BY pr.aba",
+  "rows": [
+    {
+      "role": "Logística 1",
+      "aba": "despesas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "emissao_nf",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "servicos_make_cabelo",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "compensacao_bancaria",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "vendas_excluidas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "observacoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "aba": "fechamentos_mensais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\taba\tvisualizar\tinserir\texcluir\nLogística 1\tdespesas\t1\t0\t0\nLogística 1\temissao_nf\t0\t0\t0\nLogística 1\tservicos_make_cabelo\t0\t0\t0\nLogística 1\texecucao\t0\t0\t0\nLogística 1\tcompensacao_bancaria\t0\t0\t0\nLogística 1\tvendas_excluidas\t0\t0\t0\nLogística 1\tobservacoes\t0\t0\t0\nLogística 1\tfechamentos_mensais\t0\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

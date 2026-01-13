@@ -1,0 +1,1172 @@
+{
+  "query": "SELECT role, secao, visualizar, inserir, excluir FROM permissoes ORDER BY role, secao",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT role, secao, visualizar, inserir, excluir FROM permissoes ORDER BY role, secao",
+  "rows": [
+    {
+      "role": "administrador",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "reunioes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "servicos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "beca",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "beca",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "eventos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "controler",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "coordenador",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "coordenador",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "coordenador",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "reunioes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "coordenador",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "financeiro",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "reunioes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "gestor",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "logistica",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "logistica",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "logistica",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "eventos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Logística 1",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logística_1",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logística_1",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "logística_1",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logística_1",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logística_1",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logística_1",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "logística_1",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "eventos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "relatorios",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Teste Vendedor",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "eventos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "relatorios",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "Vendedor",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\tsecao\tvisualizar\tinserir\texcluir\nadministrador\tabordagem\t1\t1\t1\nadministrador\tbecas\t1\t1\t1\nadministrador\tbriefing\t1\t1\t1\nadministrador\tconfiguracoes\t1\t1\t1\nadministrador\tdespesas\t1\t1\t1\nadministrador\teventos\t1\t1\t1\nadministrador\texecucao\t1\t1\t1\nadministrador\tfinanceiro\t1\t1\t1\nadministrador\thome\t1\t1\t1\nadministrador\tpermissoes_cerimoniais\t1\t1\t1\nadministrador\trelatorios\t1\t1\t1\nadministrador\treunioes\t1\t1\t1\nadministrador\tservicos\t1\t1\t1\nadministrador\tturmas\t1\t1\t1\nadministrador\tvendas\t1\t1\t1\narmazenamento\tabordagem\t0\t0\t0\narmazenamento\tbecas\t0\t0\t0\narmazenamento\tbriefing\t0\t0\t0\narmazenamento\tconfiguracoes\t0\t0\t0\narmazenamento\tdespesas\t0\t0\t0\narmazenamento\teventos\t1\t0\t0\narmazenamento\texecucao\t1\t1\t0\narmazenamento\tfinanceiro\t0\t0\t0\narmazenamento\thome\t1\t0\t0\narmazenamento\tpermissoes_cerimoniais\t0\t0\t0\narmazenamento\trelatorios\t1\t0\t0\narmazenamento\treunioes\t0\t0\t0\narmazenamento\tservicos\t0\t0\t0\narmazenamento\tturmas\t1\t0\t0\narmazenamento\tvendas\t0\t0\t0\nbeca\tabordagem\t0\t0\t0\nbeca\tbecas\t1\t1\t1\nbeca\tbriefing\t0\t0\t0\nbeca\tdespesas\t1\t1\t1\nbeca\teventos\t1\t0\t0\nbeca\texecucao\t0\t0\t0\nbeca\tfinanceiro\t0\t0\t0\nbeca\thome\t1\t0\t0\nbeca\tpermissoes_cerimoniais\t0\t0\t0\nbeca\trelatorios\t1\t0\t0\nbeca\treunioes\t0\t0\t0\nbeca\tservicos\t0\t0\t0\nbeca\tturmas\t0\t0\t0\nbeca\tvendas\t0\t0\t0\ncerimonial\tabordagem\t1\t1\t0\ncerimonial\tbecas\t0\t0\t0\ncerimonial\tbriefing\t0\t0\t0\ncerimonial\teventos\t0\t0\t0\ncerimonial\texecucao\t1\t1\t0\ncerimonial\tfinanceiro\t0\t0\t0\ncerimonial\thome\t1\t0\t0\ncerimonial\tpermissoes_cerimoniais\t0\t0\t0\ncerimonial\trelatorios\t1\t0\t0\ncerimonial\treunioes\t0\t0\t0\ncerimonial\tservicos\t0\t0\t0\ncerimonial\tturmas\t0\t0\t0\ncerimonial\tvendas\t0\t0\t0\ncontroler\thome\t1\t0\t0\ncoordenador\tabordagem\t1\t1\t1\ncoordenador\tbecas\t1\t0\t0\ncoordenador\tbriefing\t1\t1\t1\ncoordenador\tconfiguracoes\t0\t0\t0\ncoordenador\tdespesas\t0\t0\t0\ncoordenador\teventos\t1\t1\t1\ncoordenador\texecucao\t1\t1\t0\ncoordenador\tfinanceiro\t0\t0\t0\ncoordenador\thome\t1\t0\t0\ncoordenador\tpermissoes_cerimoniais\t0\t0\t0\ncoordenador\trelatorios\t1\t0\t0\ncoordenador\treunioes\t1\t1\t1\ncoordenador\tservicos\t0\t0\t0\ncoordenador\tturmas\t1\t0\t0\ncoordenador\tvendas\t0\t0\t0\nfinanceiro\tabordagem\t0\t0\t0\nfinanceiro\tbecas\t0\t0\t0\nfinanceiro\tbriefing\t0\t0\t0\nfinanceiro\tdespesas\t0\t0\t0\nfinanceiro\teventos\t1\t0\t0\nfinanceiro\texecucao\t0\t0\t0\nfinanceiro\tfinanceiro\t0\t0\t0\nfinanceiro\thome\t1\t1\t0\nfinanceiro\tpermissoes_cerimoniais\t0\t0\t0\nfinanceiro\trelatorios\t1\t0\t0\nfinanceiro\treunioes\t0\t0\t0\nfinanceiro\tservicos\t0\t0\t0\nfinanceiro\tturmas\t1\t1\t1\nfinanceiro\tvendas\t0\t0\t0\ngestor\tabordagem\t1\t1\t1\ngestor\tbecas\t1\t1\t0\ngestor\tbriefing\t1\t1\t1\ngestor\tconfiguracoes\t0\t0\t0\ngestor\tdespesas\t1\t1\t1\ngestor\teventos\t1\t1\t1\ngestor\texecucao\t1\t1\t1\ngestor\tfinanceiro\t1\t0\t0\ngestor\thome\t1\t0\t0\ngestor\tpermissoes_cerimoniais\t1\t1\t0\ngestor\trelatorios\t1\t0\t0\ngestor\treunioes\t1\t1\t1\ngestor\tservicos\t0\t0\t0\ngestor\tturmas\t1\t1\t1\ngestor\tvendas\t1\t1\t1\nlogistica\tabordagem\t0\t0\t0\nlogistica\tbecas\t0\t0\t0\nlogistica\tbriefing\t0\t0\t0\nlogistica\tconfiguracoes\t1\t1\t0\nlogistica\tdespesas\t1\t1\t1\nlogistica\teventos\t1\t0\t0\nlogistica\texecucao\t0\t0\t0\nlogistica\tfinanceiro\t0\t0\t0\nlogistica\thome\t1\t0\t0\nlogistica\tpermissoes_cerimoniais\t1\t1\t1\nlogistica\trelatorios\t1\t0\t0\nlogistica\treunioes\t0\t0\t0\nlogistica\tservicos\t0\t0\t0\nlogistica\tturmas\t0\t0\t0\nlogistica\tvendas\t0\t0\t0\nLogística 1\tabordagem\t0\t0\t0\nLogística 1\tbecas\t0\t0\t0\nLogística 1\tbriefing\t0\t0\t0\nLogística 1\tconfiguracoes\t1\t0\t0\nLogística 1\tdespesas\t0\t0\t0\nLogística 1\teventos\t0\t0\t0\nLogística 1\texecucao\t0\t0\t0\nLogística 1\tfinanceiro\t0\t0\t0\nLogística 1\thome\t0\t0\t0\nLogística 1\trelatorios\t1\t0\t0\nLogística 1\treunioes\t0\t0\t0\nLogística 1\tservicos\t0\t0\t0\nLogística 1\tturmas\t0\t0\t0\nLogística 1\tvendas\t0\t0\t0\nlogística_1\tbecas\t0\t0\t0\nlogística_1\tdespesas\t1\t1\t1\nlogística_1\teventos\t1\t0\t0\nlogística_1\texecucao\t0\t0\t0\nlogística_1\thome\t1\t0\t0\nlogística_1\tpermissoes_cerimoniais\t1\t1\t1\nlogística_1\tturmas\t1\t0\t0\nTeste Vendedor\tabordagem\t0\t0\t0\nTeste Vendedor\tbecas\t0\t0\t0\nTeste Vendedor\tbriefing\t0\t0\t0\nTeste Vendedor\tconfiguracoes\t0\t0\t0\nTeste Vendedor\tdespesas\t0\t0\t0\nTeste Vendedor\teventos\t0\t0\t0\nTeste Vendedor\texecucao\t0\t0\t0\nTeste Vendedor\tfinanceiro\t0\t0\t0\nTeste Vendedor\thome\t0\t0\t0\nTeste Vendedor\trelatorios\t0\t0\t0\nTeste Vendedor\treunioes\t0\t0\t0\nTeste Vendedor\tservicos\t0\t0\t0\nTeste Vendedor\tturmas\t0\t0\t0\nTeste Vendedor\tvendas\t0\t0\t0\nVendedor\tabordagem\t0\t0\t0\nVendedor\tbecas\t0\t0\t0\nVendedor\tbriefing\t0\t0\t0\nVendedor\tconfiguracoes\t0\t0\t0\nVendedor\tdespesas\t0\t0\t0\nVendedor\teventos\t0\t0\t0\nVendedor\texecucao\t0\t0\t0\nVendedor\tfinanceiro\t0\t0\t0\nVendedor\thome\t0\t0\t0\nVendedor\trelatorios\t0\t0\t0\nVendedor\treunioes\t0\t0\t0\nVendedor\tservicos\t0\t0\t0\nVendedor\tturmas\t0\t0\t0\nVendedor\tvendas\t0\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 82
+}

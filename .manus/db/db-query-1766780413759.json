@@ -1,0 +1,20 @@
+{
+  "query": "SELECT id, name, email, role, status, openId, createdAt, lastSignedIn FROM users WHERE email = 'dadesupera@gmail.com'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, name, email, role, status, openId, createdAt, lastSignedIn FROM users WHERE email = 'dadesupera@gmail.com'",
+  "rows": [
+    {
+      "id": "20258696",
+      "name": "Maria da Paz Silva",
+      "email": "dadesupera@gmail.com",
+      "role": "beca",
+      "status": "pendente",
+      "openId": "cUU7DsgcxAeCH9a5pHcEZo",
+      "createdAt": "2025-12-26 20:14:51",
+      "lastSignedIn": "2025-12-26 20:19:26"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\topenId\tcreatedAt\tlastSignedIn\n20258696\tMaria da Paz Silva\tdadesupera@gmail.com\tbeca\tpendente\tcUU7DsgcxAeCH9a5pHcEZo\t2025-12-26 20:14:51\t2025-12-26 20:19:26\n",
+  "stderr": "",
+  "execution_time_ms": 63
+}

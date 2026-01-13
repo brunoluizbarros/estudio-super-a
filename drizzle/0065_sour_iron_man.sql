@@ -1,0 +1,1 @@
+ALTER TABLE `historico_alteracoes_vendas` ADD `snapshotVenda` json;

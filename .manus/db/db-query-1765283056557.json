@@ -1,0 +1,74 @@
+{
+  "query": "SELECT id, nome FROM tipos_servico ORDER BY nome;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM tipos_servico ORDER BY nome;",
+  "rows": [
+    {
+      "id": "2",
+      "nome": "Alimentação"
+    },
+    {
+      "id": "3",
+      "nome": "Alimento e Bebida (A&B)"
+    },
+    {
+      "id": "4",
+      "nome": "Equipamentos / Utensílios /Bens"
+    },
+    {
+      "id": "5",
+      "nome": "Gráfica (Impressos / Brindes)"
+    },
+    {
+      "id": "6",
+      "nome": "Hospedagem"
+    },
+    {
+      "id": "7",
+      "nome": "Locação de Equipamentos Fotográficos"
+    },
+    {
+      "id": "8",
+      "nome": "Locação de Espaço"
+    },
+    {
+      "id": "9",
+      "nome": "Locação de Estruturas"
+    },
+    {
+      "id": "11",
+      "nome": "Logística"
+    },
+    {
+      "id": "12",
+      "nome": "Manutenção Equipamentos"
+    },
+    {
+      "id": "13",
+      "nome": "Mão de Obra - Administrativo"
+    },
+    {
+      "id": "14",
+      "nome": "Mão de Obra - Cerimonial"
+    },
+    {
+      "id": "15",
+      "nome": "Mão de Obra - Coordenação"
+    },
+    {
+      "id": "16",
+      "nome": "Mão de Obra - Fotógrafo"
+    },
+    {
+      "id": "17",
+      "nome": "Mão de Obra - Maquiagem"
+    },
+    {
+      "id": "18",
+      "nome": "Mão de Obra - Produção"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n2\tAlimentação\n3\tAlimento e Bebida (A&B)\n4\tEquipamentos / Utensílios /Bens\n5\tGráfica (Impressos / Brindes)\n6\tHospedagem\n7\tLocação de Equipamentos Fotográficos\n8\tLocação de Espaço\n9\tLocação de Estruturas\n11\tLogística\n12\tManutenção Equipamentos\n13\tMão de Obra - Administrativo\n14\tMão de Obra - Cerimonial\n15\tMão de Obra - Coordenação\n16\tMão de Obra - Fotógrafo\n17\tMão de Obra - Maquiagem\n18\tMão de Obra - Produção\n",
+  "stderr": "",
+  "execution_time_ms": 90
+}

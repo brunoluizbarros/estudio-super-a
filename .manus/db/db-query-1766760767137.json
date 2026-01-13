@@ -1,0 +1,186 @@
+{
+  "query": "DESCRIBE despesas_v2",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute DESCRIBE despesas_v2",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "numeroCi",
+      "Type": "varchar(20)",
+      "Null": "NO",
+      "Key": "UNI",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tipoDespesa",
+      "Type": "enum('operacional','administrativa')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "mesServico",
+      "Type": "enum('janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "setorSolicitante",
+      "Type": "enum('estudio','fotografia','becas')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "fornecedorId",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tipoServicoCompra",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "detalhamento",
+      "Type": "text",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "eReembolso",
+      "Type": "tinyint(1)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "valorTotal",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tipoPagamento",
+      "Type": "enum('pix','cartao','boleto','dinheiro')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "dadosPagamento",
+      "Type": "text",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tipoComprovanteFiscal",
+      "Type": "enum('contrato','nota_fiscal','rpa')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "dataLimitePagamento",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "local",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "status",
+      "Type": "enum('aguardando_aprovacao_gestor','aguardando_aprovacao_gestor_geral','aprovado_gestor','aprovado_gestor_geral','liquidado')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "aguardando_aprovacao_gestor",
+      "Extra": ""
+    },
+    {
+      "Field": "dataLiquidacao",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "comprovanteUrl",
+      "Type": "varchar(500)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "criadoPorId",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "criadoPorNome",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint(11)\tNO\tPRI\tNULL\tauto_increment\nnumeroCi\tvarchar(20)\tNO\tUNI\tNULL\t\ntipoDespesa\tenum('operacional','administrativa')\tNO\t\tNULL\t\nmesServico\tenum('janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')\tNO\t\tNULL\t\nsetorSolicitante\tenum('estudio','fotografia','becas')\tNO\t\tNULL\t\nfornecedorId\tint(11)\tNO\t\tNULL\t\ntipoServicoCompra\tvarchar(255)\tYES\t\tNULL\t\ndetalhamento\ttext\tNO\t\tNULL\t\neReembolso\ttinyint(1)\tNO\t\t0\t\nvalorTotal\tint(11)\tNO\t\tNULL\t\ntipoPagamento\tenum('pix','cartao','boleto','dinheiro')\tNO\t\tNULL\t\ndadosPagamento\ttext\tNO\t\tNULL\t\ntipoComprovanteFiscal\tenum('contrato','nota_fiscal','rpa')\tYES\t\tNULL\t\ndataLimitePagamento\tdatetime\tYES\t\tNULL\t\nlocal\tvarchar(255)\tYES\t\tNULL\t\nstatus\tenum('aguardando_aprovacao_gestor','aguardando_aprovacao_gestor_geral','aprovado_gestor','aprovado_gestor_geral','liquidado')\tNO\t\taguardando_aprovacao_gestor\t\ndataLiquidacao\tdatetime\tYES\t\tNULL\t\ncomprovanteUrl\tvarchar(500)\tYES\t\tNULL\t\ncriadoPorId\tint(11)\tNO\t\tNULL\t\ncriadoPorNome\tvarchar(255)\tYES\t\tNULL\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\n",
+  "stderr": "",
+  "execution_time_ms": 97
+}

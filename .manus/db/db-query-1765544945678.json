@@ -1,0 +1,40 @@
+{
+  "query": "\nSELECT t.id, t.codigo, \n       (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as formandos,\n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as eventos\nFROM turmas t\nWHERE (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 5\n  AND (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\nLIMIT 5;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT t.id, t.codigo, \n       (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as formandos,\n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as eventos\nFROM turmas t\nWHERE (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 5\n  AND (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\nLIMIT 5;\n",
+  "rows": [
+    {
+      "id": "1176",
+      "codigo": "553",
+      "formandos": "73",
+      "eventos": "5"
+    },
+    {
+      "id": "1172",
+      "codigo": "632",
+      "formandos": "29",
+      "eventos": "3"
+    },
+    {
+      "id": "1231",
+      "codigo": "820",
+      "formandos": "85",
+      "eventos": "1"
+    },
+    {
+      "id": "1273",
+      "codigo": "902",
+      "formandos": "57",
+      "eventos": "1"
+    },
+    {
+      "id": "1061",
+      "codigo": "804",
+      "formandos": "84",
+      "eventos": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tformandos\teventos\n1176\t553\t73\t5\n1172\t632\t29\t3\n1231\t820\t85\t1\n1273\t902\t57\t1\n1061\t804\t84\t1\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

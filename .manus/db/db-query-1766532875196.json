@@ -1,0 +1,120 @@
+{
+  "query": "SELECT * FROM permissoes_configuracoes WHERE role = 'logistica'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes_configuracoes WHERE role = 'logistica'",
+  "rows": [
+    {
+      "id": "56",
+      "role": "logistica",
+      "aba": "instituicoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "57",
+      "role": "logistica",
+      "aba": "cursos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "58",
+      "role": "logistica",
+      "aba": "cidades",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "59",
+      "role": "logistica",
+      "aba": "locais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-23 23:31:48"
+    },
+    {
+      "id": "60",
+      "role": "logistica",
+      "aba": "tipos_evento",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "61",
+      "role": "logistica",
+      "aba": "tipos_servico",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "62",
+      "role": "logistica",
+      "aba": "fornecedores",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-23 23:31:39"
+    },
+    {
+      "id": "63",
+      "role": "logistica",
+      "aba": "tabela_preco",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-23 23:31:17"
+    },
+    {
+      "id": "64",
+      "role": "logistica",
+      "aba": "taxas_cartao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "65",
+      "role": "logistica",
+      "aba": "produtos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    },
+    {
+      "id": "66",
+      "role": "logistica",
+      "aba": "maquiagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\taba\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n56\tlogistica\tinstituicoes\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n57\tlogistica\tcursos\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n58\tlogistica\tcidades\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n59\tlogistica\tlocais\t1\t1\t0\t2025-12-22 19:29:17\t2025-12-23 23:31:48\n60\tlogistica\ttipos_evento\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n61\tlogistica\ttipos_servico\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n62\tlogistica\tfornecedores\t1\t1\t0\t2025-12-22 19:29:17\t2025-12-23 23:31:39\n63\tlogistica\ttabela_preco\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-23 23:31:17\n64\tlogistica\ttaxas_cartao\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n65\tlogistica\tprodutos\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n66\tlogistica\tmaquiagem\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

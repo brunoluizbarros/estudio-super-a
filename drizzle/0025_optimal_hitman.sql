@@ -1,0 +1,1 @@
+ALTER TABLE `formandos` ADD `becaEvento` varchar(10);

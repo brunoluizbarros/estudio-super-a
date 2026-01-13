@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n  id,\n  tipoServicoCompra,\n  valorTotal,\n  mesServico,\n  setorSolicitante\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2024\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  tipoServicoCompra,\n  valorTotal,\n  mesServico,\n  setorSolicitante\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2024\nLIMIT 10",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 66
+}

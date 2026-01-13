@@ -1,0 +1,34 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.valorTotal, v.valorLiquido, v.excluido,\n       v.dataVenda,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome,\n       f.turmaId,\n       t.codigo as turma_codigo\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\n  AND (f.turmaId IS NULL OR t.codigo IS NULL)\nORDER BY v.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.valorTotal, v.valorLiquido, v.excluido,\n       v.dataVenda,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome,\n       f.turmaId,\n       t.codigo as turma_codigo\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\n  AND (f.turmaId IS NULL OR t.codigo IS NULL)\nORDER BY v.id",
+  "rows": [
+    {
+      "id": "420006",
+      "formandoId": "1",
+      "valorTotal": "50000",
+      "valorLiquido": "NULL",
+      "excluido": "0",
+      "dataVenda": "2026-06-15 00:00:00",
+      "data_formatada": "15/06/2026 00:00:00",
+      "formando_nome": "NULL",
+      "turmaId": "NULL",
+      "turma_codigo": "NULL"
+    },
+    {
+      "id": "420008",
+      "formandoId": "1",
+      "valorTotal": "50000",
+      "valorLiquido": "NULL",
+      "excluido": "0",
+      "dataVenda": "2026-06-15 00:00:00",
+      "data_formatada": "15/06/2026 00:00:00",
+      "formando_nome": "NULL",
+      "turmaId": "NULL",
+      "turma_codigo": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tformandoId\tvalorTotal\tvalorLiquido\texcluido\tdataVenda\tdata_formatada\tformando_nome\tturmaId\tturma_codigo\n420006\t1\t50000\tNULL\t0\t2026-06-15 00:00:00\t15/06/2026 00:00:00\tNULL\tNULL\tNULL\n420008\t1\t50000\tNULL\t0\t2026-06-15 00:00:00\t15/06/2026 00:00:00\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('logistica', 'abordagem', false, false, false),\n('logistica', 'execucao', false, false, false),\n('logistica', 'vendas', false, false, false),\n('logistica', 'reunioes', false, false, false),\n('logistica', 'servicos', false, false, false),\n('logistica', 'financeiro', false, false, false),\n('logistica', 'briefing', false, false, false),\n('logistica', 'becas', false, false, false)\nON DUPLICATE KEY UPDATE visualizar=visualizar;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('logistica', 'abordagem', false, false, false),\n('logistica', 'execucao', false, false, false),\n('logistica', 'vendas', false, false, false),\n('logistica', 'reunioes', false, false, false),\n('logistica', 'servicos', false, false, false),\n('logistica', 'financeiro', false, false, false),\n('logistica', 'briefing', false, false, false),\n('logistica', 'becas', false, false, false)\nON DUPLICATE KEY UPDATE visualizar=visualizar;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 72
+}

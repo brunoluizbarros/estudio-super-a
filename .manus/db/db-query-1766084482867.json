@@ -1,0 +1,70 @@
+{
+  "query": "SELECT * FROM users WHERE email IN ('controlersuperaformaturas@gmail.com', 'controler@superaformaturas.com.br', 'controlersuperaformaturas3@gmail.com') ORDER BY email, id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM users WHERE email IN ('controlersuperaformaturas@gmail.com', 'controler@superaformaturas.com.br', 'controlersuperaformaturas3@gmail.com') ORDER BY email, id",
+  "rows": [
+    {
+      "id": "9990047",
+      "openId": "temp_controler_superaformaturas_com.br_1766083138687",
+      "name": "Lucas Felipe Nascimento",
+      "email": "controler@superaformaturas.com.br",
+      "loginMethod": "NULL",
+      "role": "financeiro",
+      "createdAt": "2025-12-18 18:38:59",
+      "updatedAt": "2025-12-18 18:38:59",
+      "lastSignedIn": "2025-12-18 18:38:59",
+      "status": "pendente"
+    },
+    {
+      "id": "9990052",
+      "openId": "2n3XNrK6aDVDZVRqLkob4A",
+      "name": "Controler Super A",
+      "email": "controler@superaformaturas.com.br",
+      "loginMethod": "google",
+      "role": "coordenador",
+      "createdAt": "2025-12-18 18:40:25",
+      "updatedAt": "2025-12-18 19:00:57",
+      "lastSignedIn": "2025-12-18 19:00:57",
+      "status": "pendente"
+    },
+    {
+      "id": "9990044",
+      "openId": "temp_controlersuperaformaturas_gmail_com_1766083112762",
+      "name": "Beatriz Silva",
+      "email": "controlersuperaformaturas@gmail.com",
+      "loginMethod": "NULL",
+      "role": "financeiro",
+      "createdAt": "2025-12-18 18:38:33",
+      "updatedAt": "2025-12-18 18:38:33",
+      "lastSignedIn": "2025-12-18 18:38:33",
+      "status": "pendente"
+    },
+    {
+      "id": "9990069",
+      "openId": "KXZpjoqotrkdNotduURhDw",
+      "name": "Controler 2",
+      "email": "controlersuperaformaturas@gmail.com",
+      "loginMethod": "google",
+      "role": "coordenador",
+      "createdAt": "2025-12-18 18:43:01",
+      "updatedAt": "2025-12-18 19:00:33",
+      "lastSignedIn": "2025-12-18 19:00:34",
+      "status": "pendente"
+    },
+    {
+      "id": "9990050",
+      "openId": "temp_controlersuperaformaturas3_gmail_com_1766083180384",
+      "name": "Etienne Lima",
+      "email": "controlersuperaformaturas3@gmail.com",
+      "loginMethod": "NULL",
+      "role": "financeiro",
+      "createdAt": "2025-12-18 18:39:41",
+      "updatedAt": "2025-12-18 18:39:41",
+      "lastSignedIn": "2025-12-18 18:39:41",
+      "status": "pendente"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\tloginMethod\trole\tcreatedAt\tupdatedAt\tlastSignedIn\tstatus\n9990047\ttemp_controler_superaformaturas_com.br_1766083138687\tLucas Felipe Nascimento\tcontroler@superaformaturas.com.br\tNULL\tfinanceiro\t2025-12-18 18:38:59\t2025-12-18 18:38:59\t2025-12-18 18:38:59\tpendente\n9990052\t2n3XNrK6aDVDZVRqLkob4A\tControler Super A\tcontroler@superaformaturas.com.br\tgoogle\tcoordenador\t2025-12-18 18:40:25\t2025-12-18 19:00:57\t2025-12-18 19:00:57\tpendente\n9990044\ttemp_controlersuperaformaturas_gmail_com_1766083112762\tBeatriz Silva\tcontrolersuperaformaturas@gmail.com\tNULL\tfinanceiro\t2025-12-18 18:38:33\t2025-12-18 18:38:33\t2025-12-18 18:38:33\tpendente\n9990069\tKXZpjoqotrkdNotduURhDw\tControler 2\tcontrolersuperaformaturas@gmail.com\tgoogle\tcoordenador\t2025-12-18 18:43:01\t2025-12-18 19:00:33\t2025-12-18 19:00:34\tpendente\n9990050\ttemp_controlersuperaformaturas3_gmail_com_1766083180384\tEtienne Lima\tcontrolersuperaformaturas3@gmail.com\tNULL\tfinanceiro\t2025-12-18 18:39:41\t2025-12-18 18:39:41\t2025-12-18 18:39:41\tpendente\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

@@ -1,0 +1,22 @@
+{
+  "query": "SELECT \n  YEAR(dataVenda) as ano,\n  MONTH(dataVenda) as mes,\n  COUNT(*) as quantidade,\n  SUM(valorTotal) as total\nFROM vendas\nWHERE YEAR(dataVenda) = 2025 AND excluido = 0\nGROUP BY YEAR(dataVenda), MONTH(dataVenda)\nORDER BY mes",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  YEAR(dataVenda) as ano,\n  MONTH(dataVenda) as mes,\n  COUNT(*) as quantidade,\n  SUM(valorTotal) as total\nFROM vendas\nWHERE YEAR(dataVenda) = 2025 AND excluido = 0\nGROUP BY YEAR(dataVenda), MONTH(dataVenda)\nORDER BY mes",
+  "rows": [
+    {
+      "ano": "2025",
+      "mes": "11",
+      "quantidade": "16",
+      "total": "797500"
+    },
+    {
+      "ano": "2025",
+      "mes": "12",
+      "quantidade": "36",
+      "total": "2360000"
+    }
+  ],
+  "messages": [],
+  "stdout": "ano\tmes\tquantidade\ttotal\n2025\t11\t16\t797500\n2025\t12\t36\t2360000\n",
+  "stderr": "",
+  "execution_time_ms": 80
+}

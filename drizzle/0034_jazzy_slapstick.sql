@@ -1,0 +1,1 @@
+ALTER TABLE `permissoes_relatorios` MODIFY COLUMN `aba` enum('despesas','emissao_nf','servicos_make_cabelo','execucao','compensacao_bancaria','observacoes') NOT NULL;

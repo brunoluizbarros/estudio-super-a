@@ -1,0 +1,1 @@
+ALTER TABLE `pagamentos` ADD `cvNsu` varchar(50);

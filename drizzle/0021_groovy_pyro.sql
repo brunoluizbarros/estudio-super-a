@@ -1,0 +1,1 @@
+ALTER TABLE `produtos` ADD `categoria` enum('Foto','Cabelo','Outros') DEFAULT 'Outros';

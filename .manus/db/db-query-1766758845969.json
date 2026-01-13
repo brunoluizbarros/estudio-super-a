@@ -1,0 +1,18 @@
+{
+  "query": "SELECT DISTINCT tipoServicoCompra, COUNT(*) as total\nFROM despesas_v2\nWHERE tipoServicoCompra LIKE '%Equipamento%' \n   OR tipoServicoCompra LIKE '%Utensílio%'\n   OR tipoServicoCompra LIKE '%Bem%'\n   OR tipoServicoCompra LIKE '%Investimento%'\nGROUP BY tipoServicoCompra\nORDER BY total DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT tipoServicoCompra, COUNT(*) as total\nFROM despesas_v2\nWHERE tipoServicoCompra LIKE '%Equipamento%' \n   OR tipoServicoCompra LIKE '%Utensílio%'\n   OR tipoServicoCompra LIKE '%Bem%'\n   OR tipoServicoCompra LIKE '%Investimento%'\nGROUP BY tipoServicoCompra\nORDER BY total DESC;",
+  "rows": [
+    {
+      "tipoServicoCompra": "Equipamentos / Utensílios /Bens",
+      "total": "1"
+    },
+    {
+      "tipoServicoCompra": "Locação de Equipamentos Fotográficos",
+      "total": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoServicoCompra\ttotal\nEquipamentos / Utensílios /Bens\t1\nLocação de Equipamentos Fotográficos\t1\n",
+  "stderr": "",
+  "execution_time_ms": 125
+}

@@ -1,0 +1,24 @@
+{
+  "query": "SELECT \n  tipoServico,\n  COUNT(*) as quantidade,\n  SUM(valorTotal) / 100 as valor_total_reais,\n  MIN(dataRealizacao) as primeira_data,\n  MAX(dataRealizacao) as ultima_data\nFROM servicos_execucao\nWHERE (tipoServico = 'make_formando' OR tipoServico = 'make_familia')\n  AND YEAR(dataRealizacao) = 2025\n  AND MONTH(dataRealizacao) = 12\nGROUP BY tipoServico;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  tipoServico,\n  COUNT(*) as quantidade,\n  SUM(valorTotal) / 100 as valor_total_reais,\n  MIN(dataRealizacao) as primeira_data,\n  MAX(dataRealizacao) as ultima_data\nFROM servicos_execucao\nWHERE (tipoServico = 'make_formando' OR tipoServico = 'make_familia')\n  AND YEAR(dataRealizacao) = 2025\n  AND MONTH(dataRealizacao) = 12\nGROUP BY tipoServico;",
+  "rows": [
+    {
+      "tipoServico": "make_familia",
+      "quantidade": "1",
+      "valor_total_reais": "90.0000",
+      "primeira_data": "2025-12-25 00:00:00",
+      "ultima_data": "2025-12-25 00:00:00"
+    },
+    {
+      "tipoServico": "make_formando",
+      "quantidade": "1",
+      "valor_total_reais": "30.8000",
+      "primeira_data": "2025-12-25 00:00:00",
+      "ultima_data": "2025-12-25 00:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoServico\tquantidade\tvalor_total_reais\tprimeira_data\tultima_data\nmake_familia\t1\t90.0000\t2025-12-25 00:00:00\t2025-12-25 00:00:00\nmake_formando\t1\t30.8000\t2025-12-25 00:00:00\t2025-12-25 00:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

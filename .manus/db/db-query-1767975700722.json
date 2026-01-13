@@ -1,0 +1,67 @@
+{
+  "query": "SELECT COUNT(*) as total FROM servicos_execucao; SHOW CREATE TABLE servicos_execucao;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT COUNT(*) as total FROM servicos_execucao; SHOW CREATE TABLE servicos_execucao;",
+  "rows": [
+    {
+      "total": "107"
+    },
+    {
+      "total": "Table\tCreate Table"
+    },
+    {
+      "total": "servicos_execucao\tCREATE TABLE `servicos_execucao` ("
+    },
+    {
+      "total": "  `id` int(11) NOT NULL AUTO_INCREMENT,"
+    },
+    {
+      "total": "  `eventoId` int(11) NOT NULL,"
+    },
+    {
+      "total": "  `formandoId` int(11) NOT NULL,"
+    },
+    {
+      "total": "  `tipoServico` enum('make_formando','make_familia','cabelo_simples','cabelo_combinado') COLLATE utf8mb4_unicode_ci NOT NULL,"
+    },
+    {
+      "total": "  `fornecedorId` int(11) DEFAULT NULL,"
+    },
+    {
+      "total": "  `quantidade` int(11) NOT NULL DEFAULT '1',"
+    },
+    {
+      "total": "  `valorUnitario` int(11) DEFAULT '0',"
+    },
+    {
+      "total": "  `valorTotal` int(11) DEFAULT '0',"
+    },
+    {
+      "total": "  `fluxo` enum('pagar','receber') COLLATE utf8mb4_unicode_ci NOT NULL,"
+    },
+    {
+      "total": "  `dataRealizacao` timestamp NULL DEFAULT NULL,"
+    },
+    {
+      "total": "  `observacao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,"
+    },
+    {
+      "total": "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,"
+    },
+    {
+      "total": "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,"
+    },
+    {
+      "total": "  `tipoMake` enum('masc','fem') COLLATE utf8mb4_unicode_ci DEFAULT NULL,"
+    },
+    {
+      "total": "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */"
+    },
+    {
+      "total": ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=630001"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\n107\nTable\tCreate Table\nservicos_execucao\tCREATE TABLE `servicos_execucao` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `eventoId` int(11) NOT NULL,\n  `formandoId` int(11) NOT NULL,\n  `tipoServico` enum('make_formando','make_familia','cabelo_simples','cabelo_combinado') COLLATE utf8mb4_unicode_ci NOT NULL,\n  `fornecedorId` int(11) DEFAULT NULL,\n  `quantidade` int(11) NOT NULL DEFAULT '1',\n  `valorUnitario` int(11) DEFAULT '0',\n  `valorTotal` int(11) DEFAULT '0',\n  `fluxo` enum('pagar','receber') COLLATE utf8mb4_unicode_ci NOT NULL,\n  `dataRealizacao` timestamp NULL DEFAULT NULL,\n  `observacao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  `tipoMake` enum('masc','fem') COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=630001\n",
+  "stderr": "",
+  "execution_time_ms": 128
+}

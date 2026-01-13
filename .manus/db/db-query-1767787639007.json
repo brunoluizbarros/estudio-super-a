@@ -1,0 +1,58 @@
+{
+  "query": "SELECT \n    v.id as 'ID Venda',\n    DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as 'Data Venda',\n    COALESCE(t.codigo, '-') as 'Código Turma',\n    COALESCE(f.nome, '-') as 'Nome Formando',\n    v.valorTotal / 100 as 'Valor Bruto (R$)',\n    v.valorLiquido / 100 as 'Valor Líquido (R$)',\n    v.status as 'Status',\n    v.excluido as 'Excluído',\n    u.name as 'Criado Por',\n    DATE_FORMAT(v.createdAt, '%d/%m/%Y %H:%i:%s') as 'Data Criação'\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nLEFT JOIN turmas t ON f.turmaId = t.id\nLEFT JOIN users u ON v.createdBy = u.id\nWHERE YEAR(v.dataVenda) = 2026\n  AND MONTH(v.dataVenda) = 6\n  AND DAY(v.dataVenda) = 15\nORDER BY v.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n    v.id as 'ID Venda',\n    DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as 'Data Venda',\n    COALESCE(t.codigo, '-') as 'Código Turma',\n    COALESCE(f.nome, '-') as 'Nome Formando',\n    v.valorTotal / 100 as 'Valor Bruto (R$)',\n    v.valorLiquido / 100 as 'Valor Líquido (R$)',\n    v.status as 'Status',\n    v.excluido as 'Excluído',\n    u.name as 'Criado Por',\n    DATE_FORMAT(v.createdAt, '%d/%m/%Y %H:%i:%s') as 'Data Criação'\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nLEFT JOIN turmas t ON f.turmaId = t.id\nLEFT JOIN users u ON v.createdBy = u.id\nWHERE YEAR(v.dataVenda) = 2026\n  AND MONTH(v.dataVenda) = 6\n  AND DAY(v.dataVenda) = 15\nORDER BY v.id",
+  "rows": [
+    {
+      "ID Venda": "420002",
+      "Data Venda": "15/06/2026",
+      "Código Turma": "-",
+      "Nome Formando": "-",
+      "Valor Bruto (R$)": "500.0000",
+      "Valor Líquido (R$)": "NULL",
+      "Status": "pago",
+      "Excluído": "1",
+      "Criado Por": "Ciro Couceiro",
+      "Data Criação": "05/01/2026 00:21:23"
+    },
+    {
+      "ID Venda": "420004",
+      "Data Venda": "15/06/2026",
+      "Código Turma": "-",
+      "Nome Formando": "-",
+      "Valor Bruto (R$)": "500.0000",
+      "Valor Líquido (R$)": "NULL",
+      "Status": "pago",
+      "Excluído": "1",
+      "Criado Por": "Ciro Couceiro",
+      "Data Criação": "05/01/2026 00:22:05"
+    },
+    {
+      "ID Venda": "420006",
+      "Data Venda": "15/06/2026",
+      "Código Turma": "-",
+      "Nome Formando": "-",
+      "Valor Bruto (R$)": "500.0000",
+      "Valor Líquido (R$)": "NULL",
+      "Status": "pago",
+      "Excluído": "0",
+      "Criado Por": "Ciro Couceiro",
+      "Data Criação": "05/01/2026 00:35:52"
+    },
+    {
+      "ID Venda": "420008",
+      "Data Venda": "15/06/2026",
+      "Código Turma": "-",
+      "Nome Formando": "-",
+      "Valor Bruto (R$)": "500.0000",
+      "Valor Líquido (R$)": "NULL",
+      "Status": "pago",
+      "Excluído": "0",
+      "Criado Por": "Ciro Couceiro",
+      "Data Criação": "05/01/2026 00:45:37"
+    }
+  ],
+  "messages": [],
+  "stdout": "ID Venda\tData Venda\tCódigo Turma\tNome Formando\tValor Bruto (R$)\tValor Líquido (R$)\tStatus\tExcluído\tCriado Por\tData Criação\n420002\t15/06/2026\t-\t-\t500.0000\tNULL\tpago\t1\tCiro Couceiro\t05/01/2026 00:21:23\n420004\t15/06/2026\t-\t-\t500.0000\tNULL\tpago\t1\tCiro Couceiro\t05/01/2026 00:22:05\n420006\t15/06/2026\t-\t-\t500.0000\tNULL\tpago\t0\tCiro Couceiro\t05/01/2026 00:35:52\n420008\t15/06/2026\t-\t-\t500.0000\tNULL\tpago\t0\tCiro Couceiro\t05/01/2026 00:45:37\n",
+  "stderr": "",
+  "execution_time_ms": 74
+}

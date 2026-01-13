@@ -1,0 +1,55 @@
+{
+  "query": "SELECT e.id, e.turmaId, e.tipoEvento, \n       DATE_FORMAT(e.dataEvento, '%d/%m/%Y %H:%i') as dataEvento,\n       DATE_FORMAT(e.dataEventoFim, '%d/%m/%Y %H:%i') as dataEventoFim,\n       e.local, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId IN (\n  SELECT id FROM turmas \n  WHERE cursos LIKE '%MEDICINA%' AND instituicoes LIKE '%UPE%' AND numeroTurma = '115'\n)\nORDER BY e.dataEvento;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.turmaId, e.tipoEvento, \n       DATE_FORMAT(e.dataEvento, '%d/%m/%Y %H:%i') as dataEvento,\n       DATE_FORMAT(e.dataEventoFim, '%d/%m/%Y %H:%i') as dataEventoFim,\n       e.local, l.nome as localNome\nFROM eventos e\nLEFT JOIN locais l ON e.local = l.id\nWHERE e.turmaId IN (\n  SELECT id FROM turmas \n  WHERE cursos LIKE '%MEDICINA%' AND instituicoes LIKE '%UPE%' AND numeroTurma = '115'\n)\nORDER BY e.dataEvento;",
+  "rows": [
+    {
+      "id": "420061",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "06/01/2026 00:00",
+      "dataEventoFim": "06/01/2026 00:00",
+      "local": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420062",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "07/01/2026 00:00",
+      "dataEventoFim": "07/01/2026 00:00",
+      "local": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420063",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "08/01/2026 00:00",
+      "dataEventoFim": "08/01/2026 00:00",
+      "local": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420064",
+      "turmaId": "1132",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "09/01/2026 00:00",
+      "dataEventoFim": "09/01/2026 00:00",
+      "local": "ESTUDIO SUPER A",
+      "localNome": "NULL"
+    },
+    {
+      "id": "420116",
+      "turmaId": "1132",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "06/02/2026 00:00",
+      "dataEventoFim": "06/02/2026 00:00",
+      "local": "MUSEU DO ESTADO",
+      "localNome": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\tlocalNome\n420061\t1132\tfoto_estudio\t06/01/2026 00:00\t06/01/2026 00:00\tESTUDIO SUPER A\tNULL\n420062\t1132\tfoto_estudio\t07/01/2026 00:00\t07/01/2026 00:00\tESTUDIO SUPER A\tNULL\n420063\t1132\tfoto_estudio\t08/01/2026 00:00\t08/01/2026 00:00\tESTUDIO SUPER A\tNULL\n420064\t1132\tfoto_estudio\t09/01/2026 00:00\t09/01/2026 00:00\tESTUDIO SUPER A\tNULL\n420116\t1132\tfoto_oficial\t06/02/2026 00:00\t06/02/2026 00:00\tMUSEU DO ESTADO\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

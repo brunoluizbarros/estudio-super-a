@@ -1,0 +1,46 @@
+{
+  "query": "SELECT \n  d.numeroCi,\n  dt.id as vinculo_id,\n  dt.turmaId,\n  dt.tipoEvento\nFROM despesas_v2 d\nLEFT JOIN despesas_v2_turmas dt ON dt.despesaId = d.id\nWHERE d.numeroCi IN ('018/2025', '017/2025', '016/2025', '015/2025', '014/2025', '013/2025')\nORDER BY d.numeroCi DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  d.numeroCi,\n  dt.id as vinculo_id,\n  dt.turmaId,\n  dt.tipoEvento\nFROM despesas_v2 d\nLEFT JOIN despesas_v2_turmas dt ON dt.despesaId = d.id\nWHERE d.numeroCi IN ('018/2025', '017/2025', '016/2025', '015/2025', '014/2025', '013/2025')\nORDER BY d.numeroCi DESC;",
+  "rows": [
+    {
+      "numeroCi": "018/2025",
+      "vinculo_id": "180004",
+      "turmaId": "1301",
+      "tipoEvento": "NULL"
+    },
+    {
+      "numeroCi": "017/2025",
+      "vinculo_id": "180003",
+      "turmaId": "1255",
+      "tipoEvento": "NULL"
+    },
+    {
+      "numeroCi": "016/2025",
+      "vinculo_id": "180001",
+      "turmaId": "1168",
+      "tipoEvento": "NULL"
+    },
+    {
+      "numeroCi": "015/2025",
+      "vinculo_id": "180002",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "numeroCi": "014/2025",
+      "vinculo_id": "120021",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "numeroCi": "013/2025",
+      "vinculo_id": "120020",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\tvinculo_id\tturmaId\ttipoEvento\n018/2025\t180004\t1301\tNULL\n017/2025\t180003\t1255\tNULL\n016/2025\t180001\t1168\tNULL\n015/2025\t180002\t90001\tfoto_estudio\n014/2025\t120021\t90001\tfoto_estudio\n013/2025\t120020\t90001\tfoto_estudio\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

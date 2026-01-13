@@ -1,0 +1,15 @@
+{
+  "query": "\nSELECT \n  d.setorSolicitante,\n  SUM(d.valorTotal) as total_setor,\n  COUNT(*) as quantidade_despesas\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nGROUP BY d.setorSolicitante;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  d.setorSolicitante,\n  SUM(d.valorTotal) as total_setor,\n  COUNT(*) as quantidade_despesas\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nGROUP BY d.setorSolicitante;\n",
+  "rows": [
+    {
+      "setorSolicitante": "fotografia",
+      "total_setor": "10272000",
+      "quantidade_despesas": "40"
+    }
+  ],
+  "messages": [],
+  "stdout": "setorSolicitante\ttotal_setor\tquantidade_despesas\nfotografia\t10272000\t40\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

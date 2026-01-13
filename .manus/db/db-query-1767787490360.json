@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE vendas \nSET excluido = 1,\n    excluidoEm = NOW(),\n    motivoExclusao = 'Vendas de teste sem identificação de turma e formando - removidas conforme solicitação do usuário'\nWHERE excluido = 0\n  AND YEAR(dataVenda) = 2026\n  AND MONTH(dataVenda) = 6\n  AND formandoId IN (\n    SELECT id FROM formandos WHERE turmaId IS NULL\n  )",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute UPDATE vendas \nSET excluido = 1,\n    excluidoEm = NOW(),\n    motivoExclusao = 'Vendas de teste sem identificação de turma e formando - removidas conforme solicitação do usuário'\nWHERE excluido = 0\n  AND YEAR(dataVenda) = 2026\n  AND MONTH(dataVenda) = 6\n  AND formandoId IN (\n    SELECT id FROM formandos WHERE turmaId IS NULL\n  )",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 54
+}

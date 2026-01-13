@@ -1,0 +1,9 @@
+{
+  "query": "SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, se.quantidade, f.nome as formandoNome, e.tipoEvento\nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nJOIN eventos e ON se.eventoId = e.id\nWHERE se.tipoServico LIKE '%cabelo%'\nORDER BY se.id DESC\nLIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, se.quantidade, f.nome as formandoNome, e.tipoEvento\nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nJOIN eventos e ON se.eventoId = e.id\nWHERE se.tipoServico LIKE '%cabelo%'\nORDER BY se.id DESC\nLIMIT 20",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 49
+}

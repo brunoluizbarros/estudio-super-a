@@ -1,0 +1,32 @@
+{
+  "query": "SELECT bf.eventoId, t.codigo as turmaCodigo, t.numeroTurma, t.cursos, t.instituicoes, t.anos, t.periodos, COUNT(DISTINCT bf.formandoId) as qtd_formandos, COUNT(DISTINCT bf.grupoId) as qtd_grupos FROM briefing_formando bf INNER JOIN formandos f ON bf.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id GROUP BY bf.eventoId, t.codigo, t.numeroTurma, t.cursos, t.instituicoes, t.anos, t.periodos ORDER BY t.codigo;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT bf.eventoId, t.codigo as turmaCodigo, t.numeroTurma, t.cursos, t.instituicoes, t.anos, t.periodos, COUNT(DISTINCT bf.formandoId) as qtd_formandos, COUNT(DISTINCT bf.grupoId) as qtd_grupos FROM briefing_formando bf INNER JOIN formandos f ON bf.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id GROUP BY bf.eventoId, t.codigo, t.numeroTurma, t.cursos, t.instituicoes, t.anos, t.periodos ORDER BY t.codigo;",
+  "rows": [
+    {
+      "eventoId": "60006",
+      "turmaCodigo": "553",
+      "numeroTurma": "7",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"AFYA\"]",
+      "anos": "[2026]",
+      "periodos": "[\"2\"]",
+      "qtd_formandos": "64",
+      "qtd_grupos": "8"
+    },
+    {
+      "eventoId": "300001",
+      "turmaCodigo": "654",
+      "numeroTurma": "115",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "qtd_formandos": "58",
+      "qtd_grupos": "8"
+    }
+  ],
+  "messages": [],
+  "stdout": "eventoId\tturmaCodigo\tnumeroTurma\tcursos\tinstituicoes\tanos\tperiodos\tqtd_formandos\tqtd_grupos\n60006\t553\t7\t[\"MEDICINA\"]\t[\"AFYA\"]\t[2026]\t[\"2\"]\t64\t8\n300001\t654\t115\t[\"MEDICINA\"]\t[\"UPE\"]\t[\"2026\"]\t[\"1\"]\t58\t8\n",
+  "stderr": "",
+  "execution_time_ms": 98
+}

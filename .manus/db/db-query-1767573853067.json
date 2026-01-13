@@ -1,0 +1,410 @@
+{
+  "query": "\nSELECT \n  d.id,\n  d.numeroCi,\n  d.mesServico,\n  d.setorSolicitante,\n  d.valorTotal,\n  d.excluido,\n  dd.dataRealizacao,\n  YEAR(dd.dataRealizacao) as ano_realizacao\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nORDER BY dd.dataRealizacao;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  d.id,\n  d.numeroCi,\n  d.mesServico,\n  d.setorSolicitante,\n  d.valorTotal,\n  d.excluido,\n  dd.dataRealizacao,\n  YEAR(dd.dataRealizacao) as ano_realizacao\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nORDER BY dd.dataRealizacao;\n",
+  "rows": [
+    {
+      "id": "270004",
+      "numeroCi": "029/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-07 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270006",
+      "numeroCi": "031/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "120000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-07 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270005",
+      "numeroCi": "030/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "60000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-07 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270003",
+      "numeroCi": "028/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-07 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270006",
+      "numeroCi": "031/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "120000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-08 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270003",
+      "numeroCi": "028/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-08 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270004",
+      "numeroCi": "029/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-08 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270005",
+      "numeroCi": "030/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "60000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-08 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270006",
+      "numeroCi": "031/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "120000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-09 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270004",
+      "numeroCi": "029/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-09 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "270003",
+      "numeroCi": "028/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "48000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-09 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "268000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-14 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "268000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-15 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "268000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-16 00:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-16 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-16 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-17 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-17 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-19 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-19 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-20 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-20 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-21 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-21 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-22 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-22 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-23 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-23 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "320000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-24 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "490000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-24 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "350000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-26 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-26 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-27 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "350000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-27 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-28 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "350000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-28 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-29 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "350000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-29 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "350000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-30 03:00:00",
+      "ano_realizacao": "2026"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "mesServico": "janeiro",
+      "setorSolicitante": "fotografia",
+      "valorTotal": "94000",
+      "excluido": "0",
+      "dataRealizacao": "2026-01-30 03:00:00",
+      "ano_realizacao": "2026"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\tmesServico\tsetorSolicitante\tvalorTotal\texcluido\tdataRealizacao\tano_realizacao\n270004\t029/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-07 00:00:00\t2026\n270006\t031/2025\tjaneiro\tfotografia\t120000\t0\t2026-01-07 00:00:00\t2026\n270005\t030/2025\tjaneiro\tfotografia\t60000\t0\t2026-01-07 00:00:00\t2026\n270003\t028/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-07 00:00:00\t2026\n270006\t031/2025\tjaneiro\tfotografia\t120000\t0\t2026-01-08 00:00:00\t2026\n270003\t028/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-08 00:00:00\t2026\n270004\t029/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-08 00:00:00\t2026\n270005\t030/2025\tjaneiro\tfotografia\t60000\t0\t2026-01-08 00:00:00\t2026\n270006\t031/2025\tjaneiro\tfotografia\t120000\t0\t2026-01-09 00:00:00\t2026\n270004\t029/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-09 00:00:00\t2026\n270003\t028/2025\tjaneiro\tfotografia\t48000\t0\t2026-01-09 00:00:00\t2026\n120001\t016/2025\tjaneiro\tfotografia\t268000\t0\t2026-01-14 00:00:00\t2026\n120001\t016/2025\tjaneiro\tfotografia\t268000\t0\t2026-01-15 00:00:00\t2026\n120001\t016/2025\tjaneiro\tfotografia\t268000\t0\t2026-01-16 00:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-16 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-16 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-17 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-17 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-19 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-19 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-20 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-20 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-21 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-21 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-22 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-22 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-23 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-23 03:00:00\t2026\n210002\t022/2025\tjaneiro\tfotografia\t320000\t0\t2026-01-24 03:00:00\t2026\n120002\t017/2025\tjaneiro\tfotografia\t490000\t0\t2026-01-24 03:00:00\t2026\n120003\t018/2025\tjaneiro\tfotografia\t350000\t0\t2026-01-26 03:00:00\t2026\n330001\t001/2026\tjaneiro\tfotografia\t94000\t0\t2026-01-26 03:00:00\t2026\n330001\t001/2026\tjaneiro\tfotografia\t94000\t0\t2026-01-27 03:00:00\t2026\n120003\t018/2025\tjaneiro\tfotografia\t350000\t0\t2026-01-27 03:00:00\t2026\n330001\t001/2026\tjaneiro\tfotografia\t94000\t0\t2026-01-28 03:00:00\t2026\n120003\t018/2025\tjaneiro\tfotografia\t350000\t0\t2026-01-28 03:00:00\t2026\n330001\t001/2026\tjaneiro\tfotografia\t94000\t0\t2026-01-29 03:00:00\t2026\n120003\t018/2025\tjaneiro\tfotografia\t350000\t0\t2026-01-29 03:00:00\t2026\n120003\t018/2025\tjaneiro\tfotografia\t350000\t0\t2026-01-30 03:00:00\t2026\n330001\t001/2026\tjaneiro\tfotografia\t94000\t0\t2026-01-30 03:00:00\t2026\n",
+  "stderr": "",
+  "execution_time_ms": 90
+}

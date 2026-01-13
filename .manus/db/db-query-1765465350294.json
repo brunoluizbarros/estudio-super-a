@@ -1,0 +1,210 @@
+{
+  "query": "SELECT ff.id, ff.execucaoFormandoId, ff.cenarioId, ff.fotografoId, ff.numeroArquivos, ff.createdAt \nFROM fotos_formando ff \nORDER BY ff.id DESC \nLIMIT 50",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ff.id, ff.execucaoFormandoId, ff.cenarioId, ff.fotografoId, ff.numeroArquivos, ff.createdAt \nFROM fotos_formando ff \nORDER BY ff.id DESC \nLIMIT 50",
+  "rows": [
+    {
+      "id": "60007",
+      "execucaoFormandoId": "90001",
+      "cenarioId": "7",
+      "fotografoId": "4",
+      "numeroArquivos": "10",
+      "createdAt": "2025-12-11 13:57:45"
+    },
+    {
+      "id": "60003",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "33",
+      "createdAt": "2025-12-11 13:27:00"
+    },
+    {
+      "id": "60002",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "33",
+      "createdAt": "2025-12-11 13:01:03"
+    },
+    {
+      "id": "60001",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "99",
+      "createdAt": "2025-12-11 13:00:30"
+    },
+    {
+      "id": "30012",
+      "execucaoFormandoId": "1",
+      "cenarioId": "1",
+      "fotografoId": "NULL",
+      "numeroArquivos": "0",
+      "createdAt": "2025-12-11 12:12:18"
+    },
+    {
+      "id": "30011",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "4",
+      "numeroArquivos": "33",
+      "createdAt": "2025-12-11 12:07:31"
+    },
+    {
+      "id": "30010",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "33",
+      "createdAt": "2025-12-11 12:03:26"
+    },
+    {
+      "id": "30009",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "5",
+      "numeroArquivos": "33",
+      "createdAt": "2025-12-11 12:02:49"
+    },
+    {
+      "id": "30008",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "22",
+      "createdAt": "2025-12-11 11:35:39"
+    },
+    {
+      "id": "30007",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "5",
+      "numeroArquivos": "22",
+      "createdAt": "2025-12-11 11:34:42"
+    },
+    {
+      "id": "30006",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "1",
+      "createdAt": "2025-12-11 11:25:28"
+    },
+    {
+      "id": "30005",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "222",
+      "createdAt": "2025-12-11 11:24:58"
+    },
+    {
+      "id": "30004",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "7",
+      "numeroArquivos": "111",
+      "createdAt": "2025-12-11 11:08:51"
+    },
+    {
+      "id": "30003",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "111",
+      "createdAt": "2025-12-11 11:07:52"
+    },
+    {
+      "id": "30002",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "4",
+      "numeroArquivos": "3",
+      "createdAt": "2025-12-11 11:02:03"
+    },
+    {
+      "id": "30001",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "5",
+      "numeroArquivos": "34",
+      "createdAt": "2025-12-11 11:01:04"
+    },
+    {
+      "id": "9",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "888",
+      "createdAt": "2025-12-11 04:50:04"
+    },
+    {
+      "id": "8",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "4",
+      "numeroArquivos": "444",
+      "createdAt": "2025-12-11 04:40:07"
+    },
+    {
+      "id": "7",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "4",
+      "numeroArquivos": "876",
+      "createdAt": "2025-12-11 04:36:47"
+    },
+    {
+      "id": "6",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "191",
+      "numeroArquivos": "355",
+      "createdAt": "2025-12-11 04:23:50"
+    },
+    {
+      "id": "5",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "117",
+      "numeroArquivos": "192",
+      "createdAt": "2025-12-11 04:23:49"
+    },
+    {
+      "id": "4",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "2",
+      "fotografoId": "76",
+      "numeroArquivos": "113",
+      "createdAt": "2025-12-11 04:23:49"
+    },
+    {
+      "id": "3",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "5",
+      "fotografoId": "191",
+      "numeroArquivos": "355",
+      "createdAt": "2025-12-11 04:09:41"
+    },
+    {
+      "id": "2",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "1",
+      "fotografoId": "117",
+      "numeroArquivos": "192",
+      "createdAt": "2025-12-11 04:09:41"
+    },
+    {
+      "id": "1",
+      "execucaoFormandoId": "30001",
+      "cenarioId": "2",
+      "fotografoId": "76",
+      "numeroArquivos": "113",
+      "createdAt": "2025-12-11 04:09:40"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\texecucaoFormandoId\tcenarioId\tfotografoId\tnumeroArquivos\tcreatedAt\n60007\t90001\t7\t4\t10\t2025-12-11 13:57:45\n60003\t30001\t1\t4\t33\t2025-12-11 13:27:00\n60002\t30001\t5\t5\t33\t2025-12-11 13:01:03\n60001\t30001\t5\t5\t99\t2025-12-11 13:00:30\n30012\t1\t1\tNULL\t0\t2025-12-11 12:12:18\n30011\t30001\t5\t4\t33\t2025-12-11 12:07:31\n30010\t30001\t1\t4\t33\t2025-12-11 12:03:26\n30009\t30001\t1\t5\t33\t2025-12-11 12:02:49\n30008\t30001\t5\t5\t22\t2025-12-11 11:35:39\n30007\t30001\t5\t5\t22\t2025-12-11 11:34:42\n30006\t30001\t1\t4\t1\t2025-12-11 11:25:28\n30005\t30001\t1\t4\t222\t2025-12-11 11:24:58\n30004\t30001\t1\t7\t111\t2025-12-11 11:08:51\n30003\t30001\t1\t4\t111\t2025-12-11 11:07:52\n30002\t30001\t5\t4\t3\t2025-12-11 11:02:03\n30001\t30001\t1\t5\t34\t2025-12-11 11:01:04\n9\t30001\t1\t4\t888\t2025-12-11 04:50:04\n8\t30001\t1\t4\t444\t2025-12-11 04:40:07\n7\t30001\t5\t4\t876\t2025-12-11 04:36:47\n6\t30001\t5\t191\t355\t2025-12-11 04:23:50\n5\t30001\t1\t117\t192\t2025-12-11 04:23:49\n4\t30001\t2\t76\t113\t2025-12-11 04:23:49\n3\t30001\t5\t191\t355\t2025-12-11 04:09:41\n2\t30001\t1\t117\t192\t2025-12-11 04:09:41\n1\t30001\t2\t76\t113\t2025-12-11 04:09:40\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

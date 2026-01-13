@@ -1,0 +1,60 @@
+{
+  "query": "SELECT id, nome, tiposServico FROM fornecedores WHERE tiposServico IS NOT NULL AND tiposServico != '' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome, tiposServico FROM fornecedores WHERE tiposServico IS NOT NULL AND tiposServico != '' LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "ACADEMIA PERNAMBUCANA DE LETRAS",
+      "tiposServico": "[6]"
+    },
+    {
+      "id": "2",
+      "nome": "ACADEMIA PERNAMBUCANA DE LETRAS",
+      "tiposServico": "[6]"
+    },
+    {
+      "id": "3",
+      "nome": "ADECORE COMERCIO",
+      "tiposServico": "[3]"
+    },
+    {
+      "id": "4",
+      "nome": "ADEILTON NOGUEIRA DA SILVA JÚNIOR",
+      "tiposServico": "[12]"
+    },
+    {
+      "id": "5",
+      "nome": "ADRIANO FEITOZA DIAS",
+      "tiposServico": "[12]"
+    },
+    {
+      "id": "6",
+      "nome": "ALANE CARDOSO PAIXÃO",
+      "tiposServico": "[10]"
+    },
+    {
+      "id": "7",
+      "nome": "ALBERTH KLINSMANN DE SOUZA PALHARES",
+      "tiposServico": "[12]"
+    },
+    {
+      "id": "8",
+      "nome": "ALISON MATIAS DANTAS DOS SANTOS",
+      "tiposServico": "[12]"
+    },
+    {
+      "id": "9",
+      "nome": "ALLEX DE SOUZA ARAÚJO",
+      "tiposServico": "[5, 12]"
+    },
+    {
+      "id": "10",
+      "nome": "AMANDA GABRIELLE CASSIMIRO DA SILVA REIS",
+      "tiposServico": "[10]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\ttiposServico\n1\tACADEMIA PERNAMBUCANA DE LETRAS\t[6]\n2\tACADEMIA PERNAMBUCANA DE LETRAS\t[6]\n3\tADECORE COMERCIO\t[3]\n4\tADEILTON NOGUEIRA DA SILVA JÚNIOR\t[12]\n5\tADRIANO FEITOZA DIAS\t[12]\n6\tALANE CARDOSO PAIXÃO\t[10]\n7\tALBERTH KLINSMANN DE SOUZA PALHARES\t[12]\n8\tALISON MATIAS DANTAS DOS SANTOS\t[12]\n9\tALLEX DE SOUZA ARAÚJO\t[5, 12]\n10\tAMANDA GABRIELLE CASSIMIRO DA SILVA REIS\t[10]\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

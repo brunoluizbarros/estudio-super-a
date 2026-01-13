@@ -1,0 +1,34 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, dataEvento FROM eventos WHERE turmaId = 1061;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, dataEvento FROM eventos WHERE turmaId = 1061;",
+  "rows": [
+    {
+      "id": "137",
+      "turmaId": "1061",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "NULL"
+    },
+    {
+      "id": "138",
+      "turmaId": "1061",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "NULL"
+    },
+    {
+      "id": "139",
+      "turmaId": "1061",
+      "tipoEvento": "foto_50",
+      "dataEvento": "NULL"
+    },
+    {
+      "id": "90008",
+      "turmaId": "1061",
+      "tipoEvento": "foto_50",
+      "dataEvento": "2025-11-03 15:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\n137\t1061\tfoto_estudio\tNULL\n138\t1061\tfoto_oficial\tNULL\n139\t1061\tfoto_50\tNULL\n90008\t1061\tfoto_50\t2025-11-03 15:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 134
+}

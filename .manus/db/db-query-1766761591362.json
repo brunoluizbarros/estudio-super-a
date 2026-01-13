@@ -1,0 +1,40 @@
+{
+  "query": "SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  setorSolicitante,\n  detalhamento,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander') \n    THEN '❌ EXCLUÍDO' \n    ELSE '✅ INCLUÍDO' \n  END AS status_calculo\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY status_calculo DESC, numeroCi",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  setorSolicitante,\n  detalhamento,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander') \n    THEN '❌ EXCLUÍDO' \n    ELSE '✅ INCLUÍDO' \n  END AS status_calculo\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY status_calculo DESC, numeroCi",
+  "rows": [
+    {
+      "numeroCi": "023/2025",
+      "tipoServicoCompra": "Equipamentos / Utensílios / Bens",
+      "valorReais": "0.0100",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "setorSolicitante": "estudio",
+      "detalhamento": "teste formulário Fechamento Mensal",
+      "status_calculo": "❌ EXCLUÍDO"
+    },
+    {
+      "numeroCi": "024/2025",
+      "tipoServicoCompra": "Transferência Santander",
+      "valorReais": "4965.3800",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "setorSolicitante": "estudio",
+      "detalhamento": "Transferência referente ao pagamento de contrato da Formanda   Maria Eduarda Carvalho - GGE 2025, na conta do estúdio",
+      "status_calculo": "❌ EXCLUÍDO"
+    },
+    {
+      "numeroCi": "022/2025",
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "valorReais": "2721.0000",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "setorSolicitante": "estudio",
+      "detalhamento": "Impressão de fotos editadas vendidas para turma conforme alinhamento realizado por André",
+      "status_calculo": "✅ INCLUÍDO"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\ttipoServicoCompra\tvalorReais\tmesServico\tano\tsetorSolicitante\tdetalhamento\tstatus_calculo\n023/2025\tEquipamentos / Utensílios / Bens\t0.0100\tdezembro\t2025\testudio\tteste formulário Fechamento Mensal\t❌ EXCLUÍDO\n024/2025\tTransferência Santander\t4965.3800\tdezembro\t2025\testudio\tTransferência referente ao pagamento de contrato da Formanda   Maria Eduarda Carvalho - GGE 2025, na conta do estúdio\t❌ EXCLUÍDO\n022/2025\tGráfica (Impressos / Brindes)\t2721.0000\tdezembro\t2025\testudio\tImpressão de fotos editadas vendidas para turma conforme alinhamento realizado por André\t✅ INCLUÍDO\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

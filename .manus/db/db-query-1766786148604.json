@@ -1,0 +1,18 @@
+{
+  "query": "SELECT id, valorTotal, valorLiquido, status, excluido, dataVenda FROM vendas WHERE excluido = 1 LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, valorTotal, valorLiquido, status, excluido, dataVenda FROM vendas WHERE excluido = 1 LIMIT 5",
+  "rows": [
+    {
+      "id": "300001",
+      "valorTotal": "55000",
+      "valorLiquido": "55000",
+      "status": "pago",
+      "excluido": "1",
+      "dataVenda": "2025-12-20 15:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvalorTotal\tvalorLiquido\tstatus\texcluido\tdataVenda\n300001\t55000\t55000\tpago\t1\t2025-12-20 15:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

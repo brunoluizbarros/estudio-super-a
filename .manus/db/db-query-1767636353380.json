@@ -1,0 +1,18 @@
+{
+  "query": "SELECT id, openId, name, email, role, status FROM users WHERE name = 'Controler'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, openId, name, email, role, status FROM users WHERE name = 'Controler'",
+  "rows": [
+    {
+      "id": "21243033",
+      "openId": "controler_openid_1767636349",
+      "name": "Controler",
+      "email": "controler@estudio-super-a.com",
+      "role": "coordenador",
+      "status": "aprovado"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\trole\tstatus\n21243033\tcontroler_openid_1767636349\tControler\tcontroler@estudio-super-a.com\tcoordenador\taprovado\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

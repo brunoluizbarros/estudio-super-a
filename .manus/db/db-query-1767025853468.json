@@ -1,0 +1,35 @@
+{
+  "query": "SELECT bg.id, bg.eventoId, bg.numero FROM briefing_grupo bg LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT bg.id, bg.eventoId, bg.numero FROM briefing_grupo bg LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "eventoId": "60006",
+      "numero": "1"
+    },
+    {
+      "id": "30001",
+      "eventoId": "60006",
+      "numero": "2"
+    },
+    {
+      "id": "60001",
+      "eventoId": "60006",
+      "numero": "3"
+    },
+    {
+      "id": "60002",
+      "eventoId": "60006",
+      "numero": "4"
+    },
+    {
+      "id": "60003",
+      "eventoId": "60006",
+      "numero": "5"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tnumero\n1\t60006\t1\n30001\t60006\t2\n60001\t60006\t3\n60002\t60006\t4\n60003\t60006\t5\n",
+  "stderr": "",
+  "execution_time_ms": 46
+}

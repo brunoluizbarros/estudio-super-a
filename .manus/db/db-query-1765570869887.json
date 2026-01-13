@@ -1,0 +1,27 @@
+{
+  "query": "SELECT se.*, f.nome as formando_nome\nFROM servicos_execucao se\nLEFT JOIN formandos f ON se.formandoId = f.id\nWHERE f.nome LIKE '%Ayna%'\nORDER BY se.createdAt DESC",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.*, f.nome as formando_nome\nFROM servicos_execucao se\nLEFT JOIN formandos f ON se.formandoId = f.id\nWHERE f.nome LIKE '%Ayna%'\nORDER BY se.createdAt DESC",
+  "rows": [
+    {
+      "id": "90002",
+      "eventoId": "90008",
+      "formandoId": "90003",
+      "tipoServico": "make_formando",
+      "fornecedorId": "158",
+      "quantidade": "1",
+      "valorUnitario": "3080",
+      "valorTotal": "3080",
+      "fluxo": "pagar",
+      "dataRealizacao": "NULL",
+      "observacao": "NULL",
+      "createdAt": "2025-12-11 15:47:06",
+      "updatedAt": "2025-12-11 15:47:06",
+      "tipoMake": "NULL",
+      "formando_nome": "Ayna Letícia Santos Barbosa"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\ttipoServico\tfornecedorId\tquantidade\tvalorUnitario\tvalorTotal\tfluxo\tdataRealizacao\tobservacao\tcreatedAt\tupdatedAt\ttipoMake\tformando_nome\n90002\t90008\t90003\tmake_formando\t158\t1\t3080\t3080\tpagar\tNULL\tNULL\t2025-12-11 15:47:06\t2025-12-11 15:47:06\tNULL\tAyna Letícia Santos Barbosa\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

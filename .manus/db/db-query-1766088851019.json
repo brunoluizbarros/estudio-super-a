@@ -1,0 +1,80 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'financeiro'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'financeiro'",
+  "rows": [
+    {
+      "id": "30064",
+      "role": "financeiro",
+      "secao": "dashboard",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:40:23"
+    },
+    {
+      "id": "30065",
+      "role": "financeiro",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:46:06"
+    },
+    {
+      "id": "30066",
+      "role": "financeiro",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:36:31"
+    },
+    {
+      "id": "30067",
+      "role": "financeiro",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:36:31"
+    },
+    {
+      "id": "30068",
+      "role": "financeiro",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:46:26"
+    },
+    {
+      "id": "30069",
+      "role": "financeiro",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:46:31"
+    },
+    {
+      "id": "30070",
+      "role": "financeiro",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2025-12-18 12:36:31"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n30064\tfinanceiro\tdashboard\t0\t0\t0\t2025-12-18 12:36:31\t2025-12-18 12:40:23\n30065\tfinanceiro\tturmas\t1\t1\t1\t2025-12-18 12:36:31\t2025-12-18 12:46:06\n30066\tfinanceiro\teventos\t1\t0\t0\t2025-12-18 12:36:31\t2025-12-18 12:36:31\n30067\tfinanceiro\tvendas\t1\t1\t0\t2025-12-18 12:36:31\t2025-12-18 12:36:31\n30068\tfinanceiro\tfinanceiro\t0\t0\t0\t2025-12-18 12:36:31\t2025-12-18 12:46:26\n30069\tfinanceiro\tdespesas\t0\t0\t0\t2025-12-18 12:36:31\t2025-12-18 12:46:31\n30070\tfinanceiro\trelatorios\t1\t0\t0\t2025-12-18 12:36:31\t2025-12-18 12:36:31\n",
+  "stderr": "",
+  "execution_time_ms": 116
+}

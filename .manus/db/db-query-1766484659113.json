@@ -1,0 +1,14 @@
+{
+  "query": "SELECT * FROM despesas_v2 LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM despesas_v2 LIMIT 1;",
+  "rows": [],
+  "messages": [
+    "30001\t002/2025\toperacional\tjaneiro\tfotografia\t94\tHospedagem\tHospedagem da equipe nos dias 11/01  à 15/05 para realização das Fotos de Estúdio nos dias 12, 13 e 14/01",
+    "Quarto Duplo: ",
+    "Quarto Triplo: ",
+    "Valor total: R$3.500,00\t0\t350000\tpix\t02947923000180\tnota_fiscal\t2025-12-30 00:00:00\tFACULDADE  UNIFACISA\taguardando_aprovacao_gestor_geral\tNULL\tNULL\t10590005\tLogistica Supera\t2025-12-19 20:39:17\t2025-12-22 17:11:05"
+  ],
+  "stdout": "id\tnumeroCi\ttipoDespesa\tmesServico\tsetorSolicitante\tfornecedorId\ttipoServicoCompra\tdetalhamento\teReembolso\tvalorTotal\ttipoPagamento\tdadosPagamento\ttipoComprovanteFiscal\tdataLimitePagamento\tlocal\tstatus\tdataLiquidacao\tcomprovanteUrl\tcriadoPorId\tcriadoPorNome\tcreatedAt\tupdatedAt\n30001\t002/2025\toperacional\tjaneiro\tfotografia\t94\tHospedagem\tHospedagem da equipe nos dias 11/01  à 15/05 para realização das Fotos de Estúdio nos dias 12, 13 e 14/01\nQuarto Duplo: \nQuarto Triplo: \n\nValor total: R$3.500,00\t0\t350000\tpix\t02947923000180\tnota_fiscal\t2025-12-30 00:00:00\tFACULDADE  UNIFACISA\taguardando_aprovacao_gestor_geral\tNULL\tNULL\t10590005\tLogistica Supera\t2025-12-19 20:39:17\t2025-12-22 17:11:05\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

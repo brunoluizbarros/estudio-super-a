@@ -1,0 +1,80 @@
+{
+  "query": "SELECT \n  d.id,\n  d.numeroCi,\n  d.tipoDespesa,\n  dt.turmaId,\n  dt.tipoEvento\nFROM despesas_v2 d\nINNER JOIN despesas_v2_turmas dt ON d.id = dt.despesaId\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  d.id,\n  d.numeroCi,\n  d.tipoDespesa,\n  dt.turmaId,\n  dt.tipoEvento\nFROM despesas_v2 d\nINNER JOIN despesas_v2_turmas dt ON d.id = dt.despesaId\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "90006",
+      "numeroCi": "011/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90005",
+      "numeroCi": "010/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90004",
+      "numeroCi": "009/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90003",
+      "numeroCi": "008/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90002",
+      "numeroCi": "007/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90001",
+      "numeroCi": "006/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "60003",
+      "numeroCi": "005/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "60002",
+      "numeroCi": "004/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90007",
+      "numeroCi": "012/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    },
+    {
+      "id": "90008",
+      "numeroCi": "013/2025",
+      "tipoDespesa": "operacional",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\ttipoDespesa\tturmaId\ttipoEvento\n90006\t011/2025\toperacional\t90001\tfoto_estudio\n90005\t010/2025\toperacional\t90001\tfoto_estudio\n90004\t009/2025\toperacional\t90001\tfoto_estudio\n90003\t008/2025\toperacional\t90001\tfoto_estudio\n90002\t007/2025\toperacional\t90001\tfoto_estudio\n90001\t006/2025\toperacional\t90001\tfoto_estudio\n60003\t005/2025\toperacional\t90001\tfoto_estudio\n60002\t004/2025\toperacional\t90001\tfoto_estudio\n90007\t012/2025\toperacional\t90001\tfoto_estudio\n90008\t013/2025\toperacional\t90001\tfoto_estudio\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

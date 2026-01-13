@@ -1,0 +1,22 @@
+{
+  "query": "\nSELECT \n  v.id as vendaId,\n  v.dataVenda,\n  v.valorTotal,\n  p.id as pagamentoId,\n  p.tipo,\n  p.valor,\n  p.cvNsu,\n  p.bandeira,\n  p.parcelas,\n  DATE(v.dataVenda) as dataVendaFormatada\nFROM vendas v\nINNER JOIN pagamentos p ON p.vendaId = v.id\nWHERE p.cvNsu = '176726822'\nLIMIT 5;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  v.id as vendaId,\n  v.dataVenda,\n  v.valorTotal,\n  p.id as pagamentoId,\n  p.tipo,\n  p.valor,\n  p.cvNsu,\n  p.bandeira,\n  p.parcelas,\n  DATE(v.dataVenda) as dataVendaFormatada\nFROM vendas v\nINNER JOIN pagamentos p ON p.vendaId = v.id\nWHERE p.cvNsu = '176726822'\nLIMIT 5;\n",
+  "rows": [
+    {
+      "vendaId": "330015",
+      "dataVenda": "2025-12-13 15:00:00",
+      "valorTotal": "65000",
+      "pagamentoId": "480032",
+      "tipo": "debito",
+      "valor": "65000",
+      "cvNsu": "176726822",
+      "bandeira": "VISA",
+      "parcelas": "1",
+      "dataVendaFormatada": "2025-12-13"
+    }
+  ],
+  "messages": [],
+  "stdout": "vendaId\tdataVenda\tvalorTotal\tpagamentoId\ttipo\tvalor\tcvNsu\tbandeira\tparcelas\tdataVendaFormatada\n330015\t2025-12-13 15:00:00\t65000\t480032\tdebito\t65000\t176726822\tVISA\t1\t2025-12-13\n",
+  "stderr": "",
+  "execution_time_ms": 99
+}

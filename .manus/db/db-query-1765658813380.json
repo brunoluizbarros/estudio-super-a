@@ -1,0 +1,80 @@
+{
+  "query": "SELECT t.id, t.codigo, t.curso, t.instituicao, COUNT(e.id) as numEventos\nFROM turmas t\nJOIN eventos e ON e.turmaId = t.id\nGROUP BY t.id\nHAVING numEventos > 0\nORDER BY t.codigo\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, t.curso, t.instituicao, COUNT(e.id) as numEventos\nFROM turmas t\nJOIN eventos e ON e.turmaId = t.id\nGROUP BY t.id\nHAVING numEventos > 0\nORDER BY t.codigo\nLIMIT 10",
+  "rows": [
+    {
+      "id": "1335",
+      "codigo": "1000",
+      "curso": "COLEGIO",
+      "instituicao": "SÃO LUIS",
+      "numEventos": "1"
+    },
+    {
+      "id": "1225",
+      "codigo": "1002",
+      "curso": "MEDICINA",
+      "instituicao": "AFYA",
+      "numEventos": "2"
+    },
+    {
+      "id": "1228",
+      "codigo": "1003",
+      "curso": "MEDICINA",
+      "instituicao": "FCM AFYA",
+      "numEventos": "3"
+    },
+    {
+      "id": "1146",
+      "codigo": "1005",
+      "curso": "MEDICINA",
+      "instituicao": "CESMAC",
+      "numEventos": "3"
+    },
+    {
+      "id": "1323",
+      "codigo": "1006",
+      "curso": "ODONTOLOGIA",
+      "instituicao": "UNIFACISA",
+      "numEventos": "3"
+    },
+    {
+      "id": "1226",
+      "codigo": "1007",
+      "curso": "MEDICINA",
+      "instituicao": "FAP",
+      "numEventos": "3"
+    },
+    {
+      "id": "1088",
+      "codigo": "1008",
+      "curso": "DIREITO",
+      "instituicao": "ASCES",
+      "numEventos": "2"
+    },
+    {
+      "id": "1324",
+      "codigo": "1009",
+      "curso": "MEDICINA",
+      "instituicao": "FCM",
+      "numEventos": "3"
+    },
+    {
+      "id": "1350",
+      "codigo": "1011",
+      "curso": "COLEGIO",
+      "instituicao": "DIOCESANO",
+      "numEventos": "1"
+    },
+    {
+      "id": "1325",
+      "codigo": "1012",
+      "curso": "MEDICINA",
+      "instituicao": "UFCG",
+      "numEventos": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcurso\tinstituicao\tnumEventos\n1335\t1000\tCOLEGIO\tSÃO LUIS\t1\n1225\t1002\tMEDICINA\tAFYA\t2\n1228\t1003\tMEDICINA\tFCM AFYA\t3\n1146\t1005\tMEDICINA\tCESMAC\t3\n1323\t1006\tODONTOLOGIA\tUNIFACISA\t3\n1226\t1007\tMEDICINA\tFAP\t3\n1088\t1008\tDIREITO\tASCES\t2\n1324\t1009\tMEDICINA\tFCM\t3\n1350\t1011\tCOLEGIO\tDIOCESANO\t1\n1325\t1012\tMEDICINA\tUFCG\t3\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

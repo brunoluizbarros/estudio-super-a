@@ -1,0 +1,20 @@
+{
+  "query": "SELECT \n  'vendas' as tabela, \n  COUNT(*) as total_excluidos,\n  SUM(valorTotal) as valor_total_excluido\nFROM vendas \nWHERE excluido = 1 AND YEAR(dataVenda) = 2026\nUNION ALL\nSELECT \n  'despesas_v2' as tabela, \n  COUNT(*) as total_excluidos,\n  SUM(valorTotal) as valor_total_excluido\nFROM despesas_v2 \nWHERE excluido = 1 AND YEAR(createdAt) = 2026",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  'vendas' as tabela, \n  COUNT(*) as total_excluidos,\n  SUM(valorTotal) as valor_total_excluido\nFROM vendas \nWHERE excluido = 1 AND YEAR(dataVenda) = 2026\nUNION ALL\nSELECT \n  'despesas_v2' as tabela, \n  COUNT(*) as total_excluidos,\n  SUM(valorTotal) as valor_total_excluido\nFROM despesas_v2 \nWHERE excluido = 1 AND YEAR(createdAt) = 2026",
+  "rows": [
+    {
+      "tabela": "vendas",
+      "total_excluidos": "1",
+      "valor_total_excluido": "65000"
+    },
+    {
+      "tabela": "despesas_v2",
+      "total_excluidos": "0",
+      "valor_total_excluido": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "tabela\ttotal_excluidos\tvalor_total_excluido\nvendas\t1\t65000\ndespesas_v2\t0\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 69
+}

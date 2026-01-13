@@ -1,0 +1,38 @@
+{
+  "query": "SELECT DISTINCT t.id, t.codigo, t.instituicao, \n  (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as eventos_com_data,\n  (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as total_formandos\nFROM turmas t \nWHERE (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\n  AND (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 0\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT t.id, t.codigo, t.instituicao, \n  (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as eventos_com_data,\n  (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as total_formandos\nFROM turmas t \nWHERE (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\n  AND (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 0\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "1231",
+      "codigo": "820",
+      "instituicao": "NASSAU",
+      "eventos_com_data": "1",
+      "total_formandos": "85"
+    },
+    {
+      "id": "1172",
+      "codigo": "632",
+      "instituicao": "UNIVASF PAULO AFONSO",
+      "eventos_com_data": "3",
+      "total_formandos": "29"
+    },
+    {
+      "id": "1061",
+      "codigo": "804",
+      "instituicao": "FPS",
+      "eventos_com_data": "1",
+      "total_formandos": "84"
+    },
+    {
+      "id": "1176",
+      "codigo": "553",
+      "instituicao": "FITS",
+      "eventos_com_data": "5",
+      "total_formandos": "73"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tinstituicao\teventos_com_data\ttotal_formandos\n1231\t820\tNASSAU\t1\t85\n1172\t632\tUNIVASF PAULO AFONSO\t3\t29\n1061\t804\tFPS\t1\t84\n1176\t553\tFITS\t5\t73\n",
+  "stderr": "",
+  "execution_time_ms": 105
+}

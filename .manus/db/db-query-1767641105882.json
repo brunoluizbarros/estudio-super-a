@@ -1,0 +1,175 @@
+{
+  "query": "SHOW TABLES",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW TABLES",
+  "rows": [
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "agendamentos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "anexos_despesas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "briefing_evento"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "briefing_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "briefing_grupo"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cenarios"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cidades"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "configMaquiagem"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "configMaquiagemTurma"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cursos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas_v2"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas_v2_anexos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas_v2_datas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas_v2_historico"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas_v2_turmas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "divergencias_fechamento"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "eventos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "execucao_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "extratos_uploads"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fechamento_diario"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fechamentos_diarios"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fechamentos_mensais"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "formandos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fornecedores"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fotos_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "historico_alteracoes_vendas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "historico_observacoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "horarios_briefing"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "instituicoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "itensVenda"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "locais"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "notificacoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "pagamentos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "permissoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "permissoes_configuracoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "permissoes_relatorios"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "produtos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "reunioes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "sequencia_ci"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "servicosAgendados"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "servicos_execucao"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tabela_preco_fornecedores"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "taxasCartao"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_cenario"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_evento"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_servico"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_usuario"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "transacoes_maquineta"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "transacoes_rede"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "turmas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "users"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "usuario_turmas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "vendas"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_axWmxYbCBHHB5ETKSgA95A\n__drizzle_migrations\nagendamentos\nanexos_despesas\nbriefing_evento\nbriefing_formando\nbriefing_grupo\ncenarios\ncidades\nconfigMaquiagem\nconfigMaquiagemTurma\ncursos\ndespesas\ndespesas_v2\ndespesas_v2_anexos\ndespesas_v2_datas\ndespesas_v2_historico\ndespesas_v2_turmas\ndivergencias_fechamento\neventos\nexecucao_formando\nextratos_uploads\nfechamento_diario\nfechamentos_diarios\nfechamentos_mensais\nformandos\nfornecedores\nfotos_formando\nhistorico_alteracoes_vendas\nhistorico_observacoes\nhorarios_briefing\ninstituicoes\nitensVenda\nlocais\nnotificacoes\npagamentos\npermissoes\npermissoes_configuracoes\npermissoes_relatorios\nprodutos\nreunioes\nsequencia_ci\nservicosAgendados\nservicos_execucao\ntabela_preco_fornecedores\ntaxasCartao\ntipos_cenario\ntipos_evento\ntipos_servico\ntipos_usuario\ntransacoes_maquineta\ntransacoes_rede\nturmas\nusers\nusuario_turmas\nvendas\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

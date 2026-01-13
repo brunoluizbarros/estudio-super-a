@@ -1,0 +1,28 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.valorTotal, v.valorLiquido,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome,\n       f.turmaId\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\n  AND f.turmaId IS NULL\nORDER BY v.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.valorTotal, v.valorLiquido,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome,\n       f.turmaId\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE v.dataVenda BETWEEN '2026-06-14 00:00:00' AND '2026-06-15 23:59:59'\n  AND v.excluido = 0\n  AND f.turmaId IS NULL\nORDER BY v.id",
+  "rows": [
+    {
+      "id": "420006",
+      "formandoId": "1",
+      "valorTotal": "50000",
+      "valorLiquido": "NULL",
+      "data_formatada": "15/06/2026 00:00:00",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420008",
+      "formandoId": "1",
+      "valorTotal": "50000",
+      "valorLiquido": "NULL",
+      "data_formatada": "15/06/2026 00:00:00",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tformandoId\tvalorTotal\tvalorLiquido\tdata_formatada\tformando_nome\tturmaId\n420006\t1\t50000\tNULL\t15/06/2026 00:00:00\tNULL\tNULL\n420008\t1\t50000\tNULL\t15/06/2026 00:00:00\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

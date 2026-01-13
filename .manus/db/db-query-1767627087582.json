@@ -1,0 +1,58 @@
+{
+  "query": "SELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  h.usuarioId,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail,\n  h.dataAlteracao,\n  h.motivo,\n  f.nome AS formandoNome,\n  t.codigo AS turmaCodigo\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE f.nome IN (\n  'Monaliza Carvalho Alves Feitosa',\n  'Maria Eduarda Lima Alves',\n  'Rayssa Rocha Vieira Da Silva',\n  'Lívia Maria Bezerra De Luna Lins'\n)\nORDER BY h.dataAlteracao DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  h.usuarioId,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail,\n  h.dataAlteracao,\n  h.motivo,\n  f.nome AS formandoNome,\n  t.codigo AS turmaCodigo\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nLEFT JOIN turmas t ON f.turmaId = t.id\nWHERE f.nome IN (\n  'Monaliza Carvalho Alves Feitosa',\n  'Maria Eduarda Lima Alves',\n  'Rayssa Rocha Vieira Da Silva',\n  'Lívia Maria Bezerra De Luna Lins'\n)\nORDER BY h.dataAlteracao DESC;",
+  "rows": [
+    {
+      "id": "60004",
+      "vendaId": "330027",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:25:44",
+      "motivo": "Venda editada",
+      "formandoNome": "Monaliza Carvalho Alves Feitosa",
+      "turmaCodigo": "902"
+    },
+    {
+      "id": "60003",
+      "vendaId": "330021",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:22:42",
+      "motivo": "Venda editada",
+      "formandoNome": "Maria Eduarda Lima Alves",
+      "turmaCodigo": "902"
+    },
+    {
+      "id": "60002",
+      "vendaId": "450001",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:20:28",
+      "motivo": "Venda editada",
+      "formandoNome": "Rayssa Rocha Vieira Da Silva",
+      "turmaCodigo": "902"
+    },
+    {
+      "id": "60001",
+      "vendaId": "330030",
+      "tipo": "exclusao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:20:09",
+      "motivo": "duplicidade no lançamento",
+      "formandoNome": "Rayssa Rocha Vieira Da Silva",
+      "turmaCodigo": "902"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tusuarioId\tusuarioNome\tusuarioEmail\tdataAlteracao\tmotivo\tformandoNome\tturmaCodigo\n60004\t330027\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:25:44\tVenda editada\tMonaliza Carvalho Alves Feitosa\t902\n60003\t330021\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:22:42\tVenda editada\tMaria Eduarda Lima Alves\t902\n60002\t450001\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:20:28\tVenda editada\tRayssa Rocha Vieira Da Silva\t902\n60001\t330030\texclusao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:20:09\tduplicidade no lançamento\tRayssa Rocha Vieira Da Silva\t902\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

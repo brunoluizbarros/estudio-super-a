@@ -1,0 +1,40 @@
+{
+  "query": "SELECT DISTINCT v.formandoId FROM vendas v WHERE v.formandoId NOT IN (SELECT id FROM formandos) LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT v.formandoId FROM vendas v WHERE v.formandoId NOT IN (SELECT id FROM formandos) LIMIT 10",
+  "rows": [
+    {
+      "formandoId": "270054"
+    },
+    {
+      "formandoId": "270050"
+    },
+    {
+      "formandoId": "270035"
+    },
+    {
+      "formandoId": "150002"
+    },
+    {
+      "formandoId": "270033"
+    },
+    {
+      "formandoId": "270045"
+    },
+    {
+      "formandoId": "420001"
+    },
+    {
+      "formandoId": "270052"
+    },
+    {
+      "formandoId": "270039"
+    },
+    {
+      "formandoId": "270032"
+    }
+  ],
+  "messages": [],
+  "stdout": "formandoId\n270054\n270050\n270035\n150002\n270033\n270045\n420001\n270052\n270039\n270032\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

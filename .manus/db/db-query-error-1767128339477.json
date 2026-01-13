@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  e.id,\n  e.tipoEvento,\n  e.dataEvento,\n  e.dataEventoFim,\n  e.local,\n  t.codigo,\n  t.curso,\n  t.instituicao\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654' AND e.tipoEvento LIKE '%studio%'\nORDER BY e.dataEvento",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  e.id,\n  e.tipoEvento,\n  e.dataEvento,\n  e.dataEventoFim,\n  e.local,\n  t.codigo,\n  t.curso,\n  t.instituicao\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654' AND e.tipoEvento LIKE '%studio%'\nORDER BY e.dataEvento",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 't.curso' in 'field list'"
+  ]
+}

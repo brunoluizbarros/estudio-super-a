@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('artefinalizador', 'abordagem', false, false, false),\n('artefinalizador', 'execucao', false, false, false),\n('artefinalizador', 'vendas', false, false, false),\n('artefinalizador', 'reunioes', false, false, false),\n('artefinalizador', 'servicos', false, false, false),\n('artefinalizador', 'financeiro', false, false, false),\n('artefinalizador', 'briefing', false, false, false)\nON DUPLICATE KEY UPDATE visualizar=visualizar;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('artefinalizador', 'abordagem', false, false, false),\n('artefinalizador', 'execucao', false, false, false),\n('artefinalizador', 'vendas', false, false, false),\n('artefinalizador', 'reunioes', false, false, false),\n('artefinalizador', 'servicos', false, false, false),\n('artefinalizador', 'financeiro', false, false, false),\n('artefinalizador', 'briefing', false, false, false)\nON DUPLICATE KEY UPDATE visualizar=visualizar;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1265 (01000) at line 1: Data truncated for column 'role' at row 1"
+  ]
+}

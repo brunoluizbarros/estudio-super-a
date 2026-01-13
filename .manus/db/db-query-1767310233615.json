@@ -1,0 +1,31 @@
+{
+  "query": "SELECT p.role, p.secao, p.visualizar, p.inserir, p.excluir\nFROM permissoes p\nWHERE p.role = 'armazenamento' AND p.secao IN ('home', 'turmas', 'eventos')\nORDER BY p.secao",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.role, p.secao, p.visualizar, p.inserir, p.excluir\nFROM permissoes p\nWHERE p.role = 'armazenamento' AND p.secao IN ('home', 'turmas', 'eventos')\nORDER BY p.secao",
+  "rows": [
+    {
+      "role": "armazenamento",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\tsecao\tvisualizar\tinserir\texcluir\narmazenamento\teventos\t1\t0\t0\narmazenamento\thome\t1\t0\t0\narmazenamento\tturmas\t1\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

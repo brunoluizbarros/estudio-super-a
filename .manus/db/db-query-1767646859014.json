@@ -1,0 +1,24 @@
+{
+  "query": "SELECT u.*, t.nome as tipo_nome FROM users u LEFT JOIN tipos_usuario t ON u.tipoUsuarioId = t.id WHERE u.email = 'suporteplataforma@superaformaturas.com.br'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT u.*, t.nome as tipo_nome FROM users u LEFT JOIN tipos_usuario t ON u.tipoUsuarioId = t.id WHERE u.email = 'suporteplataforma@superaformaturas.com.br'",
+  "rows": [
+    {
+      "id": "20880297",
+      "openId": "mGcGyM4BJTQPteXMDbSQGp",
+      "name": "Suporte Plataforma",
+      "email": "suporteplataforma@superaformaturas.com.br",
+      "loginMethod": "google",
+      "tipoUsuarioId": "8",
+      "role": "coordenador",
+      "createdAt": "2026-01-01 21:34:24",
+      "updatedAt": "2026-01-05 21:00:29",
+      "lastSignedIn": "2026-01-05 21:00:29",
+      "status": "aprovado",
+      "tipo_nome": "Beca"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\tloginMethod\ttipoUsuarioId\trole\tcreatedAt\tupdatedAt\tlastSignedIn\tstatus\ttipo_nome\n20880297\tmGcGyM4BJTQPteXMDbSQGp\tSuporte Plataforma\tsuporteplataforma@superaformaturas.com.br\tgoogle\t8\tcoordenador\t2026-01-01 21:34:24\t2026-01-05 21:00:29\t2026-01-05 21:00:29\taprovado\tBeca\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

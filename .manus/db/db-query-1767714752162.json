@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n  bf.id,\n  bf.grupoId,\n  bf.eventoId,\n  bf.formandoId,\n  bf.makeFormando,\n  bf.cabeloFormando,\n  bf.qtdMakeFamilia,\n  bf.qtdCabeloSimples,\n  bf.qtdCabeloCombinado,\n  bf.qtdFamilia,\n  bf.qtdPets,\n  e.tipoEvento,\n  t.codigo as codigoTurma\nFROM briefing_formando bf\nJOIN eventos e ON bf.eventoId = e.id\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654' AND e.tipoEvento = 'foto_estudio'\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  bf.id,\n  bf.grupoId,\n  bf.eventoId,\n  bf.formandoId,\n  bf.makeFormando,\n  bf.cabeloFormando,\n  bf.qtdMakeFamilia,\n  bf.qtdCabeloSimples,\n  bf.qtdCabeloCombinado,\n  bf.qtdFamilia,\n  bf.qtdPets,\n  e.tipoEvento,\n  t.codigo as codigoTurma\nFROM briefing_formando bf\nJOIN eventos e ON bf.eventoId = e.id\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654' AND e.tipoEvento = 'foto_estudio'\nLIMIT 10;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 75
+}

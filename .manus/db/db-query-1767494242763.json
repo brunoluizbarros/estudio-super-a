@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `historico_alteracoes_vendas` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `vendaId` int NOT NULL,\n  `tipo` enum('exclusao', 'edicao') NOT NULL,\n  `usuarioId` int NOT NULL,\n  `dataAlteracao` timestamp NOT NULL DEFAULT (now()),\n  `motivo` text,\n  `camposAlterados` json,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  CONSTRAINT `historico_alteracoes_vendas_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE TABLE IF NOT EXISTS `historico_alteracoes_vendas` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `vendaId` int NOT NULL,\n  `tipo` enum('exclusao', 'edicao') NOT NULL,\n  `usuarioId` int NOT NULL,\n  `dataAlteracao` timestamp NOT NULL DEFAULT (now()),\n  `motivo` text,\n  `camposAlterados` json,\n  `createdAt` timestamp NOT NULL DEFAULT (now()),\n  CONSTRAINT `historico_alteracoes_vendas_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 227
+}

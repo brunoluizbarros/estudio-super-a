@@ -1,0 +1,2 @@
+ALTER TABLE `permissoes` MODIFY COLUMN `role` enum('administrador','gestor','coordenador','cerimonial','beca','logistica','armazenamento','financeiro') NOT NULL;--> statement-breakpoint
+ALTER TABLE `users` MODIFY COLUMN `role` enum('administrador','gestor','coordenador','cerimonial','beca','logistica','armazenamento','financeiro') NOT NULL DEFAULT 'coordenador';

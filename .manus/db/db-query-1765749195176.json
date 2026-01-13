@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, tipoEvento, cenarios FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '553') AND tipoEvento = 'foto_estudio' LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, tipoEvento, cenarios FROM eventos WHERE turmaId = (SELECT id FROM turmas WHERE codigo = '553') AND tipoEvento = 'foto_estudio' LIMIT 1;",
+  "rows": [
+    {
+      "id": "490",
+      "tipoEvento": "foto_estudio",
+      "cenarios": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tcenarios\n490\tfoto_estudio\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 146
+}

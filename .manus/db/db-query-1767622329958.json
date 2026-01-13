@@ -1,0 +1,90 @@
+{
+  "query": "SELECT gb.id, gb.eventoId, gb.numero, gb.dataGrupo, gb.horarioFormandos, gb.limiteFormandos, e.tipoEvento, t.codigo \nFROM briefing_grupo gb \nJOIN eventos e ON gb.eventoId = e.id \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '654';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT gb.id, gb.eventoId, gb.numero, gb.dataGrupo, gb.horarioFormandos, gb.limiteFormandos, e.tipoEvento, t.codigo \nFROM briefing_grupo gb \nJOIN eventos e ON gb.eventoId = e.id \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '654';",
+  "rows": [
+    {
+      "id": "240001",
+      "eventoId": "420061",
+      "numero": "1",
+      "dataGrupo": "2026-01-06 12:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "9",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240002",
+      "eventoId": "420061",
+      "numero": "2",
+      "dataGrupo": "2026-01-06 12:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "10",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240003",
+      "eventoId": "420061",
+      "numero": "3",
+      "dataGrupo": "2026-01-07 12:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "8",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240006",
+      "eventoId": "420061",
+      "numero": "4",
+      "dataGrupo": "2026-01-07 12:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "10",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240007",
+      "eventoId": "420061",
+      "numero": "5",
+      "dataGrupo": "2026-01-08 12:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "7",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240008",
+      "eventoId": "420061",
+      "numero": "6",
+      "dataGrupo": "2026-01-08 12:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "7",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240009",
+      "eventoId": "420061",
+      "numero": "7",
+      "dataGrupo": "2026-01-09 12:00:00",
+      "horarioFormandos": "08:00",
+      "limiteFormandos": "8",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    },
+    {
+      "id": "240010",
+      "eventoId": "420061",
+      "numero": "8",
+      "dataGrupo": "2026-01-09 12:00:00",
+      "horarioFormandos": "13:00",
+      "limiteFormandos": "11",
+      "tipoEvento": "foto_estudio",
+      "codigo": "654"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tnumero\tdataGrupo\thorarioFormandos\tlimiteFormandos\ttipoEvento\tcodigo\n240001\t420061\t1\t2026-01-06 12:00:00\t08:00\t9\tfoto_estudio\t654\n240002\t420061\t2\t2026-01-06 12:00:00\t13:00\t10\tfoto_estudio\t654\n240003\t420061\t3\t2026-01-07 12:00:00\t08:00\t8\tfoto_estudio\t654\n240006\t420061\t4\t2026-01-07 12:00:00\t13:00\t10\tfoto_estudio\t654\n240007\t420061\t5\t2026-01-08 12:00:00\t08:00\t7\tfoto_estudio\t654\n240008\t420061\t6\t2026-01-08 12:00:00\t13:00\t7\tfoto_estudio\t654\n240009\t420061\t7\t2026-01-09 12:00:00\t08:00\t8\tfoto_estudio\t654\n240010\t420061\t8\t2026-01-09 12:00:00\t13:00\t11\tfoto_estudio\t654\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

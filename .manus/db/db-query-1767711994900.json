@@ -1,0 +1,130 @@
+{
+  "query": "SELECT id, nome, telefone, pacote FROM formandos LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome, telefone, pacote FROM formandos LIMIT 20",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "Alice Souza Florêncio",
+      "telefone": "81997868646",
+      "pacote": "Completo"
+    },
+    {
+      "id": "2",
+      "nome": "Ana Laura de Souza Lins",
+      "telefone": "81994217646",
+      "pacote": "Completo"
+    },
+    {
+      "id": "3",
+      "nome": "Ana Sofia Ribeiro Câmara de Oliveira",
+      "telefone": "81991289991",
+      "pacote": "Completo"
+    },
+    {
+      "id": "4",
+      "nome": "Anna Maria Foerster de Brito",
+      "telefone": "87991171658",
+      "pacote": "Completo"
+    },
+    {
+      "id": "5",
+      "nome": "Arthur Uchôa Diniz",
+      "telefone": "81994997780",
+      "pacote": "Completo"
+    },
+    {
+      "id": "6",
+      "nome": "Bianca Gomes de Castro Coitinho",
+      "telefone": "81988554108",
+      "pacote": "Completo"
+    },
+    {
+      "id": "7",
+      "nome": "Bruna Brito Sereno",
+      "telefone": "81998665604",
+      "pacote": "Completo"
+    },
+    {
+      "id": "8",
+      "nome": "Bruna Vilarim de Andrade LIma",
+      "telefone": "81993199161",
+      "pacote": "Completo"
+    },
+    {
+      "id": "9",
+      "nome": "Camila Bezerra Silva",
+      "telefone": "81996903925",
+      "pacote": "Completo"
+    },
+    {
+      "id": "10",
+      "nome": "Camilly Evelyn Barbosa de Sousa Cabral",
+      "telefone": "81995024135",
+      "pacote": "Completo"
+    },
+    {
+      "id": "11",
+      "nome": "Cecília Avellar Diniz Rabêlo Távora",
+      "telefone": "81993364142",
+      "pacote": "Completo"
+    },
+    {
+      "id": "12",
+      "nome": "Cecília Gomes Pontes",
+      "telefone": "81998391852",
+      "pacote": "Completo"
+    },
+    {
+      "id": "13",
+      "nome": "Clarice Gonçalves Nascimento",
+      "telefone": "81991853823",
+      "pacote": "Completo"
+    },
+    {
+      "id": "14",
+      "nome": "Davi Furtado Ferraz",
+      "telefone": "81994922512",
+      "pacote": "Completo"
+    },
+    {
+      "id": "15",
+      "nome": "Emily Darlling Lima Fonseca",
+      "telefone": "81981776141",
+      "pacote": "Completo"
+    },
+    {
+      "id": "16",
+      "nome": "Giovanna Odilia Nunes Cordeiro",
+      "telefone": "81998520077",
+      "pacote": "Completo"
+    },
+    {
+      "id": "17",
+      "nome": "Gustavo Holanda",
+      "telefone": "81999888805",
+      "pacote": "Completo"
+    },
+    {
+      "id": "18",
+      "nome": "Hyasmin Cristina Ferreira Fonseca",
+      "telefone": "81998694638",
+      "pacote": "Completo"
+    },
+    {
+      "id": "19",
+      "nome": "Ívinna Maria de Siqueira Gonçalves",
+      "telefone": "86995691186",
+      "pacote": "Completo"
+    },
+    {
+      "id": "20",
+      "nome": "João Fernando Paulino de Sousa",
+      "telefone": "87999710528",
+      "pacote": "Completo"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\ttelefone\tpacote\n1\tAlice Souza Florêncio\t81997868646\tCompleto\n2\tAna Laura de Souza Lins\t81994217646\tCompleto\n3\tAna Sofia Ribeiro Câmara de Oliveira\t81991289991\tCompleto\n4\tAnna Maria Foerster de Brito\t87991171658\tCompleto\n5\tArthur Uchôa Diniz\t81994997780\tCompleto\n6\tBianca Gomes de Castro Coitinho\t81988554108\tCompleto\n7\tBruna Brito Sereno\t81998665604\tCompleto\n8\tBruna Vilarim de Andrade LIma\t81993199161\tCompleto\n9\tCamila Bezerra Silva\t81996903925\tCompleto\n10\tCamilly Evelyn Barbosa de Sousa Cabral\t81995024135\tCompleto\n11\tCecília Avellar Diniz Rabêlo Távora\t81993364142\tCompleto\n12\tCecília Gomes Pontes\t81998391852\tCompleto\n13\tClarice Gonçalves Nascimento\t81991853823\tCompleto\n14\tDavi Furtado Ferraz\t81994922512\tCompleto\n15\tEmily Darlling Lima Fonseca\t81981776141\tCompleto\n16\tGiovanna Odilia Nunes Cordeiro\t81998520077\tCompleto\n17\tGustavo Holanda\t81999888805\tCompleto\n18\tHyasmin Cristina Ferreira Fonseca\t81998694638\tCompleto\n19\tÍvinna Maria de Siqueira Gonçalves\t86995691186\tCompleto\n20\tJoão Fernando Paulino de Sousa\t87999710528\tCompleto\n",
+  "stderr": "",
+  "execution_time_ms": 65
+}

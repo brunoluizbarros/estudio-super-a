@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO fornecedores (tipoPessoa, cpfCnpj, nome, tiposServico, pix, chavesPix, ativo)\nVALUES (NULL, '11021243000122', 'ACADEMIA PERNAMBUCANA DE LETRAS', '[6]', '110212430001-22', '[\"110212430001-22\"]', true)\nON DUPLICATE KEY UPDATE\n    tipoPessoa = COALESCE(VALUES(tipoPessoa), tipoPessoa),\n    cpfCnpj = COALESCE(VALUES(cpfCnpj), cpfCnpj),\n    tiposServico = VALUES(tiposServico),\n    pix = COALESCE(VALUES(pix), pix),\n    chavesPix = VALUES(chavesPix);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO fornecedores (tipoPessoa, cpfCnpj, nome, tiposServico, pix, chavesPix, ativo)\nVALUES (NULL, '11021243000122', 'ACADEMIA PERNAMBUCANA DE LETRAS', '[6]', '110212430001-22', '[\"110212430001-22\"]', true)\nON DUPLICATE KEY UPDATE\n    tipoPessoa = COALESCE(VALUES(tipoPessoa), tipoPessoa),\n    cpfCnpj = COALESCE(VALUES(cpfCnpj), cpfCnpj),\n    tiposServico = VALUES(tiposServico),\n    pix = COALESCE(VALUES(pix), pix),\n    chavesPix = VALUES(chavesPix);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 70
+}

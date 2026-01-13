@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  d.id,\n  d.numeroCi,\n  dt.turmaId,\n  dt.tipoEvento,\n  t.codigo as turma_codigo,\n  t.cursos as turma_cursos,\n  t.instituicoes as turma_instituicoes,\n  t.turma_numero,\n  t.anos,\n  t.periodos\nFROM despesas_v2 d\nINNER JOIN despesas_v2_turmas dt ON d.id = dt.despesaId\nLEFT JOIN turmas t ON dt.turmaId = t.id\nWHERE d.numeroCi IN ('015/2025', '014/2025', '013/2025')\nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  d.id,\n  d.numeroCi,\n  dt.turmaId,\n  dt.tipoEvento,\n  t.codigo as turma_codigo,\n  t.cursos as turma_cursos,\n  t.instituicoes as turma_instituicoes,\n  t.turma_numero,\n  t.anos,\n  t.periodos\nFROM despesas_v2 d\nINNER JOIN despesas_v2_turmas dt ON d.id = dt.despesaId\nLEFT JOIN turmas t ON dt.turmaId = t.id\nWHERE d.numeroCi IN ('015/2025', '014/2025', '013/2025')\nLIMIT 5;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 't.turma_numero' in 'field list'"
+  ]
+}

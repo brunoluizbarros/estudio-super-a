@@ -1,0 +1,1 @@
+ALTER TABLE `eventos` ADD `horariosInicio` text;

@@ -1,0 +1,55 @@
+{
+  "query": "SELECT t.id, t.nome, COUNT(p.id) as total_permissoes FROM tipos_usuario t LEFT JOIN permissoes p ON t.id = p.tipoUsuarioId GROUP BY t.id, t.nome ORDER BY t.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.nome, COUNT(p.id) as total_permissoes FROM tipos_usuario t LEFT JOIN permissoes p ON t.id = p.tipoUsuarioId GROUP BY t.id, t.nome ORDER BY t.id",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "total_permissoes": "157"
+    },
+    {
+      "id": "2",
+      "nome": "Financeiro",
+      "total_permissoes": "13"
+    },
+    {
+      "id": "3",
+      "nome": "Gestor",
+      "total_permissoes": "0"
+    },
+    {
+      "id": "4",
+      "nome": "Logística",
+      "total_permissoes": "0"
+    },
+    {
+      "id": "5",
+      "nome": "Coordenador",
+      "total_permissoes": "0"
+    },
+    {
+      "id": "6",
+      "nome": "Armazenamento",
+      "total_permissoes": "0"
+    },
+    {
+      "id": "7",
+      "nome": "Cerimonial",
+      "total_permissoes": "2"
+    },
+    {
+      "id": "8",
+      "nome": "Beca",
+      "total_permissoes": "13"
+    },
+    {
+      "id": "30002",
+      "nome": "Controle",
+      "total_permissoes": "15"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\ttotal_permissoes\n1\tAdministrador\t157\n2\tFinanceiro\t13\n3\tGestor\t0\n4\tLogística\t0\n5\tCoordenador\t0\n6\tArmazenamento\t0\n7\tCerimonial\t2\n8\tBeca\t13\n30002\tControle\t15\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

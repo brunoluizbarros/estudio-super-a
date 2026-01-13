@@ -1,0 +1,9 @@
+{
+  "query": "SELECT p.*, t.nome as tipo_usuario_nome FROM permissoes p JOIN tipos_usuario t ON p.tipoUsuarioId = t.id WHERE p.tipoUsuarioId = 4",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.*, t.nome as tipo_usuario_nome FROM permissoes p JOIN tipos_usuario t ON p.tipoUsuarioId = t.id WHERE p.tipoUsuarioId = 4",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 55
+}

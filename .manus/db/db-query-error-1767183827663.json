@@ -1,0 +1,8 @@
+{
+  "query": "SELECT e.turmaId, t.codigo, t.curso, t.instituicao, COUNT(*) as total, GROUP_CONCAT(DISTINCT e.local) as locais FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL AND e.local IS NOT NULL GROUP BY e.turmaId LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.turmaId, t.codigo, t.curso, t.instituicao, COUNT(*) as total, GROUP_CONCAT(DISTINCT e.local) as locais FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL AND e.local IS NOT NULL GROUP BY e.turmaId LIMIT 5",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 't.curso' in 'field list'"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "query": "SELECT DATE(dataVenda) as data, COUNT(*) as qtd_vendas, SUM(valorTotal)/100 as total_reais FROM vendas GROUP BY DATE(dataVenda) ORDER BY data DESC LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DATE(dataVenda) as data, COUNT(*) as qtd_vendas, SUM(valorTotal)/100 as total_reais FROM vendas GROUP BY DATE(dataVenda) ORDER BY data DESC LIMIT 5",
+  "rows": [
+    {
+      "data": "2025-12-20",
+      "qtd_vendas": "1",
+      "total_reais": "550.0000"
+    },
+    {
+      "data": "2025-12-13",
+      "qtd_vendas": "9",
+      "total_reais": "5850.0000"
+    },
+    {
+      "data": "2025-12-12",
+      "qtd_vendas": "13",
+      "total_reais": "8550.0000"
+    },
+    {
+      "data": "2025-12-11",
+      "qtd_vendas": "7",
+      "total_reais": "4550.0000"
+    },
+    {
+      "data": "2025-12-10",
+      "qtd_vendas": "7",
+      "total_reais": "4650.0000"
+    }
+  ],
+  "messages": [],
+  "stdout": "data\tqtd_vendas\ttotal_reais\n2025-12-20\t1\t550.0000\n2025-12-13\t9\t5850.0000\n2025-12-12\t13\t8550.0000\n2025-12-11\t7\t4550.0000\n2025-12-10\t7\t4650.0000\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

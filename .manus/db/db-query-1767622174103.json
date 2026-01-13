@@ -1,0 +1,172 @@
+{
+  "query": "SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas WHERE instituicoes LIKE '%UPE%' AND cursos LIKE '%MEDICINA%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas WHERE instituicoes LIKE '%UPE%' AND cursos LIKE '%MEDICINA%';",
+  "rows": [
+    {
+      "id": "1091",
+      "codigo": "969",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "119",
+      "anos": "[2028]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1094",
+      "codigo": "944",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "120",
+      "anos": "[\"2028\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1097",
+      "codigo": "915",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "118",
+      "anos": "[\"2027\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1099",
+      "codigo": "909",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "117",
+      "anos": "[\"2027\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1100",
+      "codigo": "905",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "121",
+      "anos": "[\"2029\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1111",
+      "codigo": "808",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "116",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1132",
+      "codigo": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1134",
+      "codigo": "633",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "114",
+      "anos": "[2025]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1141",
+      "codigo": "554",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "113",
+      "anos": "[2025]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1149",
+      "codigo": "1022",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "122",
+      "anos": "[\"2029\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "1160",
+      "codigo": "2107",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "",
+      "anos": "[\"2030\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1165",
+      "codigo": "475",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE GARANHUNS\"]",
+      "numeroTurma": "9",
+      "anos": "[2025]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1173",
+      "codigo": "721",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE SERRA TALHADA \\r\\n GARANHUNS\"]",
+      "numeroTurma": "",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1183",
+      "codigo": "717",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE GARANHUNS\"]",
+      "numeroTurma": "11",
+      "anos": "[\"2027\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1196",
+      "codigo": "829",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE GARANHUNS\"]",
+      "numeroTurma": "12",
+      "anos": "[2028]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1208",
+      "codigo": "908",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "14",
+      "anos": "[\"2029\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "1237",
+      "codigo": "1051",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "14",
+      "anos": "[\"2030\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "180001",
+      "codigo": "389",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "112",
+      "anos": "[2024]",
+      "periodos": "[\"2\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\n1091\t969\t[\"MEDICINA\"]\t[\"UPE\"]\t119\t[2028]\t[\"1\"]\n1094\t944\t[\"MEDICINA\"]\t[\"UPE\"]\t120\t[\"2028\"]\t[\"2\"]\n1097\t915\t[\"MEDICINA\"]\t[\"UPE\"]\t118\t[\"2027\"]\t[\"2\"]\n1099\t909\t[\"MEDICINA\"]\t[\"UPE\"]\t117\t[\"2027\"]\t[\"1\"]\n1100\t905\t[\"MEDICINA\"]\t[\"UPE\"]\t121\t[\"2029\"]\t[\"1\"]\n1111\t808\t[\"MEDICINA\"]\t[\"UPE\"]\t116\t[\"2026\"]\t[\"2\"]\n1132\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n1134\t633\t[\"MEDICINA\"]\t[\"UPE\"]\t114\t[2025]\t[\"2\"]\n1141\t554\t[\"MEDICINA\"]\t[\"UPE\"]\t113\t[2025]\t[\"1\"]\n1149\t1022\t[\"MEDICINA\"]\t[\"UPE\"]\t122\t[\"2029\"]\t[\"2\"]\n1160\t2107\t[\"MEDICINA\"]\t[\"UPE\"]\t\t[\"2030\"]\t[\"1\"]\n1165\t475\t[\"MEDICINA\"]\t[\"UPE GARANHUNS\"]\t9\t[2025]\t[\"1\"]\n1173\t721\t[\"MEDICINA\"]\t[\"UPE SERRA TALHADA \\r\\n GARANHUNS\"]\t\t[2026]\t[\"1\"]\n1183\t717\t[\"MEDICINA\"]\t[\"UPE GARANHUNS\"]\t11\t[\"2027\"]\t[\"1\"]\n1196\t829\t[\"MEDICINA\"]\t[\"UPE GARANHUNS\"]\t12\t[2028]\t[\"1\"]\n1208\t908\t[\"MEDICINA\"]\t[\"UPE\"]\t14\t[\"2029\"]\t[\"1\"]\n1237\t1051\t[\"MEDICINA\"]\t[\"UPE\"]\t14\t[\"2030\"]\t[\"1\"]\n180001\t389\t[\"MEDICINA\"]\t[\"UPE\"]\t112\t[2024]\t[\"2\"]\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

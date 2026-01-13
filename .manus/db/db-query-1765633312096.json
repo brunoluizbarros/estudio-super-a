@@ -1,0 +1,52 @@
+{
+  "query": "SELECT iv.id, iv.vendaId, iv.produto, iv.ajusteValor, iv.justificativa FROM itensVenda iv LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT iv.id, iv.vendaId, iv.produto, iv.ajusteValor, iv.justificativa FROM itensVenda iv LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "vendaId": "1",
+      "produto": "10 Fotos",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "30001",
+      "vendaId": "30001",
+      "produto": "Pen Drive",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "60001",
+      "vendaId": "60001",
+      "produto": "Família",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "90001",
+      "vendaId": "90001",
+      "produto": "Todas as Fotos",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "90002",
+      "vendaId": "90002",
+      "produto": "Pen Drive",
+      "ajusteValor": "0",
+      "justificativa": "NULL"
+    },
+    {
+      "id": "120001",
+      "vendaId": "120001",
+      "produto": "Todas as Fotos",
+      "ajusteValor": "-32500",
+      "justificativa": "Desconto Comissão"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\tproduto\tajusteValor\tjustificativa\n1\t1\t10 Fotos\t0\tNULL\n30001\t30001\tPen Drive\t0\tNULL\n60001\t60001\tFamília\t0\tNULL\n90001\t90001\tTodas as Fotos\t0\tNULL\n90002\t90002\tPen Drive\t0\tNULL\n120001\t120001\tTodas as Fotos\t-32500\tDesconto Comissão\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

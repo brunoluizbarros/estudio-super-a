@@ -1,0 +1,73 @@
+{
+  "query": "\nSELECT \n  d.id,\n  d.numeroCi,\n  d.valorTotal,\n  COUNT(dd.id) as quantidade_datas,\n  GROUP_CONCAT(dd.dataRealizacao ORDER BY dd.dataRealizacao) as datas\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nGROUP BY d.id, d.numeroCi, d.valorTotal\nHAVING COUNT(dd.id) > 1\nLIMIT 10;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  d.id,\n  d.numeroCi,\n  d.valorTotal,\n  COUNT(dd.id) as quantidade_datas,\n  GROUP_CONCAT(dd.dataRealizacao ORDER BY dd.dataRealizacao) as datas\nFROM despesas_v2 d\nINNER JOIN despesas_v2_datas dd ON dd.despesaId = d.id\nWHERE d.mesServico = 'janeiro' \n  AND d.excluido = 0\n  AND YEAR(dd.dataRealizacao) = 2026\nGROUP BY d.id, d.numeroCi, d.valorTotal\nHAVING COUNT(dd.id) > 1\nLIMIT 10;\n",
+  "rows": [
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "valorTotal": "268000",
+      "quantidade_datas": "3",
+      "datas": "2026-01-14 00:00:00,2026-01-15 00:00:00,2026-01-16 00:00:00"
+    },
+    {
+      "id": "270003",
+      "numeroCi": "028/2025",
+      "valorTotal": "48000",
+      "quantidade_datas": "3",
+      "datas": "2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00"
+    },
+    {
+      "id": "270004",
+      "numeroCi": "029/2025",
+      "valorTotal": "48000",
+      "quantidade_datas": "3",
+      "datas": "2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00"
+    },
+    {
+      "id": "270005",
+      "numeroCi": "030/2025",
+      "valorTotal": "60000",
+      "quantidade_datas": "2",
+      "datas": "2026-01-07 00:00:00,2026-01-08 00:00:00"
+    },
+    {
+      "id": "270006",
+      "numeroCi": "031/2025",
+      "valorTotal": "120000",
+      "quantidade_datas": "3",
+      "datas": "2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "valorTotal": "490000",
+      "quantidade_datas": "8",
+      "datas": "2026-01-16 03:00:00,2026-01-17 03:00:00,2026-01-19 03:00:00,2026-01-20 03:00:00,2026-01-21 03:00:00,2026-01-22 03:00:00,2026-01-23 03:00:00,2026-01-24 03:00:00"
+    },
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "valorTotal": "350000",
+      "quantidade_datas": "5",
+      "datas": "2026-01-26 03:00:00,2026-01-27 03:00:00,2026-01-28 03:00:00,2026-01-29 03:00:00,2026-01-30 03:00:00"
+    },
+    {
+      "id": "330001",
+      "numeroCi": "001/2026",
+      "valorTotal": "94000",
+      "quantidade_datas": "5",
+      "datas": "2026-01-26 03:00:00,2026-01-27 03:00:00,2026-01-28 03:00:00,2026-01-29 03:00:00,2026-01-30 03:00:00"
+    },
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "valorTotal": "320000",
+      "quantidade_datas": "8",
+      "datas": "2026-01-16 03:00:00,2026-01-17 03:00:00,2026-01-19 03:00:00,2026-01-20 03:00:00,2026-01-21 03:00:00,2026-01-22 03:00:00,2026-01-23 03:00:00,2026-01-24 03:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\tvalorTotal\tquantidade_datas\tdatas\n120001\t016/2025\t268000\t3\t2026-01-14 00:00:00,2026-01-15 00:00:00,2026-01-16 00:00:00\n270003\t028/2025\t48000\t3\t2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00\n270004\t029/2025\t48000\t3\t2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00\n270005\t030/2025\t60000\t2\t2026-01-07 00:00:00,2026-01-08 00:00:00\n270006\t031/2025\t120000\t3\t2026-01-07 00:00:00,2026-01-08 00:00:00,2026-01-09 00:00:00\n120002\t017/2025\t490000\t8\t2026-01-16 03:00:00,2026-01-17 03:00:00,2026-01-19 03:00:00,2026-01-20 03:00:00,2026-01-21 03:00:00,2026-01-22 03:00:00,2026-01-23 03:00:00,2026-01-24 03:00:00\n120003\t018/2025\t350000\t5\t2026-01-26 03:00:00,2026-01-27 03:00:00,2026-01-28 03:00:00,2026-01-29 03:00:00,2026-01-30 03:00:00\n330001\t001/2026\t94000\t5\t2026-01-26 03:00:00,2026-01-27 03:00:00,2026-01-28 03:00:00,2026-01-29 03:00:00,2026-01-30 03:00:00\n210002\t022/2025\t320000\t8\t2026-01-16 03:00:00,2026-01-17 03:00:00,2026-01-19 03:00:00,2026-01-20 03:00:00,2026-01-21 03:00:00,2026-01-22 03:00:00,2026-01-23 03:00:00,2026-01-24 03:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

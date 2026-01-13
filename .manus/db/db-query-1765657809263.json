@@ -1,0 +1,43 @@
+{
+  "query": "SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, se.quantidade, se.valorUnitario, se.valorTotal, se.fluxo, f.nome as formandoNome \nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nWHERE f.nome LIKE '%Dilianne%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, se.quantidade, se.valorUnitario, se.valorTotal, se.fluxo, f.nome as formandoNome \nFROM servicos_execucao se \nJOIN formandos f ON se.formandoId = f.id \nWHERE f.nome LIKE '%Dilianne%'",
+  "rows": [
+    {
+      "id": "360006",
+      "eventoId": "60006",
+      "formandoId": "30064",
+      "tipoServico": "make_formando",
+      "quantidade": "1",
+      "valorUnitario": "3500",
+      "valorTotal": "3500",
+      "fluxo": "pagar",
+      "formandoNome": "Dilianne Sousa Alencar"
+    },
+    {
+      "id": "360007",
+      "eventoId": "60006",
+      "formandoId": "30064",
+      "tipoServico": "cabelo_simples",
+      "quantidade": "1",
+      "valorUnitario": "800",
+      "valorTotal": "800",
+      "fluxo": "receber",
+      "formandoNome": "Dilianne Sousa Alencar"
+    },
+    {
+      "id": "360008",
+      "eventoId": "60006",
+      "formandoId": "30064",
+      "tipoServico": "make_familia",
+      "quantidade": "1",
+      "valorUnitario": "3000",
+      "valorTotal": "3000",
+      "fluxo": "receber",
+      "formandoNome": "Dilianne Sousa Alencar"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\ttipoServico\tquantidade\tvalorUnitario\tvalorTotal\tfluxo\tformandoNome\n360006\t60006\t30064\tmake_formando\t1\t3500\t3500\tpagar\tDilianne Sousa Alencar\n360007\t60006\t30064\tcabelo_simples\t1\t800\t800\treceber\tDilianne Sousa Alencar\n360008\t60006\t30064\tmake_familia\t1\t3000\t3000\treceber\tDilianne Sousa Alencar\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

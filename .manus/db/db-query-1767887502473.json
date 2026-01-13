@@ -1,0 +1,35 @@
+{
+  "query": "SELECT DISTINCT e.turmaId, t.codigo, COUNT(e.id) as total_eventos FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL GROUP BY e.turmaId, t.codigo ORDER BY total_eventos DESC LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT e.turmaId, t.codigo, COUNT(e.id) as total_eventos FROM eventos e JOIN turmas t ON e.turmaId = t.id WHERE e.dataEvento IS NOT NULL GROUP BY e.turmaId, t.codigo ORDER BY total_eventos DESC LIMIT 5",
+  "rows": [
+    {
+      "turmaId": "1128",
+      "codigo": "727",
+      "total_eventos": "16"
+    },
+    {
+      "turmaId": "1143",
+      "codigo": "480",
+      "total_eventos": "11"
+    },
+    {
+      "turmaId": "1029",
+      "codigo": "450",
+      "total_eventos": "11"
+    },
+    {
+      "turmaId": "1255",
+      "codigo": "567",
+      "total_eventos": "10"
+    },
+    {
+      "turmaId": "1272",
+      "codigo": "468",
+      "total_eventos": "9"
+    }
+  ],
+  "messages": [],
+  "stdout": "turmaId\tcodigo\ttotal_eventos\n1128\t727\t16\n1143\t480\t11\n1029\t450\t11\n1255\t567\t10\n1272\t468\t9\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

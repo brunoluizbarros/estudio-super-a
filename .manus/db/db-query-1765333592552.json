@@ -1,0 +1,122 @@
+{
+  "query": "SELECT * FROM tipos_servico ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM tipos_servico ORDER BY id;",
+  "rows": [
+    {
+      "id": "2",
+      "nome": "Alimentação",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:35:52",
+      "updatedAt": "2025-12-09 11:35:52"
+    },
+    {
+      "id": "3",
+      "nome": "Alimento e Bebida (A&B)",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:36:05",
+      "updatedAt": "2025-12-09 11:36:05"
+    },
+    {
+      "id": "4",
+      "nome": "Equipamentos / Utensílios /Bens",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:36:22",
+      "updatedAt": "2025-12-09 11:36:22"
+    },
+    {
+      "id": "5",
+      "nome": "Gráfica (Impressos / Brindes)",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:36:33",
+      "updatedAt": "2025-12-09 11:36:33"
+    },
+    {
+      "id": "6",
+      "nome": "Hospedagem",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:36:44",
+      "updatedAt": "2025-12-09 11:36:44"
+    },
+    {
+      "id": "7",
+      "nome": "Locação de Equipamentos Fotográficos",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:36:58",
+      "updatedAt": "2025-12-09 11:36:58"
+    },
+    {
+      "id": "8",
+      "nome": "Locação de Espaço",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:37:12",
+      "updatedAt": "2025-12-09 11:37:12"
+    },
+    {
+      "id": "9",
+      "nome": "Locação de Estruturas",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:37:36",
+      "updatedAt": "2025-12-09 11:37:36"
+    },
+    {
+      "id": "11",
+      "nome": "Logística",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:38:08",
+      "updatedAt": "2025-12-09 11:38:08"
+    },
+    {
+      "id": "12",
+      "nome": "Manutenção Equipamentos",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:38:24",
+      "updatedAt": "2025-12-09 11:38:24"
+    },
+    {
+      "id": "13",
+      "nome": "Mão de Obra - Administrativo",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:38:50",
+      "updatedAt": "2025-12-09 11:38:50"
+    },
+    {
+      "id": "14",
+      "nome": "Mão de Obra - Cerimonial",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:39:08",
+      "updatedAt": "2025-12-09 11:39:08"
+    },
+    {
+      "id": "15",
+      "nome": "Mão de Obra - Coordenação",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:39:21",
+      "updatedAt": "2025-12-09 11:39:21"
+    },
+    {
+      "id": "16",
+      "nome": "Mão de Obra - Fotógrafo",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:39:33",
+      "updatedAt": "2025-12-09 11:39:33"
+    },
+    {
+      "id": "17",
+      "nome": "Mão de Obra - Maquiagem",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:39:48",
+      "updatedAt": "2025-12-09 11:39:48"
+    },
+    {
+      "id": "18",
+      "nome": "Mão de Obra - Produção",
+      "ativo": "1",
+      "createdAt": "2025-12-09 11:40:01",
+      "updatedAt": "2025-12-09 11:40:01"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tativo\tcreatedAt\tupdatedAt\n2\tAlimentação\t1\t2025-12-09 11:35:52\t2025-12-09 11:35:52\n3\tAlimento e Bebida (A&B)\t1\t2025-12-09 11:36:05\t2025-12-09 11:36:05\n4\tEquipamentos / Utensílios /Bens\t1\t2025-12-09 11:36:22\t2025-12-09 11:36:22\n5\tGráfica (Impressos / Brindes)\t1\t2025-12-09 11:36:33\t2025-12-09 11:36:33\n6\tHospedagem\t1\t2025-12-09 11:36:44\t2025-12-09 11:36:44\n7\tLocação de Equipamentos Fotográficos\t1\t2025-12-09 11:36:58\t2025-12-09 11:36:58\n8\tLocação de Espaço\t1\t2025-12-09 11:37:12\t2025-12-09 11:37:12\n9\tLocação de Estruturas\t1\t2025-12-09 11:37:36\t2025-12-09 11:37:36\n11\tLogística\t1\t2025-12-09 11:38:08\t2025-12-09 11:38:08\n12\tManutenção Equipamentos\t1\t2025-12-09 11:38:24\t2025-12-09 11:38:24\n13\tMão de Obra - Administrativo\t1\t2025-12-09 11:38:50\t2025-12-09 11:38:50\n14\tMão de Obra - Cerimonial\t1\t2025-12-09 11:39:08\t2025-12-09 11:39:08\n15\tMão de Obra - Coordenação\t1\t2025-12-09 11:39:21\t2025-12-09 11:39:21\n16\tMão de Obra - Fotógrafo\t1\t2025-12-09 11:39:33\t2025-12-09 11:39:33\n17\tMão de Obra - Maquiagem\t1\t2025-12-09 11:39:48\t2025-12-09 11:39:48\n18\tMão de Obra - Produção\t1\t2025-12-09 11:40:01\t2025-12-09 11:40:01\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

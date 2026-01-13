@@ -1,0 +1,360 @@
+{
+  "query": "\nSELECT role, secao, visualizar, inserir, excluir \nFROM permissoes \nWHERE role IN ('Administrador', 'Armazenamento', 'Beca', 'Cerimonial', 'Controle', 'Coordenador', 'Financeiro', 'Fotógrafo', 'Gestor', 'Logística')\nORDER BY role, secao\nLIMIT 50\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT role, secao, visualizar, inserir, excluir \nFROM permissoes \nWHERE role IN ('Administrador', 'Armazenamento', 'Beca', 'Cerimonial', 'Controle', 'Coordenador', 'Financeiro', 'Fotógrafo', 'Gestor', 'Logística')\nORDER BY role, secao\nLIMIT 50\n",
+  "rows": [
+    {
+      "role": "administrador",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "briefing",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "financeiro",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "reunioes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "servicos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "administrador",
+      "secao": "vendas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "beca",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "role": "beca",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "turmas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "abordagem",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "eventos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\tsecao\tvisualizar\tinserir\texcluir\nadministrador\tabordagem\t1\t1\t1\nadministrador\tbecas\t1\t1\t1\nadministrador\tbriefing\t1\t1\t1\nadministrador\tconfiguracoes\t1\t1\t1\nadministrador\tdespesas\t1\t1\t1\nadministrador\teventos\t1\t1\t1\nadministrador\texecucao\t1\t1\t1\nadministrador\tfinanceiro\t1\t1\t1\nadministrador\thome\t1\t1\t1\nadministrador\tpermissoes_cerimoniais\t1\t1\t1\nadministrador\trelatorios\t1\t1\t1\nadministrador\treunioes\t1\t1\t1\nadministrador\tservicos\t1\t1\t1\nadministrador\tturmas\t1\t1\t1\nadministrador\tvendas\t1\t1\t1\narmazenamento\tabordagem\t0\t0\t0\narmazenamento\tbecas\t0\t0\t0\narmazenamento\tbriefing\t0\t0\t0\narmazenamento\tconfiguracoes\t0\t0\t0\narmazenamento\tdespesas\t0\t0\t0\narmazenamento\teventos\t1\t0\t0\narmazenamento\texecucao\t1\t1\t0\narmazenamento\tfinanceiro\t0\t0\t0\narmazenamento\thome\t1\t0\t0\narmazenamento\tpermissoes_cerimoniais\t0\t0\t0\narmazenamento\trelatorios\t1\t0\t0\narmazenamento\treunioes\t0\t0\t0\narmazenamento\tservicos\t0\t0\t0\narmazenamento\tturmas\t1\t0\t0\narmazenamento\tvendas\t0\t0\t0\nbeca\tabordagem\t0\t0\t0\nbeca\tbecas\t1\t1\t1\nbeca\tbriefing\t0\t0\t0\nbeca\tdespesas\t1\t1\t1\nbeca\teventos\t1\t0\t0\nbeca\texecucao\t0\t0\t0\nbeca\tfinanceiro\t0\t0\t0\nbeca\thome\t1\t0\t0\nbeca\tpermissoes_cerimoniais\t0\t0\t0\nbeca\trelatorios\t1\t0\t0\nbeca\treunioes\t0\t0\t0\nbeca\tservicos\t0\t0\t0\nbeca\tturmas\t0\t0\t0\nbeca\tvendas\t0\t0\t0\ncerimonial\tabordagem\t1\t1\t0\ncerimonial\tbecas\t0\t0\t0\ncerimonial\tbriefing\t0\t0\t0\ncerimonial\teventos\t0\t0\t0\ncerimonial\texecucao\t1\t1\t0\ncerimonial\tfinanceiro\t0\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

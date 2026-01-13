@@ -1,0 +1,37 @@
+{
+  "query": "SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  setorSolicitante,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander')\n    THEN 'EXCLUÍDO'\n    ELSE 'INCLUÍDO'\n  END AS status_filtro\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2025\nORDER BY numeroCi",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  setorSolicitante,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  CASE \n    WHEN tipoServicoCompra IN ('Comissão', 'Equipamentos / Utensílios / Bens', 'Estorno', 'Imposto', 'Mão de Obra - Maquiadora', 'Transferência Santander')\n    THEN 'EXCLUÍDO'\n    ELSE 'INCLUÍDO'\n  END AS status_filtro\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2025\nORDER BY numeroCi",
+  "rows": [
+    {
+      "numeroCi": "022/2025",
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "valorReais": "2721.0000",
+      "setorSolicitante": "estudio",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "status_filtro": "INCLUÍDO"
+    },
+    {
+      "numeroCi": "023/2025",
+      "tipoServicoCompra": "Equipamentos / Utensílios / Bens",
+      "valorReais": "0.0100",
+      "setorSolicitante": "estudio",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "status_filtro": "EXCLUÍDO"
+    },
+    {
+      "numeroCi": "024/2025",
+      "tipoServicoCompra": "Transferência Santander",
+      "valorReais": "4965.3800",
+      "setorSolicitante": "estudio",
+      "mesServico": "dezembro",
+      "ano": "2025",
+      "status_filtro": "EXCLUÍDO"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\ttipoServicoCompra\tvalorReais\tsetorSolicitante\tmesServico\tano\tstatus_filtro\n022/2025\tGráfica (Impressos / Brindes)\t2721.0000\testudio\tdezembro\t2025\tINCLUÍDO\n023/2025\tEquipamentos / Utensílios / Bens\t0.0100\testudio\tdezembro\t2025\tEXCLUÍDO\n024/2025\tTransferência Santander\t4965.3800\testudio\tdezembro\t2025\tEXCLUÍDO\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

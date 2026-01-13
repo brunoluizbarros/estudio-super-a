@@ -1,0 +1,1 @@
+ALTER TABLE `servicos_execucao` ADD `tipoMake` enum('masc','fem');

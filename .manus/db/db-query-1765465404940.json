@@ -1,0 +1,16 @@
+{
+  "query": "SELECT ef.id as execucaoId, ef.formandoId, f.nome as formandoNome, COUNT(ff.id) as totalFotos\nFROM execucao_formando ef\nJOIN formandos f ON ef.formandoId = f.id\nLEFT JOIN fotos_formando ff ON ff.execucaoFormandoId = ef.id\nWHERE f.nome LIKE '%Álvaro Pontual%'\nGROUP BY ef.id, ef.formandoId, f.nome",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ef.id as execucaoId, ef.formandoId, f.nome as formandoNome, COUNT(ff.id) as totalFotos\nFROM execucao_formando ef\nJOIN formandos f ON ef.formandoId = f.id\nLEFT JOIN fotos_formando ff ON ff.execucaoFormandoId = ef.id\nWHERE f.nome LIKE '%Álvaro Pontual%'\nGROUP BY ef.id, ef.formandoId, f.nome",
+  "rows": [
+    {
+      "execucaoId": "30001",
+      "formandoId": "90001",
+      "formandoNome": "Álvaro Pontual Moraes Rego De Lucena",
+      "totalFotos": "23"
+    }
+  ],
+  "messages": [],
+  "stdout": "execucaoId\tformandoId\tformandoNome\ttotalFotos\n30001\t90001\tÁlvaro Pontual Moraes Rego De Lucena\t23\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

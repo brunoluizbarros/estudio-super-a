@@ -1,0 +1,230 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.status, \n       v.createdAt,\n       DATE_FORMAT(FROM_UNIXTIME(v.createdAt / 1000), '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome, f.turmaId \nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nORDER BY v.createdAt DESC \nLIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.status, \n       v.createdAt,\n       DATE_FORMAT(FROM_UNIXTIME(v.createdAt / 1000), '%d/%m/%Y %H:%i:%s') as data_formatada,\n       f.nome as formando_nome, f.turmaId \nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nORDER BY v.createdAt DESC \nLIMIT 20",
+  "rows": [
+    {
+      "id": "480009",
+      "formandoId": "480003",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:17:51",
+      "data_formatada": "07/01/2612 23:17:01",
+      "formando_nome": "Bianca de Medeiros Fernandes",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480008",
+      "formandoId": "480018",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:16:48",
+      "data_formatada": "07/01/2612 23:17:01",
+      "formando_nome": "Mateus Soares Pereira",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480007",
+      "formandoId": "480016",
+      "eventoId": "420064",
+      "valorTotal": "55000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:15:30",
+      "data_formatada": "07/01/2612 23:17:01",
+      "formando_nome": "Felipe Henrique Santos Nunes",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480006",
+      "formandoId": "480011",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:13:54",
+      "data_formatada": "07/01/2612 23:17:01",
+      "formando_nome": "Caio José Miranda Azevedo de Paiva",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480005",
+      "formandoId": "480015",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:11:28",
+      "data_formatada": "07/01/2612 23:17:01",
+      "formando_nome": "Joao Macedo Holanda Pinto",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480004",
+      "formandoId": "480006",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:09:13",
+      "data_formatada": "07/01/2612 23:17:00",
+      "formando_nome": "Thais Dias Uchoa de Moura",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480003",
+      "formandoId": "480004",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 22:06:49",
+      "data_formatada": "07/01/2612 23:17:00",
+      "formando_nome": "Maria Eduarda Cavalcante Melo",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480002",
+      "formandoId": "480005",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 21:59:38",
+      "data_formatada": "07/01/2612 23:16:55",
+      "formando_nome": "Alice Rodrigues de Andrade Alves",
+      "turmaId": "1132"
+    },
+    {
+      "id": "480001",
+      "formandoId": "480007",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-06 21:58:05",
+      "data_formatada": "07/01/2612 23:16:55",
+      "formando_nome": "Artur Caminha do Rêgo Barros",
+      "turmaId": "1132"
+    },
+    {
+      "id": "450003",
+      "formandoId": "450002",
+      "eventoId": "420035",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-05 19:21:00",
+      "data_formatada": "07/01/2612 22:59:52",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "450002",
+      "formandoId": "450001",
+      "eventoId": "390877",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-05 19:18:12",
+      "data_formatada": "07/01/2612 22:59:51",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "450001",
+      "formandoId": "270048",
+      "eventoId": "420060",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-05 15:19:19",
+      "data_formatada": "07/01/2612 22:59:11",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420008",
+      "formandoId": "1",
+      "eventoId": "1",
+      "valorTotal": "50000",
+      "status": "pago",
+      "createdAt": "2026-01-05 00:45:37",
+      "data_formatada": "07/01/2612 22:56:44",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420006",
+      "formandoId": "1",
+      "eventoId": "1",
+      "valorTotal": "50000",
+      "status": "pago",
+      "createdAt": "2026-01-05 00:35:52",
+      "data_formatada": "07/01/2612 22:56:43",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420004",
+      "formandoId": "1",
+      "eventoId": "1",
+      "valorTotal": "50000",
+      "status": "pago",
+      "createdAt": "2026-01-05 00:22:05",
+      "data_formatada": "07/01/2612 22:56:42",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420002",
+      "formandoId": "1",
+      "eventoId": "1",
+      "valorTotal": "50000",
+      "status": "pago",
+      "createdAt": "2026-01-05 00:21:23",
+      "data_formatada": "07/01/2612 22:56:42",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "390001",
+      "formandoId": "240002",
+      "eventoId": "510001",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-04 03:13:17",
+      "data_formatada": "07/01/2612 22:40:31",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "360001",
+      "formandoId": "420001",
+      "eventoId": "480001",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2026-01-02 22:30:36",
+      "data_formatada": "07/01/2612 22:10:23",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "330036",
+      "formandoId": "270022",
+      "eventoId": "240001",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2025-12-22 12:59:32",
+      "data_formatada": "27/09/2611 03:28:45",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "330035",
+      "formandoId": "270009",
+      "eventoId": "240001",
+      "valorTotal": "65000",
+      "status": "pago",
+      "createdAt": "2025-12-22 12:57:49",
+      "data_formatada": "27/09/2611 03:28:45",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tformandoId\teventoId\tvalorTotal\tstatus\tcreatedAt\tdata_formatada\tformando_nome\tturmaId\n480009\t480003\t420064\t65000\tpago\t2026-01-06 22:17:51\t07/01/2612 23:17:01\tBianca de Medeiros Fernandes\t1132\n480008\t480018\t420064\t65000\tpago\t2026-01-06 22:16:48\t07/01/2612 23:17:01\tMateus Soares Pereira\t1132\n480007\t480016\t420064\t55000\tpago\t2026-01-06 22:15:30\t07/01/2612 23:17:01\tFelipe Henrique Santos Nunes\t1132\n480006\t480011\t420064\t65000\tpago\t2026-01-06 22:13:54\t07/01/2612 23:17:01\tCaio José Miranda Azevedo de Paiva\t1132\n480005\t480015\t420064\t65000\tpago\t2026-01-06 22:11:28\t07/01/2612 23:17:01\tJoao Macedo Holanda Pinto\t1132\n480004\t480006\t420064\t65000\tpago\t2026-01-06 22:09:13\t07/01/2612 23:17:00\tThais Dias Uchoa de Moura\t1132\n480003\t480004\t420064\t65000\tpago\t2026-01-06 22:06:49\t07/01/2612 23:17:00\tMaria Eduarda Cavalcante Melo\t1132\n480002\t480005\t420064\t65000\tpago\t2026-01-06 21:59:38\t07/01/2612 23:16:55\tAlice Rodrigues de Andrade Alves\t1132\n480001\t480007\t420064\t65000\tpago\t2026-01-06 21:58:05\t07/01/2612 23:16:55\tArtur Caminha do Rêgo Barros\t1132\n450003\t450002\t420035\t65000\tpago\t2026-01-05 19:21:00\t07/01/2612 22:59:52\tNULL\tNULL\n450002\t450001\t390877\t65000\tpago\t2026-01-05 19:18:12\t07/01/2612 22:59:51\tNULL\tNULL\n450001\t270048\t420060\t65000\tpago\t2026-01-05 15:19:19\t07/01/2612 22:59:11\tNULL\tNULL\n420008\t1\t1\t50000\tpago\t2026-01-05 00:45:37\t07/01/2612 22:56:44\tNULL\tNULL\n420006\t1\t1\t50000\tpago\t2026-01-05 00:35:52\t07/01/2612 22:56:43\tNULL\tNULL\n420004\t1\t1\t50000\tpago\t2026-01-05 00:22:05\t07/01/2612 22:56:42\tNULL\tNULL\n420002\t1\t1\t50000\tpago\t2026-01-05 00:21:23\t07/01/2612 22:56:42\tNULL\tNULL\n390001\t240002\t510001\t65000\tpago\t2026-01-04 03:13:17\t07/01/2612 22:40:31\tNULL\tNULL\n360001\t420001\t480001\t65000\tpago\t2026-01-02 22:30:36\t07/01/2612 22:10:23\tNULL\tNULL\n330036\t270022\t240001\t65000\tpago\t2025-12-22 12:59:32\t27/09/2611 03:28:45\tNULL\tNULL\n330035\t270009\t240001\t65000\tpago\t2025-12-22 12:57:49\t27/09/2611 03:28:45\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

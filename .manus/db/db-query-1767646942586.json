@@ -1,0 +1,100 @@
+{
+  "query": "SELECT secao, visualizar, inserir, excluir FROM permissoes WHERE role = 'Beca' ORDER BY secao",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT secao, visualizar, inserir, excluir FROM permissoes WHERE role = 'Beca' ORDER BY secao",
+  "rows": [
+    {
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "becas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "despesas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "1",
+      "excluir": "1"
+    },
+    {
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "relatorios",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "secao\tvisualizar\tinserir\texcluir\nabordagem\t0\t0\t0\nbecas\t1\t1\t1\nbriefing\t0\t0\t0\nconfiguracoes\t0\t0\t0\ndespesas\t0\t0\t0\neventos\t1\t0\t0\nexecucao\t0\t0\t0\nfinanceiro\t0\t0\t0\nhome\t0\t1\t1\npermissoes_cerimoniais\t0\t0\t0\nrelatorios\t0\t0\t0\nreunioes\t0\t0\t0\nservicos\t0\t0\t0\nturmas\t1\t0\t0\nvendas\t0\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

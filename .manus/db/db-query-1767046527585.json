@@ -1,0 +1,17 @@
+{
+  "query": "\nSELECT \n  bg.eventoId,\n  e.tipoEvento,\n  e.dataEvento,\n  COUNT(DISTINCT bg.id) as qtdGrupos,\n  COUNT(DISTINCT bf.id) as qtdFormandos\nFROM briefing_grupo bg\nINNER JOIN eventos e ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = bg.eventoId\nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '654')\nGROUP BY bg.eventoId, e.tipoEvento, e.dataEvento;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  bg.eventoId,\n  e.tipoEvento,\n  e.dataEvento,\n  COUNT(DISTINCT bg.id) as qtdGrupos,\n  COUNT(DISTINCT bf.id) as qtdFormandos\nFROM briefing_grupo bg\nINNER JOIN eventos e ON bg.eventoId = e.id\nLEFT JOIN briefing_formando bf ON bf.eventoId = bg.eventoId\nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '654')\nGROUP BY bg.eventoId, e.tipoEvento, e.dataEvento;\n",
+  "rows": [
+    {
+      "eventoId": "420061",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-06 00:00:00",
+      "qtdGrupos": "8",
+      "qtdFormandos": "68"
+    }
+  ],
+  "messages": [],
+  "stdout": "eventoId\ttipoEvento\tdataEvento\tqtdGrupos\tqtdFormandos\n420061\tfoto_estudio\t2026-01-06 00:00:00\t8\t68\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

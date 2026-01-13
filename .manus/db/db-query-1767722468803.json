@@ -1,0 +1,90 @@
+{
+  "query": "SELECT f.id, f.nome, f.cabeloSimples, f.cabeloCombinado, f.makeFormando, f.makeFamilia\nFROM formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nWHERE t.codigo = '654'\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT f.id, f.nome, f.cabeloSimples, f.cabeloCombinado, f.makeFormando, f.makeFamilia\nFROM formandos f\nINNER JOIN turmas t ON t.id = f.turmaId\nWHERE t.codigo = '654'\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "480001",
+      "nome": "Victor de Paula Fonseca",
+      "cabeloSimples": "0",
+      "cabeloCombinado": "1",
+      "makeFormando": "0",
+      "makeFamilia": "1"
+    },
+    {
+      "id": "480002",
+      "nome": "Idílio Lucas Freitas de Araújo",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "1",
+      "makeFamilia": "3"
+    },
+    {
+      "id": "480003",
+      "nome": "Bianca de Medeiros Fernandes",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "0",
+      "makeFamilia": "0"
+    },
+    {
+      "id": "480004",
+      "nome": "Maria Eduarda Cavalcante Melo",
+      "cabeloSimples": "0",
+      "cabeloCombinado": "1",
+      "makeFormando": "1",
+      "makeFamilia": "2"
+    },
+    {
+      "id": "480005",
+      "nome": "Alice Rodrigues de Andrade Alves",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "0",
+      "makeFamilia": "1"
+    },
+    {
+      "id": "480006",
+      "nome": "Thais Dias Uchoa de Moura",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "1",
+      "makeFamilia": "3"
+    },
+    {
+      "id": "480007",
+      "nome": "Artur Caminha do Rêgo Barros",
+      "cabeloSimples": "0",
+      "cabeloCombinado": "1",
+      "makeFormando": "0",
+      "makeFamilia": "0"
+    },
+    {
+      "id": "480008",
+      "nome": "Maria Eduarda Lopes Nunes",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "1",
+      "makeFamilia": "2"
+    },
+    {
+      "id": "480009",
+      "nome": "André Henrique Albuquerque Silva",
+      "cabeloSimples": "1",
+      "cabeloCombinado": "0",
+      "makeFormando": "0",
+      "makeFamilia": "1"
+    },
+    {
+      "id": "480010",
+      "nome": "Luiz Eduardo Caldas Pinheiro",
+      "cabeloSimples": "0",
+      "cabeloCombinado": "1",
+      "makeFormando": "1",
+      "makeFamilia": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tcabeloSimples\tcabeloCombinado\tmakeFormando\tmakeFamilia\n480001\tVictor de Paula Fonseca\t0\t1\t0\t1\n480002\tIdílio Lucas Freitas de Araújo\t1\t0\t1\t3\n480003\tBianca de Medeiros Fernandes\t1\t0\t0\t0\n480004\tMaria Eduarda Cavalcante Melo\t0\t1\t1\t2\n480005\tAlice Rodrigues de Andrade Alves\t1\t0\t0\t1\n480006\tThais Dias Uchoa de Moura\t1\t0\t1\t3\n480007\tArtur Caminha do Rêgo Barros\t0\t1\t0\t0\n480008\tMaria Eduarda Lopes Nunes\t1\t0\t1\t2\n480009\tAndré Henrique Albuquerque Silva\t1\t0\t0\t1\n480010\tLuiz Eduardo Caldas Pinheiro\t0\t1\t1\t3\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

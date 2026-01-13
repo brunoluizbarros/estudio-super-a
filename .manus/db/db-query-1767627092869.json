@@ -1,0 +1,120 @@
+{
+  "query": "SELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  h.usuarioId,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail,\n  h.dataAlteracao,\n  h.motivo,\n  f.nome AS formandoNome\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE DATE(h.dataAlteracao) = CURDATE()\nORDER BY h.dataAlteracao DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  h.id,\n  h.vendaId,\n  h.tipo,\n  h.usuarioId,\n  u.name AS usuarioNome,\n  u.email AS usuarioEmail,\n  h.dataAlteracao,\n  h.motivo,\n  f.nome AS formandoNome\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nLEFT JOIN vendas v ON h.vendaId = v.id\nLEFT JOIN formandos f ON v.formandoId = f.id\nWHERE DATE(h.dataAlteracao) = CURDATE()\nORDER BY h.dataAlteracao DESC;",
+  "rows": [
+    {
+      "id": "60006",
+      "vendaId": "330034",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:29:14",
+      "motivo": "Venda editada",
+      "formandoNome": "Arielly Gouveia Urbano da Silva"
+    },
+    {
+      "id": "60005",
+      "vendaId": "330024",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:27:07",
+      "motivo": "Venda editada",
+      "formandoNome": "Maria Vitória Sobral Bernardino"
+    },
+    {
+      "id": "60004",
+      "vendaId": "330027",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:25:44",
+      "motivo": "Venda editada",
+      "formandoNome": "Monaliza Carvalho Alves Feitosa"
+    },
+    {
+      "id": "60003",
+      "vendaId": "330021",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:22:42",
+      "motivo": "Venda editada",
+      "formandoNome": "Maria Eduarda Lima Alves"
+    },
+    {
+      "id": "60002",
+      "vendaId": "450001",
+      "tipo": "edicao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:20:28",
+      "motivo": "Venda editada",
+      "formandoNome": "Rayssa Rocha Vieira Da Silva"
+    },
+    {
+      "id": "60001",
+      "vendaId": "330030",
+      "tipo": "exclusao",
+      "usuarioId": "20970368",
+      "usuarioNome": "Bruno.vasconcelos Vasconelos",
+      "usuarioEmail": "bruno.vasconcelos1302@gmail.com",
+      "dataAlteracao": "2026-01-05 15:20:09",
+      "motivo": "duplicidade no lançamento",
+      "formandoNome": "Rayssa Rocha Vieira Da Silva"
+    },
+    {
+      "id": "30004",
+      "vendaId": "420002",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:19",
+      "motivo": "teste",
+      "formandoNome": "Alice Souza Florêncio"
+    },
+    {
+      "id": "30003",
+      "vendaId": "420004",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:15",
+      "motivo": "teste",
+      "formandoNome": "Alice Souza Florêncio"
+    },
+    {
+      "id": "30002",
+      "vendaId": "1",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:11",
+      "motivo": "teste",
+      "formandoNome": "Alice Souza Florêncio"
+    },
+    {
+      "id": "30001",
+      "vendaId": "360001",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:16:06",
+      "motivo": "teste do sistema",
+      "formandoNome": "Teste CV/NSU"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tusuarioId\tusuarioNome\tusuarioEmail\tdataAlteracao\tmotivo\tformandoNome\n60006\t330034\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:29:14\tVenda editada\tArielly Gouveia Urbano da Silva\n60005\t330024\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:27:07\tVenda editada\tMaria Vitória Sobral Bernardino\n60004\t330027\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:25:44\tVenda editada\tMonaliza Carvalho Alves Feitosa\n60003\t330021\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:22:42\tVenda editada\tMaria Eduarda Lima Alves\n60002\t450001\tedicao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:20:28\tVenda editada\tRayssa Rocha Vieira Da Silva\n60001\t330030\texclusao\t20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:20:09\tduplicidade no lançamento\tRayssa Rocha Vieira Da Silva\n30004\t420002\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:19\tteste\tAlice Souza Florêncio\n30003\t420004\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:15\tteste\tAlice Souza Florêncio\n30002\t1\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:11\tteste\tAlice Souza Florêncio\n30001\t360001\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:16:06\tteste do sistema\tTeste CV/NSU\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

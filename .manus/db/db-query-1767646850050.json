@@ -1,0 +1,22 @@
+{
+  "query": "SELECT p.*, t.nome as tipo_nome FROM permissoes p LEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id WHERE t.nome = 'Beca' LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.*, t.nome as tipo_nome FROM permissoes p LEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id WHERE t.nome = 'Beca' LIMIT 20",
+  "rows": [
+    {
+      "id": "270021",
+      "role": "beca",
+      "secao": "configuracoes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2026-01-05 20:18:00",
+      "updatedAt": "2026-01-05 20:18:00",
+      "tipoUsuarioId": "8",
+      "tipo_nome": "Beca"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\ttipo_nome\n270021\tbeca\tconfiguracoes\t0\t0\t0\t2026-01-05 20:18:00\t2026-01-05 20:18:00\t8\tBeca\n",
+  "stderr": "",
+  "execution_time_ms": 72
+}

@@ -1,0 +1,9 @@
+{
+  "query": "SELECT bg.id, bg.eventoId, e.tipoEvento, e.turmaId, t.codigo FROM briefing_grupo bg INNER JOIN eventos e ON bg.eventoId = e.id INNER JOIN turmas t ON e.turmaId = t.id LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT bg.id, bg.eventoId, e.tipoEvento, e.turmaId, t.codigo FROM briefing_grupo bg INNER JOIN eventos e ON bg.eventoId = e.id INNER JOIN turmas t ON e.turmaId = t.id LIMIT 20;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 91
+}

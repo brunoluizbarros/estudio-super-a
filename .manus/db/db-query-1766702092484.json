@@ -1,0 +1,21 @@
+{
+  "query": "SELECT * FROM configMaquiagemTurma",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM configMaquiagemTurma",
+  "rows": [
+    {
+      "id": "6",
+      "turmaId": "90001",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000",
+      "createdAt": "2025-12-25 22:24:40",
+      "updatedAt": "2025-12-25 22:24:40",
+      "semServicoFormando": "0",
+      "semServicoFamilia": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\tvalorMasculino\tvalorFeminino\tvalorFamilia\tcreatedAt\tupdatedAt\tsemServicoFormando\tsemServicoFamilia\n6\t90001\t1815\t3080\t3000\t2025-12-25 22:24:40\t2025-12-25 22:24:40\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 101
+}

@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('administrador', 'financeiro', true, true, true),\n('gestor', 'financeiro', true, true, true),\n('coordenador', 'financeiro', true, false, false),\n('cerimonial', 'financeiro', false, false, false),\n('beca', 'financeiro', false, false, false),\n('logistica', 'financeiro', false, false, false),\n('armazenamento', 'financeiro', false, false, false),\n('financeiro', 'financeiro', true, true, true);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO permissoes (role, secao, visualizar, inserir, excluir) VALUES\n('administrador', 'financeiro', true, true, true),\n('gestor', 'financeiro', true, true, true),\n('coordenador', 'financeiro', true, false, false),\n('cerimonial', 'financeiro', false, false, false),\n('beca', 'financeiro', false, false, false),\n('logistica', 'financeiro', false, false, false),\n('armazenamento', 'financeiro', false, false, false),\n('financeiro', 'financeiro', true, true, true);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1062 (23000) at line 1: Duplicate entry '?' for key 'permissoes.unique_role_secao'"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "query": "SHOW CREATE TABLE permissoes_configuracoes;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW CREATE TABLE permissoes_configuracoes;",
+  "rows": [
+    {
+      "Table": "permissoes_configuracoes",
+      "Create Table": "CREATE TABLE `permissoes_configuracoes` ("
+    }
+  ],
+  "messages": [
+    "  `id` int(11) NOT NULL AUTO_INCREMENT,",
+    "  `role` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `aba` enum('instituicoes','cursos','cidades','locais','tipos_evento','tipos_servico','fornecedores','tabela_preco','taxas_cartao','produtos','maquiagem') COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `visualizar` tinyint(1) NOT NULL DEFAULT '0',",
+    "  `inserir` tinyint(1) NOT NULL DEFAULT '0',",
+    "  `excluir` tinyint(1) NOT NULL DEFAULT '0',",
+    "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,",
+    "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,",
+    "  `tipoUsuarioId` int(11) NOT NULL DEFAULT '1',",
+    "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,",
+    "  KEY `permissoes_configuracoes_tipoUsuarioId_tipos_usuario_id_fk` (`tipoUsuarioId`),",
+    "  CONSTRAINT `permissoes_configuracoes_tipoUsuarioId_tipos_usuario_id_fk` FOREIGN KEY (`tipoUsuarioId`) REFERENCES `axWmxYbCBHHB5ETKSgA95A`.`tipos_usuario` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION",
+    ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=60001"
+  ],
+  "stdout": "Table\tCreate Table\npermissoes_configuracoes\tCREATE TABLE `permissoes_configuracoes` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `role` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `aba` enum('instituicoes','cursos','cidades','locais','tipos_evento','tipos_servico','fornecedores','tabela_preco','taxas_cartao','produtos','maquiagem') COLLATE utf8mb4_unicode_ci NOT NULL,\n  `visualizar` tinyint(1) NOT NULL DEFAULT '0',\n  `inserir` tinyint(1) NOT NULL DEFAULT '0',\n  `excluir` tinyint(1) NOT NULL DEFAULT '0',\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  `tipoUsuarioId` int(11) NOT NULL DEFAULT '1',\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,\n  KEY `permissoes_configuracoes_tipoUsuarioId_tipos_usuario_id_fk` (`tipoUsuarioId`),\n  CONSTRAINT `permissoes_configuracoes_tipoUsuarioId_tipos_usuario_id_fk` FOREIGN KEY (`tipoUsuarioId`) REFERENCES `axWmxYbCBHHB5ETKSgA95A`.`tipos_usuario` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=60001\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

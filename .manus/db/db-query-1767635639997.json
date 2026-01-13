@@ -1,0 +1,50 @@
+{
+  "query": "SELECT t.id, t.nome, COUNT(p.id) as qtd_permissoes FROM tipos_usuario t LEFT JOIN permissoes p ON t.nome = p.role WHERE t.ativo = 1 GROUP BY t.id, t.nome ORDER BY t.nome LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.nome, COUNT(p.id) as qtd_permissoes FROM tipos_usuario t LEFT JOIN permissoes p ON t.nome = p.role WHERE t.ativo = 1 GROUP BY t.id, t.nome ORDER BY t.nome LIMIT 20",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "qtd_permissoes": "15"
+    },
+    {
+      "id": "6",
+      "nome": "Armazenamento",
+      "qtd_permissoes": "15"
+    },
+    {
+      "id": "8",
+      "nome": "Beca",
+      "qtd_permissoes": "14"
+    },
+    {
+      "id": "7",
+      "nome": "Cerimonial",
+      "qtd_permissoes": "13"
+    },
+    {
+      "id": "5",
+      "nome": "Coordenador",
+      "qtd_permissoes": "15"
+    },
+    {
+      "id": "2",
+      "nome": "Financeiro",
+      "qtd_permissoes": "14"
+    },
+    {
+      "id": "3",
+      "nome": "Gestor",
+      "qtd_permissoes": "15"
+    },
+    {
+      "id": "4",
+      "nome": "Logística",
+      "qtd_permissoes": "15"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tqtd_permissoes\n1\tAdministrador\t15\n6\tArmazenamento\t15\n8\tBeca\t14\n7\tCerimonial\t13\n5\tCoordenador\t15\n2\tFinanceiro\t14\n3\tGestor\t15\n4\tLogística\t15\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

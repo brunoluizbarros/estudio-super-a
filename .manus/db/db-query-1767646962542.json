@@ -1,0 +1,131 @@
+{
+  "query": "SELECT * FROM permissoes_configuracoes WHERE role = 'Financeiro'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes_configuracoes WHERE role = 'Financeiro'",
+  "rows": [
+    {
+      "id": "78",
+      "role": "financeiro",
+      "aba": "instituicoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2026-01-05 19:34:35",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "79",
+      "role": "financeiro",
+      "aba": "cursos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "80",
+      "role": "financeiro",
+      "aba": "cidades",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "81",
+      "role": "financeiro",
+      "aba": "locais",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "82",
+      "role": "financeiro",
+      "aba": "tipos_evento",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "83",
+      "role": "financeiro",
+      "aba": "tipos_servico",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "84",
+      "role": "financeiro",
+      "aba": "fornecedores",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "85",
+      "role": "financeiro",
+      "aba": "tabela_preco",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "86",
+      "role": "financeiro",
+      "aba": "taxas_cartao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "87",
+      "role": "financeiro",
+      "aba": "produtos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "88",
+      "role": "financeiro",
+      "aba": "maquiagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-22 19:29:17",
+      "updatedAt": "2025-12-22 19:29:17",
+      "tipoUsuarioId": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\taba\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\n78\tfinanceiro\tinstituicoes\t1\t1\t0\t2025-12-22 19:29:17\t2026-01-05 19:34:35\t1\n79\tfinanceiro\tcursos\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n80\tfinanceiro\tcidades\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n81\tfinanceiro\tlocais\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n82\tfinanceiro\ttipos_evento\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n83\tfinanceiro\ttipos_servico\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n84\tfinanceiro\tfornecedores\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n85\tfinanceiro\ttabela_preco\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n86\tfinanceiro\ttaxas_cartao\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n87\tfinanceiro\tprodutos\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n88\tfinanceiro\tmaquiagem\t0\t0\t0\t2025-12-22 19:29:17\t2025-12-22 19:29:17\t1\n",
+  "stderr": "",
+  "execution_time_ms": 72
+}

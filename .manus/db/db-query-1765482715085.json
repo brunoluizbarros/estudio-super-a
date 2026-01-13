@@ -1,0 +1,39 @@
+{
+  "query": "SHOW CREATE TABLE despesas;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW CREATE TABLE despesas;",
+  "rows": [
+    {
+      "Table": "despesas",
+      "Create Table": "CREATE TABLE `despesas` ("
+    }
+  ],
+  "messages": [
+    "  `id` int(11) NOT NULL AUTO_INCREMENT,",
+    "  `numeroCi` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `tipoDespesa` enum('operacional','administrativo') COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `turmaId` int(11) DEFAULT NULL,",
+    "  `eventoId` int(11) DEFAULT NULL,",
+    "  `mesServico` varchar(7) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `setorSolicitante` enum('estudio','fotografia') COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `fornecedorId` int(11) NOT NULL,",
+    "  `tipoServicoId` int(11) DEFAULT NULL,",
+    "  `detalhamento` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `eReembolso` tinyint(1) DEFAULT '0',",
+    "  `valorTotal` int(11) NOT NULL,",
+    "  `tipoPagamento` enum('pix','transferencia','boleto','dinheiro','cartao') COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `dadosPagamento` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `tipoComprovante` enum('nota_fiscal','recibo','cupom','outros') COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `dataLimitePagamento` datetime DEFAULT NULL,",
+    "  `status` enum('pendente','apto','pendente_nf','cancelado') COLLATE utf8mb4_unicode_ci DEFAULT 'pendente',",
+    "  `pago` tinyint(1) DEFAULT '0',",
+    "  `dataPagamento` datetime DEFAULT NULL,",
+    "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,",
+    "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,",
+    "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,",
+    "  UNIQUE KEY `numeroCi` (`numeroCi`)",
+    ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci"
+  ],
+  "stdout": "Table\tCreate Table\ndespesas\tCREATE TABLE `despesas` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `numeroCi` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `tipoDespesa` enum('operacional','administrativo') COLLATE utf8mb4_unicode_ci NOT NULL,\n  `turmaId` int(11) DEFAULT NULL,\n  `eventoId` int(11) DEFAULT NULL,\n  `mesServico` varchar(7) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `setorSolicitante` enum('estudio','fotografia') COLLATE utf8mb4_unicode_ci NOT NULL,\n  `fornecedorId` int(11) NOT NULL,\n  `tipoServicoId` int(11) DEFAULT NULL,\n  `detalhamento` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `eReembolso` tinyint(1) DEFAULT '0',\n  `valorTotal` int(11) NOT NULL,\n  `tipoPagamento` enum('pix','transferencia','boleto','dinheiro','cartao') COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `dadosPagamento` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `tipoComprovante` enum('nota_fiscal','recibo','cupom','outros') COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `dataLimitePagamento` datetime DEFAULT NULL,\n  `status` enum('pendente','apto','pendente_nf','cancelado') COLLATE utf8mb4_unicode_ci DEFAULT 'pendente',\n  `pago` tinyint(1) DEFAULT '0',\n  `dataPagamento` datetime DEFAULT NULL,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */,\n  UNIQUE KEY `numeroCi` (`numeroCi`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\n",
+  "stderr": "",
+  "execution_time_ms": 282
+}

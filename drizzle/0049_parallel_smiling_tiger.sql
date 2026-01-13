@@ -1,0 +1,1 @@
+ALTER TABLE `briefing_formando` ADD `tamanhoBeca` varchar(10);

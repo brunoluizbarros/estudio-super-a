@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, formando_id, abordagem_make_formando, abordagem_cabelo_formando, abordagem_qtd_cabelo_simples, abordagem_qtd_cabelo_combinado, abordagem_qtd_make_familia, abordagem_qtd_familia, abordagem_qtd_pets FROM briefing_formando WHERE abordagem_make_formando IS NOT NULL OR abordagem_cabelo_formando IS NOT NULL OR abordagem_qtd_cabelo_simples IS NOT NULL LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, formando_id, abordagem_make_formando, abordagem_cabelo_formando, abordagem_qtd_cabelo_simples, abordagem_qtd_cabelo_combinado, abordagem_qtd_make_familia, abordagem_qtd_familia, abordagem_qtd_pets FROM briefing_formando WHERE abordagem_make_formando IS NOT NULL OR abordagem_cabelo_formando IS NOT NULL OR abordagem_qtd_cabelo_simples IS NOT NULL LIMIT 20;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'abordagem_make_formando' in 'where clause'"
+  ]
+}

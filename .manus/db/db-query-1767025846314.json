@@ -1,0 +1,9 @@
+{
+  "query": "SELECT DISTINCT t.codigo, e.tipoEvento, COUNT(bg.id) as qtd_grupos FROM turmas t INNER JOIN eventos e ON e.turmaId = t.id INNER JOIN briefing_grupo bg ON bg.eventoId = e.id GROUP BY t.codigo, e.tipoEvento ORDER BY t.codigo;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT t.codigo, e.tipoEvento, COUNT(bg.id) as qtd_grupos FROM turmas t INNER JOIN eventos e ON e.turmaId = t.id INNER JOIN briefing_grupo bg ON bg.eventoId = e.id GROUP BY t.codigo, e.tipoEvento ORDER BY t.codigo;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 52
+}

@@ -1,0 +1,18 @@
+{
+  "query": "SELECT f.id, f.nome, f.turmaId, t.codigo, t.cursos, t.instituicoes \nFROM formandos f \nJOIN turmas t ON f.turmaId = t.id \nWHERE f.nome LIKE '%Dilianne%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT f.id, f.nome, f.turmaId, t.codigo, t.cursos, t.instituicoes \nFROM formandos f \nJOIN turmas t ON f.turmaId = t.id \nWHERE f.nome LIKE '%Dilianne%'",
+  "rows": [
+    {
+      "id": "30064",
+      "nome": "Dilianne Sousa Alencar",
+      "turmaId": "1176",
+      "codigo": "553",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FITS\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tturmaId\tcodigo\tcursos\tinstituicoes\n30064\tDilianne Sousa Alencar\t1176\t553\t[\"MEDICINA\"]\t[\"FITS\"]\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

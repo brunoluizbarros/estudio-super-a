@@ -1,0 +1,8 @@
+{
+  "query": "SELECT ff.*, ef.formandoId, f.nome as formandoNome, c.nome as cenarioNome \nFROM fotos_formando ff \nJOIN execucoes_formando ef ON ff.execucaoFormandoId = ef.id \nJOIN formandos f ON ef.formandoId = f.id \nLEFT JOIN cenarios c ON ff.cenarioId = c.id \nWHERE f.nome LIKE '%Álvaro Pontual%' \nORDER BY ff.id DESC \nLIMIT 50",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ff.*, ef.formandoId, f.nome as formandoNome, c.nome as cenarioNome \nFROM fotos_formando ff \nJOIN execucoes_formando ef ON ff.execucaoFormandoId = ef.id \nJOIN formandos f ON ef.formandoId = f.id \nLEFT JOIN cenarios c ON ff.cenarioId = c.id \nWHERE f.nome LIKE '%Álvaro Pontual%' \nORDER BY ff.id DESC \nLIMIT 50",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'axwmxybcbhhb5etksga95a.execucoes_formando' doesn't exist"
+  ]
+}

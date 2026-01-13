@@ -1,0 +1,42 @@
+{
+  "query": "SELECT role, COUNT(*) as total FROM permissoes GROUP BY role ORDER BY role;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT role, COUNT(*) as total FROM permissoes GROUP BY role ORDER BY role;",
+  "rows": [
+    {
+      "role": "administrador",
+      "total": "14"
+    },
+    {
+      "role": "gestor",
+      "total": "14"
+    },
+    {
+      "role": "coordenador",
+      "total": "14"
+    },
+    {
+      "role": "cerimonial",
+      "total": "12"
+    },
+    {
+      "role": "beca",
+      "total": "12"
+    },
+    {
+      "role": "logistica",
+      "total": "14"
+    },
+    {
+      "role": "armazenamento",
+      "total": "6"
+    },
+    {
+      "role": "financeiro",
+      "total": "13"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\ttotal\nadministrador\t14\ngestor\t14\ncoordenador\t14\ncerimonial\t12\nbeca\t12\nlogistica\t14\narmazenamento\t6\nfinanceiro\t13\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

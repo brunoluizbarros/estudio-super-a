@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `extratos_uploads` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `fechamentoId` int NOT NULL,\n  `tipo` enum('itau_entrada','itau_saida','rede_recebimentos') NOT NULL,\n  `nomeArquivo` varchar(255) NOT NULL,\n  `urlArquivo` text NOT NULL,\n  `processado` boolean NOT NULL DEFAULT false,\n  `dadosProcessados` text,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  CONSTRAINT `extratos_uploads_id` PRIMARY KEY(`id`)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE TABLE IF NOT EXISTS `extratos_uploads` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `fechamentoId` int NOT NULL,\n  `tipo` enum('itau_entrada','itau_saida','rede_recebimentos') NOT NULL,\n  `nomeArquivo` varchar(255) NOT NULL,\n  `urlArquivo` text NOT NULL,\n  `processado` boolean NOT NULL DEFAULT false,\n  `dadosProcessados` text,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  CONSTRAINT `extratos_uploads_id` PRIMARY KEY(`id`)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 177
+}

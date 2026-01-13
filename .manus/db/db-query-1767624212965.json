@@ -1,0 +1,70 @@
+{
+  "query": "SELECT \n  h.id, \n  h.vendaId, \n  h.tipo, \n  h.usuarioId, \n  u.name as usuarioNome,\n  u.email as usuarioEmail,\n  h.dataAlteracao,\n  h.motivo\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nORDER BY h.dataAlteracao DESC\nLIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  h.id, \n  h.vendaId, \n  h.tipo, \n  h.usuarioId, \n  u.name as usuarioNome,\n  u.email as usuarioEmail,\n  h.dataAlteracao,\n  h.motivo\nFROM historico_alteracoes_vendas h\nLEFT JOIN users u ON h.usuarioId = u.id\nORDER BY h.dataAlteracao DESC\nLIMIT 20;",
+  "rows": [
+    {
+      "id": "30004",
+      "vendaId": "420002",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:19",
+      "motivo": "teste"
+    },
+    {
+      "id": "30003",
+      "vendaId": "420004",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:15",
+      "motivo": "teste"
+    },
+    {
+      "id": "30002",
+      "vendaId": "1",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:31:11",
+      "motivo": "teste"
+    },
+    {
+      "id": "30001",
+      "vendaId": "360001",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-05 00:16:06",
+      "motivo": "teste do sistema"
+    },
+    {
+      "id": "2",
+      "vendaId": "390001",
+      "tipo": "edicao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-04 03:14:10",
+      "motivo": "Venda editada"
+    },
+    {
+      "id": "1",
+      "vendaId": "300001",
+      "tipo": "exclusao",
+      "usuarioId": "1",
+      "usuarioNome": "Ciro Couceiro",
+      "usuarioEmail": "gestao@superaformaturas.com.br",
+      "dataAlteracao": "2026-01-04 02:55:58",
+      "motivo": "Teste de registro no histórico"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tusuarioId\tusuarioNome\tusuarioEmail\tdataAlteracao\tmotivo\n30004\t420002\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:19\tteste\n30003\t420004\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:15\tteste\n30002\t1\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:31:11\tteste\n30001\t360001\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 00:16:06\tteste do sistema\n2\t390001\tedicao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-04 03:14:10\tVenda editada\n1\t300001\texclusao\t1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-04 02:55:58\tTeste de registro no histórico\n",
+  "stderr": "",
+  "execution_time_ms": 106
+}

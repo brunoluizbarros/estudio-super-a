@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `divergencias_fechamento` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `fechamentoDiarioId` int NOT NULL,\n  `tipoDivergencia` enum('valor_diferente','nao_lancado','venda_fantasma','duplicado') NOT NULL,\n  `vendaId` int,\n  `pagamentoId` int,\n  `transacaoRedeId` int,\n  `valorEsperado` int,\n  `valorEncontrado` int,\n  `diferenca` int,\n  `cvNsu` varchar(50),\n  `descricao` text,\n  `statusResolucao` enum('pendente','aprovado','corrigido','ignorado') NOT NULL DEFAULT 'pendente',\n  `justificativa` text,\n  `resolvidoPorId` int,\n  `resolvidoPorNome` varchar(255),\n  `resolvidoEm` timestamp,\n  `observacoes` text,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  CONSTRAINT `divergencias_fechamento_id` PRIMARY KEY(`id`)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE TABLE IF NOT EXISTS `divergencias_fechamento` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `fechamentoDiarioId` int NOT NULL,\n  `tipoDivergencia` enum('valor_diferente','nao_lancado','venda_fantasma','duplicado') NOT NULL,\n  `vendaId` int,\n  `pagamentoId` int,\n  `transacaoRedeId` int,\n  `valorEsperado` int,\n  `valorEncontrado` int,\n  `diferenca` int,\n  `cvNsu` varchar(50),\n  `descricao` text,\n  `statusResolucao` enum('pendente','aprovado','corrigido','ignorado') NOT NULL DEFAULT 'pendente',\n  `justificativa` text,\n  `resolvidoPorId` int,\n  `resolvidoPorNome` varchar(255),\n  `resolvidoEm` timestamp,\n  `observacoes` text,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  CONSTRAINT `divergencias_fechamento_id` PRIMARY KEY(`id`)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 177
+}

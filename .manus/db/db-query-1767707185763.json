@@ -1,0 +1,17 @@
+{
+  "query": "SELECT * FROM tipos_usuario WHERE id = 4",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM tipos_usuario WHERE id = 4",
+  "rows": [
+    {
+      "id": "4",
+      "nome": "Logística",
+      "ativo": "1",
+      "createdAt": "2025-12-31 14:53:08",
+      "updatedAt": "2025-12-31 14:53:08"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tativo\tcreatedAt\tupdatedAt\n4\tLogística\t1\t2025-12-31 14:53:08\t2025-12-31 14:53:08\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

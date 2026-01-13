@@ -1,0 +1,33 @@
+{
+  "query": "SELECT \n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  detalhamento\nFROM despesas_v2\nWHERE numeroCi IN ('017/2025', '018/2025', '021/2025')\nORDER BY numeroCi",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  detalhamento\nFROM despesas_v2\nWHERE numeroCi IN ('017/2025', '018/2025', '021/2025')\nORDER BY numeroCi",
+  "rows": [
+    {
+      "numeroCi": "017/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Hospedagem",
+      "valorReais": "8100.0000",
+      "mesServico": "janeiro",
+      "detalhamento": "Hospedagem da equipe nos dias 15/01 à 25/01 para realização das fotos de estúdio nos dias 16/01 à 24/01"
+    },
+    {
+      "numeroCi": "018/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Hospedagem",
+      "valorReais": "4440.0000",
+      "mesServico": "janeiro",
+      "detalhamento": "Hospedagem da equipe nos dias 25/01 à 31/01 para realização das fotos de estúdio nos dias 26/01 à 31/01"
+    }
+  ],
+  "messages": [
+    "Quarto Duplo: ",
+    "Quarto Triplo: ",
+    "Valor total: R$8.100,00",
+    "Quarto Duplo: ",
+    "Quarto single: ",
+    "Valor total: R$4.440,00"
+  ],
+  "stdout": "numeroCi\tsetorSolicitante\ttipoServicoCompra\tvalorReais\tmesServico\tdetalhamento\n017/2025\tfotografia\tHospedagem\t8100.0000\tjaneiro\tHospedagem da equipe nos dias 15/01 à 25/01 para realização das fotos de estúdio nos dias 16/01 à 24/01\nQuarto Duplo: \nQuarto Triplo: \nValor total: R$8.100,00\n018/2025\tfotografia\tHospedagem\t4440.0000\tjaneiro\tHospedagem da equipe nos dias 25/01 à 31/01 para realização das fotos de estúdio nos dias 26/01 à 31/01\nQuarto Duplo: \nQuarto single: \nValor total: R$4.440,00\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

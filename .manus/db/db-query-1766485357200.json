@@ -1,0 +1,70 @@
+{
+  "query": "SELECT \n  d.id,\n  d.numeroCi,\n  d.tipoDespesa,\n  d.fornecedorId\nFROM despesas_v2 d\nORDER BY d.numeroCi DESC\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  d.id,\n  d.numeroCi,\n  d.tipoDespesa,\n  d.fornecedorId\nFROM despesas_v2 d\nORDER BY d.numeroCi DESC\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "94"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "94"
+    },
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "109"
+    },
+    {
+      "id": "90010",
+      "numeroCi": "015/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "186"
+    },
+    {
+      "id": "90009",
+      "numeroCi": "014/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "84"
+    },
+    {
+      "id": "90008",
+      "numeroCi": "013/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "117"
+    },
+    {
+      "id": "90007",
+      "numeroCi": "012/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "161"
+    },
+    {
+      "id": "90006",
+      "numeroCi": "011/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "30001"
+    },
+    {
+      "id": "90005",
+      "numeroCi": "010/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "169"
+    },
+    {
+      "id": "90004",
+      "numeroCi": "009/2025",
+      "tipoDespesa": "operacional",
+      "fornecedorId": "175"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\ttipoDespesa\tfornecedorId\n120003\t018/2025\toperacional\t94\n120002\t017/2025\toperacional\t94\n120001\t016/2025\toperacional\t109\n90010\t015/2025\toperacional\t186\n90009\t014/2025\toperacional\t84\n90008\t013/2025\toperacional\t117\n90007\t012/2025\toperacional\t161\n90006\t011/2025\toperacional\t30001\n90005\t010/2025\toperacional\t169\n90004\t009/2025\toperacional\t175\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

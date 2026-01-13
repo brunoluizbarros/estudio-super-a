@@ -1,0 +1,75 @@
+{
+  "query": "SELECT DISTINCT p.role, t.nome as tipo_usuario_nome, COUNT(*) as total\nFROM permissoes p\nLEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id\nGROUP BY p.role, t.nome\nORDER BY t.nome",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT p.role, t.nome as tipo_usuario_nome, COUNT(*) as total\nFROM permissoes p\nLEFT JOIN tipos_usuario t ON p.tipoUsuarioId = t.id\nGROUP BY p.role, t.nome\nORDER BY t.nome",
+  "rows": [
+    {
+      "role": "beca",
+      "tipo_usuario_nome": "Administrador",
+      "total": "14"
+    },
+    {
+      "role": "logistica",
+      "tipo_usuario_nome": "Administrador",
+      "total": "15"
+    },
+    {
+      "role": "financeiro",
+      "tipo_usuario_nome": "Administrador",
+      "total": "14"
+    },
+    {
+      "role": "Logística 1",
+      "tipo_usuario_nome": "Administrador",
+      "total": "14"
+    },
+    {
+      "role": "administrador",
+      "tipo_usuario_nome": "Administrador",
+      "total": "15"
+    },
+    {
+      "role": "coordenador",
+      "tipo_usuario_nome": "Administrador",
+      "total": "15"
+    },
+    {
+      "role": "cerimonial",
+      "tipo_usuario_nome": "Administrador",
+      "total": "13"
+    },
+    {
+      "role": "logística_1",
+      "tipo_usuario_nome": "Administrador",
+      "total": "7"
+    },
+    {
+      "role": "armazenamento",
+      "tipo_usuario_nome": "Administrador",
+      "total": "15"
+    },
+    {
+      "role": "controler",
+      "tipo_usuario_nome": "Administrador",
+      "total": "1"
+    },
+    {
+      "role": "Vendedor",
+      "tipo_usuario_nome": "Administrador",
+      "total": "14"
+    },
+    {
+      "role": "gestor",
+      "tipo_usuario_nome": "Administrador",
+      "total": "15"
+    },
+    {
+      "role": "Teste Vendedor",
+      "tipo_usuario_nome": "Administrador",
+      "total": "14"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\ttipo_usuario_nome\ttotal\nbeca\tAdministrador\t14\nlogistica\tAdministrador\t15\nfinanceiro\tAdministrador\t14\nLogística 1\tAdministrador\t14\nadministrador\tAdministrador\t15\ncoordenador\tAdministrador\t15\ncerimonial\tAdministrador\t13\nlogística_1\tAdministrador\t7\narmazenamento\tAdministrador\t15\ncontroler\tAdministrador\t1\nVendedor\tAdministrador\t14\ngestor\tAdministrador\t15\nTeste Vendedor\tAdministrador\t14\n",
+  "stderr": "",
+  "execution_time_ms": 69
+}

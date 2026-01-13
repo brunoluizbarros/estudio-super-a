@@ -1,0 +1,42 @@
+{
+  "query": "SELECT e.id, e.tipoEvento, e.dataEvento, e.dataEventoFim, e.turmaId, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '902' \nORDER BY e.dataEvento DESC\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.tipoEvento, e.dataEvento, e.dataEventoFim, e.turmaId, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '902' \nORDER BY e.dataEvento DESC\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "30002",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-12-10 00:00:00",
+      "dataEventoFim": "2025-12-13 00:00:00",
+      "turmaId": "1273",
+      "codigo": "902"
+    },
+    {
+      "id": "780",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "turmaId": "1273",
+      "codigo": "902"
+    },
+    {
+      "id": "781",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "turmaId": "1273",
+      "codigo": "902"
+    },
+    {
+      "id": "30001",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "turmaId": "1273",
+      "codigo": "902"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tdataEvento\tdataEventoFim\tturmaId\tcodigo\n30002\tfoto_estudio\t2025-12-10 00:00:00\t2025-12-13 00:00:00\t1273\t902\n780\tfoto_estudio\tNULL\tNULL\t1273\t902\n781\tfoto_oficial\tNULL\tNULL\t1273\t902\n30001\tfoto_estudio\tNULL\tNULL\t1273\t902\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

@@ -1,0 +1,16 @@
+{
+  "query": "SELECT turmaId, valorMasculino, valorFeminino, valorFamilia FROM configMaquiagemTurma LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT turmaId, valorMasculino, valorFeminino, valorFamilia FROM configMaquiagemTurma LIMIT 10",
+  "rows": [
+    {
+      "turmaId": "90001",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    }
+  ],
+  "messages": [],
+  "stdout": "turmaId\tvalorMasculino\tvalorFeminino\tvalorFamilia\n90001\t1815\t3080\t3000\n",
+  "stderr": "",
+  "execution_time_ms": 171
+}

@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE briefing_formando bf SET bf.eventoId = (SELECT e.id FROM eventos e INNER JOIN turmas t ON e.turmaId = t.id WHERE t.codigo = '654' AND e.tipoEvento = 'foto_estudio' ORDER BY e.id LIMIT 1) WHERE bf.eventoId IN (SELECT DISTINCT bf2.eventoId FROM briefing_formando bf2 INNER JOIN formandos f ON bf2.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id WHERE t.codigo = '654');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute UPDATE briefing_formando bf SET bf.eventoId = (SELECT e.id FROM eventos e INNER JOIN turmas t ON e.turmaId = t.id WHERE t.codigo = '654' AND e.tipoEvento = 'foto_estudio' ORDER BY e.id LIMIT 1) WHERE bf.eventoId IN (SELECT DISTINCT bf2.eventoId FROM briefing_formando bf2 INNER JOIN formandos f ON bf2.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id WHERE t.codigo = '654');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 76
+}

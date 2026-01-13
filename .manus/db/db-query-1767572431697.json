@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO despesas_v2 (numeroCi, tipoDespesa, mesServico, setorSolicitante, fornecedorId, detalhamento, eReembolso, valorTotal, tipoPagamento, dadosPagamento, criadoPorId, excluido, excluidoPor, excluidoEm, motivoExclusao)\nVALUES \n  ('999/2026', 'operacional', 'janeiro', 'fotografia', 1, 'Teste de validação - despesa excluída', 0, 50000, 'pix', 'PIX: teste@teste.com', 1, 1, 1, NOW(), 'Teste do sistema - validação de filtro')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO despesas_v2 (numeroCi, tipoDespesa, mesServico, setorSolicitante, fornecedorId, detalhamento, eReembolso, valorTotal, tipoPagamento, dadosPagamento, criadoPorId, excluido, excluidoPor, excluidoEm, motivoExclusao)\nVALUES \n  ('999/2026', 'operacional', 'janeiro', 'fotografia', 1, 'Teste de validação - despesa excluída', 0, 50000, 'pix', 'PIX: teste@teste.com', 1, 1, 1, NOW(), 'Teste do sistema - validação de filtro')",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 67
+}

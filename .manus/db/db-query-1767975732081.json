@@ -1,0 +1,9 @@
+{
+  "query": "CREATE INDEX IF NOT EXISTS idx_execucao_formando_evento ON execucao_formando(eventoId); CREATE INDEX IF NOT EXISTS idx_execucao_formando_formando ON execucao_formando(formandoId); CREATE INDEX IF NOT EXISTS idx_execucao_formando_evento_formando ON execucao_formando(eventoId, formandoId)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute CREATE INDEX IF NOT EXISTS idx_execucao_formando_evento ON execucao_formando(eventoId); CREATE INDEX IF NOT EXISTS idx_execucao_formando_formando ON execucao_formando(formandoId); CREATE INDEX IF NOT EXISTS idx_execucao_formando_evento_formando ON execucao_formando(eventoId, formandoId)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1443
+}

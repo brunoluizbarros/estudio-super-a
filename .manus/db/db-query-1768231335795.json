@@ -1,0 +1,32 @@
+{
+  "query": "SELECT * FROM eventos WHERE id = 480001;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM eventos WHERE id = 480001;",
+  "rows": [
+    {
+      "id": "480001",
+      "turmaId": "300001",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2026-01-15 00:00:00",
+      "dataEventoFim": "NULL",
+      "local": "NULL",
+      "cenarios": "NULL",
+      "observacao": "NULL",
+      "status": "agendado",
+      "createdAt": "2026-01-02 22:30:36",
+      "updatedAt": "2026-01-02 22:30:36",
+      "fotografos": "NULL",
+      "cerimoniais": "NULL",
+      "coordenadores": "NULL",
+      "producao": "NULL",
+      "maquiadoras": "NULL",
+      "horariosInicio": "NULL",
+      "acessoComissaoHabilitado": "0",
+      "prazoEdicaoComissao": "NULL",
+      "tokenAcessoComissao": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\tcenarios\tobservacao\tstatus\tcreatedAt\tupdatedAt\tfotografos\tcerimoniais\tcoordenadores\tproducao\tmaquiadoras\thorariosInicio\tacessoComissaoHabilitado\tprazoEdicaoComissao\ttokenAcessoComissao\n480001\t300001\tfoto_estudio\t2026-01-15 00:00:00\tNULL\tNULL\tNULL\tNULL\tagendado\t2026-01-02 22:30:36\t2026-01-02 22:30:36\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\t0\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 398
+}

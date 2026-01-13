@@ -1,0 +1,19 @@
+{
+  "query": "SELECT se.id, se.tipoServico, se.quantidade, se.eventoId, se.formandoId, \n       f.nome as formando_nome, e.dataEvento\nFROM servicos_execucao se\nJOIN formandos f ON se.formandoId = f.id\nJOIN eventos e ON se.eventoId = e.id\nWHERE f.nome LIKE '%Aires%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.tipoServico, se.quantidade, se.eventoId, se.formandoId, \n       f.nome as formando_nome, e.dataEvento\nFROM servicos_execucao se\nJOIN formandos f ON se.formandoId = f.id\nJOIN eventos e ON se.eventoId = e.id\nWHERE f.nome LIKE '%Aires%'",
+  "rows": [
+    {
+      "id": "390001",
+      "tipoServico": "cabelo_simples",
+      "quantidade": "1",
+      "eventoId": "90008",
+      "formandoId": "90039",
+      "formando_nome": "Aires Gonçalves Da Costa Pinto",
+      "dataEvento": "2025-11-03 15:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoServico\tquantidade\teventoId\tformandoId\tformando_nome\tdataEvento\n390001\tcabelo_simples\t1\t90008\t90039\tAires Gonçalves Da Costa Pinto\t2025-11-03 15:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

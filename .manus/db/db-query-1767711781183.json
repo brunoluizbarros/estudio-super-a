@@ -1,0 +1,9 @@
+{
+  "query": "SELECT id, formandoId, abordagemMakeFormando, abordagemCabeloFormando, abordagemQtdCabeloSimples, abordagemQtdCabeloCombinado, abordagemQtdMakeFamilia, abordagemQtdFamilia, abordagemQtdPets FROM briefing_formando WHERE abordagemMakeFormando IS NOT NULL OR abordagemCabeloFormando IS NOT NULL OR abordagemQtdCabeloSimples IS NOT NULL LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, formandoId, abordagemMakeFormando, abordagemCabeloFormando, abordagemQtdCabeloSimples, abordagemQtdCabeloCombinado, abordagemQtdMakeFamilia, abordagemQtdFamilia, abordagemQtdPets FROM briefing_formando WHERE abordagemMakeFormando IS NOT NULL OR abordagemCabeloFormando IS NOT NULL OR abordagemQtdCabeloSimples IS NOT NULL LIMIT 20;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 66
+}

@@ -1,0 +1,9 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.status, \n       FROM_UNIXTIME(v.createdAt / 1000) as data_venda,\n       f.nome as formando_nome, f.turmaId \nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nWHERE YEAR(FROM_UNIXTIME(v.createdAt / 1000)) = 2026 \n  AND MONTH(FROM_UNIXTIME(v.createdAt / 1000)) = 6\nORDER BY v.createdAt",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.status, \n       FROM_UNIXTIME(v.createdAt / 1000) as data_venda,\n       f.nome as formando_nome, f.turmaId \nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nWHERE YEAR(FROM_UNIXTIME(v.createdAt / 1000)) = 2026 \n  AND MONTH(FROM_UNIXTIME(v.createdAt / 1000)) = 6\nORDER BY v.createdAt",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 58
+}

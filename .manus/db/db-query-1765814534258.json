@@ -1,0 +1,9 @@
+{
+  "query": "\nCREATE TABLE IF NOT EXISTS `sequencia_ci` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `ano` int NOT NULL,\n  `ultimoNumero` int NOT NULL DEFAULT 0,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `sequencia_ci_ano_unique` (`ano`)\n);\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nCREATE TABLE IF NOT EXISTS `sequencia_ci` (\n  `id` int AUTO_INCREMENT NOT NULL,\n  `ano` int NOT NULL,\n  `ultimoNumero` int NOT NULL DEFAULT 0,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `sequencia_ci_ano_unique` (`ano`)\n);\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 184
+}

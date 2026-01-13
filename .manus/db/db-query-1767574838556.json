@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n  MONTH(FROM_UNIXTIME(dataVenda/1000)) as mes,\n  COALESCE(SUM(valorTotal), 0) as totalBruto\nFROM vendas\nWHERE YEAR(FROM_UNIXTIME(dataVenda/1000)) = 2025\n  AND excluido = 0\nGROUP BY MONTH(FROM_UNIXTIME(dataVenda/1000))\nORDER BY MONTH(FROM_UNIXTIME(dataVenda/1000))",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  MONTH(FROM_UNIXTIME(dataVenda/1000)) as mes,\n  COALESCE(SUM(valorTotal), 0) as totalBruto\nFROM vendas\nWHERE YEAR(FROM_UNIXTIME(dataVenda/1000)) = 2025\n  AND excluido = 0\nGROUP BY MONTH(FROM_UNIXTIME(dataVenda/1000))\nORDER BY MONTH(FROM_UNIXTIME(dataVenda/1000))",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 59
+}

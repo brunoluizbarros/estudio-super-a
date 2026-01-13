@@ -1,0 +1,8 @@
+{
+  "query": "\nSELECT DISTINCT t.id, t.codigo, t.cursos, t.instituicoes, \n       COUNT(DISTINCT f.id) as total_formandos,\n       COUNT(DISTINCT e.id) as total_eventos\nFROM turmas t\nINNER JOIN formandos f ON f.turmaId = t.id\nINNER JOIN eventos e ON e.turmaId = t.id AND e.data IS NOT NULL\nGROUP BY t.id\nORDER BY total_formandos DESC\nLIMIT 5;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT DISTINCT t.id, t.codigo, t.cursos, t.instituicoes, \n       COUNT(DISTINCT f.id) as total_formandos,\n       COUNT(DISTINCT e.id) as total_eventos\nFROM turmas t\nINNER JOIN formandos f ON f.turmaId = t.id\nINNER JOIN eventos e ON e.turmaId = t.id AND e.data IS NOT NULL\nGROUP BY t.id\nORDER BY total_formandos DESC\nLIMIT 5;\n",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 2: Unknown column 'e.data' in 'on clause'"
+  ]
+}

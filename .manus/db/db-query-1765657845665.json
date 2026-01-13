@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, nome FROM formandos WHERE nome LIKE '%Dilianne%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM formandos WHERE nome LIKE '%Dilianne%'",
+  "rows": [
+    {
+      "id": "30064",
+      "nome": "Dilianne Sousa Alencar"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n30064\tDilianne Sousa Alencar\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

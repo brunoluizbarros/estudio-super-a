@@ -1,0 +1,45 @@
+{
+  "query": "SELECT t.id, t.codigo, t.cursos,\n  (SELECT COUNT(*) FROM formandos WHERE turmaId = t.id) as total_formandos,\n  (SELECT COUNT(*) FROM eventos WHERE turmaId = t.id) as total_eventos\nFROM turmas t \nWHERE EXISTS (SELECT 1 FROM formandos WHERE turmaId = t.id)\n  AND EXISTS (SELECT 1 FROM eventos WHERE turmaId = t.id)\nORDER BY t.id DESC \nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, t.cursos,\n  (SELECT COUNT(*) FROM formandos WHERE turmaId = t.id) as total_formandos,\n  (SELECT COUNT(*) FROM eventos WHERE turmaId = t.id) as total_eventos\nFROM turmas t \nWHERE EXISTS (SELECT 1 FROM formandos WHERE turmaId = t.id)\n  AND EXISTS (SELECT 1 FROM eventos WHERE turmaId = t.id)\nORDER BY t.id DESC \nLIMIT 5;",
+  "rows": [
+    {
+      "id": "300001",
+      "codigo": "TEST GERAL",
+      "cursos": "[\"TESTE\"]",
+      "total_formandos": "2",
+      "total_eventos": "2"
+    },
+    {
+      "id": "1306",
+      "codigo": "974",
+      "cursos": "[\"MEDICINA\"]",
+      "total_formandos": "42",
+      "total_eventos": "3"
+    },
+    {
+      "id": "1255",
+      "codigo": "567",
+      "cursos": "[\"MEDICINA\"]",
+      "total_formandos": "1",
+      "total_eventos": "10"
+    },
+    {
+      "id": "1254",
+      "codigo": "572",
+      "cursos": "[\"MEDICINA\"]",
+      "total_formandos": "1",
+      "total_eventos": "4"
+    },
+    {
+      "id": "1253",
+      "codigo": "776",
+      "cursos": "[\"MEDICINA\"]",
+      "total_formandos": "2",
+      "total_eventos": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\ttotal_formandos\ttotal_eventos\n300001\tTEST GERAL\t[\"TESTE\"]\t2\t2\n1306\t974\t[\"MEDICINA\"]\t42\t3\n1255\t567\t[\"MEDICINA\"]\t1\t10\n1254\t572\t[\"MEDICINA\"]\t1\t4\n1253\t776\t[\"MEDICINA\"]\t2\t3\n",
+  "stderr": "",
+  "execution_time_ms": 49
+}

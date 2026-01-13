@@ -1,0 +1,175 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'logistica'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'logistica'",
+  "rows": [
+    {
+      "id": "54",
+      "role": "logistica",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "55",
+      "role": "logistica",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "56",
+      "role": "logistica",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "57",
+      "role": "logistica",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "58",
+      "role": "logistica",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "60001",
+      "role": "logistica",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-19 20:30:16",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "90001",
+      "role": "logistica",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-22 13:16:49",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120001",
+      "role": "logistica",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120002",
+      "role": "logistica",
+      "secao": "execucao",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120003",
+      "role": "logistica",
+      "secao": "vendas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120004",
+      "role": "logistica",
+      "secao": "reunioes",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120006",
+      "role": "logistica",
+      "secao": "financeiro",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120007",
+      "role": "logistica",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120008",
+      "role": "logistica",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-23 18:32:44",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "180014",
+      "role": "logistica",
+      "secao": "permissoes_cerimoniais",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-26 23:14:45",
+      "updatedAt": "2026-01-06 13:48:17",
+      "tipoUsuarioId": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\n54\tlogistica\thome\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-06 13:48:17\t4\n55\tlogistica\tturmas\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-06 13:48:17\t4\n56\tlogistica\teventos\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-06 13:48:17\t4\n57\tlogistica\tservicos\t0\t0\t0\t2025-12-18 12:24:40\t2026-01-06 13:48:17\t4\n58\tlogistica\trelatorios\t1\t0\t0\t2025-12-18 12:24:40\t2026-01-06 13:48:17\t4\n60001\tlogistica\tdespesas\t1\t1\t0\t2025-12-19 20:30:16\t2026-01-06 13:48:17\t4\n90001\tlogistica\tconfiguracoes\t1\t1\t0\t2025-12-22 13:16:49\t2026-01-06 13:48:17\t4\n120001\tlogistica\tabordagem\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120002\tlogistica\texecucao\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120003\tlogistica\tvendas\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120004\tlogistica\treunioes\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120006\tlogistica\tfinanceiro\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120007\tlogistica\tbriefing\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n120008\tlogistica\tbecas\t0\t0\t0\t2025-12-23 18:32:44\t2026-01-06 13:48:17\t4\n180014\tlogistica\tpermissoes_cerimoniais\t1\t1\t1\t2025-12-26 23:14:45\t2026-01-06 13:48:17\t4\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

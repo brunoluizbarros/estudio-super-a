@@ -1,0 +1,80 @@
+{
+  "query": "SELECT id, turmaId, valorMasculino, valorFeminino, valorFamilia FROM configMaquiagemTurma LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, valorMasculino, valorFeminino, valorFamilia FROM configMaquiagemTurma LIMIT 10",
+  "rows": [
+    {
+      "id": "6",
+      "turmaId": "90001",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30001",
+      "turmaId": "1231",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30002",
+      "turmaId": "1196",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30003",
+      "turmaId": "1201",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30004",
+      "turmaId": "1104",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30005",
+      "turmaId": "1101",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30006",
+      "turmaId": "1339",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30007",
+      "turmaId": "1096",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30008",
+      "turmaId": "1338",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    },
+    {
+      "id": "30009",
+      "turmaId": "1091",
+      "valorMasculino": "1815",
+      "valorFeminino": "3080",
+      "valorFamilia": "3000"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\tvalorMasculino\tvalorFeminino\tvalorFamilia\n6\t90001\t1815\t3080\t3000\n30001\t1231\t1815\t3080\t3000\n30002\t1196\t1815\t3080\t3000\n30003\t1201\t1815\t3080\t3000\n30004\t1104\t1815\t3080\t3000\n30005\t1101\t1815\t3080\t3000\n30006\t1339\t1815\t3080\t3000\n30007\t1096\t1815\t3080\t3000\n30008\t1338\t1815\t3080\t3000\n30009\t1091\t1815\t3080\t3000\n",
+  "stderr": "",
+  "execution_time_ms": 102
+}

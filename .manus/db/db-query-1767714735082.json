@@ -1,0 +1,75 @@
+{
+  "query": "SELECT \n  e.id,\n  e.tipoEvento,\n  e.turmaId,\n  e.dataEvento,\n  e.dataEventoFim,\n  t.codigo as codigoTurma,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654'\nORDER BY e.tipoEvento;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  e.id,\n  e.tipoEvento,\n  e.turmaId,\n  e.dataEvento,\n  e.dataEventoFim,\n  t.codigo as codigoTurma,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654'\nORDER BY e.tipoEvento;",
+  "rows": [
+    {
+      "id": "420061",
+      "tipoEvento": "foto_estudio",
+      "turmaId": "1132",
+      "dataEvento": "2026-01-06 15:00:00",
+      "dataEventoFim": "2026-01-06 15:00:00",
+      "codigoTurma": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "420062",
+      "tipoEvento": "foto_estudio",
+      "turmaId": "1132",
+      "dataEvento": "2026-01-07 15:00:00",
+      "dataEventoFim": "2026-01-07 15:00:00",
+      "codigoTurma": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "420063",
+      "tipoEvento": "foto_estudio",
+      "turmaId": "1132",
+      "dataEvento": "2026-01-08 15:00:00",
+      "dataEventoFim": "2026-01-08 15:00:00",
+      "codigoTurma": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "420064",
+      "tipoEvento": "foto_estudio",
+      "turmaId": "1132",
+      "dataEvento": "2026-01-09 15:00:00",
+      "dataEventoFim": "2026-01-09 15:00:00",
+      "codigoTurma": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "420116",
+      "tipoEvento": "foto_oficial",
+      "turmaId": "1132",
+      "dataEvento": "2026-02-06 00:00:00",
+      "dataEventoFim": "2026-02-06 00:00:00",
+      "codigoTurma": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tturmaId\tdataEvento\tdataEventoFim\tcodigoTurma\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\n420061\tfoto_estudio\t1132\t2026-01-06 15:00:00\t2026-01-06 15:00:00\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n420062\tfoto_estudio\t1132\t2026-01-07 15:00:00\t2026-01-07 15:00:00\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n420063\tfoto_estudio\t1132\t2026-01-08 15:00:00\t2026-01-08 15:00:00\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n420064\tfoto_estudio\t1132\t2026-01-09 15:00:00\t2026-01-09 15:00:00\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n420116\tfoto_oficial\t1132\t2026-02-06 00:00:00\t2026-02-06 00:00:00\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

@@ -1,0 +1,19 @@
+{
+  "query": "SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas WHERE codigo = '654' LIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, periodos FROM turmas WHERE codigo = '654' LIMIT 1",
+  "rows": [
+    {
+      "id": "1132",
+      "codigo": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "115",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\n1132\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t115\t[\"2026\"]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

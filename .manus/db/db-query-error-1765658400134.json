@@ -1,0 +1,8 @@
+{
+  "query": "SELECT se.id, se.tipo, se.quantidade, se.eventoId, se.formandoId, f.nome as formando_nome\nFROM servicos_execucao se\nJOIN formandos f ON se.formandoId = f.id\nWHERE f.nome LIKE '%Aires%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.tipo, se.quantidade, se.eventoId, se.formandoId, f.nome as formando_nome\nFROM servicos_execucao se\nJOIN formandos f ON se.formandoId = f.id\nWHERE f.nome LIKE '%Aires%'",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'se.tipo' in 'field list'"
+  ]
+}

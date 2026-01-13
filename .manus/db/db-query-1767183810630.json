@@ -1,0 +1,70 @@
+{
+  "query": "SELECT turmaId, COUNT(*) as total_eventos, GROUP_CONCAT(DISTINCT tipoEvento) as tipos, GROUP_CONCAT(DISTINCT local) as locais FROM eventos WHERE dataEvento IS NOT NULL GROUP BY turmaId LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT turmaId, COUNT(*) as total_eventos, GROUP_CONCAT(DISTINCT tipoEvento) as tipos, GROUP_CONCAT(DISTINCT local) as locais FROM eventos WHERE dataEvento IS NOT NULL GROUP BY turmaId LIMIT 10",
+  "rows": [
+    {
+      "turmaId": "1272",
+      "total_eventos": "9",
+      "tipos": "foto_estudio,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "1165",
+      "total_eventos": "3",
+      "tipos": "foto_estudio,foto_descontrada",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "1175",
+      "total_eventos": "2",
+      "tipos": "foto_estudio,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "180001",
+      "total_eventos": "3",
+      "tipos": "foto_oficial,foto_descontrada",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "180002",
+      "total_eventos": "4",
+      "tipos": "foto_estudio,foto_descontrada,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "1141",
+      "total_eventos": "6",
+      "tipos": "foto_estudio,foto_oficial,foto_descontrada",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "1142",
+      "total_eventos": "5",
+      "tipos": "foto_estudio,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "1177",
+      "total_eventos": "5",
+      "tipos": "foto_estudio,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "180006",
+      "total_eventos": "4",
+      "tipos": "foto_estudio,foto_oficial",
+      "locais": "NULL"
+    },
+    {
+      "turmaId": "180004",
+      "total_eventos": "4",
+      "tipos": "foto_oficial,foto_estudio",
+      "locais": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "turmaId\ttotal_eventos\ttipos\tlocais\n1272\t9\tfoto_estudio,foto_oficial\tNULL\n1165\t3\tfoto_estudio,foto_descontrada\tNULL\n1175\t2\tfoto_estudio,foto_oficial\tNULL\n180001\t3\tfoto_oficial,foto_descontrada\tNULL\n180002\t4\tfoto_estudio,foto_descontrada,foto_oficial\tNULL\n1141\t6\tfoto_estudio,foto_oficial,foto_descontrada\tNULL\n1142\t5\tfoto_estudio,foto_oficial\tNULL\n1177\t5\tfoto_estudio,foto_oficial\tNULL\n180006\t4\tfoto_estudio,foto_oficial\tNULL\n180004\t4\tfoto_oficial,foto_estudio\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 63
+}

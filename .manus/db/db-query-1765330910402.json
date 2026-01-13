@@ -1,0 +1,38 @@
+{
+  "query": "SELECT e.id, e.tipoEvento, e.dataEvento, e.dataEventoFim, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '804' \nORDER BY e.dataEvento DESC \nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.tipoEvento, e.dataEvento, e.dataEventoFim, t.codigo \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE t.codigo = '804' \nORDER BY e.dataEvento DESC \nLIMIT 10",
+  "rows": [
+    {
+      "id": "90008",
+      "tipoEvento": "foto_50",
+      "dataEvento": "2025-11-03 15:00:00",
+      "dataEventoFim": "2025-11-04 15:00:00",
+      "codigo": "804"
+    },
+    {
+      "id": "137",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "codigo": "804"
+    },
+    {
+      "id": "138",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "codigo": "804"
+    },
+    {
+      "id": "139",
+      "tipoEvento": "foto_50",
+      "dataEvento": "NULL",
+      "dataEventoFim": "NULL",
+      "codigo": "804"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tdataEvento\tdataEventoFim\tcodigo\n90008\tfoto_50\t2025-11-03 15:00:00\t2025-11-04 15:00:00\t804\n137\tfoto_estudio\tNULL\tNULL\t804\n138\tfoto_oficial\tNULL\tNULL\t804\n139\tfoto_50\tNULL\tNULL\t804\n",
+  "stderr": "",
+  "execution_time_ms": 127
+}

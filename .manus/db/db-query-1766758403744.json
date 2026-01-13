@@ -1,0 +1,70 @@
+{
+  "query": "SELECT tipoServicoCompra, COUNT(*) as total, \n       MIN(numeroCi) as exemplo_ci,\n       MIN(mesServico) as exemplo_mes\nFROM despesas_v2\nGROUP BY tipoServicoCompra\nORDER BY tipoServicoCompra;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT tipoServicoCompra, COUNT(*) as total, \n       MIN(numeroCi) as exemplo_ci,\n       MIN(mesServico) as exemplo_mes\nFROM despesas_v2\nGROUP BY tipoServicoCompra\nORDER BY tipoServicoCompra;",
+  "rows": [
+    {
+      "tipoServicoCompra": "Alimentação",
+      "total": "3",
+      "exemplo_ci": "004/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Equipamentos / Utensílios /Bens",
+      "total": "1",
+      "exemplo_ci": "023/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "total": "1",
+      "exemplo_ci": "022/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Hospedagem",
+      "total": "5",
+      "exemplo_ci": "002/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Locação de Equipamentos Fotográficos",
+      "total": "1",
+      "exemplo_ci": "013/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Locação de Estruturas",
+      "total": "1",
+      "exemplo_ci": "012/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Mão de Obra - Cerimonial",
+      "total": "2",
+      "exemplo_ci": "010/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Mão de Obra - Coordenação",
+      "total": "1",
+      "exemplo_ci": "015/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Mão de Obra - Fotógrafo",
+      "total": "4",
+      "exemplo_ci": "007/2025",
+      "exemplo_mes": "dezembro"
+    },
+    {
+      "tipoServicoCompra": "Transferência Santander",
+      "total": "1",
+      "exemplo_ci": "024/2025",
+      "exemplo_mes": "dezembro"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoServicoCompra\ttotal\texemplo_ci\texemplo_mes\nAlimentação\t3\t004/2025\tdezembro\nEquipamentos / Utensílios /Bens\t1\t023/2025\tdezembro\nGráfica (Impressos / Brindes)\t1\t022/2025\tdezembro\nHospedagem\t5\t002/2025\tdezembro\nLocação de Equipamentos Fotográficos\t1\t013/2025\tdezembro\nLocação de Estruturas\t1\t012/2025\tdezembro\nMão de Obra - Cerimonial\t2\t010/2025\tdezembro\nMão de Obra - Coordenação\t1\t015/2025\tdezembro\nMão de Obra - Fotógrafo\t4\t007/2025\tdezembro\nTransferência Santander\t1\t024/2025\tdezembro\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

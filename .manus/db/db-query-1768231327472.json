@@ -1,0 +1,170 @@
+{
+  "query": "DESCRIBE eventos;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute DESCRIBE eventos;",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "turmaId",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tipoEvento",
+      "Type": "enum('foto_estudio','foto_50','foto_descontrada','foto_oficial','foto_samu','foto_bloco','foto_consultorio','foto_estrela','foto_internato','family_day')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "dataEvento",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "dataEventoFim",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "local",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "cenarios",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "observacao",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "status",
+      "Type": "enum('agendado','em_andamento','concluido','cancelado')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "agendado",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    },
+    {
+      "Field": "fotografos",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "cerimoniais",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "coordenadores",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "producao",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "maquiadoras",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "horariosInicio",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "acessoComissaoHabilitado",
+      "Type": "tinyint(1)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "prazoEdicaoComissao",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "tokenAcessoComissao",
+      "Type": "varchar(64)",
+      "Null": "YES",
+      "Key": "UNI",
+      "Default": "NULL",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint(11)\tNO\tPRI\tNULL\tauto_increment\nturmaId\tint(11)\tNO\t\tNULL\t\ntipoEvento\tenum('foto_estudio','foto_50','foto_descontrada','foto_oficial','foto_samu','foto_bloco','foto_consultorio','foto_estrela','foto_internato','family_day')\tNO\t\tNULL\t\ndataEvento\tdatetime\tYES\t\tNULL\t\ndataEventoFim\tdatetime\tYES\t\tNULL\t\nlocal\tvarchar(255)\tYES\t\tNULL\t\ncenarios\ttext\tYES\t\tNULL\t\nobservacao\ttext\tYES\t\tNULL\t\nstatus\tenum('agendado','em_andamento','concluido','cancelado')\tYES\t\tagendado\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\nfotografos\ttext\tYES\t\tNULL\t\ncerimoniais\ttext\tYES\t\tNULL\t\ncoordenadores\ttext\tYES\t\tNULL\t\nproducao\ttext\tYES\t\tNULL\t\nmaquiadoras\ttext\tYES\t\tNULL\t\nhorariosInicio\ttext\tYES\t\tNULL\t\nacessoComissaoHabilitado\ttinyint(1)\tNO\t\t0\t\nprazoEdicaoComissao\tdatetime\tYES\t\tNULL\t\ntokenAcessoComissao\tvarchar(64)\tYES\tUNI\tNULL\t\n",
+  "stderr": "",
+  "execution_time_ms": 389
+}

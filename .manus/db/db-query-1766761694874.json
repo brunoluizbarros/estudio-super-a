@@ -1,0 +1,40 @@
+{
+  "query": "SELECT \n  id,\n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY numeroCi",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\nORDER BY numeroCi",
+  "rows": [
+    {
+      "id": "210002",
+      "numeroCi": "022/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "valorTotal": "272100",
+      "valorReais": "2721.0000",
+      "mesServico": "dezembro",
+      "ano": "2025"
+    },
+    {
+      "id": "240001",
+      "numeroCi": "023/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Equipamentos / Utensílios / Bens",
+      "valorTotal": "1",
+      "valorReais": "0.0100",
+      "mesServico": "dezembro",
+      "ano": "2025"
+    },
+    {
+      "id": "240002",
+      "numeroCi": "024/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Transferência Santander",
+      "valorTotal": "496538",
+      "valorReais": "4965.3800",
+      "mesServico": "dezembro",
+      "ano": "2025"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\tsetorSolicitante\ttipoServicoCompra\tvalorTotal\tvalorReais\tmesServico\tano\n210002\t022/2025\testudio\tGráfica (Impressos / Brindes)\t272100\t2721.0000\tdezembro\t2025\n240001\t023/2025\testudio\tEquipamentos / Utensílios / Bens\t1\t0.0100\tdezembro\t2025\n240002\t024/2025\testudio\tTransferência Santander\t496538\t4965.3800\tdezembro\t2025\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

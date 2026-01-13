@@ -1,0 +1,170 @@
+{
+  "query": "SELECT * FROM taxasCartao LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM taxasCartao LIMIT 20;",
+  "rows": [
+    {
+      "id": "1",
+      "tipoPagamento": "credito",
+      "bandeira": "VISA",
+      "parcelas": "1",
+      "taxaPercentual": "299",
+      "createdAt": "2025-12-13 22:57:07"
+    },
+    {
+      "id": "2",
+      "tipoPagamento": "credito",
+      "bandeira": "VISA",
+      "parcelas": "2",
+      "taxaPercentual": "378",
+      "createdAt": "2025-12-13 22:57:23"
+    },
+    {
+      "id": "3",
+      "tipoPagamento": "credito",
+      "bandeira": "VISA",
+      "parcelas": "3",
+      "taxaPercentual": "437",
+      "createdAt": "2025-12-13 22:57:34"
+    },
+    {
+      "id": "4",
+      "tipoPagamento": "credito",
+      "bandeira": "VISA",
+      "parcelas": "4",
+      "taxaPercentual": "496",
+      "createdAt": "2025-12-13 22:57:49"
+    },
+    {
+      "id": "5",
+      "tipoPagamento": "credito",
+      "bandeira": "VISA",
+      "parcelas": "5",
+      "taxaPercentual": "555",
+      "createdAt": "2025-12-13 22:58:01"
+    },
+    {
+      "id": "30001",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "1",
+      "taxaPercentual": "299",
+      "createdAt": "2025-12-13 23:05:30"
+    },
+    {
+      "id": "30003",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "2",
+      "taxaPercentual": "378",
+      "createdAt": "2025-12-13 23:05:46"
+    },
+    {
+      "id": "30004",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "3",
+      "taxaPercentual": "437",
+      "createdAt": "2025-12-13 23:06:01"
+    },
+    {
+      "id": "30005",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "4",
+      "taxaPercentual": "496",
+      "createdAt": "2025-12-13 23:06:24"
+    },
+    {
+      "id": "30006",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "5",
+      "taxaPercentual": "555",
+      "createdAt": "2025-12-13 23:06:41"
+    },
+    {
+      "id": "30007",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "6",
+      "taxaPercentual": "614",
+      "createdAt": "2025-12-13 23:06:55"
+    },
+    {
+      "id": "30008",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "1",
+      "taxaPercentual": "379",
+      "createdAt": "2025-12-13 23:07:08"
+    },
+    {
+      "id": "30009",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "2",
+      "taxaPercentual": "458",
+      "createdAt": "2025-12-13 23:07:22"
+    },
+    {
+      "id": "30010",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "3",
+      "taxaPercentual": "517",
+      "createdAt": "2025-12-13 23:07:36"
+    },
+    {
+      "id": "30011",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "4",
+      "taxaPercentual": "576",
+      "createdAt": "2025-12-13 23:07:52"
+    },
+    {
+      "id": "30012",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "5",
+      "taxaPercentual": "635",
+      "createdAt": "2025-12-13 23:08:06"
+    },
+    {
+      "id": "30013",
+      "tipoPagamento": "credito",
+      "bandeira": "ELO",
+      "parcelas": "6",
+      "taxaPercentual": "694",
+      "createdAt": "2025-12-13 23:08:29"
+    },
+    {
+      "id": "30014",
+      "tipoPagamento": "credito",
+      "bandeira": "AMERICAN EXPRESS",
+      "parcelas": "1",
+      "taxaPercentual": "379",
+      "createdAt": "2025-12-13 23:08:45"
+    },
+    {
+      "id": "30015",
+      "tipoPagamento": "credito",
+      "bandeira": "AMERICAN EXPRESS",
+      "parcelas": "2",
+      "taxaPercentual": "458",
+      "createdAt": "2025-12-13 23:08:55"
+    },
+    {
+      "id": "30016",
+      "tipoPagamento": "credito",
+      "bandeira": "AMERICAN EXPRESS",
+      "parcelas": "3",
+      "taxaPercentual": "517",
+      "createdAt": "2025-12-13 23:09:06"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoPagamento\tbandeira\tparcelas\ttaxaPercentual\tcreatedAt\n1\tcredito\tVISA\t1\t299\t2025-12-13 22:57:07\n2\tcredito\tVISA\t2\t378\t2025-12-13 22:57:23\n3\tcredito\tVISA\t3\t437\t2025-12-13 22:57:34\n4\tcredito\tVISA\t4\t496\t2025-12-13 22:57:49\n5\tcredito\tVISA\t5\t555\t2025-12-13 22:58:01\n30001\tcredito\tMASTER\t1\t299\t2025-12-13 23:05:30\n30003\tcredito\tMASTER\t2\t378\t2025-12-13 23:05:46\n30004\tcredito\tMASTER\t3\t437\t2025-12-13 23:06:01\n30005\tcredito\tMASTER\t4\t496\t2025-12-13 23:06:24\n30006\tcredito\tMASTER\t5\t555\t2025-12-13 23:06:41\n30007\tcredito\tMASTER\t6\t614\t2025-12-13 23:06:55\n30008\tcredito\tELO\t1\t379\t2025-12-13 23:07:08\n30009\tcredito\tELO\t2\t458\t2025-12-13 23:07:22\n30010\tcredito\tELO\t3\t517\t2025-12-13 23:07:36\n30011\tcredito\tELO\t4\t576\t2025-12-13 23:07:52\n30012\tcredito\tELO\t5\t635\t2025-12-13 23:08:06\n30013\tcredito\tELO\t6\t694\t2025-12-13 23:08:29\n30014\tcredito\tAMERICAN EXPRESS\t1\t379\t2025-12-13 23:08:45\n30015\tcredito\tAMERICAN EXPRESS\t2\t458\t2025-12-13 23:08:55\n30016\tcredito\tAMERICAN EXPRESS\t3\t517\t2025-12-13 23:09:06\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

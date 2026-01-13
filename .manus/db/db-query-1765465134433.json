@@ -1,0 +1,19 @@
+{
+  "query": "SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME LIKE '%foto%' OR TABLE_NAME LIKE '%execu%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME LIKE '%foto%' OR TABLE_NAME LIKE '%execu%'",
+  "rows": [
+    {
+      "TABLE_NAME": "execucao_formando"
+    },
+    {
+      "TABLE_NAME": "fotos_formando"
+    },
+    {
+      "TABLE_NAME": "servicos_execucao"
+    }
+  ],
+  "messages": [],
+  "stdout": "TABLE_NAME\nexecucao_formando\nfotos_formando\nservicos_execucao\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

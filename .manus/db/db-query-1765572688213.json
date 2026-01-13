@@ -1,0 +1,17 @@
+{
+  "query": "SELECT ef.id, ef.eventoId, ef.formandoId, ef.dataExecucao, f.nome FROM execucao_formando ef JOIN formandos f ON ef.formandoId = f.id WHERE f.nome LIKE '%Aires%' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ef.id, ef.eventoId, ef.formandoId, ef.dataExecucao, f.nome FROM execucao_formando ef JOIN formandos f ON ef.formandoId = f.id WHERE f.nome LIKE '%Aires%' LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "eventoId": "90008",
+      "formandoId": "90039",
+      "dataExecucao": "NULL",
+      "nome": "Aires Gonçalves Da Costa Pinto"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\tdataExecucao\tnome\n1\t90008\t90039\tNULL\tAires Gonçalves Da Costa Pinto\n",
+  "stderr": "",
+  "execution_time_ms": 48
+}

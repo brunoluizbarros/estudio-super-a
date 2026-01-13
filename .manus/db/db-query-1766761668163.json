@@ -1,0 +1,70 @@
+{
+  "query": "SELECT \n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais\nFROM despesas_v2\nORDER BY numeroCi DESC\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  setorSolicitante,\n  tipoServicoCompra,\n  valorTotal / 100 AS valorReais\nFROM despesas_v2\nORDER BY numeroCi DESC\nLIMIT 10",
+  "rows": [
+    {
+      "numeroCi": "024/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Transferência Santander",
+      "valorReais": "4965.3800"
+    },
+    {
+      "numeroCi": "023/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Equipamentos / Utensílios / Bens",
+      "valorReais": "0.0100"
+    },
+    {
+      "numeroCi": "022/2025",
+      "setorSolicitante": "estudio",
+      "tipoServicoCompra": "Gráfica (Impressos / Brindes)",
+      "valorReais": "2721.0000"
+    },
+    {
+      "numeroCi": "018/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Hospedagem",
+      "valorReais": "4440.0000"
+    },
+    {
+      "numeroCi": "017/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Hospedagem",
+      "valorReais": "8100.0000"
+    },
+    {
+      "numeroCi": "016/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Hospedagem",
+      "valorReais": "2680.0000"
+    },
+    {
+      "numeroCi": "015/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Mão de Obra - Coordenação",
+      "valorReais": "120.0000"
+    },
+    {
+      "numeroCi": "014/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Mão de Obra - Fotógrafo",
+      "valorReais": "450.0000"
+    },
+    {
+      "numeroCi": "013/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Locação de Equipamentos Fotográficos",
+      "valorReais": "800.0000"
+    },
+    {
+      "numeroCi": "012/2025",
+      "setorSolicitante": "fotografia",
+      "tipoServicoCompra": "Locação de Estruturas",
+      "valorReais": "2000.0000"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\tsetorSolicitante\ttipoServicoCompra\tvalorReais\n024/2025\testudio\tTransferência Santander\t4965.3800\n023/2025\testudio\tEquipamentos / Utensílios / Bens\t0.0100\n022/2025\testudio\tGráfica (Impressos / Brindes)\t2721.0000\n018/2025\tfotografia\tHospedagem\t4440.0000\n017/2025\tfotografia\tHospedagem\t8100.0000\n016/2025\tfotografia\tHospedagem\t2680.0000\n015/2025\tfotografia\tMão de Obra - Coordenação\t120.0000\n014/2025\tfotografia\tMão de Obra - Fotógrafo\t450.0000\n013/2025\tfotografia\tLocação de Equipamentos Fotográficos\t800.0000\n012/2025\tfotografia\tLocação de Estruturas\t2000.0000\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

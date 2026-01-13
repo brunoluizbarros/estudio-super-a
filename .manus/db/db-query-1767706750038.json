@@ -1,0 +1,175 @@
+{
+  "query": "SELECT * FROM permissoes WHERE secao = 'home' ORDER BY role",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE secao = 'home' ORDER BY role",
+  "rows": [
+    {
+      "id": "1",
+      "role": "administrador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:24:39",
+      "updatedAt": "2025-12-18 20:21:17",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "59",
+      "role": "armazenamento",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-05 18:49:16",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "49",
+      "role": "beca",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-06 13:38:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "43",
+      "role": "cerimonial",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-05 18:48:58",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "270022",
+      "role": "controle",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2026-01-05 20:18:00",
+      "updatedAt": "2026-01-05 20:18:00",
+      "tipoUsuarioId": "30002"
+    },
+    {
+      "id": "210002",
+      "role": "controler",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-31 22:55:05",
+      "updatedAt": "2025-12-31 22:55:05",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "29",
+      "role": "coordenador",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-05 18:48:51",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "30064",
+      "role": "financeiro",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:36:31",
+      "updatedAt": "2026-01-05 18:49:22",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "270002",
+      "role": "Fotógrafo",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2026-01-05 18:10:57",
+      "updatedAt": "2026-01-05 18:49:27",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "15",
+      "role": "gestor",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:24:39",
+      "updatedAt": "2026-01-05 18:48:45",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "54",
+      "role": "logistica",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-05 18:49:09",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "210037",
+      "role": "Logística 1",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2026-01-01 15:22:57",
+      "updatedAt": "2026-01-01 15:22:57",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "210003",
+      "role": "logística_1",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-31 22:58:45",
+      "updatedAt": "2025-12-31 22:58:45",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "210023",
+      "role": "Teste Vendedor",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2026-01-01 15:22:57",
+      "updatedAt": "2026-01-01 15:22:57",
+      "tipoUsuarioId": "1"
+    },
+    {
+      "id": "210009",
+      "role": "Vendedor",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2026-01-01 15:22:56",
+      "updatedAt": "2026-01-01 15:22:56",
+      "tipoUsuarioId": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\n1\tadministrador\thome\t1\t1\t1\t2025-12-18 12:24:39\t2025-12-18 20:21:17\t1\n59\tarmazenamento\thome\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-05 18:49:16\t1\n49\tbeca\thome\t1\t1\t1\t2025-12-18 12:24:40\t2026-01-06 13:38:22\t1\n43\tcerimonial\thome\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-05 18:48:58\t1\n270022\tcontrole\thome\t1\t0\t0\t2026-01-05 20:18:00\t2026-01-05 20:18:00\t30002\n210002\tcontroler\thome\t1\t0\t0\t2025-12-31 22:55:05\t2025-12-31 22:55:05\t1\n29\tcoordenador\thome\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-05 18:48:51\t1\n30064\tfinanceiro\thome\t1\t1\t1\t2025-12-18 12:36:31\t2026-01-05 18:49:22\t1\n270002\tFotógrafo\thome\t1\t1\t0\t2026-01-05 18:10:57\t2026-01-05 18:49:27\t1\n15\tgestor\thome\t1\t1\t1\t2025-12-18 12:24:39\t2026-01-05 18:48:45\t1\n54\tlogistica\thome\t1\t1\t0\t2025-12-18 12:24:40\t2026-01-05 18:49:09\t1\n210037\tLogística 1\thome\t0\t0\t0\t2026-01-01 15:22:57\t2026-01-01 15:22:57\t1\n210003\tlogística_1\thome\t1\t0\t0\t2025-12-31 22:58:45\t2025-12-31 22:58:45\t1\n210023\tTeste Vendedor\thome\t0\t0\t0\t2026-01-01 15:22:57\t2026-01-01 15:22:57\t1\n210009\tVendedor\thome\t0\t0\t0\t2026-01-01 15:22:56\t2026-01-01 15:22:56\t1\n",
+  "stderr": "",
+  "execution_time_ms": 100
+}

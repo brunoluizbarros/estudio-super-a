@@ -1,0 +1,35 @@
+{
+  "query": "SELECT t.id, t.codigo, COUNT(f.id) as total_formandos FROM turmas t INNER JOIN formandos f ON f.turmaId = t.id GROUP BY t.id ORDER BY total_formandos DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, COUNT(f.id) as total_formandos FROM turmas t INNER JOIN formandos f ON f.turmaId = t.id GROUP BY t.id ORDER BY total_formandos DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "1231",
+      "codigo": "820",
+      "total_formandos": "85"
+    },
+    {
+      "id": "1061",
+      "codigo": "804",
+      "total_formandos": "84"
+    },
+    {
+      "id": "1176",
+      "codigo": "553",
+      "total_formandos": "73"
+    },
+    {
+      "id": "1273",
+      "codigo": "902",
+      "total_formandos": "57"
+    },
+    {
+      "id": "1172",
+      "codigo": "632",
+      "total_formandos": "29"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\ttotal_formandos\n1231\t820\t85\n1061\t804\t84\n1176\t553\t73\n1273\t902\t57\n1172\t632\t29\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

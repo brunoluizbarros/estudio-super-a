@@ -1,0 +1,50 @@
+{
+  "query": "\nSELECT t.id, t.codigo, t.cursos, t.instituicoes, \n       (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as total_formandos,\n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as total_eventos\nFROM turmas t\nWHERE (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 0\n  AND (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\nORDER BY total_formandos DESC\nLIMIT 5;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT t.id, t.codigo, t.cursos, t.instituicoes, \n       (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) as total_formandos,\n       (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) as total_eventos\nFROM turmas t\nWHERE (SELECT COUNT(*) FROM formandos f WHERE f.turmaId = t.id) > 0\n  AND (SELECT COUNT(*) FROM eventos e WHERE e.turmaId = t.id AND e.dataEvento IS NOT NULL) > 0\nORDER BY total_formandos DESC\nLIMIT 5;\n",
+  "rows": [
+    {
+      "id": "1231",
+      "codigo": "820",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"NASSAU\"]",
+      "total_formandos": "85",
+      "total_eventos": "1"
+    },
+    {
+      "id": "1061",
+      "codigo": "804",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FPS\"]",
+      "total_formandos": "84",
+      "total_eventos": "1"
+    },
+    {
+      "id": "1176",
+      "codigo": "553",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FITS\"]",
+      "total_formandos": "73",
+      "total_eventos": "5"
+    },
+    {
+      "id": "1273",
+      "codigo": "902",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "total_formandos": "57",
+      "total_eventos": "1"
+    },
+    {
+      "id": "1172",
+      "codigo": "632",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIVASF PAULO AFONSO\"]",
+      "total_formandos": "29",
+      "total_eventos": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\ttotal_formandos\ttotal_eventos\n1231\t820\t[\"MEDICINA\"]\t[\"NASSAU\"]\t85\t1\n1061\t804\t[\"MEDICINA\"]\t[\"FPS\"]\t84\t1\n1176\t553\t[\"MEDICINA\"]\t[\"FITS\"]\t73\t5\n1273\t902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\t57\t1\n1172\t632\t[\"MEDICINA\"]\t[\"UNIVASF PAULO AFONSO\"]\t29\t3\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

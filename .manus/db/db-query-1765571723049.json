@@ -1,0 +1,16 @@
+{
+  "query": "SELECT se.id, se.eventoId, se.formandoId, se.tipoServico\nFROM servicos_execucao se\nWHERE se.formandoId = (SELECT id FROM formandos WHERE nome LIKE '%Ayna%' LIMIT 1)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.eventoId, se.formandoId, se.tipoServico\nFROM servicos_execucao se\nWHERE se.formandoId = (SELECT id FROM formandos WHERE nome LIKE '%Ayna%' LIMIT 1)",
+  "rows": [
+    {
+      "id": "90002",
+      "eventoId": "90008",
+      "formandoId": "90003",
+      "tipoServico": "make_formando"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\teventoId\tformandoId\ttipoServico\n90002\t90008\t90003\tmake_formando\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

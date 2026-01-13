@@ -1,0 +1,1 @@
+ALTER TABLE `configMaquiagemTurma` ADD `valorFamilia` int NOT NULL;

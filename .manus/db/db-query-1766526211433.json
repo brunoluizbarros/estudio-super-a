@@ -1,0 +1,58 @@
+{
+  "query": "SELECT role, visualizar, inserir, excluir FROM permissoes_relatorios WHERE aba = 'compensacao_bancaria' ORDER BY role",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT role, visualizar, inserir, excluir FROM permissoes_relatorios WHERE aba = 'compensacao_bancaria' ORDER BY role",
+  "rows": [
+    {
+      "role": "administrador",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "gestor",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "coordenador",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "cerimonial",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "beca",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "logistica",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "armazenamento",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "role": "financeiro",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "role\tvisualizar\tinserir\texcluir\nadministrador\t1\t0\t0\ngestor\t1\t0\t0\ncoordenador\t1\t0\t0\ncerimonial\t1\t0\t0\nbeca\t1\t0\t0\nlogistica\t1\t0\t0\narmazenamento\t1\t0\t0\nfinanceiro\t1\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 75
+}

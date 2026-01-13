@@ -1,0 +1,52 @@
+{
+  "query": "SELECT id, tipoPagamento, bandeira, parcelas, taxaPercentual FROM taxasCartao WHERE bandeira = 'MASTER' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, tipoPagamento, bandeira, parcelas, taxaPercentual FROM taxasCartao WHERE bandeira = 'MASTER' LIMIT 10;",
+  "rows": [
+    {
+      "id": "30001",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "1",
+      "taxaPercentual": "299"
+    },
+    {
+      "id": "30003",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "2",
+      "taxaPercentual": "378"
+    },
+    {
+      "id": "30004",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "3",
+      "taxaPercentual": "437"
+    },
+    {
+      "id": "30005",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "4",
+      "taxaPercentual": "496"
+    },
+    {
+      "id": "30006",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "5",
+      "taxaPercentual": "555"
+    },
+    {
+      "id": "30007",
+      "tipoPagamento": "credito",
+      "bandeira": "MASTER",
+      "parcelas": "6",
+      "taxaPercentual": "614"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoPagamento\tbandeira\tparcelas\ttaxaPercentual\n30001\tcredito\tMASTER\t1\t299\n30003\tcredito\tMASTER\t2\t378\n30004\tcredito\tMASTER\t3\t437\n30005\tcredito\tMASTER\t4\t496\n30006\tcredito\tMASTER\t5\t555\n30007\tcredito\tMASTER\t6\t614\n",
+  "stderr": "",
+  "execution_time_ms": 49
+}

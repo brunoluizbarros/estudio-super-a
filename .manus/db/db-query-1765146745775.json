@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, nome FROM locais WHERE nome LIKE '%IMIP%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM locais WHERE nome LIKE '%IMIP%';",
+  "rows": [
+    {
+      "id": "30004",
+      "nome": "IMIP"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n30004\tIMIP\n",
+  "stderr": "",
+  "execution_time_ms": 88
+}

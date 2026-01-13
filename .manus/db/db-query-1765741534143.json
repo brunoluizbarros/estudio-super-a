@@ -1,0 +1,9 @@
+{
+  "query": "SELECT a.*, e.tipoEvento, e.dataEvento, f.nome as formandoNome \nFROM agendamentos a \nINNER JOIN eventos e ON a.eventoId = e.id \nINNER JOIN formandos f ON a.formandoId = f.id \nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '553') \nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT a.*, e.tipoEvento, e.dataEvento, f.nome as formandoNome \nFROM agendamentos a \nINNER JOIN eventos e ON a.eventoId = e.id \nINNER JOIN formandos f ON a.formandoId = f.id \nWHERE e.turmaId = (SELECT id FROM turmas WHERE codigo = '553') \nLIMIT 10",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 58
+}

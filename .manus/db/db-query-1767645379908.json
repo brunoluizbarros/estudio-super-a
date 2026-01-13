@@ -1,0 +1,21 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'beca' AND secao = 'home';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'beca' AND secao = 'home';",
+  "rows": [
+    {
+      "id": "49",
+      "role": "beca",
+      "secao": "home",
+      "visualizar": "0",
+      "inserir": "1",
+      "excluir": "1",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2026-01-05 20:35:47",
+      "tipoUsuarioId": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\ttipoUsuarioId\n49\tbeca\thome\t0\t1\t1\t2025-12-18 12:24:40\t2026-01-05 20:35:47\t1\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

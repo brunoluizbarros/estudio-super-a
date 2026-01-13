@@ -1,0 +1,100 @@
+{
+  "query": "SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, cidade FROM turmas WHERE codigo LIKE '%654%' OR codigo LIKE '%MEDICINA%' OR codigo LIKE '%UPE%' OR instituicoes LIKE '%UPE%' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo, cursos, instituicoes, numeroTurma, anos, cidade FROM turmas WHERE codigo LIKE '%654%' OR codigo LIKE '%MEDICINA%' OR codigo LIKE '%UPE%' OR instituicoes LIKE '%UPE%' LIMIT 10;",
+  "rows": [
+    {
+      "id": "1091",
+      "codigo": "969",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "119",
+      "anos": "[2028]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1094",
+      "codigo": "944",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "120",
+      "anos": "[\"2028\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1095",
+      "codigo": "924",
+      "cursos": "[\"DIREITO\"]",
+      "instituicoes": "[\"UPE\\r\\nFDR\"]",
+      "numeroTurma": "",
+      "anos": "[\"2028\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1096",
+      "codigo": "920",
+      "cursos": "[\"DIREITO\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "",
+      "anos": "[2025]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1097",
+      "codigo": "915",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "118",
+      "anos": "[\"2027\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1099",
+      "codigo": "909",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "117",
+      "anos": "[\"2027\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1100",
+      "codigo": "905",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "121",
+      "anos": "[\"2029\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1111",
+      "codigo": "808",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "116",
+      "anos": "[\"2026\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1113",
+      "codigo": "799",
+      "cursos": "[\"ODONTOLOGIA\"]",
+      "instituicoes": "[\"UPE\\r\\nUFPE\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "cidade": "Recife / RMR"
+    },
+    {
+      "id": "1118",
+      "codigo": "768",
+      "cursos": "[\"ENFERMAGEM\"]",
+      "instituicoes": "[\"UPE\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "cidade": "Recife / RMR"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tcidade\n1091\t969\t[\"MEDICINA\"]\t[\"UPE\"]\t119\t[2028]\tRecife / RMR\n1094\t944\t[\"MEDICINA\"]\t[\"UPE\"]\t120\t[\"2028\"]\tRecife / RMR\n1095\t924\t[\"DIREITO\"]\t[\"UPE\\r\\nFDR\"]\t\t[\"2028\"]\tRecife / RMR\n1096\t920\t[\"DIREITO\"]\t[\"UPE\"]\t\t[2025]\tRecife / RMR\n1097\t915\t[\"MEDICINA\"]\t[\"UPE\"]\t118\t[\"2027\"]\tRecife / RMR\n1099\t909\t[\"MEDICINA\"]\t[\"UPE\"]\t117\t[\"2027\"]\tRecife / RMR\n1100\t905\t[\"MEDICINA\"]\t[\"UPE\"]\t121\t[\"2029\"]\tRecife / RMR\n1111\t808\t[\"MEDICINA\"]\t[\"UPE\"]\t116\t[\"2026\"]\tRecife / RMR\n1113\t799\t[\"ODONTOLOGIA\"]\t[\"UPE\\r\\nUFPE\"]\t\t[\"2026\"]\tRecife / RMR\n1118\t768\t[\"ENFERMAGEM\"]\t[\"UPE\"]\t\t[\"2026\"]\tRecife / RMR\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

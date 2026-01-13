@@ -1,0 +1,20 @@
+{
+  "query": "SELECT \n  id,\n  name,\n  email,\n  role,\n  status,\n  lastSignedIn,\n  createdAt,\n  openId\nFROM users\nWHERE email = 'bruno.vasconcelos1302@gmail.com'\n   OR email LIKE '%bruno%'\n   OR name LIKE '%Bruno%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  name,\n  email,\n  role,\n  status,\n  lastSignedIn,\n  createdAt,\n  openId\nFROM users\nWHERE email = 'bruno.vasconcelos1302@gmail.com'\n   OR email LIKE '%bruno%'\n   OR name LIKE '%Bruno%';",
+  "rows": [
+    {
+      "id": "20970368",
+      "name": "Bruno.vasconcelos Vasconelos",
+      "email": "bruno.vasconcelos1302@gmail.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 15:33:31",
+      "createdAt": "2026-01-02 17:37:26",
+      "openId": "cBcQYMWVHiBUNKATg8kLrV"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\tlastSignedIn\tcreatedAt\topenId\n20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\tcoordenador\taprovado\t2026-01-05 15:33:31\t2026-01-02 17:37:26\tcBcQYMWVHiBUNKATg8kLrV\n",
+  "stderr": "",
+  "execution_time_ms": 91
+}

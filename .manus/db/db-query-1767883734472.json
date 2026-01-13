@@ -1,0 +1,37 @@
+{
+  "query": "SELECT * FROM backup_logs ORDER BY dataHora DESC LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM backup_logs ORDER BY dataHora DESC LIMIT 10",
+  "rows": [
+    {
+      "id": "3",
+      "dataHora": "2026-01-07 20:11:02",
+      "status": "sucesso",
+      "mensagem": "Backup gerado e enviado por e-mail",
+      "tamanhoArquivo": "84532668",
+      "emailEnviado": "1",
+      "createdAt": "2026-01-07 20:11:14"
+    },
+    {
+      "id": "2",
+      "dataHora": "2026-01-07 18:47:10",
+      "status": "sucesso",
+      "mensagem": "Backup gerado e enviado por e-mail",
+      "tamanhoArquivo": "84008636",
+      "emailEnviado": "1",
+      "createdAt": "2026-01-07 18:47:22"
+    },
+    {
+      "id": "1",
+      "dataHora": "2026-01-07 18:22:32",
+      "status": "sucesso",
+      "mensagem": "Backup gerado e enviado por e-mail",
+      "tamanhoArquivo": "83997412",
+      "emailEnviado": "1",
+      "createdAt": "2026-01-07 18:22:39"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tdataHora\tstatus\tmensagem\ttamanhoArquivo\temailEnviado\tcreatedAt\n3\t2026-01-07 20:11:02\tsucesso\tBackup gerado e enviado por e-mail\t84532668\t1\t2026-01-07 20:11:14\n2\t2026-01-07 18:47:10\tsucesso\tBackup gerado e enviado por e-mail\t84008636\t1\t2026-01-07 18:47:22\n1\t2026-01-07 18:22:32\tsucesso\tBackup gerado e enviado por e-mail\t83997412\t1\t2026-01-07 18:22:39\n",
+  "stderr": "",
+  "execution_time_ms": 409
+}

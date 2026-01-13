@@ -1,0 +1,70 @@
+{
+  "query": "SELECT * FROM permissoes WHERE role = 'armazenamento';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM permissoes WHERE role = 'armazenamento';",
+  "rows": [
+    {
+      "id": "59",
+      "role": "armazenamento",
+      "secao": "home",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-22 13:18:24"
+    },
+    {
+      "id": "60",
+      "role": "armazenamento",
+      "secao": "turmas",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:24:40"
+    },
+    {
+      "id": "61",
+      "role": "armazenamento",
+      "secao": "eventos",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:24:40"
+    },
+    {
+      "id": "62",
+      "role": "armazenamento",
+      "secao": "servicos",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:41:09"
+    },
+    {
+      "id": "63",
+      "role": "armazenamento",
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:24:40",
+      "updatedAt": "2025-12-18 12:24:40"
+    },
+    {
+      "id": "30073",
+      "role": "armazenamento",
+      "secao": "execucao",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "createdAt": "2025-12-18 12:45:57",
+      "updatedAt": "2025-12-18 12:45:58"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\tcreatedAt\tupdatedAt\n59\tarmazenamento\thome\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-22 13:18:24\n60\tarmazenamento\tturmas\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:24:40\n61\tarmazenamento\teventos\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:24:40\n62\tarmazenamento\tservicos\t0\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:41:09\n63\tarmazenamento\trelatorios\t1\t0\t0\t2025-12-18 12:24:40\t2025-12-18 12:24:40\n30073\tarmazenamento\texecucao\t1\t1\t0\t2025-12-18 12:45:57\t2025-12-18 12:45:58\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

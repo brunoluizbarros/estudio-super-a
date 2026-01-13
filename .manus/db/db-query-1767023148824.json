@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total_briefing_grupo FROM briefing_grupo;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT COUNT(*) as total_briefing_grupo FROM briefing_grupo;",
+  "rows": [
+    {
+      "total_briefing_grupo": "21"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_briefing_grupo\n21\n",
+  "stderr": "",
+  "execution_time_ms": 70
+}

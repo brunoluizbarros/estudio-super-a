@@ -1,0 +1,14 @@
+{
+  "query": "SELECT id, codigo FROM turmas WHERE codigo = 799",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo FROM turmas WHERE codigo = 799",
+  "rows": [
+    {
+      "id": "1113",
+      "codigo": "799"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\n1113\t799\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

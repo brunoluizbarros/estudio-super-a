@@ -1,0 +1,28 @@
+{
+  "query": "SELECT id, name, email, role, status, openId, createdAt FROM users WHERE email = 'cirocouceiro@me.com' OR name LIKE '%Ciro%' OR email LIKE '%cirocouceiro%' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, name, email, role, status, openId, createdAt FROM users WHERE email = 'cirocouceiro@me.com' OR name LIKE '%Ciro%' OR email LIKE '%cirocouceiro%' ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Ciro Couceiro",
+      "email": "gestao@superaformaturas.com.br",
+      "role": "administrador",
+      "status": "aprovado",
+      "openId": "E9VgU2svErDiaAbpY3Y2Gn",
+      "createdAt": "2025-12-06 16:06:51"
+    },
+    {
+      "id": "14100118",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "openId": "PThHPwQ7ZTYXSZuFuhoi6r",
+      "createdAt": "2025-12-23 18:26:34"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\topenId\tcreatedAt\n1\tCiro Couceiro\tgestao@superaformaturas.com.br\tadministrador\taprovado\tE9VgU2svErDiaAbpY3Y2Gn\t2025-12-06 16:06:51\n14100118\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\taprovado\tPThHPwQ7ZTYXSZuFuhoi6r\t2025-12-23 18:26:34\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

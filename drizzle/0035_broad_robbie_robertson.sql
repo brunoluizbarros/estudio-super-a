@@ -1,0 +1,1 @@
+ALTER TABLE `pagamentos` MODIFY COLUMN `tipo` enum('pix','dinheiro','debito','credito','incluso_pacote') NOT NULL;

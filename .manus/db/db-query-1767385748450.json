@@ -1,0 +1,60 @@
+{
+  "query": "SELECT DATE(dataVenda) as data, COUNT(*) as quantidade, SUM(valorTotal) as total FROM vendas GROUP BY DATE(dataVenda) ORDER BY data DESC LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DATE(dataVenda) as data, COUNT(*) as quantidade, SUM(valorTotal) as total FROM vendas GROUP BY DATE(dataVenda) ORDER BY data DESC LIMIT 10",
+  "rows": [
+    {
+      "data": "2025-12-20",
+      "quantidade": "1",
+      "total": "55000"
+    },
+    {
+      "data": "2025-12-13",
+      "quantidade": "9",
+      "total": "585000"
+    },
+    {
+      "data": "2025-12-12",
+      "quantidade": "13",
+      "total": "855000"
+    },
+    {
+      "data": "2025-12-11",
+      "quantidade": "7",
+      "total": "455000"
+    },
+    {
+      "data": "2025-12-10",
+      "quantidade": "7",
+      "total": "465000"
+    },
+    {
+      "data": "2025-11-28",
+      "quantidade": "13",
+      "total": "702500"
+    },
+    {
+      "data": "2025-11-18",
+      "quantidade": "1",
+      "total": "65000"
+    },
+    {
+      "data": "2025-11-11",
+      "quantidade": "1",
+      "total": "10000"
+    },
+    {
+      "data": "2025-11-09",
+      "quantidade": "1",
+      "total": "55000"
+    },
+    {
+      "data": "2025-11-05",
+      "quantidade": "1",
+      "total": "20000"
+    }
+  ],
+  "messages": [],
+  "stdout": "data\tquantidade\ttotal\n2025-12-20\t1\t55000\n2025-12-13\t9\t585000\n2025-12-12\t13\t855000\n2025-12-11\t7\t455000\n2025-12-10\t7\t465000\n2025-11-28\t13\t702500\n2025-11-18\t1\t65000\n2025-11-11\t1\t10000\n2025-11-09\t1\t55000\n2025-11-05\t1\t20000\n",
+  "stderr": "",
+  "execution_time_ms": 98
+}

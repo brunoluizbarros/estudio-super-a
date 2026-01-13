@@ -1,0 +1,18 @@
+{
+  "query": "SELECT f.id, f.nome, t.id as turmaId, t.codigo, t.curso, e.id as eventoId\nFROM formandos f\nJOIN turmas t ON f.turmaId = t.id\nLEFT JOIN eventos e ON e.turmaId = t.id\nWHERE f.nome LIKE '%Aires%'\nLIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT f.id, f.nome, t.id as turmaId, t.codigo, t.curso, e.id as eventoId\nFROM formandos f\nJOIN turmas t ON f.turmaId = t.id\nLEFT JOIN eventos e ON e.turmaId = t.id\nWHERE f.nome LIKE '%Aires%'\nLIMIT 1",
+  "rows": [
+    {
+      "id": "90039",
+      "nome": "Aires Gonçalves Da Costa Pinto",
+      "turmaId": "1061",
+      "codigo": "804",
+      "curso": "MEDICINA",
+      "eventoId": "137"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tturmaId\tcodigo\tcurso\teventoId\n90039\tAires Gonçalves Da Costa Pinto\t1061\t804\tMEDICINA\t137\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

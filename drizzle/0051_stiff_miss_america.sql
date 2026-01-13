@@ -1,0 +1,1 @@
+ALTER TABLE `vendas` ADD `motivoExclusao` text;

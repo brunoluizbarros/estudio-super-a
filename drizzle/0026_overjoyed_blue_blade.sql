@@ -1,0 +1,1 @@
+ALTER TABLE `turmas` ADD `observacoesBeca` text;

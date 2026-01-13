@@ -1,0 +1,29 @@
+{
+  "query": "SHOW CREATE TABLE formandos;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW CREATE TABLE formandos;",
+  "rows": [
+    {
+      "Table": "formandos",
+      "Create Table": "CREATE TABLE `formandos` ("
+    }
+  ],
+  "messages": [
+    "  `id` int(11) NOT NULL AUTO_INCREMENT,",
+    "  `turmaId` int(11) NOT NULL,",
+    "  `codigoFormando` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,",
+    "  `cpf` varchar(14) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `telefone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `email` varchar(320) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `genero` enum('masculino','feminino') COLLATE utf8mb4_unicode_ci DEFAULT 'masculino',",
+    "  `pacote` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `eComissao` tinyint(1) DEFAULT '0',",
+    "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,",
+    "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,",
+    "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */",
+    ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci"
+  ],
+  "stdout": "Table\tCreate Table\nformandos\tCREATE TABLE `formandos` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `turmaId` int(11) NOT NULL,\n  `codigoFormando` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,\n  `cpf` varchar(14) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `telefone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `email` varchar(320) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `genero` enum('masculino','feminino') COLLATE utf8mb4_unicode_ci DEFAULT 'masculino',\n  `pacote` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `eComissao` tinyint(1) DEFAULT '0',\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

@@ -1,0 +1,3 @@
+ALTER TABLE `formandos` ADD CONSTRAINT `formandos_turmaId_turmas_id_fk` FOREIGN KEY (`turmaId`) REFERENCES `turmas`(`id`) ON DELETE restrict ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `vendas` ADD CONSTRAINT `vendas_eventoId_eventos_id_fk` FOREIGN KEY (`eventoId`) REFERENCES `eventos`(`id`) ON DELETE restrict ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `vendas` ADD CONSTRAINT `vendas_formandoId_formandos_id_fk` FOREIGN KEY (`formandoId`) REFERENCES `formandos`(`id`) ON DELETE restrict ON UPDATE no action;

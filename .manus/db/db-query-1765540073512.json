@@ -1,0 +1,40 @@
+{
+  "query": "SELECT t.id, t.codigo, e.id as eventoId, e.dataEvento \nFROM turmas t \nJOIN eventos e ON e.turmaId = t.id \nWHERE e.dataEvento IS NOT NULL \nLIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, e.id as eventoId, e.dataEvento \nFROM turmas t \nJOIN eventos e ON e.turmaId = t.id \nWHERE e.dataEvento IS NOT NULL \nLIMIT 5",
+  "rows": [
+    {
+      "id": "1033",
+      "codigo": "652",
+      "eventoId": "90006",
+      "dataEvento": "2025-11-08 15:00:00"
+    },
+    {
+      "id": "1041",
+      "codigo": "582",
+      "eventoId": "60013",
+      "dataEvento": "2025-11-02 15:00:00"
+    },
+    {
+      "id": "1041",
+      "codigo": "582",
+      "eventoId": "60012",
+      "dataEvento": "2025-11-01 15:00:00"
+    },
+    {
+      "id": "1041",
+      "codigo": "582",
+      "eventoId": "60011",
+      "dataEvento": "2025-11-01 15:00:00"
+    },
+    {
+      "id": "1060",
+      "codigo": "832",
+      "eventoId": "90013",
+      "dataEvento": "2025-11-06 15:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\teventoId\tdataEvento\n1033\t652\t90006\t2025-11-08 15:00:00\n1041\t582\t60013\t2025-11-02 15:00:00\n1041\t582\t60012\t2025-11-01 15:00:00\n1041\t582\t60011\t2025-11-01 15:00:00\n1060\t832\t90013\t2025-11-06 15:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

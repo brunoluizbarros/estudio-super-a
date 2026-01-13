@@ -1,0 +1,9 @@
+{
+  "query": "SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  setorSolicitante,\n  CASE \n    WHEN tipoServicoCompra = 'Equipamentos / Utensílios / Bens' THEN 'DEVERIA SER EXCLUÍDO'\n    ELSE 'OK - INCLUIR'\n  END AS status_esperado\nFROM despesas_v2\nWHERE numeroCi = '021/2025'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  numeroCi,\n  tipoServicoCompra,\n  valorTotal,\n  valorTotal / 100 AS valorReais,\n  mesServico,\n  YEAR(createdAt) AS ano,\n  setorSolicitante,\n  CASE \n    WHEN tipoServicoCompra = 'Equipamentos / Utensílios / Bens' THEN 'DEVERIA SER EXCLUÍDO'\n    ELSE 'OK - INCLUIR'\n  END AS status_esperado\nFROM despesas_v2\nWHERE numeroCi = '021/2025'",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 56
+}

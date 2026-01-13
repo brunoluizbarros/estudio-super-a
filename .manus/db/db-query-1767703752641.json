@@ -1,0 +1,22 @@
+{
+  "query": "SELECT \n  p.id, \n  p.vendaId, \n  p.tipo, \n  p.valor, \n  p.valorLiquido, \n  p.bandeira, \n  p.parcelas, \n  p.cvNsu,\n  v.dataVenda,\n  v.formandoId\nFROM pagamentos p\nINNER JOIN vendas v ON v.id = p.vendaId\nWHERE p.cvNsu = '18913508'\nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  p.id, \n  p.vendaId, \n  p.tipo, \n  p.valor, \n  p.valorLiquido, \n  p.bandeira, \n  p.parcelas, \n  p.cvNsu,\n  v.dataVenda,\n  v.formandoId\nFROM pagamentos p\nINNER JOIN vendas v ON v.id = p.vendaId\nWHERE p.cvNsu = '18913508'\nLIMIT 5;",
+  "rows": [
+    {
+      "id": "480028",
+      "vendaId": "330004",
+      "tipo": "credito",
+      "valor": "35000",
+      "valorLiquido": "33954",
+      "bandeira": "VISA",
+      "parcelas": "1",
+      "cvNsu": "18913508",
+      "dataVenda": "2025-12-13 15:00:00",
+      "formandoId": "270005"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvendaId\ttipo\tvalor\tvalorLiquido\tbandeira\tparcelas\tcvNsu\tdataVenda\tformandoId\n480028\t330004\tcredito\t35000\t33954\tVISA\t1\t18913508\t2025-12-13 15:00:00\t270005\n",
+  "stderr": "",
+  "execution_time_ms": 424
+}

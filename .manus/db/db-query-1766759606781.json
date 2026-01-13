@@ -1,0 +1,22 @@
+{
+  "query": "SELECT \n  tipoServico,\n  COUNT(*) as qtd_servicos,\n  SUM(valorTotal) as total_centavos,\n  SUM(valorTotal) / 100 as total_reais\nFROM servicos_execucao\nWHERE (tipoServico = 'make_formando' OR tipoServico = 'make_familia')\n  AND YEAR(dataRealizacao) = 2025\n  AND MONTH(dataRealizacao) = 12\nGROUP BY tipoServico;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  tipoServico,\n  COUNT(*) as qtd_servicos,\n  SUM(valorTotal) as total_centavos,\n  SUM(valorTotal) / 100 as total_reais\nFROM servicos_execucao\nWHERE (tipoServico = 'make_formando' OR tipoServico = 'make_familia')\n  AND YEAR(dataRealizacao) = 2025\n  AND MONTH(dataRealizacao) = 12\nGROUP BY tipoServico;",
+  "rows": [
+    {
+      "tipoServico": "make_familia",
+      "qtd_servicos": "1",
+      "total_centavos": "9000",
+      "total_reais": "90.0000"
+    },
+    {
+      "tipoServico": "make_formando",
+      "qtd_servicos": "1",
+      "total_centavos": "3080",
+      "total_reais": "30.8000"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoServico\tqtd_servicos\ttotal_centavos\ttotal_reais\nmake_familia\t1\t9000\t90.0000\nmake_formando\t1\t3080\t30.8000\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

@@ -1,0 +1,80 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, local, dataEvento FROM eventos WHERE tipoEvento = 'foto_estudio' LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, local, dataEvento FROM eventos WHERE tipoEvento = 'foto_estudio' LIMIT 10",
+  "rows": [
+    {
+      "id": "390757",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-06 05:00:00"
+    },
+    {
+      "id": "390758",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-07 05:00:00"
+    },
+    {
+      "id": "390759",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-08 05:00:00"
+    },
+    {
+      "id": "390760",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-09 05:00:00"
+    },
+    {
+      "id": "390761",
+      "turmaId": "1165",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-09 05:00:00"
+    },
+    {
+      "id": "390762",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-10 05:00:00"
+    },
+    {
+      "id": "390763",
+      "turmaId": "1165",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-10 05:00:00"
+    },
+    {
+      "id": "390766",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-13 05:00:00"
+    },
+    {
+      "id": "390767",
+      "turmaId": "1175",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-13 05:00:00"
+    },
+    {
+      "id": "390768",
+      "turmaId": "1272",
+      "tipoEvento": "foto_estudio",
+      "local": "NULL",
+      "dataEvento": "2025-01-14 05:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tlocal\tdataEvento\n390757\t1272\tfoto_estudio\tNULL\t2025-01-06 05:00:00\n390758\t1272\tfoto_estudio\tNULL\t2025-01-07 05:00:00\n390759\t1272\tfoto_estudio\tNULL\t2025-01-08 05:00:00\n390760\t1272\tfoto_estudio\tNULL\t2025-01-09 05:00:00\n390761\t1165\tfoto_estudio\tNULL\t2025-01-09 05:00:00\n390762\t1272\tfoto_estudio\tNULL\t2025-01-10 05:00:00\n390763\t1165\tfoto_estudio\tNULL\t2025-01-10 05:00:00\n390766\t1272\tfoto_estudio\tNULL\t2025-01-13 05:00:00\n390767\t1175\tfoto_estudio\tNULL\t2025-01-13 05:00:00\n390768\t1272\tfoto_estudio\tNULL\t2025-01-14 05:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

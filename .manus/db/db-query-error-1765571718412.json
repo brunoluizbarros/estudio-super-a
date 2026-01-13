@@ -1,0 +1,8 @@
+{
+  "query": "SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, e.data as evento_data, e.tipoEvento\nFROM servicos_execucao se\nLEFT JOIN eventos e ON se.eventoId = e.id\nWHERE se.formandoId = (SELECT id FROM formandos WHERE nome LIKE '%Ayna%' LIMIT 1)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT se.id, se.eventoId, se.formandoId, se.tipoServico, e.data as evento_data, e.tipoEvento\nFROM servicos_execucao se\nLEFT JOIN eventos e ON se.eventoId = e.id\nWHERE se.formandoId = (SELECT id FROM formandos WHERE nome LIKE '%Ayna%' LIMIT 1)",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'e.data' in 'field list'"
+  ]
+}

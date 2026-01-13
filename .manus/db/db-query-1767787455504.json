@@ -1,0 +1,120 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.valorLiquido, v.status, \n       DATE_FORMAT(FROM_UNIXTIME(v.createdAt / 1000), '%d/%m/%Y') as data_venda,\n       v.createdAt,\n       f.nome as formando_nome\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nORDER BY v.createdAt DESC \nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.eventoId, v.valorTotal, v.valorLiquido, v.status, \n       DATE_FORMAT(FROM_UNIXTIME(v.createdAt / 1000), '%d/%m/%Y') as data_venda,\n       v.createdAt,\n       f.nome as formando_nome\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nORDER BY v.createdAt DESC \nLIMIT 10",
+  "rows": [
+    {
+      "id": "480009",
+      "formandoId": "480003",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:17:51",
+      "formando_nome": "Bianca de Medeiros Fernandes"
+    },
+    {
+      "id": "480008",
+      "formandoId": "480018",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:16:48",
+      "formando_nome": "Mateus Soares Pereira"
+    },
+    {
+      "id": "480007",
+      "formandoId": "480016",
+      "eventoId": "420064",
+      "valorTotal": "55000",
+      "valorLiquido": "52272",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:15:30",
+      "formando_nome": "Felipe Henrique Santos Nunes"
+    },
+    {
+      "id": "480006",
+      "formandoId": "480011",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:13:54",
+      "formando_nome": "Caio José Miranda Azevedo de Paiva"
+    },
+    {
+      "id": "480005",
+      "formandoId": "480015",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "65000",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:11:28",
+      "formando_nome": "Joao Macedo Holanda Pinto"
+    },
+    {
+      "id": "480004",
+      "formandoId": "480006",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:09:13",
+      "formando_nome": "Thais Dias Uchoa de Moura"
+    },
+    {
+      "id": "480003",
+      "formandoId": "480004",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "65000",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 22:06:49",
+      "formando_nome": "Maria Eduarda Cavalcante Melo"
+    },
+    {
+      "id": "480002",
+      "formandoId": "480005",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 21:59:38",
+      "formando_nome": "Alice Rodrigues de Andrade Alves"
+    },
+    {
+      "id": "480001",
+      "formandoId": "480007",
+      "eventoId": "420064",
+      "valorTotal": "65000",
+      "valorLiquido": "61776",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-06 21:58:05",
+      "formando_nome": "Artur Caminha do Rêgo Barros"
+    },
+    {
+      "id": "450003",
+      "formandoId": "450002",
+      "eventoId": "420035",
+      "valorTotal": "65000",
+      "valorLiquido": "65000",
+      "status": "pago",
+      "data_venda": "07/01/2612",
+      "createdAt": "2026-01-05 19:21:00",
+      "formando_nome": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tformandoId\teventoId\tvalorTotal\tvalorLiquido\tstatus\tdata_venda\tcreatedAt\tformando_nome\n480009\t480003\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 22:17:51\tBianca de Medeiros Fernandes\n480008\t480018\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 22:16:48\tMateus Soares Pereira\n480007\t480016\t420064\t55000\t52272\tpago\t07/01/2612\t2026-01-06 22:15:30\tFelipe Henrique Santos Nunes\n480006\t480011\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 22:13:54\tCaio José Miranda Azevedo de Paiva\n480005\t480015\t420064\t65000\t65000\tpago\t07/01/2612\t2026-01-06 22:11:28\tJoao Macedo Holanda Pinto\n480004\t480006\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 22:09:13\tThais Dias Uchoa de Moura\n480003\t480004\t420064\t65000\t65000\tpago\t07/01/2612\t2026-01-06 22:06:49\tMaria Eduarda Cavalcante Melo\n480002\t480005\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 21:59:38\tAlice Rodrigues de Andrade Alves\n480001\t480007\t420064\t65000\t61776\tpago\t07/01/2612\t2026-01-06 21:58:05\tArtur Caminha do Rêgo Barros\n450003\t450002\t420035\t65000\t65000\tpago\t07/01/2612\t2026-01-05 19:21:00\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

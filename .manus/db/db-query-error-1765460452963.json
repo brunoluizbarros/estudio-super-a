@@ -1,0 +1,8 @@
+{
+  "query": "SELECT ff.*, ef.id as execucao_id, ef.formandoId, f.nome as formando_nome, tc.nome as cenario_nome\nFROM foto_formando ff\nJOIN execucao_formando ef ON ff.execucaoFormandoId = ef.id\nJOIN formando f ON ef.formandoId = f.id\nLEFT JOIN tipo_cenario tc ON ff.cenarioId = tc.id\nORDER BY ff.id DESC\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT ff.*, ef.id as execucao_id, ef.formandoId, f.nome as formando_nome, tc.nome as cenario_nome\nFROM foto_formando ff\nJOIN execucao_formando ef ON ff.execucaoFormandoId = ef.id\nJOIN formando f ON ef.formandoId = f.id\nLEFT JOIN tipo_cenario tc ON ff.cenarioId = tc.id\nORDER BY ff.id DESC\nLIMIT 10",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'axwmxybcbhhb5etksga95a.foto_formando' doesn't exist"
+  ]
+}

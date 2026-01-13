@@ -1,0 +1,24 @@
+{
+  "query": "SELECT numeroCi, tipoServicoCompra, valorTotal, mesServico, YEAR(createdAt) as ano \nFROM despesas_v2 \nWHERE mesServico = 'dezembro' \n  AND YEAR(createdAt) = 2025\n  AND tipoServicoCompra LIKE '%Equipamentos%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT numeroCi, tipoServicoCompra, valorTotal, mesServico, YEAR(createdAt) as ano \nFROM despesas_v2 \nWHERE mesServico = 'dezembro' \n  AND YEAR(createdAt) = 2025\n  AND tipoServicoCompra LIKE '%Equipamentos%'",
+  "rows": [
+    {
+      "numeroCi": "013/2025",
+      "tipoServicoCompra": "Locação de Equipamentos Fotográficos",
+      "valorTotal": "80000",
+      "mesServico": "dezembro",
+      "ano": "2025"
+    },
+    {
+      "numeroCi": "021/2025",
+      "tipoServicoCompra": "Equipamentos / Utensílios /Bens",
+      "valorTotal": "10000",
+      "mesServico": "dezembro",
+      "ano": "2025"
+    }
+  ],
+  "messages": [],
+  "stdout": "numeroCi\ttipoServicoCompra\tvalorTotal\tmesServico\tano\n013/2025\tLocação de Equipamentos Fotográficos\t80000\tdezembro\t2025\n021/2025\tEquipamentos / Utensílios /Bens\t10000\tdezembro\t2025\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

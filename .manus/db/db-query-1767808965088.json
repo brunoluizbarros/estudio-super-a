@@ -1,0 +1,35 @@
+{
+  "query": "SHOW CREATE TABLE vendas",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW CREATE TABLE vendas",
+  "rows": [
+    {
+      "Table": "vendas",
+      "Create Table": "CREATE TABLE `vendas` ("
+    }
+  ],
+  "messages": [
+    "  `id` int(11) NOT NULL AUTO_INCREMENT,",
+    "  `agendamentoId` int(11) DEFAULT NULL,",
+    "  `reuniaoId` int(11) DEFAULT NULL,",
+    "  `eventoId` int(11) NOT NULL,",
+    "  `formandoId` int(11) NOT NULL,",
+    "  `dataVenda` datetime NOT NULL,",
+    "  `valorTotal` int(11) NOT NULL,",
+    "  `valorLiquido` int(11) DEFAULT NULL,",
+    "  `status` enum('pendente','pago','cancelada') COLLATE utf8mb4_unicode_ci DEFAULT 'pendente',",
+    "  `fase` enum('Atendimento','Execução','Armazenamento') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Execução',",
+    "  `observacao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,",
+    "  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,",
+    "  `excluido` tinyint(1) NOT NULL DEFAULT '0',",
+    "  `excluidoPor` int(11) DEFAULT NULL,",
+    "  `excluidoEm` timestamp NULL DEFAULT NULL,",
+    "  `motivoExclusao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,",
+    "  `createdBy` int(11) NOT NULL DEFAULT '1',",
+    "  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */",
+    ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=540001"
+  ],
+  "stdout": "Table\tCreate Table\nvendas\tCREATE TABLE `vendas` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `agendamentoId` int(11) DEFAULT NULL,\n  `reuniaoId` int(11) DEFAULT NULL,\n  `eventoId` int(11) NOT NULL,\n  `formandoId` int(11) NOT NULL,\n  `dataVenda` datetime NOT NULL,\n  `valorTotal` int(11) NOT NULL,\n  `valorLiquido` int(11) DEFAULT NULL,\n  `status` enum('pendente','pago','cancelada') COLLATE utf8mb4_unicode_ci DEFAULT 'pendente',\n  `fase` enum('Atendimento','Execução','Armazenamento') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Execução',\n  `observacao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  `excluido` tinyint(1) NOT NULL DEFAULT '0',\n  `excluidoPor` int(11) DEFAULT NULL,\n  `excluidoEm` timestamp NULL DEFAULT NULL,\n  `motivoExclusao` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n  `createdBy` int(11) NOT NULL DEFAULT '1',\n  PRIMARY KEY (`id`) /*T![clustered_index] CLUSTERED */\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=540001\n",
+  "stderr": "",
+  "execution_time_ms": 524
+}

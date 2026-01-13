@@ -1,0 +1,23 @@
+{
+  "query": "SELECT * FROM vendas ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM vendas ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "agendamentoId": "NULL",
+      "eventoId": "90012",
+      "formandoId": "1",
+      "dataVenda": "2025-12-09 11:37:26",
+      "valorTotal": "55000",
+      "valorLiquido": "55000",
+      "status": "pago",
+      "observacao": "NULL",
+      "createdAt": "2025-12-09 11:37:26",
+      "updatedAt": "2025-12-09 11:37:26"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tagendamentoId\teventoId\tformandoId\tdataVenda\tvalorTotal\tvalorLiquido\tstatus\tobservacao\tcreatedAt\tupdatedAt\n1\tNULL\t90012\t1\t2025-12-09 11:37:26\t55000\t55000\tpago\tNULL\t2025-12-09 11:37:26\t2025-12-09 11:37:26\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

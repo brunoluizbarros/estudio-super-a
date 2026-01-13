@@ -1,0 +1,9 @@
+{
+  "query": "SELECT p.id, p.role, p.secao, p.visualizar, p.inserir, p.excluir, p.tipoUsuarioId, t.nome as tipo_nome \nFROM permissoes p \nJOIN tipos_usuario t ON p.tipoUsuarioId = t.id \nWHERE t.nome = 'Financeiro' AND p.secao = 'turmas';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT p.id, p.role, p.secao, p.visualizar, p.inserir, p.excluir, p.tipoUsuarioId, t.nome as tipo_nome \nFROM permissoes p \nJOIN tipos_usuario t ON p.tipoUsuarioId = t.id \nWHERE t.nome = 'Financeiro' AND p.secao = 'turmas';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 52
+}

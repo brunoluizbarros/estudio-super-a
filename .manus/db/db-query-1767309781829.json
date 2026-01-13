@@ -1,0 +1,42 @@
+{
+  "query": "SELECT id, nome FROM tipos_usuario ORDER BY nome",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, nome FROM tipos_usuario ORDER BY nome",
+  "rows": [
+    {
+      "id": "1",
+      "nome": "Administrador"
+    },
+    {
+      "id": "6",
+      "nome": "Armazenamento"
+    },
+    {
+      "id": "8",
+      "nome": "Beca"
+    },
+    {
+      "id": "7",
+      "nome": "Cerimonial"
+    },
+    {
+      "id": "5",
+      "nome": "Coordenador"
+    },
+    {
+      "id": "2",
+      "nome": "Financeiro"
+    },
+    {
+      "id": "3",
+      "nome": "Gestor"
+    },
+    {
+      "id": "4",
+      "nome": "Logística"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\n1\tAdministrador\n6\tArmazenamento\n8\tBeca\n7\tCerimonial\n5\tCoordenador\n2\tFinanceiro\n3\tGestor\n4\tLogística\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

@@ -1,0 +1,22 @@
+{
+  "query": "SELECT id, name, email, role FROM users WHERE name LIKE '%Ciro%' OR email LIKE '%ciro%' LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, name, email, role FROM users WHERE name LIKE '%Ciro%' OR email LIKE '%ciro%' LIMIT 5",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Ciro Couceiro",
+      "email": "gestao@superaformaturas.com.br",
+      "role": "administrador"
+    },
+    {
+      "id": "14100118",
+      "name": "CIRO COUCEIRO",
+      "email": "cirocouceiro@me.com",
+      "role": "coordenador"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\n1\tCiro Couceiro\tgestao@superaformaturas.com.br\tadministrador\n14100118\tCIRO COUCEIRO\tcirocouceiro@me.com\tcoordenador\n",
+  "stderr": "",
+  "execution_time_ms": 257
+}

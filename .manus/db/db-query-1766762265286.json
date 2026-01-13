@@ -1,0 +1,13 @@
+{
+  "query": "SELECT \n  SUM(valorTotal) / 100 AS total_operacao_fora\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2025\n  AND tipoServicoCompra NOT IN (\n    'Comissão',\n    'Equipamentos / Utensílios / Bens',\n    'Estorno',\n    'Imposto',\n    'Mão de Obra - Maquiadora',\n    'Transferência Santander'\n  )",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  SUM(valorTotal) / 100 AS total_operacao_fora\nFROM despesas_v2\nWHERE setorSolicitante = 'estudio'\n  AND mesServico = 'dezembro'\n  AND YEAR(createdAt) = 2025\n  AND tipoServicoCompra NOT IN (\n    'Comissão',\n    'Equipamentos / Utensílios / Bens',\n    'Estorno',\n    'Imposto',\n    'Mão de Obra - Maquiadora',\n    'Transferência Santander'\n  )",
+  "rows": [
+    {
+      "total_operacao_fora": "2721.0000"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_operacao_fora\n2721.0000\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

@@ -1,0 +1,97 @@
+{
+  "query": "SHOW TABLES",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW TABLES",
+  "rows": [
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "agendamentos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "anexos_despesas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cenarios"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cidades"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "configMaquiagem"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "configMaquiagemTurma"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "cursos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "despesas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "eventos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "execucao_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "formandos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fornecedores"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "fotos_formando"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "instituicoes"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "itensVenda"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "locais"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "pagamentos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "produtos"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "servicosAgendados"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "servicos_execucao"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tabela_preco_fornecedores"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "taxasCartao"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_cenario"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_evento"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "tipos_servico"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "turmas"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "users"
+    },
+    {
+      "Tables_in_axWmxYbCBHHB5ETKSgA95A": "vendas"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_axWmxYbCBHHB5ETKSgA95A\n__drizzle_migrations\nagendamentos\nanexos_despesas\ncenarios\ncidades\nconfigMaquiagem\nconfigMaquiagemTurma\ncursos\ndespesas\neventos\nexecucao_formando\nformandos\nfornecedores\nfotos_formando\ninstituicoes\nitensVenda\nlocais\npagamentos\nprodutos\nservicosAgendados\nservicos_execucao\ntabela_preco_fornecedores\ntaxasCartao\ntipos_cenario\ntipos_evento\ntipos_servico\nturmas\nusers\nvendas\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `execucao_formando` ADD `observacoes` text;

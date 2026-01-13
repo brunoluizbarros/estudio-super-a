@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE vendas ADD CONSTRAINT fk_vendas_formandoId FOREIGN KEY (formandoId) REFERENCES formandos(id) ON DELETE RESTRICT",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute ALTER TABLE vendas ADD CONSTRAINT fk_vendas_formandoId FOREIGN KEY (formandoId) REFERENCES formandos(id) ON DELETE RESTRICT",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1452 (23000) at line 1: Cannot add or update a child row: a foreign key constraint fails (`axwmxybcbhhb5etksga95a`.`vendas`, CONSTRAINT `fk_vendas_formandoId` FOREIGN KEY (`formandoId`) REFERENCES `formandos` (`id`) ON DELETE RESTRICT)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "query": "SELECT codigo, cursos, instituicoes, anos, periodos FROM turmas WHERE codigo = '553' LIMIT 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT codigo, cursos, instituicoes, anos, periodos FROM turmas WHERE codigo = '553' LIMIT 1",
+  "rows": [
+    {
+      "codigo": "553",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FITS\"]",
+      "anos": "[2026]",
+      "periodos": "[\"2\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "codigo\tcursos\tinstituicoes\tanos\tperiodos\n553\t[\"MEDICINA\"]\t[\"FITS\"]\t[2026]\t[\"2\"]\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

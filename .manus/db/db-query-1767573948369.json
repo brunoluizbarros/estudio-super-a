@@ -1,0 +1,15 @@
+{
+  "query": "\nSELECT \n  d.setorSolicitante,\n  SUM(d.valorTotal) as total_setor,\n  COUNT(DISTINCT d.id) as quantidade_despesas\nFROM despesas_v2 d\nWHERE d.excluido = 0\n  AND d.id IN (\n    SELECT DISTINCT dd.despesaId \n    FROM despesas_v2_datas dd \n    WHERE YEAR(dd.dataRealizacao) = 2026\n      AND MONTH(dd.dataRealizacao) = 1\n  )\n  AND d.mesServico = 'janeiro'\nGROUP BY d.setorSolicitante;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute \nSELECT \n  d.setorSolicitante,\n  SUM(d.valorTotal) as total_setor,\n  COUNT(DISTINCT d.id) as quantidade_despesas\nFROM despesas_v2 d\nWHERE d.excluido = 0\n  AND d.id IN (\n    SELECT DISTINCT dd.despesaId \n    FROM despesas_v2_datas dd \n    WHERE YEAR(dd.dataRealizacao) = 2026\n      AND MONTH(dd.dataRealizacao) = 1\n  )\n  AND d.mesServico = 'janeiro'\nGROUP BY d.setorSolicitante;\n",
+  "rows": [
+    {
+      "setorSolicitante": "fotografia",
+      "total_setor": "1798000",
+      "quantidade_despesas": "9"
+    }
+  ],
+  "messages": [],
+  "stdout": "setorSolicitante\ttotal_setor\tquantidade_despesas\nfotografia\t1798000\t9\n",
+  "stderr": "",
+  "execution_time_ms": 66
+}

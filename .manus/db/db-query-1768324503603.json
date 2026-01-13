@@ -1,0 +1,15 @@
+{
+  "query": "SELECT t.id, t.codigo, COUNT(f.id) as total_formandos \nFROM turmas t \nLEFT JOIN formandos f ON f.turmaId = t.id \nWHERE t.codigo LIKE '%642%' \nGROUP BY t.id, t.codigo \nLIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, COUNT(f.id) as total_formandos \nFROM turmas t \nLEFT JOIN formandos f ON f.turmaId = t.id \nWHERE t.codigo LIKE '%642%' \nGROUP BY t.id, t.codigo \nLIMIT 5;",
+  "rows": [
+    {
+      "id": "180007",
+      "codigo": "642",
+      "total_formandos": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\ttotal_formandos\n180007\t642\t0\n",
+  "stderr": "",
+  "execution_time_ms": 114
+}

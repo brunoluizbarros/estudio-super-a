@@ -1,0 +1,82 @@
+{
+  "query": "SELECT DISTINCT tipoUsuarioId, role FROM permissoes ORDER BY tipoUsuarioId",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT tipoUsuarioId, role FROM permissoes ORDER BY tipoUsuarioId",
+  "rows": [
+    {
+      "tipoUsuarioId": "1",
+      "role": "logistica"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "cerimonial"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "Teste Vendedor"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "Logística 1"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "beca"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "armazenamento"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "financeiro"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "coordenador"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "Fotógrafo"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "gestor"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "Vendedor"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "administrador"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "controler"
+    },
+    {
+      "tipoUsuarioId": "1",
+      "role": "logística_1"
+    },
+    {
+      "tipoUsuarioId": "2",
+      "role": "financeiro"
+    },
+    {
+      "tipoUsuarioId": "7",
+      "role": "cerimonial"
+    },
+    {
+      "tipoUsuarioId": "8",
+      "role": "beca"
+    },
+    {
+      "tipoUsuarioId": "30002",
+      "role": "controle"
+    }
+  ],
+  "messages": [],
+  "stdout": "tipoUsuarioId\trole\n1\tlogistica\n1\tcerimonial\n1\tTeste Vendedor\n1\tLogística 1\n1\tbeca\n1\tarmazenamento\n1\tfinanceiro\n1\tcoordenador\n1\tFotógrafo\n1\tgestor\n1\tVendedor\n1\tadministrador\n1\tcontroler\n1\tlogística_1\n2\tfinanceiro\n7\tcerimonial\n8\tbeca\n30002\tcontrole\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

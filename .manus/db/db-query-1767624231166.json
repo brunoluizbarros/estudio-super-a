@@ -1,0 +1,18 @@
+{
+  "query": "SELECT \n  v.id, \n  v.valorTotal, \n  v.dataVenda,\n  v.updatedAt,\n  f.nome as formandoNome,\n  t.codigo as turmaCodigo\nFROM vendas v\nJOIN formandos f ON v.formandoId = f.id\nJOIN turmas t ON f.turmaId = t.id\nWHERE f.nome LIKE '%Mayara%' AND f.nome LIKE '%Vasconcelos%' AND t.codigo = '902';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  v.id, \n  v.valorTotal, \n  v.dataVenda,\n  v.updatedAt,\n  f.nome as formandoNome,\n  t.codigo as turmaCodigo\nFROM vendas v\nJOIN formandos f ON v.formandoId = f.id\nJOIN turmas t ON f.turmaId = t.id\nWHERE f.nome LIKE '%Mayara%' AND f.nome LIKE '%Vasconcelos%' AND t.codigo = '902';",
+  "rows": [
+    {
+      "id": "330025",
+      "valorTotal": "65000",
+      "dataVenda": "2025-12-11 15:00:00",
+      "updatedAt": "2025-12-22 12:47:39",
+      "formandoNome": "Mayara Vasconcelos De Souto",
+      "turmaCodigo": "902"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvalorTotal\tdataVenda\tupdatedAt\tformandoNome\tturmaCodigo\n330025\t65000\t2025-12-11 15:00:00\t2025-12-22 12:47:39\tMayara Vasconcelos De Souto\t902\n",
+  "stderr": "",
+  "execution_time_ms": 80
+}

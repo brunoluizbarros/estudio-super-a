@@ -1,0 +1,22 @@
+{
+  "query": "SELECT secao, visualizar, inserir, excluir FROM permissoes WHERE role = 'Logística 1' AND visualizar = 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT secao, visualizar, inserir, excluir FROM permissoes WHERE role = 'Logística 1' AND visualizar = 1",
+  "rows": [
+    {
+      "secao": "relatorios",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    },
+    {
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "0",
+      "excluir": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "secao\tvisualizar\tinserir\texcluir\nrelatorios\t1\t0\t0\nconfiguracoes\t1\t0\t0\n",
+  "stderr": "",
+  "execution_time_ms": 71
+}

@@ -1,0 +1,22 @@
+{
+  "query": "SELECT \n  id,\n  name,\n  email,\n  lastSignedIn\nFROM users\nWHERE email IN ('bruno.vasconcelos1302@gmail.com', 'cirocouceiro@gmail.com')\n   OR name IN ('Bruno Vasconcelos', 'Ciro Couceiro')\nORDER BY name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  name,\n  email,\n  lastSignedIn\nFROM users\nWHERE email IN ('bruno.vasconcelos1302@gmail.com', 'cirocouceiro@gmail.com')\n   OR name IN ('Bruno Vasconcelos', 'Ciro Couceiro')\nORDER BY name;",
+  "rows": [
+    {
+      "id": "20970368",
+      "name": "Bruno.vasconcelos Vasconelos",
+      "email": "bruno.vasconcelos1302@gmail.com",
+      "lastSignedIn": "2026-01-05 15:33:31"
+    },
+    {
+      "id": "1",
+      "name": "Ciro Couceiro",
+      "email": "gestao@superaformaturas.com.br",
+      "lastSignedIn": "2026-01-05 15:33:45"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\tlastSignedIn\n20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\t2026-01-05 15:33:31\n1\tCiro Couceiro\tgestao@superaformaturas.com.br\t2026-01-05 15:33:45\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

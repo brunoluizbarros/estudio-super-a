@@ -1,0 +1,54 @@
+{
+  "query": "SELECT v.id, v.formandoId, v.excluido, v.excluidoEm, v.motivoExclusao,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as data_venda,\n       v.valorTotal / 100 as valor_bruto,\n       f.nome as formando_nome, f.turmaId\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nWHERE DATE(v.dataVenda) = '2026-06-15'\nORDER BY v.id",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT v.id, v.formandoId, v.excluido, v.excluidoEm, v.motivoExclusao,\n       DATE_FORMAT(v.dataVenda, '%d/%m/%Y') as data_venda,\n       v.valorTotal / 100 as valor_bruto,\n       f.nome as formando_nome, f.turmaId\nFROM vendas v \nLEFT JOIN formandos f ON v.formandoId = f.id \nWHERE DATE(v.dataVenda) = '2026-06-15'\nORDER BY v.id",
+  "rows": [
+    {
+      "id": "420002",
+      "formandoId": "1",
+      "excluido": "1",
+      "excluidoEm": "2026-01-05 00:31:19",
+      "motivoExclusao": "teste",
+      "data_venda": "15/06/2026",
+      "valor_bruto": "500.0000",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420004",
+      "formandoId": "1",
+      "excluido": "1",
+      "excluidoEm": "2026-01-05 00:31:15",
+      "motivoExclusao": "teste",
+      "data_venda": "15/06/2026",
+      "valor_bruto": "500.0000",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420006",
+      "formandoId": "1",
+      "excluido": "0",
+      "excluidoEm": "NULL",
+      "motivoExclusao": "NULL",
+      "data_venda": "15/06/2026",
+      "valor_bruto": "500.0000",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    },
+    {
+      "id": "420008",
+      "formandoId": "1",
+      "excluido": "0",
+      "excluidoEm": "NULL",
+      "motivoExclusao": "NULL",
+      "data_venda": "15/06/2026",
+      "valor_bruto": "500.0000",
+      "formando_nome": "NULL",
+      "turmaId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tformandoId\texcluido\texcluidoEm\tmotivoExclusao\tdata_venda\tvalor_bruto\tformando_nome\tturmaId\n420002\t1\t1\t2026-01-05 00:31:19\tteste\t15/06/2026\t500.0000\tNULL\tNULL\n420004\t1\t1\t2026-01-05 00:31:15\tteste\t15/06/2026\t500.0000\tNULL\tNULL\n420006\t1\t0\tNULL\tNULL\t15/06/2026\t500.0000\tNULL\tNULL\n420008\t1\t0\tNULL\tNULL\t15/06/2026\t500.0000\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

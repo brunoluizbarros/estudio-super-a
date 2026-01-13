@@ -1,0 +1,24 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, observacao, createdAt FROM eventos WHERE createdAt >= '2025-12-22 07:00:00' ORDER BY createdAt DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, observacao, createdAt FROM eventos WHERE createdAt >= '2025-12-22 07:00:00' ORDER BY createdAt DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "180005",
+      "turmaId": "1",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-22 10:39:52"
+    },
+    {
+      "id": "180002",
+      "turmaId": "1",
+      "tipoEvento": "foto_estudio",
+      "observacao": "NULL",
+      "createdAt": "2025-12-22 10:39:23"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tobservacao\tcreatedAt\n180005\t1\tfoto_estudio\tNULL\t2025-12-22 10:39:52\n180002\t1\tfoto_estudio\tNULL\t2025-12-22 10:39:23\n",
+  "stderr": "",
+  "execution_time_ms": 117
+}

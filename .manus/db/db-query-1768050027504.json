@@ -1,0 +1,94 @@
+{
+  "query": "SELECT * FROM tipos_cenario ORDER BY nome;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM tipos_cenario ORDER BY nome;",
+  "rows": [
+    {
+      "id": "7",
+      "nome": "Beca",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "8",
+      "nome": "Consultório",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "1",
+      "nome": "Externa",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "5",
+      "nome": "Família",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "2",
+      "nome": "Fundo Branco",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "3",
+      "nome": "Fundo Cinza",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "12",
+      "nome": "Fundo de Led",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "4",
+      "nome": "Fundo Preto",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "6",
+      "nome": "Poltrona",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "10",
+      "nome": "Raio X",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "11",
+      "nome": "Sala de Habilidades",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    },
+    {
+      "id": "9",
+      "nome": "Samu",
+      "ativo": "1",
+      "createdAt": "2025-12-10 04:26:27",
+      "updatedAt": "2025-12-10 04:26:27"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnome\tativo\tcreatedAt\tupdatedAt\n7\tBeca\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n8\tConsultório\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n1\tExterna\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n5\tFamília\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n2\tFundo Branco\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n3\tFundo Cinza\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n12\tFundo de Led\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n4\tFundo Preto\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n6\tPoltrona\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n10\tRaio X\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n11\tSala de Habilidades\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n9\tSamu\t1\t2025-12-10 04:26:27\t2025-12-10 04:26:27\n",
+  "stderr": "",
+  "execution_time_ms": 495
+}

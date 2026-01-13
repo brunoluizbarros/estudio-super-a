@@ -1,0 +1,80 @@
+{
+  "query": "SELECT e.id, e.tipoEvento, e.dataEvento, t.codigo, t.id as turmaId \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE e.dataEvento IS NOT NULL \nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT e.id, e.tipoEvento, e.dataEvento, t.codigo, t.id as turmaId \nFROM eventos e \nJOIN turmas t ON e.turmaId = t.id \nWHERE e.dataEvento IS NOT NULL \nLIMIT 10",
+  "rows": [
+    {
+      "id": "30002",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-12-10 00:00:00",
+      "codigo": "902",
+      "turmaId": "1273"
+    },
+    {
+      "id": "30003",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-01-06 00:00:00",
+      "codigo": "654",
+      "turmaId": "1132"
+    },
+    {
+      "id": "60001",
+      "tipoEvento": "foto_descontrada",
+      "dataEvento": "2025-11-08 00:00:00",
+      "codigo": "553",
+      "turmaId": "1176"
+    },
+    {
+      "id": "60003",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-14 00:00:00",
+      "codigo": "553",
+      "turmaId": "1176"
+    },
+    {
+      "id": "60004",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-19 15:00:00",
+      "codigo": "553",
+      "turmaId": "1176"
+    },
+    {
+      "id": "60005",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-21 15:00:00",
+      "codigo": "553",
+      "turmaId": "1176"
+    },
+    {
+      "id": "60006",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-28 15:00:00",
+      "codigo": "553",
+      "turmaId": "1176"
+    },
+    {
+      "id": "60007",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-12 15:00:00",
+      "codigo": "572",
+      "turmaId": "1254"
+    },
+    {
+      "id": "60008",
+      "tipoEvento": "foto_oficial",
+      "dataEvento": "2025-11-15 15:00:00",
+      "codigo": "572",
+      "turmaId": "1254"
+    },
+    {
+      "id": "60009",
+      "tipoEvento": "foto_estudio",
+      "dataEvento": "2025-11-22 15:00:00",
+      "codigo": "573",
+      "turmaId": "1258"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tdataEvento\tcodigo\tturmaId\n30002\tfoto_estudio\t2025-12-10 00:00:00\t902\t1273\n30003\tfoto_estudio\t2025-01-06 00:00:00\t654\t1132\n60001\tfoto_descontrada\t2025-11-08 00:00:00\t553\t1176\n60003\tfoto_estudio\t2025-11-14 00:00:00\t553\t1176\n60004\tfoto_estudio\t2025-11-19 15:00:00\t553\t1176\n60005\tfoto_estudio\t2025-11-21 15:00:00\t553\t1176\n60006\tfoto_estudio\t2025-11-28 15:00:00\t553\t1176\n60007\tfoto_estudio\t2025-11-12 15:00:00\t572\t1254\n60008\tfoto_oficial\t2025-11-15 15:00:00\t572\t1254\n60009\tfoto_estudio\t2025-11-22 15:00:00\t573\t1258\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

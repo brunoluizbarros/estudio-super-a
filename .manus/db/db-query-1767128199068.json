@@ -1,0 +1,50 @@
+{
+  "query": "SELECT \n  e.id,\n  e.tipoEvento,\n  DATE_FORMAT(e.dataEvento, '%d/%m/%Y') as dataInicio,\n  DATE_FORMAT(e.dataEventoFim, '%d/%m/%Y') as dataFim,\n  e.local,\n  t.codigo as codigoTurma\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654'\nORDER BY e.dataEvento",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  e.id,\n  e.tipoEvento,\n  DATE_FORMAT(e.dataEvento, '%d/%m/%Y') as dataInicio,\n  DATE_FORMAT(e.dataEventoFim, '%d/%m/%Y') as dataFim,\n  e.local,\n  t.codigo as codigoTurma\nFROM eventos e\nJOIN turmas t ON e.turmaId = t.id\nWHERE t.codigo = '654'\nORDER BY e.dataEvento",
+  "rows": [
+    {
+      "id": "420061",
+      "tipoEvento": "foto_estudio",
+      "dataInicio": "06/01/2026",
+      "dataFim": "06/01/2026",
+      "local": "ESTUDIO SUPER A",
+      "codigoTurma": "654"
+    },
+    {
+      "id": "420062",
+      "tipoEvento": "foto_estudio",
+      "dataInicio": "07/01/2026",
+      "dataFim": "07/01/2026",
+      "local": "ESTUDIO SUPER A",
+      "codigoTurma": "654"
+    },
+    {
+      "id": "420063",
+      "tipoEvento": "foto_estudio",
+      "dataInicio": "08/01/2026",
+      "dataFim": "08/01/2026",
+      "local": "ESTUDIO SUPER A",
+      "codigoTurma": "654"
+    },
+    {
+      "id": "420064",
+      "tipoEvento": "foto_estudio",
+      "dataInicio": "09/01/2026",
+      "dataFim": "09/01/2026",
+      "local": "ESTUDIO SUPER A",
+      "codigoTurma": "654"
+    },
+    {
+      "id": "420116",
+      "tipoEvento": "foto_oficial",
+      "dataInicio": "06/02/2026",
+      "dataFim": "06/02/2026",
+      "local": "MUSEU DO ESTADO",
+      "codigoTurma": "654"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttipoEvento\tdataInicio\tdataFim\tlocal\tcodigoTurma\n420061\tfoto_estudio\t06/01/2026\t06/01/2026\tESTUDIO SUPER A\t654\n420062\tfoto_estudio\t07/01/2026\t07/01/2026\tESTUDIO SUPER A\t654\n420063\tfoto_estudio\t08/01/2026\t08/01/2026\tESTUDIO SUPER A\t654\n420064\tfoto_estudio\t09/01/2026\t09/01/2026\tESTUDIO SUPER A\t654\n420116\tfoto_oficial\t06/02/2026\t06/02/2026\tMUSEU DO ESTADO\t654\n",
+  "stderr": "",
+  "execution_time_ms": 77
+}

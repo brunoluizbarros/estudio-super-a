@@ -1,0 +1,37 @@
+{
+  "query": "SELECT id, codigo, cursos, instituicoes, anos, periodos, createdAt FROM turmas WHERE codigo IN ('654', '1036', '642') ORDER BY codigo",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, codigo, cursos, instituicoes, anos, periodos, createdAt FROM turmas WHERE codigo IN ('654', '1036', '642') ORDER BY codigo",
+  "rows": [
+    {
+      "id": "210001",
+      "codigo": "1036",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UFPB\"]",
+      "anos": "[2024]",
+      "periodos": "[\"1\"]",
+      "createdAt": "2025-12-28 20:54:26"
+    },
+    {
+      "id": "180007",
+      "codigo": "642",
+      "cursos": "[\"ODONTOLOGIA\"]",
+      "instituicoes": "[\"UFPE\",\"UPE\"]",
+      "anos": "[2024,2025]",
+      "periodos": "[\"1\",\"2\"]",
+      "createdAt": "2025-12-28 02:03:07"
+    },
+    {
+      "id": "1132",
+      "codigo": "654",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UPE\"]",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]",
+      "createdAt": "2025-12-07 04:06:10"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\tcursos\tinstituicoes\tanos\tperiodos\tcreatedAt\n210001\t1036\t[\"MEDICINA\"]\t[\"UFPB\"]\t[2024]\t[\"1\"]\t2025-12-28 20:54:26\n180007\t642\t[\"ODONTOLOGIA\"]\t[\"UFPE\",\"UPE\"]\t[2024,2025]\t[\"1\",\"2\"]\t2025-12-28 02:03:07\n1132\t654\t[\"MEDICINA\"]\t[\"UPE\"]\t[\"2026\"]\t[\"1\"]\t2025-12-07 04:06:10\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

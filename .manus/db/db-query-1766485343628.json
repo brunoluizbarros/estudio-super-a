@@ -1,0 +1,82 @@
+{
+  "query": "SELECT \n  d.id,\n  d.numeroCi,\n  dt.turmaId,\n  dt.tipoEvento,\n  t.codigo,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos\nFROM despesas_v2 d\nLEFT JOIN despesas_v2_turmas dt ON dt.despesaId = d.id\nLEFT JOIN turmas t ON t.id = dt.turmaId\nWHERE d.numeroCi IN ('018/2025', '017/2025', '016/2025', '015/2025', '014/2025', '013/2025')\nORDER BY d.numeroCi DESC\nLIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  d.id,\n  d.numeroCi,\n  dt.turmaId,\n  dt.tipoEvento,\n  t.codigo,\n  t.cursos,\n  t.instituicoes,\n  t.numeroTurma,\n  t.anos,\n  t.periodos\nFROM despesas_v2 d\nLEFT JOIN despesas_v2_turmas dt ON dt.despesaId = d.id\nLEFT JOIN turmas t ON t.id = dt.turmaId\nWHERE d.numeroCi IN ('018/2025', '017/2025', '016/2025', '015/2025', '014/2025', '013/2025')\nORDER BY d.numeroCi DESC\nLIMIT 20;",
+  "rows": [
+    {
+      "id": "120003",
+      "numeroCi": "018/2025",
+      "turmaId": "1301",
+      "tipoEvento": "NULL",
+      "codigo": "935",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIPÊ\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "120002",
+      "numeroCi": "017/2025",
+      "turmaId": "1255",
+      "tipoEvento": "NULL",
+      "codigo": "567",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FCM\"]",
+      "numeroTurma": "34",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"2\"]"
+    },
+    {
+      "id": "120001",
+      "numeroCi": "016/2025",
+      "turmaId": "1168",
+      "tipoEvento": "NULL",
+      "codigo": "507",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"FMJ\"]",
+      "numeroTurma": "",
+      "anos": "[\"2026\"]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "90010",
+      "numeroCi": "015/2025",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio",
+      "codigo": "902",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "numeroTurma": "NULL",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "90009",
+      "numeroCi": "014/2025",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio",
+      "codigo": "902",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "numeroTurma": "NULL",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    },
+    {
+      "id": "90008",
+      "numeroCi": "013/2025",
+      "turmaId": "90001",
+      "tipoEvento": "foto_estudio",
+      "codigo": "902",
+      "cursos": "[\"MEDICINA\"]",
+      "instituicoes": "[\"UNIFACISA\"]",
+      "numeroTurma": "NULL",
+      "anos": "[2026]",
+      "periodos": "[\"1\"]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tnumeroCi\tturmaId\ttipoEvento\tcodigo\tcursos\tinstituicoes\tnumeroTurma\tanos\tperiodos\n120003\t018/2025\t1301\tNULL\t935\t[\"MEDICINA\"]\t[\"UNIPÊ\"]\t\t[\"2026\"]\t[\"2\"]\n120002\t017/2025\t1255\tNULL\t567\t[\"MEDICINA\"]\t[\"FCM\"]\t34\t[\"2026\"]\t[\"2\"]\n120001\t016/2025\t1168\tNULL\t507\t[\"MEDICINA\"]\t[\"FMJ\"]\t\t[\"2026\"]\t[\"1\"]\n90010\t015/2025\t90001\tfoto_estudio\t902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\tNULL\t[2026]\t[\"1\"]\n90009\t014/2025\t90001\tfoto_estudio\t902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\tNULL\t[2026]\t[\"1\"]\n90008\t013/2025\t90001\tfoto_estudio\t902\t[\"MEDICINA\"]\t[\"UNIFACISA\"]\tNULL\t[2026]\t[\"1\"]\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

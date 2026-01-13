@@ -1,0 +1,1 @@
+ALTER TABLE `eventos` MODIFY COLUMN `tipoEvento` enum('foto_estudio','foto_50','foto_descontrada','foto_oficial','foto_samu','foto_bloco','foto_consultorio','foto_estrela','foto_internato','family_day') NOT NULL;

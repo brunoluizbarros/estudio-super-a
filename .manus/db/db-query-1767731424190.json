@@ -1,0 +1,55 @@
+{
+  "query": "SELECT id, role, secao, visualizar, inserir, excluir, tipoUsuarioId FROM permissoes WHERE role = 'logistica' LIMIT 5",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, role, secao, visualizar, inserir, excluir, tipoUsuarioId FROM permissoes WHERE role = 'logistica' LIMIT 5",
+  "rows": [
+    {
+      "id": "60001",
+      "role": "logistica",
+      "secao": "despesas",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "90001",
+      "role": "logistica",
+      "secao": "configuracoes",
+      "visualizar": "1",
+      "inserir": "1",
+      "excluir": "0",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120001",
+      "role": "logistica",
+      "secao": "abordagem",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120007",
+      "role": "logistica",
+      "secao": "briefing",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "tipoUsuarioId": "4"
+    },
+    {
+      "id": "120008",
+      "role": "logistica",
+      "secao": "becas",
+      "visualizar": "0",
+      "inserir": "0",
+      "excluir": "0",
+      "tipoUsuarioId": "4"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\trole\tsecao\tvisualizar\tinserir\texcluir\ttipoUsuarioId\n60001\tlogistica\tdespesas\t1\t1\t0\t4\n90001\tlogistica\tconfiguracoes\t1\t1\t0\t4\n120001\tlogistica\tabordagem\t0\t0\t0\t4\n120007\tlogistica\tbriefing\t0\t0\t0\t4\n120008\tlogistica\tbecas\t0\t0\t0\t4\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

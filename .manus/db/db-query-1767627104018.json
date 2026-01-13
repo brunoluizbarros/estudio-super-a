@@ -1,0 +1,109 @@
+{
+  "query": "SELECT \n  id,\n  name,\n  email,\n  role,\n  status,\n  lastSignedIn,\n  createdAt\nFROM users\nORDER BY lastSignedIn DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  name,\n  email,\n  role,\n  status,\n  lastSignedIn,\n  createdAt\nFROM users\nORDER BY lastSignedIn DESC;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Ciro Couceiro",
+      "email": "gestao@superaformaturas.com.br",
+      "role": "administrador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 15:31:35",
+      "createdAt": "2025-12-06 16:06:51"
+    },
+    {
+      "id": "20970368",
+      "name": "Bruno.vasconcelos Vasconelos",
+      "email": "bruno.vasconcelos1302@gmail.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 15:31:28",
+      "createdAt": "2026-01-02 17:37:26"
+    },
+    {
+      "id": "21240315",
+      "name": "Matheus Marinho",
+      "email": "matheuzmarinho@gmail.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:56:07",
+      "createdAt": "2026-01-05 14:17:38"
+    },
+    {
+      "id": "21180052",
+      "name": "m.clara.azevedo",
+      "email": "m.clara.azevedo@hotmail.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:52:36",
+      "createdAt": "2026-01-05 12:25:00"
+    },
+    {
+      "id": "20822125",
+      "name": "Logistica Supera",
+      "email": "superaa.logistica@gmail.com",
+      "role": "logistica",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:45:13",
+      "createdAt": "2025-12-31 21:04:31"
+    },
+    {
+      "id": "21210101",
+      "name": "Controler Super A",
+      "email": "controler@superaformaturas.com.br",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:38:02",
+      "createdAt": "2026-01-05 13:29:34"
+    },
+    {
+      "id": "20822124",
+      "name": "raylanejmedeiros",
+      "email": "raylanejmedeiros@gmail.com",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:26:38",
+      "createdAt": "2025-12-31 21:04:31"
+    },
+    {
+      "id": "20822127",
+      "name": "Gestão Fotografia Super A",
+      "email": "gestaofotografia@superaformaturas.com.br",
+      "role": "gestor",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:19:42",
+      "createdAt": "2025-12-31 21:04:31"
+    },
+    {
+      "id": "20822126",
+      "name": "Tais Dantas",
+      "email": "taisdantas20@gmail.com",
+      "role": "armazenamento",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-05 14:05:02",
+      "createdAt": "2025-12-31 21:04:31"
+    },
+    {
+      "id": "20880297",
+      "name": "Suporte Plataforma",
+      "email": "suporteplataforma@superaformaturas.com.br",
+      "role": "coordenador",
+      "status": "aprovado",
+      "lastSignedIn": "2026-01-02 01:33:26",
+      "createdAt": "2026-01-01 21:34:24"
+    },
+    {
+      "id": "20822128",
+      "name": "Maria da Paz",
+      "email": "dadesupera@gmail.com",
+      "role": "beca",
+      "status": "aprovado",
+      "lastSignedIn": "2025-12-31 21:04:32",
+      "createdAt": "2025-12-31 21:04:32"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\tstatus\tlastSignedIn\tcreatedAt\n1\tCiro Couceiro\tgestao@superaformaturas.com.br\tadministrador\taprovado\t2026-01-05 15:31:35\t2025-12-06 16:06:51\n20970368\tBruno.vasconcelos Vasconelos\tbruno.vasconcelos1302@gmail.com\tcoordenador\taprovado\t2026-01-05 15:31:28\t2026-01-02 17:37:26\n21240315\tMatheus Marinho\tmatheuzmarinho@gmail.com\tcoordenador\taprovado\t2026-01-05 14:56:07\t2026-01-05 14:17:38\n21180052\tm.clara.azevedo\tm.clara.azevedo@hotmail.com\tcoordenador\taprovado\t2026-01-05 14:52:36\t2026-01-05 12:25:00\n20822125\tLogistica Supera\tsuperaa.logistica@gmail.com\tlogistica\taprovado\t2026-01-05 14:45:13\t2025-12-31 21:04:31\n21210101\tControler Super A\tcontroler@superaformaturas.com.br\tcoordenador\taprovado\t2026-01-05 14:38:02\t2026-01-05 13:29:34\n20822124\traylanejmedeiros\traylanejmedeiros@gmail.com\tcoordenador\taprovado\t2026-01-05 14:26:38\t2025-12-31 21:04:31\n20822127\tGestão Fotografia Super A\tgestaofotografia@superaformaturas.com.br\tgestor\taprovado\t2026-01-05 14:19:42\t2025-12-31 21:04:31\n20822126\tTais Dantas\ttaisdantas20@gmail.com\tarmazenamento\taprovado\t2026-01-05 14:05:02\t2025-12-31 21:04:31\n20880297\tSuporte Plataforma\tsuporteplataforma@superaformaturas.com.br\tcoordenador\taprovado\t2026-01-02 01:33:26\t2026-01-01 21:34:24\n20822128\tMaria da Paz\tdadesupera@gmail.com\tbeca\taprovado\t2025-12-31 21:04:32\t2025-12-31 21:04:32\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

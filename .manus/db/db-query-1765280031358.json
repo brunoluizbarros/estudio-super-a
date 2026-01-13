@@ -1,0 +1,18 @@
+{
+  "query": "SHOW COLUMNS FROM vendas WHERE Field = 'status';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SHOW COLUMNS FROM vendas WHERE Field = 'status';",
+  "rows": [
+    {
+      "Field": "status",
+      "Type": "enum('pendente','realizada','cancelada')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "pendente",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nstatus\tenum('pendente','realizada','cancelada')\tYES\t\tpendente\t\n",
+  "stderr": "",
+  "execution_time_ms": 84
+}

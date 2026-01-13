@@ -1,0 +1,60 @@
+{
+  "query": "SELECT t.id, t.codigo, COUNT(f.id) as total_formandos \nFROM turmas t \nJOIN formandos f ON f.turmaId = t.id \nGROUP BY t.id, t.codigo \nHAVING COUNT(f.id) > 0 \nORDER BY COUNT(f.id) DESC \nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT t.id, t.codigo, COUNT(f.id) as total_formandos \nFROM turmas t \nJOIN formandos f ON f.turmaId = t.id \nGROUP BY t.id, t.codigo \nHAVING COUNT(f.id) > 0 \nORDER BY COUNT(f.id) DESC \nLIMIT 10;",
+  "rows": [
+    {
+      "id": "1113",
+      "codigo": "799",
+      "total_formandos": "62"
+    },
+    {
+      "id": "1132",
+      "codigo": "654",
+      "total_formandos": "57"
+    },
+    {
+      "id": "1168",
+      "codigo": "507",
+      "total_formandos": "49"
+    },
+    {
+      "id": "1306",
+      "codigo": "974",
+      "total_formandos": "42"
+    },
+    {
+      "id": "1252",
+      "codigo": "506",
+      "total_formandos": "3"
+    },
+    {
+      "id": "1138",
+      "codigo": "596",
+      "total_formandos": "2"
+    },
+    {
+      "id": "1253",
+      "codigo": "776",
+      "total_formandos": "2"
+    },
+    {
+      "id": "1033",
+      "codigo": "652",
+      "total_formandos": "2"
+    },
+    {
+      "id": "300001",
+      "codigo": "TEST GERAL",
+      "total_formandos": "2"
+    },
+    {
+      "id": "1255",
+      "codigo": "567",
+      "total_formandos": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcodigo\ttotal_formandos\n1113\t799\t62\n1132\t654\t57\n1168\t507\t49\n1306\t974\t42\n1252\t506\t3\n1138\t596\t2\n1253\t776\t2\n1033\t652\t2\n300001\tTEST GERAL\t2\n1255\t567\t1\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

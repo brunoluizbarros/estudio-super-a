@@ -1,0 +1,20 @@
+{
+  "query": "SELECT \n  MONTH(dataVenda) as mes,\n  COALESCE(SUM(valorTotal), 0) as totalBruto,\n  COUNT(*) as quantidade\nFROM vendas\nWHERE YEAR(dataVenda) = 2025\n  AND excluido = 0\nGROUP BY MONTH(dataVenda)\nORDER BY MONTH(dataVenda)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  MONTH(dataVenda) as mes,\n  COALESCE(SUM(valorTotal), 0) as totalBruto,\n  COUNT(*) as quantidade\nFROM vendas\nWHERE YEAR(dataVenda) = 2025\n  AND excluido = 0\nGROUP BY MONTH(dataVenda)\nORDER BY MONTH(dataVenda)",
+  "rows": [
+    {
+      "mes": "11",
+      "totalBruto": "797500",
+      "quantidade": "16"
+    },
+    {
+      "mes": "12",
+      "totalBruto": "2360000",
+      "quantidade": "36"
+    }
+  ],
+  "messages": [],
+  "stdout": "mes\ttotalBruto\tquantidade\n11\t797500\t16\n12\t2360000\t36\n",
+  "stderr": "",
+  "execution_time_ms": 96
+}

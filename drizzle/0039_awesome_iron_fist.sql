@@ -1,0 +1,2 @@
+ALTER TABLE `despesas` MODIFY COLUMN `setorSolicitante` enum('estudio','fotografia','becas') NOT NULL;--> statement-breakpoint
+ALTER TABLE `despesas_v2` MODIFY COLUMN `setorSolicitante` enum('estudio','fotografia','becas') NOT NULL;

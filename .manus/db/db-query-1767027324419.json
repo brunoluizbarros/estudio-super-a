@@ -1,0 +1,16 @@
+{
+  "query": "SELECT DISTINCT t.codigo FROM briefing_formando bf INNER JOIN formandos f ON bf.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id ORDER BY t.codigo;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT DISTINCT t.codigo FROM briefing_formando bf INNER JOIN formandos f ON bf.formandoId = f.id INNER JOIN turmas t ON f.turmaId = t.id ORDER BY t.codigo;",
+  "rows": [
+    {
+      "codigo": "553"
+    },
+    {
+      "codigo": "654"
+    }
+  ],
+  "messages": [],
+  "stdout": "codigo\n553\n654\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

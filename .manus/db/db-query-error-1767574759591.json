@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  id,\n  dataVenda,\n  TYPEOF(dataVenda) as tipo,\n  FROM_UNIXTIME(dataVenda/1000) as data_convertida,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT \n  id,\n  dataVenda,\n  TYPEOF(dataVenda) as tipo,\n  FROM_UNIXTIME(dataVenda/1000) as data_convertida,\n  valorTotal,\n  excluido\nFROM vendas\nWHERE excluido = 0\nORDER BY dataVenda DESC\nLIMIT 10",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1305 (42000) at line 1: FUNCTION axWmxYbCBHHB5ETKSgA95A.typeof does not exist"
+  ]
+}

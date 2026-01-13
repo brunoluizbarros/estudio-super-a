@@ -1,0 +1,23 @@
+{
+  "query": "SELECT * FROM eventos WHERE turmaId = 1061 AND dataEvento IS NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT * FROM eventos WHERE turmaId = 1061 AND dataEvento IS NOT NULL;",
+  "rows": [
+    {
+      "id": "90008",
+      "turmaId": "1061",
+      "tipoEvento": "foto_50",
+      "dataEvento": "2025-11-03 15:00:00",
+      "dataEventoFim": "2025-11-04 15:00:00",
+      "local": "ESTUDIO SUPER A",
+      "cenarios": "NULL",
+      "observacao": "NULL",
+      "status": "agendado",
+      "createdAt": "2025-12-07 22:43:37",
+      "updatedAt": "2025-12-07 22:43:37"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tdataEvento\tdataEventoFim\tlocal\tcenarios\tobservacao\tstatus\tcreatedAt\tupdatedAt\n90008\t1061\tfoto_50\t2025-11-03 15:00:00\t2025-11-04 15:00:00\tESTUDIO SUPER A\tNULL\tNULL\tagendado\t2025-12-07 22:43:37\t2025-12-07 22:43:37\n",
+  "stderr": "",
+  "execution_time_ms": 46
+}

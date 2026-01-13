@@ -1,0 +1,22 @@
+{
+  "query": "SELECT id, turmaId, tipoEvento, maquiadoras FROM eventos WHERE maquiadoras IS NOT NULL AND maquiadoras != '' AND maquiadoras != '[]' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute SELECT id, turmaId, tipoEvento, maquiadoras FROM eventos WHERE maquiadoras IS NOT NULL AND maquiadoras != '' AND maquiadoras != '[]' LIMIT 5;",
+  "rows": [
+    {
+      "id": "30002",
+      "turmaId": "1273",
+      "tipoEvento": "foto_estudio",
+      "maquiadoras": "[119,133]"
+    },
+    {
+      "id": "60006",
+      "turmaId": "1176",
+      "tipoEvento": "foto_estudio",
+      "maquiadoras": "[158,150]"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tturmaId\ttipoEvento\tmaquiadoras\n30002\t1273\tfoto_estudio\t[119,133]\n60006\t1176\tfoto_estudio\t[158,150]\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

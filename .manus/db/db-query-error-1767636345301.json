@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO users (openId, name, email, role, status, createdAt, updatedAt, lastSignedIn) VALUES ('controler_openid_' || UNIX_TIMESTAMP(), 'Controler', 'controler@estudio-super-a.com', 'coordenador', 'aprovado', NOW(), NOW(), NOW())",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3WG3DCJNDgKq1ck.d12df11ceaba --database axWmxYbCBHHB5ETKSgA95A --execute INSERT INTO users (openId, name, email, role, status, createdAt, updatedAt, lastSignedIn) VALUES ('controler_openid_' || UNIX_TIMESTAMP(), 'Controler', 'controler@estudio-super-a.com', 'coordenador', 'aprovado', NOW(), NOW(), NOW())",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1292 (22007) at line 1: Truncated incorrect DOUBLE value: '?'"
+  ]
+}
